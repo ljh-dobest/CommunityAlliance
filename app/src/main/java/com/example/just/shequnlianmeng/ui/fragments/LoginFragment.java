@@ -34,9 +34,10 @@ public class LoginFragment extends Fragment {
     @OnClick(R.id.sign_in_btn)
     public void loginOnLick(View view) {
         String userName = et_userName.getText().toString().trim();
-        String password = et_userName.getText().toString().trim();
+        String password = et_pw.getText().toString().trim();
         if ("".equals(userName) || "".equals(password)) {
             Toast.makeText(getContext(), "用户名和密码不能为空", Toast.LENGTH_SHORT).show();
+            return;
         } else if (userName != null && password != null) {
             LoadDialog.show(getContext());
             //服务器验证
