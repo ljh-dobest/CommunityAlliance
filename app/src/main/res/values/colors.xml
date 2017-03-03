@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#ff9999</color>
+    <color name="blue">#FF3CB9FF</color>
+    <color name="orange">#B8860B</color>
+    <color name="d">#ffcccc</color>
+    <color name="fs">#D4D4D4</color>
+    <color name="fd">#dcdcdc</color>
+    <color name="ff">#aeadad</color>
+    <color name="calendar_top_bg">#F5A0B3</color>
+    <color name="bt">#CBCDC9DE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_2">#737373</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="ccc">#444444</color>
+    <color name="grey">#eeeeee</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="menu_bkg">#555555</color>
+    <color name="sddd">#eeeeee</color>
+    <color name="search">#c2c4c4</color>
+    <color name="blue2">#48a4f9</color>
+    <color name="blue3">#329cfd</color>
+    <color name="green">#73ec71</color>
+    <color name="f850_default_blue">#0079ff</color>
+    <color name="text_color">#353535</color>
+
+    <color name="sd">#990033</color>
+
+    <drawable name="transparent">#00000000</drawable>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="header_toast_bg">#ccebfc</color>
+    <color name="header_toast">#024ca1</color>
+    <color name="header_toast_line">#abdaf4</color>
+    <color name="offline_down_title">#909090</color>
+    <color name="offline_head_font">#FFFFFF</color>
+    <color name="gary">#898989</color>
+    <color name="taobao_black">#333333</color>
+    <color name="offline_down_size">#777777</color>
+    <color name="gray_lite">#c5c5c5</color>
+    <color name="progress_background">#ededed</color>
+    <color name="itemlist">#f4f4f4</color>
+    <color name="act_background">#efefef</color>
+</resources>
