@@ -41,6 +41,7 @@ public class LoginActivity extends BaseActivity implements TabLayout.OnTabSelect
         initFragments();
     }
 
+    //初始化碎片
     private void initFragments() {
         registerFragment=new RegisterFragment();
         registerFragment.setListener(this);

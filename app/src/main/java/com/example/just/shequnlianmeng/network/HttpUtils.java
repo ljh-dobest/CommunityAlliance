@@ -20,8 +20,8 @@ import okhttp3.OkHttpClient;
 public class HttpUtils {
     public static final String CACHE_PATH=
             Environment.getExternalStorageDirectory().getAbsolutePath()+"/ CommunityAlliance/";
-      public static final String IMAGE_RUL ="http://192.168.0.212";
-      public static final String BASE_RUL ="http://192.168.0.212/appapi/app";
+      public static final String IMAGE_RUL ="http://192.168.0.212:90";
+      public static final String BASE_RUL ="http://192.168.0.212:90/appapi/app";
 
 
 
@@ -121,13 +121,14 @@ public class HttpUtils {
     }
 
     //注册
-    public static void postRegisterRequest(String url, String nickname, String phone, String password,
+    public static void postRegisterRequest(String url, String nickname, String mobile, String password,String recommendId,
                                            StringCallback callback){
         OkHttpUtils.post().url(BASE_RUL +url)
                 .addHeader("Connection", "close")
                 .addParams("nickname",nickname)
-                .addParams("mobile",phone)
+                .addParams("mobile",mobile)
                 .addParams("password",password)
+                .addParams("recommendId",recommendId)
                 .build().execute(callback);
     }
 

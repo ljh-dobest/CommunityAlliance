@@ -5,4 +5,13 @@
     <dimen name="font_24">24sp</dimen>
     <dimen name="font_12">12sp</dimen>
     <dimen name="font_48">48sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="lv_item_icon">40dp</dimen>
+    <dimen name="lv_item_header">50dp</dimen>
+    <dimen name="lv_dividerHeight">5dp</dimen>
+    <dimen name="lv_foot_ml_10">10dp</dimen>
+    <dimen name="lv_foot_iv_30">30dp</dimen>
+    <dimen name="lv_foot_ml_50">40dp</dimen>
+
+
 </resources>

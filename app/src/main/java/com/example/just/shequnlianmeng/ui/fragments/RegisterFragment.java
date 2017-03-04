@@ -11,13 +11,18 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.example.just.shequnlianmeng.R;
+import com.example.just.shequnlianmeng.bean.Code;
+import com.example.just.shequnlianmeng.network.HttpUtils;
+import com.example.just.shequnlianmeng.network.JsonParser;
 import com.example.just.shequnlianmeng.utils.AMUtils;
 import com.example.just.shequnlianmeng.utils.LoadDialog;
 import com.example.just.shequnlianmeng.utils.T;
+import com.zhy.http.okhttp.callback.StringCallback;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import okhttp3.Call;
 
 
 public class RegisterFragment extends Fragment {
@@ -65,9 +70,9 @@ public class RegisterFragment extends Fragment {
     @OnClick(R.id.btn_register)
     public void registerOnClick(View view){
        String password = et_pw.getText().toString();
-      String  phone = et_phoneNum.getText().toString();
+      String  mobile = et_phoneNum.getText().toString();
         String inviteCode = et_inviteCode.getText().toString().trim();
-        if (TextUtils.isEmpty(phone)) {
+        if (TextUtils.isEmpty(mobile)) {
             T.showShort(getContext(), "手机号不能为空");
             return;
         }
@@ -81,10 +86,36 @@ public class RegisterFragment extends Fragment {
         }
         LoadDialog.show(getContext());
         //信息提交服务器
-        listener.finishRegister();
-        et_pw.setText("");
-        et_phoneNum.setText("");
-        et_inviteCode.setText("");
+        HttpUtils.postRegisterRequest("/register", mobile, mobile, password, inviteCode, new StringCallback() {
+            @Override
+            public void onError(Call call, Exception e, int id) {
+                T.showShort(getContext(),e.toString());
+            }
+
+            @Override
+            public void onResponse(String response, int id) {
+                Code<Object> code = JsonParser.parserRegisterRespon(response);
+                switch (code.getCode()) {
+                    case 200:
+                        listener.finishRegister();
+                        et_pw.setText("");
+                        et_phoneNum.setText("");
+                        et_inviteCode.setText("");
+                        LoadDialog.dismiss(getContext());
+                        break;
+                    case 0:
+                        T.showShort(getContext(),"账号已注册");
+                        LoadDialog.dismiss(getContext());
+                        break;
+                    case 1000:
+                        T.showShort(getContext(),"推荐id不一致");
+                        LoadDialog.dismiss(getContext());
+                        break;
+
+                }
+
+            }
+        });
     }
 
     public void setListener(FinishRegisterListener listener){

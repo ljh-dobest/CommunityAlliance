@@ -61,7 +61,7 @@ public class HomeFragment extends Fragment implements TabLayout.OnTabSelectedLis
         fragments.add(yiYuanDuoBaoFragment);
         fragments.add(usefulActivityFragment);
         fragments.add(platformActivityFragment);
-        vp_home.setAdapter(new FragmentPagerAdapter(getActivity().getSupportFragmentManager()) {
+        vp_home.setAdapter(new FragmentPagerAdapter(getChildFragmentManager()) {
             //此方法用来显示tab上的名字
             @Override
             public CharSequence getPageTitle(int position) {

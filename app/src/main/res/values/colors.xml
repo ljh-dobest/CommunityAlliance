@@ -27,13 +27,9 @@
     <color name="green">#73ec71</color>
     <color name="f850_default_blue">#0079ff</color>
     <color name="text_color">#353535</color>
-
     <color name="sd">#990033</color>
-
     <drawable name="transparent">#00000000</drawable>
     <color name="transparent">#00000000</color>
-
-
     <color name="header_toast_bg">#ccebfc</color>
     <color name="header_toast">#024ca1</color>
     <color name="header_toast_line">#abdaf4</color>
@@ -46,4 +42,11 @@
     <color name="progress_background">#ededed</color>
     <color name="itemlist">#f4f4f4</color>
     <color name="act_background">#efefef</color>
+    <color name="col_10DB9F">#10DB9F</color>
+    <color name="col_DDDDDD">#DDDDDD</color>
+    <color name="col_909090">#909090</color>
+    <color name="col_999999">#999999</color>
+    <color name="col_333333">#333333</color>
+
+
 </resources>
