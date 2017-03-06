@@ -10,7 +10,6 @@ import com.example.just.shequnlianmeng.R;
 import com.example.just.shequnlianmeng.base.BaseActivity;
 import com.example.just.shequnlianmeng.ui.fragments.LoginFragment;
 import com.example.just.shequnlianmeng.ui.fragments.RegisterFragment;
-import com.example.just.shequnlianmeng.utils.LoadDialog;
 import com.example.just.shequnlianmeng.utils.T;
 
 import java.util.ArrayList;
@@ -96,7 +95,6 @@ public class LoginActivity extends BaseActivity implements TabLayout.OnTabSelect
     @Override
     public void finishRegister() {
         vp_login.setCurrentItem(0);
-        LoadDialog.dismiss(LoginActivity.this);
         T.showShort(this,"注册成功！恭喜您加入艾佳大家庭~~");
     }
 }

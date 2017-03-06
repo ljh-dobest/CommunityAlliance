@@ -42,7 +42,7 @@ public class JsonParser {
             } catch (JSONException e) {
             }
             userInfo = new UserInfo(userId, token, nickname, sex, mobile, address, birthday, age, email, userPortraitUrl,recommendUserId);
-            code.setMsg(userInfo);
+            code.setData(userInfo);
         } catch (JSONException e) {
             return code;
         }

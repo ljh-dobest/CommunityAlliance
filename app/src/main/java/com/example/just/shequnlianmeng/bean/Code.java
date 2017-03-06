@@ -6,14 +6,14 @@ package com.example.just.shequnlianmeng.bean;
 
 public class Code<T> {
     private int code;
-    private T msg;
+    private T data;
 
     public Code() {
     }
 
-    public Code(int code, T msg) {
+    public Code(int code, T data) {
         this.code = code;
-        this.msg = msg;
+        this.data = data;
     }
 
     public int getCode() {
@@ -24,11 +24,11 @@ public class Code<T> {
         this.code = code;
     }
 
-    public T getMsg() {
-        return msg;
+    public T getData() {
+        return data;
     }
 
-    public void setMsg(T msg) {
-        this.msg = msg;
+    public void setData(T data) {
+        this.data = data;
     }
 }

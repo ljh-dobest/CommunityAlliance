@@ -6,7 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
+import com.example.just.shequnlianmeng.R;
 
 /**
  * Created by just on 2017/3/1.
@@ -16,8 +17,7 @@ public class MineFragment extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        TextView tv=new TextView(getContext());
-        tv.setText("我的页面");
-        return  tv;
+      View containerView= inflater.inflate(R.layout.mine_fragment,container,false);
+        return  containerView;
     }
 }

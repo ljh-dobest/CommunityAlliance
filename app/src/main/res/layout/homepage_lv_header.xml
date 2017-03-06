@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.youth.banner.Banner
-        android:id="@+id/zc_banner"
+        android:id="@+id/homepage_banner"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:indicator_width="@dimen/lv_foot_ml_10"
-        app:indicator_height="@dimen/lv_foot_ml_10"
+        app:indicator_width="10dp"
+        app:indicator_height="10dp"
         />
-</RelativeLayout>
+    <com.example.just.shequnlianmeng.views.HomeGridView
+        android:id="@+id/homepage_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:verticalSpacing="3dp"
+        android:horizontalSpacing="3dp"
+        ></com.example.just.shequnlianmeng.views.HomeGridView>
+</LinearLayout>

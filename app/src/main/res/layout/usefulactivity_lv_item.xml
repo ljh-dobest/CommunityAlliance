@@ -5,46 +5,34 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp">
 <LinearLayout
-    android:id="@+id/ll_zc_item_1"
+    android:id="@+id/ua_lv_item_ll"
     android:layout_width="match_parent"
     android:layout_height="@dimen/lv_item_header"
     android:gravity="center_vertical"
     android:orientation="horizontal">
     <com.example.just.shequnlianmeng.views.XCRoundRectImageView
-        android:id="@+id/iv_zc_item_icon"
+        android:id="@+id/iv_ua_lv_item_icon"
         android:layout_width="@dimen/lv_item_icon"
         android:layout_height="@dimen/lv_item_icon"
         android:src="@mipmap/ic_launcher"/>
     <TextView
-        android:id="@+id/tv_zc_item_name"
+        android:id="@+id/tv_ua_lv_item_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:textSize="@dimen/font_18"
         android:textColor="@color/col_333333"
         android:text="用户名称"/>
-    <View
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"/>
-    <TextView
-        android:id="@+id/tv_zc_item_style"
-        android:layout_marginRight="8dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/font_18"
-        android:textColor="@color/col_999999"
-        android:text="产品众筹"/>
 </LinearLayout>
     <com.example.just.shequnlianmeng.views.XCRoundRectImageView
-        android:layout_below="@id/ll_zc_item_1"
-        android:id="@+id/iv_zc_item_image"
+        android:layout_below="@id/ua_lv_item_ll"
+        android:id="@+id/iv_ua_lv_item_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:src="@mipmap/ic_launcher"/>
     <TextView
-        android:layout_below="@id/iv_zc_item_image"
-        android:id="@+id/tv_zc_item_title"
+        android:layout_below="@id/iv_ua_lv_item_image"
+        android:id="@+id/tv_ua_lv_item_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/font_24"
@@ -53,8 +41,8 @@
         android:text="上大大的萨达萨达是飞洒发讯课程女款vkdn"/>
     <TextView
         android:layout_marginTop="6dp"
-        android:layout_below="@id/tv_zc_item_title"
-        android:id="@+id/tv_zc_item_details"
+        android:layout_below="@id/tv_ua_lv_item_title"
+        android:id="@+id/tv_ua_lv_item_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/font_18"
@@ -62,53 +50,7 @@
         android:text="温暖的家你付款赶紧睡吧敬爱的空间被罚款颁发的被罚款的被罚款的步伐"
         />
     <LinearLayout
-        android:layout_below="@id/tv_zc_item_details"
-        android:id="@+id/ll_zc_item_2"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/font_12"
-            android:textColor="@color/col_999999"
-            android:text="@string/renchouzonge"/>
-        <TextView
-            android:id="@+id/tv_zc_item_rcNum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/font_12"
-            android:textColor="@color/col_999999"
-            android:text="11654.00"/>
-        <View
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/font_12"
-            android:textColor="@color/col_999999"
-            android:text="@string/renchouzonge"/>
-        <TextView
-            android:id="@+id/tv_zc_item_mbNum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/font_12"
-            android:textColor="@color/col_999999"
-            android:text="25000.00"/>
-    </LinearLayout>
-    <ProgressBar
-        android:layout_below="@id/ll_zc_item_2"
-        android:id="@+id/pb_zc_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:progress="50"
-        style="@android:style/Widget.ProgressBar.Horizontal"
-        />
-    <LinearLayout
-        android:layout_below="@id/pb_zc_item"
+        android:layout_below="@id/tv_ua_lv_item_detail"
         android:layout_width="match_parent"
         android:layout_height="@dimen/lv_item_header"
         android:layout_marginTop="5dp"
@@ -119,6 +61,7 @@
             android:layout_height="@dimen/lv_foot_iv_30"
             android:src="@drawable/good"/>
         <TextView
+            android:id="@+id/tv_ua_lv_item_good"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/lv_foot_ml_10"
@@ -131,11 +74,23 @@
             android:layout_marginLeft="@dimen/lv_foot_ml_50"
             android:src="@drawable/discusstion"/>
         <TextView
+            android:id="@+id/tv_ua_lv_item_disc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/lv_foot_ml_10"
             android:textSize="@dimen/font_18"
             android:textColor="@color/col_999999"
             android:text="评论"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+          <TextView
+              android:id="@+id/tv_ua_lv_item_location"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/font_18"
+              android:textColor="@color/col_999999"
+              android:text="广州-天河"/>
     </LinearLayout>
 </RelativeLayout>

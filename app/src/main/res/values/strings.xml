@@ -11,7 +11,24 @@
     <string name="InviteCode">邀请码</string>
     <string name="renchouzonge">认筹总额：¥</string>
     <string name="mubiaozonge">目标总额：¥</string>
-    <string name="dianjiduobao">点击夺宝</string>
+    <string name="lijiduobao">立即夺宝</string>
+    <string name="qiandao">签到</string>
+    <string name="mine">我的</string>
+    <string name="edit">编辑</string>
+    <string name="mingpian">名片</string>
+    <string name="woyaotuijian">我要推荐</string>
+    <string name="renlingzhoingxin">认领中心</string>
+    <string name="woderenmai">我的人脉</string>
+    <string name="sanfenzhong">三分钟教学</string>
+    <string name="wodeganhuo">我的干货</string>
+    <string name="wodeqiuzu">我的求助</string>
+    <string name="wodezhongchou">我的众筹</string>
+    <string name="wodeduobao">我的夺宝</string>
+    <string name="wodelinghun">我的灵魂贩卖</string>
+    <string name="canyudehuodong">参与的活动</string>
+    <string name="setting">设置</string>
+    <string name="fankui">反馈</string>
+
 
 
     <!-- TODO: Remove or change this placeholder text -->
