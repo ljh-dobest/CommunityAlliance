@@ -15,6 +15,7 @@
     android:orientation="vertical">
     <TextView
         android:background="@color/blue2"
+        android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -42,6 +43,7 @@
 
         <EditText
             android:id="@+id/et_recom_mobile"
+            android:inputType="number"
             style="@style/recommend_item_et_styles" />
     </LinearLayout>
     <LinearLayout
@@ -124,16 +126,41 @@
                 android:text="旅游"/>
         </LinearLayout>
     </RadioGroup>
+        <LinearLayout
+         style="@style/recommend_item_ll_styles">
+            <TextView
+                style="@style/recommend_item_tv_styles"
+                android:text="地址(必填):" />
+        </LinearLayout>
     <LinearLayout
         style="@style/recommend_item_ll_styles">
-
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/sp_recom_province"
+            />
         <TextView
             style="@style/recommend_item_tv_styles"
-            android:text="地址(必填):" />
-
-        <EditText
-            android:id="@+id/et_recom_address"
-            style="@style/recommend_item_et_styles" />
+            android:text="省"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/sp_recom_city"
+            />
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="市"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/sp_recom_county"
+            />
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="(区)/县"/>
     </LinearLayout>
     <LinearLayout
         style="@style/recommend_item_ll_styles">
@@ -183,6 +210,7 @@
             android:text="信誉分:(必填)" />
         <EditText
             android:id="@+id/et_recom_creditScore"
+            android:inputType="number"
             style="@style/recommend_item_et_styles" />
     </LinearLayout>
     <LinearLayout

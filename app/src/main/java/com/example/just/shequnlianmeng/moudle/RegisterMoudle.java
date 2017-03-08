@@ -6,6 +6,7 @@ import com.example.just.shequnlianmeng.bean.Code;
 import com.example.just.shequnlianmeng.listeners.OnRegisterFinishListener;
 import com.example.just.shequnlianmeng.network.HttpUtils;
 import com.example.just.shequnlianmeng.network.JsonParser;
+import com.example.just.shequnlianmeng.utils.AMUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import okhttp3.Call;
@@ -16,11 +17,19 @@ import okhttp3.Call;
 
 public class RegisterMoudle {
     public void register(String userName, String mobile, String pwd, String recommendId, final OnRegisterFinishListener listener){
-        if (TextUtils.isEmpty(userName)||TextUtils.isEmpty(pwd)||TextUtils.isEmpty(recommendId)){
+        if (TextUtils.isEmpty(mobile)||TextUtils.isEmpty(pwd)||TextUtils.isEmpty(recommendId)){
                     listener.showTextEmpty();
-        }else if (TextUtils.isEmpty(pwd) || pwd.length() < 4) {
+            return;
+        }
+        if(!AMUtils.isMobile(mobile)) {
+            listener.failedToRegister("请输入正确的手机号码");
+            return;
+        }
+        if (TextUtils.isEmpty(pwd) || pwd.length() < 4) {
             listener.showPwdError();
-        }else {
+            return;
+        }
+
             //信息提交服务器
             HttpUtils.postRegisterRequest("/register", mobile, mobile, pwd, recommendId, new StringCallback() {
                 @Override
@@ -46,6 +55,4 @@ public class RegisterMoudle {
                 }
             });
         }
-
-    }
 }

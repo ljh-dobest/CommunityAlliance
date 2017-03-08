@@ -1,10 +1,14 @@
 package com.example.just.shequnlianmeng.presenters;
 
+import android.content.Context;
+
+import com.example.just.shequnlianmeng.bean.ProvinceBean;
 import com.example.just.shequnlianmeng.interfaces.IRecommedPresenter;
 import com.example.just.shequnlianmeng.interfaces.IRecommedView;
 import com.example.just.shequnlianmeng.listeners.OnRecommedFinishListener;
 import com.example.just.shequnlianmeng.moudle.RecommedMoudle;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,6 +37,11 @@ public class RecommedPresenterImpl implements IRecommedPresenter,OnRecommedFinis
      }
 
     @Override
+    public void getParserData(Context context, String fileName) {
+                recommedMoudle.getParserData(context,fileName,this);
+    }
+
+    @Override
     public void onDestroy() {
     recommedView=null;
     }
@@ -56,6 +65,11 @@ public class RecommedPresenterImpl implements IRecommedPresenter,OnRecommedFinis
         if (recommedView!=null){
             recommedView.succeedToRecommed(recommedId);
         }
+    }
+
+    @Override
+    public void returnParserData(ArrayList<ProvinceBean> provinces) {
+              recommedView.getparserData(provinces);
     }
 
 

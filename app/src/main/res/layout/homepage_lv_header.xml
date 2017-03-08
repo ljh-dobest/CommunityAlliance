@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -7,7 +7,7 @@
     <com.youth.banner.Banner
         android:id="@+id/homepage_banner"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="400px"
         app:indicator_width="10dp"
         app:indicator_height="10dp"
         />
@@ -28,12 +28,12 @@
             android:layout_height="40dp"
             android:src="@drawable/rp_arrow"/>
     </RelativeLayout>
-    <com.example.just.shequnlianmeng.views.HomeGridView
+    <GridView
         android:id="@+id/homepage_gv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:numColumns="4"
         android:verticalSpacing="3dp"
         android:horizontalSpacing="3dp"
-        ></com.example.just.shequnlianmeng.views.HomeGridView>
-</LinearLayout>
+        ></GridView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -35,5 +35,5 @@ dependencies {
     compile 'com.youth.banner:banner:1.4.9'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.contrarywind:Android-PickerView:3.0.7'
-    compile files('libs/json-lib.jar')
+    compile 'com.zhy:autolayout:1.4.5'
 }

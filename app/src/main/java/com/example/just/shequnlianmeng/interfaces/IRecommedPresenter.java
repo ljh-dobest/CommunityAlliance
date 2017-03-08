@@ -1,5 +1,7 @@
 package com.example.just.shequnlianmeng.interfaces;
 
+import android.content.Context;
+
 import java.util.List;
 
 /**
@@ -12,5 +14,6 @@ public interface IRecommedPresenter {
                             String homeplace,String finishSchool,String company,String fatherName,
                             String motherName,String marriage,String spouseName,String spouseAge,
                             String childrenName,String childrenSchool);
+   void getParserData(Context context,String fileName);
     void onDestroy();
 }
