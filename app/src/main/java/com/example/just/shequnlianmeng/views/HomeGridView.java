@@ -18,7 +18,7 @@ public class HomeGridView extends GridView {
     }
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        heightMeasureSpec=MeasureSpec.makeMeasureSpec((int) (getMeasuredWidth()*0.55f),MeasureSpec.EXACTLY);
+        heightMeasureSpec=MeasureSpec.makeMeasureSpec((int) (getMeasuredWidth()*0.2f),MeasureSpec.EXACTLY);
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 }

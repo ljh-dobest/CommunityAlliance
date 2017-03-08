@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SheQunLianMeng</string>
+    <string name="app_name">社群联盟</string>
     <string name="login">登录</string>
     <string name="register">注册</string>
     <string name="forget_passwork">忘记密码</string>
@@ -28,7 +28,8 @@
     <string name="canyudehuodong">参与的活动</string>
     <string name="setting">设置</string>
     <string name="fankui">反馈</string>
-
+    <string name="application_center">应用中心</string>
+    <string name="woyaorenling">我要认领</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

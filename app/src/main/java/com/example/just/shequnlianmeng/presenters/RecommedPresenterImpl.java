@@ -1,0 +1,62 @@
+package com.example.just.shequnlianmeng.presenters;
+
+import com.example.just.shequnlianmeng.interfaces.IRecommedPresenter;
+import com.example.just.shequnlianmeng.interfaces.IRecommedView;
+import com.example.just.shequnlianmeng.listeners.OnRecommedFinishListener;
+import com.example.just.shequnlianmeng.moudle.RecommedMoudle;
+
+import java.util.List;
+
+/**
+ * Created by just on 2017/3/5.
+ */
+
+public class RecommedPresenterImpl implements IRecommedPresenter,OnRecommedFinishListener{
+    private IRecommedView recommedView;
+    private RecommedMoudle recommedMoudle;
+
+    public RecommedPresenterImpl(IRecommedView recommedView) {
+        this.recommedView = recommedView;
+        this.recommedMoudle = new RecommedMoudle();
+    }
+
+
+    @Override
+    public void verifyRecommedInfo(String userId, String fullName, String mobile, String sex,
+                                   List<String> hobby, List<String> address, List<String> relationship, String creditScore,
+                                   String birthday, String homeplace, String finishSchool, String company,
+                                   String fatherName, String motherName, String marriage, String spouseName,
+                                   String spouseAge, String childrenName, String childrenSchool) {
+            recommedMoudle.recommed(userId,fullName,mobile,sex,hobby,address,relationship,creditScore,
+                    birthday,homeplace,finishSchool,company,fatherName, motherName,marriage,
+                    spouseName,spouseAge,childrenName,childrenSchool,this);
+     }
+
+    @Override
+    public void onDestroy() {
+    recommedView=null;
+    }
+
+    @Override
+    public void showTextEmpty() {
+        if (recommedView!=null){
+            recommedView.showTextEmpty();
+        }
+    }
+
+    @Override
+    public void showRecommedError(String string) {
+        if (recommedView!=null){
+            recommedView.showRecommedError(string);
+        }
+    }
+
+    @Override
+    public void succeedToRecommed(String recommedId) {
+        if (recommedView!=null){
+            recommedView.succeedToRecommed(recommedId);
+        }
+    }
+
+
+}

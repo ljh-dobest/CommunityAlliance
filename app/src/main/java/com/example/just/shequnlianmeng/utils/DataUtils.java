@@ -8,12 +8,15 @@ import android.annotation.SuppressLint;
 
 import com.example.just.shequnlianmeng.bean.CustomDate;
 
+import org.json.JSONArray;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.List;
 
 
 public class DataUtils {
@@ -436,5 +439,14 @@ public static long lastClickTime=0;
         long timeD = time - lastClickTime;
         lastClickTime = time;
         return timeD <= 300;
+    }
+    //把集合转成json数组
+    public static String listTOjson(List<String> list){
+       String[] arr=new String[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+             arr[i]=list.get(i);
+        }
+
+        return "";
     }
 }

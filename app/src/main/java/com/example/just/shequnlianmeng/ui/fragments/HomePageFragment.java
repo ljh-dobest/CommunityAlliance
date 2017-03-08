@@ -71,10 +71,8 @@ public class HomePageFragment extends Fragment implements AbsListView.OnScrollLi
         data = new ArrayList<>();
         data.add("干货分享");
         data.add("灵感贩卖");
-        data.add("求助中心");
-        data.add("直播频道");
-        data.add("领养中心");
-        data.add("联盟打车");
+        data.add("认领中心");
+        data.add("直播中心");
         homepage_gv.setAdapter(new HomePageGVAdapter(getContext(), data));
     }
 
@@ -122,4 +120,86 @@ public class HomePageFragment extends Fragment implements AbsListView.OnScrollLi
             homepage_iv_top.setVisibility(View.GONE);
         }
     }
+//    @BindView(R.id.tl_home)
+//    TabLayout tl_home;
+//    @BindView(R.id.vp_home)
+//    ViewPager vp_home;
+//    private List<Fragment> fragments;
+//    private List<String> mTitle;
+//    private HomePageFragment homePageFragment;
+//    private ZhongChouFragment zhongChouFragment;
+//    private YiYuanDuoBaoFragment yiYuanDuoBaoFragment;
+//    private UsefulActivityFragment usefulActivityFragment;
+//    private PlatformActivityFragment platformActivityFragment;
+//    @Nullable
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+//        View ContainerView=inflater.inflate(R.layout.fragment_home,container,false);
+//        ButterKnife.bind(this,ContainerView);
+//        init();
+//        return  ContainerView;
+//    }
+//
+//    private void init() {
+//        initTitle();
+//        initFragments();
+//    }
+//
+//    private void initFragments() {
+//        homePageFragment=new HomePageFragment();
+//        zhongChouFragment=new ZhongChouFragment();
+//        yiYuanDuoBaoFragment=new YiYuanDuoBaoFragment();
+//        usefulActivityFragment=new UsefulActivityFragment();
+//        platformActivityFragment=new PlatformActivityFragment();
+//        fragments=new ArrayList<Fragment>();
+//        tl_home.setTabMode(TabLayout.MODE_FIXED);
+//        fragments.add(homePageFragment);
+//        fragments.add(zhongChouFragment);
+//        fragments.add(yiYuanDuoBaoFragment);
+//        fragments.add(usefulActivityFragment);
+//        fragments.add(platformActivityFragment);
+//        vp_home.setAdapter(new FragmentPagerAdapter(getChildFragmentManager()) {
+//            //此方法用来显示tab上的名字
+//            @Override
+//            public CharSequence getPageTitle(int position) {
+//                return mTitle.get(position);
+//            }
+//            @Override
+//            public Fragment getItem(int position) {
+//                return fragments.get(position);
+//            }
+//
+//            @Override
+//            public int getCount() {
+//                return fragments.size();
+//            }
+//        });
+//        tl_home.setupWithViewPager(vp_home);
+//        tl_home.addOnTabSelectedListener(this);
+//    }
+//
+//    //初始化标题
+//    private void initTitle() {
+//        mTitle=new ArrayList<>();
+//        mTitle.add("首页");
+//        mTitle.add("众筹");
+//        mTitle.add("一元夺宝");
+//        mTitle.add("公益活动");
+//        mTitle.add("平台活动");
+//    }
+//
+//    @Override
+//    public void onTabSelected(TabLayout.Tab tab) {
+//        vp_home.setCurrentItem(tab.getPosition());
+//    }
+//
+//    @Override
+//    public void onTabUnselected(TabLayout.Tab tab) {
+//
+//    }
+//
+//    @Override
+//    public void onTabReselected(TabLayout.Tab tab) {
+//
+//    }
 }

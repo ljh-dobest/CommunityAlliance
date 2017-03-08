@@ -7,10 +7,27 @@
     <com.youth.banner.Banner
         android:id="@+id/homepage_banner"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         app:indicator_width="10dp"
         app:indicator_height="10dp"
         />
+    <RelativeLayout
+       android:padding="8dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_24"
+            android:text="@string/application_center"/>
+        <ImageView
+            android:id="@+id/iv_mine_renling"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/rp_arrow"/>
+    </RelativeLayout>
     <com.example.just.shequnlianmeng.views.HomeGridView
         android:id="@+id/homepage_gv"
         android:layout_width="match_parent"

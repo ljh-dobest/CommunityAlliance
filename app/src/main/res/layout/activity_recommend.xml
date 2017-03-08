@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recommend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.just.shequnlianmeng.ui.activitys.RecommendActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:background="@color/blue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="推荐好友"
+        android:textSize="@dimen/font_20" />
+
+    <LinearLayout
+    style="@style/recommend_item_ll_styles"
+        >
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="好友姓名:(必填)" />
+
+        <EditText
+            android:id="@+id/et_recom_name"
+            style="@style/recommend_item_et_styles" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="好友电话:(必填)" />
+
+        <EditText
+            android:id="@+id/et_recom_mobile"
+            style="@style/recommend_item_et_styles" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="性别:(必填)" />
+        <RadioGroup
+            android:id="@+id/rg_recom_sex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/rb_recom_man"
+                style="@style/recommend_item_rb_styles"
+                android:text="男" />
+            <RadioButton
+                android:id="@+id/rb_recom_women"
+                style="@style/recommend_item_rb_styles"
+                android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        style="@style/recommend_item_tv_styles"
+        android:text="好友爱好(必填)："/>
+    <RadioGroup
+        android:id="@+id/rg_recom_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            style="@style/recommend_item_ll_styles">
+        <RadioButton
+            android:id="@+id/rb_recom_pingpangqiu"
+            style="@style/recommend_item_rb_styles"
+            android:text="乒乓球" />
+        <RadioButton
+            android:id="@+id/rb_recom_yumaoqiu"
+            style="@style/recommend_item_rb_styles"
+            android:text="羽毛球"/>
+        <RadioButton
+            android:id="@+id/rb_recom_movie"
+            style="@style/recommend_item_rb_styles"
+            android:text="看电影"/>
+        <RadioButton
+            android:id="@+id/rb_recom_zhaijia"
+            style="@style/recommend_item_rb_styles"
+            android:text="宅在家"/>
+            <RadioButton
+                android:id="@+id/rb_recom_gezhongchi"
+                style="@style/recommend_item_rb_styles"
+                android:text="吃"/>
+    </LinearLayout>
+        <LinearLayout
+            style="@style/recommend_item_ll_styles">
+            <RadioButton
+                android:id="@+id/rb_recom_basketball"
+                style="@style/recommend_item_rb_styles"
+                android:text="篮球" />
+            <RadioButton
+                android:id="@+id/rb_recom_bybike"
+                style="@style/recommend_item_rb_styles"
+                android:text="骑行"/>
+            <RadioButton
+                android:id="@+id/rb_recom_readbook"
+                style="@style/recommend_item_rb_styles"
+                android:text="看书"/>
+            <RadioButton
+                android:id="@+id/rb_recom_run"
+                style="@style/recommend_item_rb_styles"
+                android:text="跑步"/>
+            <RadioButton
+                android:id="@+id/rb_recom_chat"
+                style="@style/recommend_item_rb_styles"
+                android:text="聊天"/>
+            <RadioButton
+                android:id="@+id/rb_recom_ludaima"
+                style="@style/recommend_item_rb_styles"
+                android:text="旅游"/>
+        </LinearLayout>
+    </RadioGroup>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="地址(必填):" />
+
+        <EditText
+            android:id="@+id/et_recom_address"
+            style="@style/recommend_item_et_styles" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="详细位置:(必填)" />
+        <EditText
+            android:id="@+id/et_recom_addressdetail"
+            style="@style/recommend_item_et_styles" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="关系:(必填)" />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_recom_relationship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_recom_qinren"
+                style="@style/recommend_item_rb_styles"
+                android:text="亲人" />
+            <RadioButton
+                android:id="@+id/rb_recom_qinglv"
+                style="@style/recommend_item_rb_styles"
+                android:text="情侣" />
+            <RadioButton
+                android:id="@+id/rb_recom_tongshi"
+                style="@style/recommend_item_rb_styles"
+                android:text="同事" />
+            <RadioButton
+                android:id="@+id/rb_recom_xiaoyou"
+                style="@style/recommend_item_rb_styles"
+                android:text="校友" />
+            <RadioButton
+                android:id="@+id/rb_recom_laoxiang"
+                style="@style/recommend_item_rb_styles"
+                android:text="老乡" />
+        </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="信誉分:(必填)" />
+        <EditText
+            android:id="@+id/et_recom_creditScore"
+            style="@style/recommend_item_et_styles" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="生日:" />
+      <EditText
+          android:id="@+id/et_recom_birthday"
+          style="@style/recommend_item_et_styles"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="籍贯:" />
+        <EditText
+            android:id="@+id/et_recom_homeplace"
+            style="@style/recommend_item_et_styles" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="毕业学校:" />
+        <EditText
+            android:id="@+id/et_recom_school"
+            style="@style/recommend_item_et_styles" />
+    </LinearLayout>
+        <LinearLayout
+            style="@style/recommend_item_ll_styles">
+            <TextView
+                style="@style/recommend_item_tv_styles"
+                android:text="公司:" />
+            <EditText
+                android:id="@+id/et_recom_company"
+                style="@style/recommend_item_et_styles" />
+        </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="父亲名字:" />
+        <EditText
+            android:id="@+id/et_recom_dadName"
+            style="@style/recommend_item_et_styles" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="母亲名字:" />
+        <EditText
+            android:id="@+id/et_recom_momName"
+            style="@style/recommend_item_et_styles" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/recommend_item_ll_styles">
+        <TextView
+            style="@style/recommend_item_tv_styles"
+            android:text="婚姻状况::" />
+        <RadioGroup
+            android:id="@+id/rg_recom_marriage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/rb_recom_unmarriage"
+                style="@style/recommend_item_rb_styles"
+                android:text="未婚" />
+            <RadioButton
+                android:id="@+id/rb_recom_marriage"
+                style="@style/recommend_item_rb_styles"
+                android:text="已婚" />
+        </RadioGroup>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_recomm_marriaged"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <LinearLayout
+                style="@style/recommend_item_ll_styles">
+                <TextView
+                    style="@style/recommend_item_tv_styles"
+                    android:text="配偶名字:" />
+                <EditText
+                    android:id="@+id/et_recom_spouseName"
+                    style="@style/recommend_item_et_styles" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/recommend_item_ll_styles">
+                <TextView
+                    style="@style/recommend_item_tv_styles"
+                    android:text="配偶年龄:" />
+                <EditText
+                    android:id="@+id/et_recom_spouseAge"
+                    style="@style/recommend_item_et_styles" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/recommend_item_ll_styles">
+                <TextView
+                    style="@style/recommend_item_tv_styles"
+                    android:text="子女名字:" />
+                <EditText
+                    android:id="@+id/et_recom_childrenName"
+                    style="@style/recommend_item_et_styles" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/recommend_item_ll_styles">
+                <TextView
+                    style="@style/recommend_item_tv_styles"
+                    android:text="子女就读院校:" />
+                <EditText
+                    android:id="@+id/et_recom_childrenSchool"
+                    style="@style/recommend_item_et_styles" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_recommend"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="马上推荐"/>
+</LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

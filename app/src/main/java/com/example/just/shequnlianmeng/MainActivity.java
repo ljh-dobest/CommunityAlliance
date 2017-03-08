@@ -4,7 +4,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
 import android.widget.RadioButton;
@@ -13,10 +12,8 @@ import android.widget.Toast;
 
 import com.example.just.shequnlianmeng.base.BaseActivity;
 import com.example.just.shequnlianmeng.ui.fragments.ChatFragment;
-import com.example.just.shequnlianmeng.ui.fragments.CommunityFragment;
 import com.example.just.shequnlianmeng.ui.fragments.HomeFragment;
 import com.example.just.shequnlianmeng.ui.fragments.MineFragment;
-import com.example.just.shequnlianmeng.ui.fragments.SearchFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,10 +25,10 @@ import butterknife.ButterKnife;
 public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {
     @BindView(R.id.rb_home)
     RadioButton rb_home;
-    @BindView(R.id.rb_community)
-    RadioButton rb_community;
-    @BindView(R.id.rb_search)
-    RadioButton rb_search;
+//    @BindView(R.id.rb_community)
+//    RadioButton rb_community;
+//    @BindView(R.id.rb_search)
+//    RadioButton rb_search;
     @BindView(R.id.rb_chat)
     RadioButton rb_chat;
     @BindView(R.id.rb_mine)
@@ -56,11 +53,9 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     }
 
     private void init() {
-        radioButtons = new RadioButton[]{rb_home, rb_community, rb_search,rb_chat,rb_mine};
+        radioButtons = new RadioButton[]{rb_home,rb_chat,rb_mine};
         fragments=new ArrayList<Fragment>();
         fragments.add(new HomeFragment());
-        fragments.add(new CommunityFragment());
-        fragments.add(new SearchFragment());
         fragments.add(new ChatFragment());
         fragments.add(new MineFragment());
         main_vp.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {

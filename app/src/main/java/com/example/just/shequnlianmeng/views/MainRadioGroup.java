@@ -22,10 +22,8 @@ public class MainRadioGroup extends RadioGroup {
         super(context, attrs);
         drawables = new Drawable[]{
                   getResources().getDrawable(R.drawable.botm_home_buttom),
-                getResources().getDrawable(R.drawable.botm_destination_buttom),
-                getResources().getDrawable(R.drawable.botm_order_buttom),
-                getResources().getDrawable(R.drawable.botm_wo_buttom),
-                getResources().getDrawable(R.drawable.botm_wo_buttom)
+                getResources().getDrawable(R.drawable.chat2x),
+                getResources().getDrawable(R.drawable.mine2x)
         };
     }
 

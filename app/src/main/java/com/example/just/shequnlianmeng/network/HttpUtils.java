@@ -410,5 +410,32 @@ public class HttpUtils {
                 .build().execute(callback);
     }
 
-
-}
+    public static void postRecommend(String url,String userId, String fullName, String mobile, String sex, String hobby,
+                                     String address, String relationship, String creditScore, String birthday,
+                                     String homeplace, String finishSchool, String company, String fatherName,
+                                     String motherName, String marriage, String spouseName, String spouseAge,
+                                     String childrenName, String childrenSchool,StringCallback callback){
+        OkHttpUtils.post().url(BASE_RUL+url)
+                .addHeader("Connection", "close")
+                .addParams("userId",userId)
+                .addParams("fullName",fullName)
+                .addParams("mobile",mobile)
+                .addParams("sex",sex)
+                .addParams("hobby",hobby)
+                .addParams("address",address)
+                .addParams("relationship",relationship)
+                .addParams("creditScore",creditScore)
+                .addParams("birthday",birthday)
+                .addParams("homeplace",homeplace)
+                .addParams("finishSchool",finishSchool)
+                .addParams("company",company)
+                .addParams("fatherName",fatherName)
+                .addParams("motherName",motherName)
+                .addParams("marriage",marriage)
+                .addParams("spouseName",spouseName)
+                .addParams("spouseAge",spouseAge)
+                .addParams("childrenName",childrenName)
+                .addParams("childrenSchool",childrenSchool)
+                .build().execute(callback);
+        }
+    }
