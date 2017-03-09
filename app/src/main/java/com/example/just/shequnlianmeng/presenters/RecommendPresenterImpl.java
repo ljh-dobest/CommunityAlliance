@@ -15,11 +15,11 @@ import java.util.List;
  * Created by just on 2017/3/5.
  */
 
-public class RecommedPresenterImpl implements IRecommedPresenter,OnRecommedFinishListener{
+public class RecommendPresenterImpl implements IRecommedPresenter,OnRecommedFinishListener{
     private IRecommedView recommedView;
     private RecommedMoudle recommedMoudle;
 
-    public RecommedPresenterImpl(IRecommedView recommedView) {
+    public RecommendPresenterImpl(IRecommedView recommedView) {
         this.recommedView = recommedView;
         this.recommedMoudle = new RecommedMoudle();
     }

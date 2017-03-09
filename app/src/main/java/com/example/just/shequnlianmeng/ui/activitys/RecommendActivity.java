@@ -19,7 +19,7 @@ import com.example.just.shequnlianmeng.bean.CityBean;
 import com.example.just.shequnlianmeng.bean.CountyBean;
 import com.example.just.shequnlianmeng.bean.ProvinceBean;
 import com.example.just.shequnlianmeng.interfaces.IRecommedView;
-import com.example.just.shequnlianmeng.presenters.RecommedPresenterImpl;
+import com.example.just.shequnlianmeng.presenters.RecommendPresenterImpl;
 import com.example.just.shequnlianmeng.utils.T;
 
 import java.text.SimpleDateFormat;
@@ -81,11 +81,12 @@ public class RecommendActivity extends AppCompatActivity implements RadioGroup.O
     private String userId;
     private String fullName;
     private String mobile;
-    private RecommedPresenterImpl recommendPersenter;
+    private RecommendPresenterImpl recommendPersenter;
 private String sex="1";
     private ArrayList<String> hobby=new ArrayList<>();
     private List<String> address=new ArrayList<>();
     private ArrayList<String> relationship=new ArrayList<>();
+    private ArrayList<String> character=new ArrayList<>();
     private String creditScore;
     private String birthday;
     private String homeplace;
@@ -113,7 +114,7 @@ private String sex="1";
         getSupportActionBar().hide();
         setContentView(R.layout.activity_recommend);
         ButterKnife.bind(this);
-        recommendPersenter=new RecommedPresenterImpl(this);
+        recommendPersenter=new RecommendPresenterImpl(this);
         recommendPersenter.getParserData(this,"data.txt");
         initView();
     }

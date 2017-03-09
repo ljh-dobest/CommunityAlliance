@@ -7,4 +7,5 @@ package com.example.just.shequnlianmeng.base;
 public interface BaseView {
     void showLoading();
     void hideLoading();
+    void showError(String errorString);
 }

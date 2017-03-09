@@ -1,5 +1,6 @@
 package com.example.just.shequnlianmeng.presenters;
 
+import com.example.just.shequnlianmeng.base.BasePersenter;
 import com.example.just.shequnlianmeng.interfaces.IRegisterPresenter;
 import com.example.just.shequnlianmeng.interfaces.IRegisterView;
 import com.example.just.shequnlianmeng.listeners.OnRegisterFinishListener;
@@ -9,12 +10,9 @@ import com.example.just.shequnlianmeng.moudle.RegisterMoudle;
  * Created by just on 2017/3/5.
  */
 
-public class RegisterPresenterImpl implements IRegisterPresenter,OnRegisterFinishListener{
-    private IRegisterView registerView;
+public class RegisterPresenterImpl extends BasePersenter<IRegisterView>implements IRegisterPresenter,OnRegisterFinishListener{
     private RegisterMoudle registerMoudle;
-
-    public RegisterPresenterImpl(IRegisterView registerView) {
-        this.registerView = registerView;
+    public RegisterPresenterImpl() {
         this.registerMoudle = new RegisterMoudle();
     }
 
@@ -24,27 +22,22 @@ public class RegisterPresenterImpl implements IRegisterPresenter,OnRegisterFinis
     }
 
     @Override
-    public void onDestroy() {
-          registerView=null;
-    }
-
-    @Override
     public void showTextEmpty() {
-              registerView.showTextEmpty();
+              mView.showTextEmpty();
     }
 
     @Override
     public void succeedToRegiset() {
-           registerView.succeedToRegister();
+        mView.succeedToRegister();
     }
 
     @Override
     public void showPwdError() {
-          registerView.showPwdError();
+        mView.showPwdError();
     }
 
     @Override
     public void failedToRegister(String string) {
-             registerView.showRegisterError(string );
+        mView.showRegisterError(string );
     }
 }

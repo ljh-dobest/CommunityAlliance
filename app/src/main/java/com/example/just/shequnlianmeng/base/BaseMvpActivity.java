@@ -1,7 +1,6 @@
 package com.example.just.shequnlianmeng.base;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 
 /**
@@ -12,8 +11,9 @@ public abstract class BaseMvpActivity<V,T extends BasePersenter<V>> extends AppC
     public T presenter;
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
+        super.onCreate(savedInstanceState);
              presenter=initPresenter();
     }
 

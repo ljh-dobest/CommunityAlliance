@@ -6,8 +6,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
+import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.just.shequnlianmeng.base.BaseActivity;
@@ -37,6 +39,8 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     RadioGroup radioGroup;
     @BindView(R.id.main_vp)
     ViewPager main_vp;
+    @BindView(R.id.rl_main_header)
+    RelativeLayout rl_main_header;
 
     private int checkedcolor = 0xffff3300;
     private RadioButton radioButtons[];
@@ -128,6 +132,11 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
             rb.setChecked(false);
             if(position==i){
                 rb.setChecked(true);
+            }
+            if(position==2){//我的碎片时隐藏头
+                rl_main_header.setVisibility(View.GONE);
+            }else{
+                rl_main_header.setVisibility(View.VISIBLE);
             }
         }
     }

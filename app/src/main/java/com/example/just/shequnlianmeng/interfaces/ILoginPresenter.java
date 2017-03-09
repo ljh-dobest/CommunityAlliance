@@ -6,6 +6,4 @@ package com.example.just.shequnlianmeng.interfaces;
 
 public interface ILoginPresenter {
     void verifyLoginInfo(String userName, String password);
-    void onDestroy();
-
 }

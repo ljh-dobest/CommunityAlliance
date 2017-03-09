@@ -438,4 +438,12 @@ public class HttpUtils {
                 .addParams("childrenSchool",childrenSchool)
                 .build().execute(callback);
         }
+
+    //获取已推荐列表
+    public static void getRecommedInfo(String url,String userId,StringCallback callback){
+        OkHttpUtils.post().url(BASE_RUL+url)
+                .addHeader("Connection", "close")
+                .addParams("userId",userId)
+                .build().execute(callback);
+       }
     }

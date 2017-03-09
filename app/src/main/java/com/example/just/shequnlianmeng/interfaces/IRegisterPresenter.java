@@ -6,5 +6,4 @@ package com.example.just.shequnlianmeng.interfaces;
 
 public interface IRegisterPresenter {
     void verifyRegisterInfo(String userName,String mobile, String password,String recommendId);
-    void onDestroy();
 }

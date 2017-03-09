@@ -43,10 +43,14 @@
     <color name="itemlist">#f4f4f4</color>
     <color name="act_background">#efefef</color>
     <color name="col_10DB9F">#10DB9F</color>
-    <color name="col_DDDDDD">#DDDDDD</color>
+    <color name="col_DDD">#DDDDDD</color>
     <color name="col_909090">#909090</color>
     <color name="col_999999">#999999</color>
     <color name="col_333333">#333333</color>
+    <color name="col_A0A0A0">#A0A0A0</color>
+    <color name="col_E3E3E3">#E3E3E3</color>
+
+
 
 
 </resources>

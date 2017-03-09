@@ -1,7 +1,6 @@
 package com.example.just.shequnlianmeng.ui.fragments;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -10,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.example.just.shequnlianmeng.R;
+import com.example.just.shequnlianmeng.base.BaseMvpFragment;
 import com.example.just.shequnlianmeng.interfaces.IRegisterView;
 import com.example.just.shequnlianmeng.presenters.RegisterPresenterImpl;
 import com.example.just.shequnlianmeng.utils.AMUtils;
@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
-public class RegisterFragment extends Fragment implements IRegisterView{
+public class RegisterFragment extends BaseMvpFragment<IRegisterView,RegisterPresenterImpl> implements IRegisterView{
 
     public interface FinishRegisterListener{
         void finishRegister();
@@ -33,16 +33,21 @@ public class RegisterFragment extends Fragment implements IRegisterView{
     @BindView(R.id.et_re_invite_code)
     EditText et_inviteCode;
      private FinishRegisterListener listener;
-    private RegisterPresenterImpl registerPresenterImpl;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        super.onCreateView(inflater,container,savedInstanceState);
         View containerView=inflater.inflate(R.layout.fragment_register, container, false);
         ButterKnife.bind(this,containerView);
-        registerPresenterImpl =new RegisterPresenterImpl(this);
         addEditTextListener();
         return containerView;
     }
+
+    @Override
+    public RegisterPresenterImpl initPresenter() {
+        return new RegisterPresenterImpl();
+    }
+
     private void addEditTextListener() {
         et_phoneNum.addTextChangedListener(new TextWatcher() {
             @Override
@@ -70,7 +75,7 @@ public class RegisterFragment extends Fragment implements IRegisterView{
        String password = et_pw.getText().toString();
       String  mobile = et_phoneNum.getText().toString();
         String inviteCode = et_inviteCode.getText().toString().trim();
-       registerPresenterImpl.verifyRegisterInfo(mobile,mobile,password,inviteCode);
+       presenter.verifyRegisterInfo(mobile,mobile,password,inviteCode);
     }
 
     public void setListener(FinishRegisterListener listener){
