@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.just.shequnlianmeng.R;
-import com.example.just.shequnlianmeng.base.BaseAdapters;
+import com.example.just.shequnlianmeng.base.adpater.BaseAdapters;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

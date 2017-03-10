@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.example.just.shequnlianmeng.R;
-import com.example.just.shequnlianmeng.base.BaseMvpFragment;
+import com.example.just.shequnlianmeng.base.view.BaseMvpFragment;
 import com.example.just.shequnlianmeng.interfaces.IRegisterView;
 import com.example.just.shequnlianmeng.presenters.RegisterPresenterImpl;
 import com.example.just.shequnlianmeng.utils.AMUtils;

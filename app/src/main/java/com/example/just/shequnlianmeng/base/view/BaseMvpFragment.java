@@ -1,4 +1,4 @@
-package com.example.just.shequnlianmeng.base;
+package com.example.just.shequnlianmeng.base.view;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,8 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.just.shequnlianmeng.base.presenter.BasePersenter;
+
 /**
  * Created by Min on 2017/3/8.
+ * 这是碎片的基类，与Activity同理
  */
 
 public abstract class BaseMvpFragment<V,T extends BasePersenter<V>> extends Fragment{

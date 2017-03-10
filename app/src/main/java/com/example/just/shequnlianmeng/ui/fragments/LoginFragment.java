@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 import com.example.just.shequnlianmeng.MainActivity;
 import com.example.just.shequnlianmeng.R;
-import com.example.just.shequnlianmeng.base.BaseMvpFragment;
+import com.example.just.shequnlianmeng.base.view.BaseMvpFragment;
 import com.example.just.shequnlianmeng.interfaces.ILoginView;
 import com.example.just.shequnlianmeng.presenters.LoginPresenterImpl;
 import com.example.just.shequnlianmeng.utils.LoadDialog;

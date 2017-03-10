@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
 import com.example.just.shequnlianmeng.R;
-import com.example.just.shequnlianmeng.base.BaseActivity;
+import com.example.just.shequnlianmeng.base.view.BaseActivity;
 import com.example.just.shequnlianmeng.ui.fragments.LoginFragment;
 import com.example.just.shequnlianmeng.ui.fragments.RegisterFragment;
 import com.example.just.shequnlianmeng.utils.T;

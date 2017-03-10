@@ -411,9 +411,9 @@ public class HttpUtils {
     }
 
     public static void postRecommend(String url,String userId, String fullName, String mobile, String sex, String hobby,
-                                     String address, String relationship, String creditScore, String birthday,
+                                     String address, String relationship,String character, String creditScore, String birthday,
                                      String homeplace, String finishSchool, String company, String fatherName,
-                                     String motherName, String marriage, String spouseName, String spouseAge,
+                                     String motherName, String marriage, String spouseName,
                                      String childrenName, String childrenSchool,StringCallback callback){
         OkHttpUtils.post().url(BASE_RUL+url)
                 .addHeader("Connection", "close")
@@ -424,6 +424,7 @@ public class HttpUtils {
                 .addParams("hobby",hobby)
                 .addParams("address",address)
                 .addParams("relationship",relationship)
+                .addParams("character",character)
                 .addParams("creditScore",creditScore)
                 .addParams("birthday",birthday)
                 .addParams("homeplace",homeplace)
@@ -433,7 +434,6 @@ public class HttpUtils {
                 .addParams("motherName",motherName)
                 .addParams("marriage",marriage)
                 .addParams("spouseName",spouseName)
-                .addParams("spouseAge",spouseAge)
                 .addParams("childrenName",childrenName)
                 .addParams("childrenSchool",childrenSchool)
                 .build().execute(callback);
@@ -446,4 +446,12 @@ public class HttpUtils {
                 .addParams("userId",userId)
                 .build().execute(callback);
        }
+    //获取已推荐列表
+    public static void getClaimPeopleInfo(String url,String userId,StringCallback callback){
+        OkHttpUtils.post().url(BASE_RUL+url)
+                .addHeader("Connection", "close")
+                .addParams("userId",userId)
+                .addParams("status","0")
+                .build().execute(callback);
+    }
     }

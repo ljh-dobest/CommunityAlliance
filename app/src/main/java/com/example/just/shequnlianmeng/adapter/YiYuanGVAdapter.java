@@ -10,7 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.just.shequnlianmeng.R;
-import com.example.just.shequnlianmeng.base.BaseAdapters;
+import com.example.just.shequnlianmeng.base.adpater.BaseAdapters;
 
 import java.util.List;
 

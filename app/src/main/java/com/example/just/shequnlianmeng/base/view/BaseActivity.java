@@ -1,4 +1,4 @@
-package com.example.just.shequnlianmeng.base;
+package com.example.just.shequnlianmeng.base.view;
 
 import android.content.Context;
 import android.content.res.Configuration;

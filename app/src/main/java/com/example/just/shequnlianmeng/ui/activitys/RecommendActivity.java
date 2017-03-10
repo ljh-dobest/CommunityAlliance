@@ -3,6 +3,7 @@ package com.example.just.shequnlianmeng.ui.activitys;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -53,8 +54,6 @@ public class RecommendActivity extends AppCompatActivity implements RadioGroup.O
     EditText et_recom_momName;
     @BindView(R.id.et_recom_spouseName)
     EditText et_recom_spouseName;
-    @BindView(R.id.et_recom_spouseAge)
-    EditText et_recom_spouseAge;
     @BindView(R.id.et_recom_childrenName)
     EditText et_recom_childrenName;
     @BindView(R.id.et_recom_childrenSchool)
@@ -68,6 +67,8 @@ public class RecommendActivity extends AppCompatActivity implements RadioGroup.O
     RadioGroup rg_recom_marriage;
     @BindView(R.id.ll_recom_relationship)
     LinearLayout ll_recom_relationship;
+    @BindView(R.id.ll_recom_character)
+    LinearLayout ll_recom_character;
     @BindView(R.id.btn_recommend)
     Button btn_recommend;
     @BindView(R.id.ll_recomm_marriaged)
@@ -96,7 +97,6 @@ private String sex="1";
     private String motherName;
     private String marriage="0";
     private String spouseName;
-    private String spouseAge;
     private String childrenName;
     private String childrenSchool;
     private ArrayList<String> options1Items=new ArrayList<>();
@@ -162,7 +162,6 @@ private String sex="1";
         fatherName=et_recom_dadName.getText().toString().trim();
         motherName=et_recom_momName.getText().toString().trim();
         spouseName=et_recom_spouseName.getText().toString().trim();
-        spouseAge=et_recom_spouseAge.getText().toString().trim();
         childrenName=et_recom_childrenName.getText().toString().trim();
         childrenSchool=et_recom_childrenSchool.getText().toString().trim();
     }
@@ -188,7 +187,18 @@ private String sex="1";
             });
 
     }
-//获取选择的亲情
+
+    @Override
+    public void getHobbys(ViewGroup group) {
+
+    }
+
+    @Override
+    public void setHobbys(List<String> hobbys) {
+
+    }
+
+    //获取选择的亲情
     private void getRelationship() {
             for (int j= 0; j < ll_recom_relationship.getChildCount(); j++) {
                 RadioButton rb= (RadioButton) ll_recom_relationship.getChildAt(j);
@@ -251,9 +261,9 @@ private String sex="1";
                 break;
             case R.id.btn_recommend:
                 getViewData();
-                recommendPersenter.verifyRecommedInfo(userId,fullName,mobile,sex,hobby,address,relationship,creditScore,
-                        birthday,homeplace,finishSchool,company,fatherName, motherName,marriage,
-                        spouseName,spouseAge,childrenName,childrenSchool);
+                recommendPersenter.verifyRecommedInfo(userId,fullName,mobile,sex,hobby,address,relationship,character,
+                        creditScore,birthday,homeplace,finishSchool,company,fatherName, motherName,marriage,
+                        spouseName,childrenName,childrenSchool);
                 break;
 
         }
@@ -290,7 +300,11 @@ private String sex="1";
     }
 
     @Override
-    public void onNothingSelected(AdapterView<?> parent) {
+    public void onNothingSelected(AdapterView<?> parent) {}
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        recommendPersenter.onDestroy();
     }
 }

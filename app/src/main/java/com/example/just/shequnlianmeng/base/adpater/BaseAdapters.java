@@ -1,4 +1,4 @@
-package com.example.just.shequnlianmeng.base;
+package com.example.just.shequnlianmeng.base.adpater;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * Created by Min on 2016/12/10.
+ * 这个是适配器的基类
  */
 
 public abstract class BaseAdapters<T> extends android.widget.BaseAdapter {
@@ -86,7 +87,7 @@ public abstract class BaseAdapters<T> extends android.widget.BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        return 0L;
+        return position;
     }
 
     public List<T> getDataSet() {

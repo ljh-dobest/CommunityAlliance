@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="radio_button_styles">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -15,29 +16,38 @@
         <item name="android:drawablePadding">6dp</item>
         <item name="android:textSize">12sp</item>
     </style>
+
     <style name="recommend_item_tv_styles">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/font_18</item>
         <item name="android:textColor">@color/col_909090</item>
     </style>
+
     <style name="recommend_item_et_styles">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textSize">@dimen/font_18</item>
     </style>
+
     <style name="recommend_item_rb_styles">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/font_14</item>
         <item name="android:textColor">@color/col_909090</item>
     </style>
+
     <style name="recommend_item_ll_styles">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50dp</item>
         <item name="android:gravity">center_vertical</item>
-     <item name="android:orientation">horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 </resources>

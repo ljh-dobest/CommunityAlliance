@@ -27,13 +27,13 @@ public class RecommendPresenterImpl implements IRecommedPresenter,OnRecommedFini
 
     @Override
     public void verifyRecommedInfo(String userId, String fullName, String mobile, String sex,
-                                   List<String> hobby, List<String> address, List<String> relationship, String creditScore,
+                                   List<String> hobby, List<String> address, List<String> relationship,List<String> character, String creditScore,
                                    String birthday, String homeplace, String finishSchool, String company,
                                    String fatherName, String motherName, String marriage, String spouseName,
-                                   String spouseAge, String childrenName, String childrenSchool) {
-            recommedMoudle.recommed(userId,fullName,mobile,sex,hobby,address,relationship,creditScore,
+                                  String childrenName, String childrenSchool) {
+            recommedMoudle.recommed(userId,fullName,mobile,sex,hobby,address,relationship,character,creditScore,
                     birthday,homeplace,finishSchool,company,fatherName, motherName,marriage,
-                    spouseName,spouseAge,childrenName,childrenSchool,this);
+                    spouseName,childrenName,childrenSchool,this);
      }
 
     @Override

@@ -1,6 +1,6 @@
 package com.example.just.shequnlianmeng.presenters;
 
-import com.example.just.shequnlianmeng.base.BasePersenter;
+import com.example.just.shequnlianmeng.base.presenter.BasePersenter;
 import com.example.just.shequnlianmeng.interfaces.IMineFragmentView;
 
 /**

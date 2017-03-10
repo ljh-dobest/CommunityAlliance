@@ -27,7 +27,11 @@ import okhttp3.Call;
  */
 
 public class RecommedMoudle {
-    public void recommed(String userId, String fullName, String mobile, String sex, List<String> hobby, List<String> address, List<String> relationship, String creditScore, String birthday, String homeplace, String finishSchool, String company, String fatherName, String motherName, String marriage, String spouseName, String spouseAge, String childrenName, String childrenSchool, final OnRecommedFinishListener listener) {
+    public void recommed(String userId, String fullName, String mobile, String sex, List<String> hobby,
+                         List<String> address, List<String> relationship,List<String> character, String creditScore,
+                         String birthday, String homeplace, String finishSchool, String company,
+                         String fatherName, String motherName, String marriage, String spouseName,
+                          String childrenName, String childrenSchool, final OnRecommedFinishListener listener) {
       if(userId.equals("")||fullName.equals("")||mobile.equals("")||sex.equals("")||hobby.size()==0||
               address.size()==0||relationship.size()==0||creditScore.equals("")){
           listener.showTextEmpty();
@@ -40,9 +44,10 @@ public class RecommedMoudle {
           String hobbys = gson.toJson(hobby);
           String relationships = gson.toJson(relationship);
           String addressList = gson.toJson(address);
-          HttpUtils.postRecommend("/friendsRecommend", userId, fullName, mobile, sex, hobbys, addressList, relationships, creditScore,
+        String characterlist=gson.toJson(character);
+          HttpUtils.postRecommend("/friendsRecommend", userId, fullName, mobile, sex, hobbys, addressList, relationships,characterlist, creditScore,
                   birthday, homeplace, finishSchool, company, fatherName, motherName, marriage,
-                  spouseName, spouseAge, childrenName, childrenSchool, new StringCallback() {
+                  spouseName, childrenName, childrenSchool, new StringCallback() {
                       @Override
                       public void onError(Call call, Exception e, int id) {
                           listener.showRecommedError(e.toString());

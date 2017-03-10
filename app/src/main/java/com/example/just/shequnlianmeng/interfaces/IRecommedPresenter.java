@@ -10,9 +10,9 @@ import java.util.List;
 
 public interface IRecommedPresenter {
     void verifyRecommedInfo(String userId, String fullName, String mobile, String sex, List<String> hobby,
-                            List<String> address,List<String> relationship,String creditScore,String birthday,
+                            List<String> address,List<String> relationship,List<String> character,String creditScore,String birthday,
                             String homeplace,String finishSchool,String company,String fatherName,
-                            String motherName,String marriage,String spouseName,String spouseAge,
+                            String motherName,String marriage,String spouseName,
                             String childrenName,String childrenSchool);
    void getParserData(Context context,String fileName);
     void onDestroy();

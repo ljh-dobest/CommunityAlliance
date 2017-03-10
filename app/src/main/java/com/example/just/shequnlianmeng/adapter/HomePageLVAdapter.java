@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.just.shequnlianmeng.R;
-import com.example.just.shequnlianmeng.base.BaseAdapters;
+import com.example.just.shequnlianmeng.base.adpater.BaseAdapters;
 import com.example.just.shequnlianmeng.views.CircleImageView;
 
 import java.util.List;

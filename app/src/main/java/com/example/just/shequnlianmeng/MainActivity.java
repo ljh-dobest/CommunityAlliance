@@ -12,7 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.example.just.shequnlianmeng.base.BaseActivity;
+import com.example.just.shequnlianmeng.base.view.BaseActivity;
 import com.example.just.shequnlianmeng.ui.fragments.ChatFragment;
 import com.example.just.shequnlianmeng.ui.fragments.HomeFragment;
 import com.example.just.shequnlianmeng.ui.fragments.MineFragment;

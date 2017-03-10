@@ -22,18 +22,18 @@
             android:textSize="@dimen/font_24"
             android:text="@string/application_center"/>
         <ImageView
-            android:id="@+id/iv_mine_renling"
+            android:id="@+id/iv_home_appcenter"
             android:layout_alignParentRight="true"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/rp_arrow"/>
     </RelativeLayout>
-    <GridView
-        android:id="@+id/homepage_gv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:numColumns="4"
-        android:verticalSpacing="3dp"
-        android:horizontalSpacing="3dp"
-        ></GridView>
+    <!--<GridView-->
+        <!--android:id="@+id/homepage_gv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:numColumns="4"-->
+        <!--android:verticalSpacing="3dp"-->
+        <!--android:horizontalSpacing="3dp"-->
+        <!--&gt;</GridView>-->
 </com.zhy.autolayout.AutoLinearLayout>

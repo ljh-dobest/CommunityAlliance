@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import com.example.just.shequnlianmeng.R;
 import com.example.just.shequnlianmeng.adapter.DividerItemDecoration;
 import com.example.just.shequnlianmeng.adapter.RecommedInfoRecyclerAdapter;
-import com.example.just.shequnlianmeng.base.BaseMvpActivity;
+import com.example.just.shequnlianmeng.base.view.BaseMvpActivity;
 import com.example.just.shequnlianmeng.bean.RecommendInfoBean;
 import com.example.just.shequnlianmeng.interfaces.IWasRecommedList;
 import com.example.just.shequnlianmeng.presenters.RecommendInfoPresenter;
@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RecommendInfoActivity extends BaseMvpActivity<IWasRecommedList,RecommendInfoPresenter>implements IWasRecommedList {
+public class RecommendInfoActivity extends BaseMvpActivity<IWasRecommedList,RecommendInfoPresenter> implements IWasRecommedList {
 @BindView(R.id.rv_recom_info)
     RecyclerView rv_recom_info;
     private RecommedInfoRecyclerAdapter adapter;
@@ -30,7 +30,6 @@ public class RecommendInfoActivity extends BaseMvpActivity<IWasRecommedList,Reco
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommend_info);
         ButterKnife.bind(this);
-        initPresenter();
          initView();
     }
 

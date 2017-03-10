@@ -67,6 +67,38 @@
                 android:text="女" />
         </RadioGroup>
     </LinearLayout>
+        <LinearLayout
+            style="@style/recommend_item_ll_styles">
+            <TextView
+                style="@style/recommend_item_tv_styles"
+                android:text="关系:(必填)" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_recom_character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_recom_df"
+                style="@style/recommend_item_rb_styles"
+                android:text="大方" />
+            <RadioButton
+                android:id="@+id/rb_recom_sl"
+                style="@style/recommend_item_rb_styles"
+                android:text="善良" />
+            <RadioButton
+                android:id="@+id/rb_recom_zb"
+                style="@style/recommend_item_rb_styles"
+                android:text="装X" />
+            <RadioButton
+                android:id="@+id/rb_recom_db"
+                style="@style/recommend_item_rb_styles"
+                android:text="逗比" />
+            <RadioButton
+                android:id="@+id/rb_recom_ck"
+                style="@style/recommend_item_rb_styles"
+                android:text="诚恳" />
+        </LinearLayout>
     <TextView
         style="@style/recommend_item_tv_styles"
         android:text="好友爱好(必填)："/>
@@ -301,15 +333,6 @@
                     android:text="配偶名字:" />
                 <EditText
                     android:id="@+id/et_recom_spouseName"
-                    style="@style/recommend_item_et_styles" />
-            </LinearLayout>
-            <LinearLayout
-                style="@style/recommend_item_ll_styles">
-                <TextView
-                    style="@style/recommend_item_tv_styles"
-                    android:text="配偶年龄:" />
-                <EditText
-                    android:id="@+id/et_recom_spouseAge"
                     style="@style/recommend_item_et_styles" />
             </LinearLayout>
             <LinearLayout
