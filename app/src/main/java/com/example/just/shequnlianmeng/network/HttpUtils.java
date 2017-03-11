@@ -4,12 +4,14 @@ import android.content.Context;
 import android.os.Environment;
 
 import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.Callback;
 import com.zhy.http.okhttp.callback.StringCallback;
 import com.zhy.http.okhttp.cookie.CookieJarImpl;
 import com.zhy.http.okhttp.cookie.store.CookieStore;
 import com.zhy.http.okhttp.cookie.store.PersistentCookieStore;
 
 import java.io.File;
+import java.util.Map;
 
 import okhttp3.OkHttpClient;
 
@@ -35,6 +37,21 @@ public class HttpUtils {
         CookieJarImpl cookieJar=new CookieJarImpl(cookieStore);
         OkHttpClient client=new OkHttpClient.Builder().cookieJar(cookieJar).build();
         OkHttpUtils.initClient(client);
+    }
+
+    /**
+     * post请求
+     * @param url 请求路径
+     * @param formBody  请求参数
+     * @param callback  请求回调
+     */
+    public static void sendFormBodyPostRequest(String url, Map<String, String> formBody, Callback callback) {
+        OkHttpUtils
+                .postString()
+                .url(BASE_RUL + url)
+                .content("{userId:"+formBody.get("userId")+"}")
+                .build()
+                .execute(callback);
     }
 
     //普通的GET请求，根据泛型Bean返回值也是Bean
