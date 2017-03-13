@@ -24,7 +24,6 @@ public class RecommendPresenterImpl implements IRecommedPresenter,OnRecommedFini
         this.recommedMoudle = new RecommedMoudle();
     }
 
-
     @Override
     public void verifyRecommedInfo(String userId, String fullName, String mobile, String sex,
                                    List<String> hobby, List<String> address, List<String> relationship,List<String> character, String creditScore,

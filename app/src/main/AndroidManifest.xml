@@ -24,15 +24,16 @@
         <activity android:name=".ui.activitys.RecommendInfoActivity" />
         <activity android:name=".ui.activitys.LoginActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".ui.activitys.ClaimInfoActivity" />
 
         <meta-data
             android:name="design_width"
-            android:value="768" />
+            android:value="750" />
         <meta-data
             android:name="design_height"
-            android:value="1280" />
+            android:value="1334" />
 
-        <activity android:name=".ui.activitys.ClaimInfoActivity"></activity>
+        <activity android:name=".ui.activitys.MineClaimActivity"></activity>
     </application>
 
 </manifest>

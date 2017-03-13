@@ -79,11 +79,11 @@ public class RecommedMoudle {
 
      }
 
-    public void getParserData(final Context mComtext, String fileName, final OnRecommedFinishListener listener){
+    public void getParserData(final Context mComtext, final String fileName, final OnRecommedFinishListener listener){
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        String jsonData=DataUtils.getJson(mComtext,"data.txt");
+                        String jsonData=DataUtils.getJson(mComtext,fileName);
                         //解析数据
                         Gson gson=new Gson();
                         Type type = new TypeToken<ArrayList<ProvinceBean>>() {
@@ -94,6 +94,8 @@ public class RecommedMoudle {
                     }
                 }).start();
      }
+
+
 
     private HashMap<String,Object> getMap(ArrayList<ProvinceBean> result) {
         HashMap<String,Object> map=new HashMap<>();

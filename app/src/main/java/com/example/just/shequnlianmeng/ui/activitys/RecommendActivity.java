@@ -137,6 +137,7 @@ private String sex="1";
     @Override
     public void initView() {
         rg_recom_marriage.setOnCheckedChangeListener(this);
+        rg_recom_sex.setOnCheckedChangeListener(this);
         et_recom_birthday.setOnClickListener(this);
         btn_recommend.setOnClickListener(this);
         sp_recom_province.setOnItemSelectedListener(this);
@@ -176,7 +177,6 @@ private String sex="1";
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    T.showShort(RecommendActivity.this,"数据已加载好");
                     //适配器
                     province_adapter = new ArrayAdapter<String>(RecommendActivity.this, android.R.layout.simple_spinner_item, options1Items);
                     //设置样式

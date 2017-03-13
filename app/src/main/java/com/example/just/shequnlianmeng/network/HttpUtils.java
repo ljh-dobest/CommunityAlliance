@@ -3,6 +3,8 @@ package com.example.just.shequnlianmeng.network;
 import android.content.Context;
 import android.os.Environment;
 
+import com.example.just.shequnlianmeng.bean.ClaimInfoBean;
+import com.google.gson.Gson;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 import com.zhy.http.okhttp.cookie.CookieJarImpl;
@@ -452,6 +454,34 @@ public class HttpUtils {
                 .addHeader("Connection", "close")
                 .addParams("userId",userId)
                 .addParams("status","0")
+                .build().execute(callback);
+    }
+
+    public static void postClaimInfo(String url, ClaimInfoBean claimInfo,StringCallback callback){
+        Gson gson=new Gson();
+        String hobbys = gson.toJson(claimInfo.getHobby());
+        String address = gson.toJson(claimInfo.getAddress());
+        String relationship=gson.toJson(claimInfo.getRelationship());
+        OkHttpUtils.post().url(BASE_RUL+url)
+                .addHeader("Connection", "close")
+                .addParams("userId",claimInfo.getUserId())
+                .addParams("claimUserId",claimInfo.getClaimUserId())
+                .addParams("fullName",claimInfo.getFullName())
+                .addParams("mobile",claimInfo.getMobile())
+                .addParams("sex",claimInfo.getSex())
+                .addParams("hobby",hobbys)
+                .addParams("address",address)
+                .addParams("relationship",relationship)
+                .addParams("creditScore",claimInfo.getCreditScore())
+                .addParams("birthday",claimInfo.getBirthday())
+                .addParams("homeplace",claimInfo.getHomeplace())
+                .addParams("finishSchool",claimInfo.getFinishSchool())
+                .addParams("degree",claimInfo.getDegree())
+                .addParams("company",claimInfo.getCompany())
+                .addParams("position",claimInfo.getPosition())
+                .addParams("email",claimInfo.getEmail())
+                .addParams("QQ",claimInfo.getQQ())
+                .addParams("wechat",claimInfo.getWechat())
                 .build().execute(callback);
     }
     }

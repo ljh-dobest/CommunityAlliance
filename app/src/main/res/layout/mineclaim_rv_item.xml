@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.zhy.autolayout.AutoRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="99px"
+            android:layout_height="99px"
+            android:id="@+id/iv_mineclaim_userHeader"
+            android:src="@drawable/test"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="10px"
+            app:riv_tile_mode="repeat"
+            app:riv_oval="false" />
+        <TextView
+            android:layout_toRightOf="@id/iv_mineclaim_userHeader"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:id="@+id/tv_mineclaim_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_30"
+            android:textColor="@color/col_121212"
+            android:text="王博文儿"/>
+    <TextView
+        android:id="@+id/tv_mineClaim_time"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_30"
+        android:textColor="@color/col_121212"
+        android:text="2017.02.05 15:30"
+        />
+    </com.zhy.autolayout.AutoRelativeLayout>

@@ -13,12 +13,13 @@ import java.util.List;
  * Created by Min on 2017/3/10.
  */
 
-public class ClaimPresenter extends BasePersenter<IClaimCenterView> implements OnClaimPeopleFinishListener {
+public class ClaimCenterPresenter extends BasePersenter<IClaimCenterView> implements OnClaimPeopleFinishListener {
     private ClaimCenterMoudle claimCenterMoudle;
-    public ClaimPresenter(){
+    public ClaimCenterPresenter(){
           claimCenterMoudle=new ClaimCenterMoudle();
     }
      public void getClaimPeopleData(String userId){
+
          claimCenterMoudle.getClaimPeopleData(userId,this);
      }
 
@@ -34,6 +35,6 @@ public class ClaimPresenter extends BasePersenter<IClaimCenterView> implements O
 
     @Override
     public void showErrorString(String errorString) {
-     mView.showError(errorString);
+        mView.showError(errorString);
     }
 }
