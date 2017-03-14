@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DryGoodsShare</string>
+    <string name="str_information">消息</string>
+    <string name="str_my_share">我的干货</string>
+</resources>
