@@ -1,7 +1,9 @@
 package com.example.just.shequnlianmeng.presenters;
 
 import android.content.Context;
+import android.view.ViewGroup;
 
+import com.example.just.shequnlianmeng.base.presenter.BasePersenter;
 import com.example.just.shequnlianmeng.bean.ProvinceBean;
 import com.example.just.shequnlianmeng.interfaces.IRecommedPresenter;
 import com.example.just.shequnlianmeng.interfaces.IRecommedView;
@@ -15,12 +17,9 @@ import java.util.List;
  * Created by just on 2017/3/5.
  */
 
-public class RecommendPresenterImpl implements IRecommedPresenter,OnRecommedFinishListener{
-    private IRecommedView recommedView;
+public class RecommendPresenterImpl extends BasePersenter<IRecommedView>implements IRecommedPresenter,OnRecommedFinishListener{
     private RecommedMoudle recommedMoudle;
-
-    public RecommendPresenterImpl(IRecommedView recommedView) {
-        this.recommedView = recommedView;
+    public RecommendPresenterImpl() {
         this.recommedMoudle = new RecommedMoudle();
     }
 
@@ -41,34 +40,49 @@ public class RecommendPresenterImpl implements IRecommedPresenter,OnRecommedFini
     }
 
     @Override
-    public void onDestroy() {
-    recommedView=null;
+    public void getHobby(ViewGroup group) {
+     recommedMoudle.getHobby(group,this);
+    }
+
+    @Override
+    public void getCharacters(ViewGroup group) {
+        recommedMoudle.getCharacters(group,this);
     }
 
     @Override
     public void showTextEmpty() {
-        if (recommedView!=null){
-            recommedView.showTextEmpty();
+        if (mView!=null){
+            mView.showTextEmpty();
         }
     }
 
     @Override
     public void showRecommedError(String string) {
-        if (recommedView!=null){
-            recommedView.showRecommedError(string);
+        if (mView!=null){
+            mView.showRecommedError(string);
         }
     }
 
     @Override
     public void succeedToRecommed(String recommedId) {
-        if (recommedView!=null){
-            recommedView.succeedToRecommed(recommedId);
+        if (mView!=null){
+            mView.succeedToRecommed(recommedId);
         }
     }
 
     @Override
     public void returnParserData(ArrayList<ProvinceBean> provinces) {
-              recommedView.getparserData(provinces);
+        mView.getparserData(provinces);
+    }
+
+    @Override
+    public void returnHobbys(ArrayList<String> hobbys) {
+        mView.setHobbys(hobbys);
+    }
+
+    @Override
+    public void returnCharacters(ArrayList<String> characters) {
+    mView.setCharacters(characters);
     }
 
 

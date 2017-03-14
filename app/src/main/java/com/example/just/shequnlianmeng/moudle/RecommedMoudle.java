@@ -1,6 +1,9 @@
 package com.example.just.shequnlianmeng.moudle;
 
 import android.content.Context;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
 
 import com.example.just.shequnlianmeng.bean.CityBean;
 import com.example.just.shequnlianmeng.bean.Code;
@@ -95,8 +98,34 @@ public class RecommedMoudle {
                 }).start();
      }
 
-
-
+    //获取选择的爱好
+    public void getHobby(ViewGroup group, OnRecommedFinishListener listener) {
+        ArrayList<String> hobbys=new ArrayList<>();
+        for (int i = 0; i < group.getChildCount(); i++) {
+            LinearLayout ll= (LinearLayout) group.getChildAt(i);
+            for (int j= 1; j < ll.getChildCount(); j++) { //j从第一个开始，跳过Textview
+                RadioButton rb= (RadioButton) ll.getChildAt(j);
+                if (rb.isChecked()){
+                    hobbys.add(rb.getText().toString());
+                }
+            }
+        }
+        listener.returnHobbys(hobbys);
+    }
+    //获取选择的性格
+    public void getCharacters(ViewGroup group, OnRecommedFinishListener listener) {
+        ArrayList<String> characters=new ArrayList<>();
+        for (int i = 0; i < group.getChildCount(); i++) {
+            LinearLayout ll= (LinearLayout) group.getChildAt(i);
+            for (int j= 1; j < ll.getChildCount(); j++) { //j从第一个开始，跳过Textview
+                RadioButton rb= (RadioButton) ll.getChildAt(j);
+                if (rb.isChecked()){
+                    characters.add(rb.getText().toString());
+                }
+            }
+        }
+        listener.returnCharacters(characters);
+    }
     private HashMap<String,Object> getMap(ArrayList<ProvinceBean> result) {
         HashMap<String,Object> map=new HashMap<>();
         ArrayList<String> options1Items=new ArrayList<>();

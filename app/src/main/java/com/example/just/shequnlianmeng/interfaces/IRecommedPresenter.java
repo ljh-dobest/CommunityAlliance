@@ -1,6 +1,7 @@
 package com.example.just.shequnlianmeng.interfaces;
 
 import android.content.Context;
+import android.view.ViewGroup;
 
 import java.util.List;
 
@@ -15,5 +16,6 @@ public interface IRecommedPresenter {
                             String motherName,String marriage,String spouseName,
                             String childrenName,String childrenSchool);
    void getParserData(Context context,String fileName);
-    void onDestroy();
+    void getHobby(ViewGroup group);
+    void getCharacters(ViewGroup group);
 }

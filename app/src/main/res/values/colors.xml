@@ -42,6 +42,8 @@
     <color name="progress_background">#ededed</color>
     <color name="itemlist">#f4f4f4</color>
     <color name="act_background">#efefef</color>
+    <color name="font_white_one">#FFFFFF</color>
+    <color name="gray_normal">#666667</color>
     <color name="col_10DB9F">#10DB9F</color>
     <color name="col_DDD">#DDDDDD</color>
     <color name="col_909090">#909090</color>

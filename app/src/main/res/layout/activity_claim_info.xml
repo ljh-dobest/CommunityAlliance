@@ -28,12 +28,6 @@
                         android:textStyle="bold"
                         android:textColor="@color/col_121212"
                         android:textSize="@dimen/font_28" />
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="1dp"
-                        android:layout_weight="1" />
-
                     <TextView
                         android:layout_centerHorizontal="true"
                         android:layout_width="wrap_content"
@@ -172,7 +166,7 @@
                 <TextView
                     style="@style/claimInfo_tv_styles"
                     android:text="爱好:"
-                    android:textColor="@color/white"
+                 android:visibility="invisible"
                     />
                 <RadioButton
                     android:id="@+id/rb_claimInfo_5"
@@ -198,6 +192,7 @@
                         style="@style/claimInfo_tv_styles"
                         android:text="爱好:"
                         android:textColor="@color/white"
+                        android:visibility="invisible"
                         />
                     <RadioButton
                         android:id="@+id/rb_claimInfo_8"

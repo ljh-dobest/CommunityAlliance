@@ -13,4 +13,6 @@ public interface OnRecommedFinishListener {
     void showRecommedError(String string);
     void succeedToRecommed(String recommedId);
     void returnParserData(ArrayList<ProvinceBean> provinces);
+    void returnHobbys(ArrayList<String> hobbys);
+    void returnCharacters(ArrayList<String> characters);
 }
