@@ -1,0 +1,23 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="font_24">24dp</dimen>
+    <dimen name="font_12">12dp</dimen>
+    <dimen name="font_14">14dp</dimen>
+    <dimen name="font_20">20dp</dimen>
+    <dimen name="font_48">48dp</dimen>
+    <dimen name="font_18">18dp</dimen>
+    <dimen name="font_28">28dp</dimen>
+    <dimen name="font_16">16dp</dimen>
+    <dimen name="font_26">26dp</dimen>
+    <dimen name="lv_item_icon">40dp</dimen>
+    <dimen name="lv_item_header">50dp</dimen>
+    <dimen name="lv_dividerHeight">5dp</dimen>
+    <dimen name="lv_foot_ml_10">10dp</dimen>
+    <dimen name="lv_foot_iv_30">30dp</dimen>
+    <dimen name="lv_foot_ml_50">40dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

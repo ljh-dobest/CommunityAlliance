@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activitys.ClaimActiviy">
+        <activity android:name=".ui.activitys.RelationMapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

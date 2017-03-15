@@ -17,6 +17,7 @@
         android:drawableLeft="@mipmap/back"
         android:gravity="center"
         android:textColor="@android:color/black"
+        android:textSize="@dimen/font_16"
         android:visibility="visible" />
 
     <TextView
@@ -26,7 +27,7 @@
         android:layout_gravity="center"
         android:text="标题"
         android:textColor="@android:color/black"
-        android:textSize="20dp"
+        android:textSize="@dimen/font_24"
         android:visibility="visible" />
 
     <TextView
@@ -38,7 +39,7 @@
         android:drawableRight="@mipmap/more"
         android:gravity="center"
         android:textColor="@android:color/black"
-        android:textSize="16dp"
+        android:textSize="@dimen/font_16"
         android:visibility="visible" />
 
 </com.issp.association.view.CustomToolbar>

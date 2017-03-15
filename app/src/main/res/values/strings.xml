@@ -33,6 +33,10 @@
     <string name="searchSomething">请输入要搜索的关键字</string>
 
 
+    <string name="str_relation_colleague">同事</string>
+    <string name="str_relation_schoolfellow">校友</string>
+    <string name="str_relation_countrymen">同乡</string>
+    <string name="str_relation_relative">亲人</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_claim_activiy">ClaimActiviy</string>

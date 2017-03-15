@@ -16,9 +16,10 @@ import okhttp3.Call;
  * Created by T-BayMax on 2017/3/11.
  */
 
-public class RelationMapMoudle {
+public class RelationMapModel {
     public void postRelationMap(Map<String, String> formData, final RelationMapListener listener) {
-        HttpUtils.sendFormBodyPostRequest("/directNexusChart", formData, new StringCallback() {
+        String data="{userId:"+formData.get("userId")+"}";
+        HttpUtils.sendFormBodyPostRequest("/directNexusChart", data, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
 
@@ -27,10 +28,15 @@ public class RelationMapMoudle {
 
             @Override
             public void onResponse(String response, int id) {
-                Code<RelationBean> code = new GsonResponsePasare<Code<RelationBean>>() {
-                }.deal(response);
-                if (code.getCode() == 200)
-                    listener.onRelationSucceed(code.getData());
+                Code<RelationBean> code = GsonResponsePasare.parseJson(response,Code.class);
+                switch (code.getCode()){
+                    case 200:
+                        listener.onRelationSucceed(code.getData());
+                        break;
+                    case 0:
+                        listener.onRelationError("没有查找到关系");
+                        break;
+                }
             }
         });
     }
