@@ -5,7 +5,7 @@ import com.example.just.shequnlianmeng.bean.RelationBean;
 import com.example.just.shequnlianmeng.interfaces.IRelationMapPresenter;
 import com.example.just.shequnlianmeng.interfaces.IRelationMapView;
 import com.example.just.shequnlianmeng.listeners.RelationMapListener;
-import com.example.just.shequnlianmeng.moudle.RelationMapMoudle;
+import com.example.just.shequnlianmeng.moudle.RelationMapModel;
 
 import java.util.Map;
 
@@ -14,10 +14,10 @@ import java.util.Map;
  */
 
 public class RelationMapPresenter extends BasePersenter<IRelationMapView> implements IRelationMapPresenter, RelationMapListener {
-    private RelationMapMoudle moudle;
+    private RelationMapModel moudle;
 
     public RelationMapPresenter() {
-        this.moudle = new RelationMapMoudle();
+        this.moudle = new RelationMapModel();
     }
 
     @Override

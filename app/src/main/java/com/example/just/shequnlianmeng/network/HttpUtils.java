@@ -49,11 +49,11 @@ public class HttpUtils {
      * @param formBody  请求参数
      * @param callback  请求回调
      */
-    public static void sendFormBodyPostRequest(String url, Map<String, String> formBody, Callback callback) {
+    public static void sendFormBodyPostRequest(String url, String formBody, Callback callback) {
         OkHttpUtils
                 .postString()
                 .url(BASE_RUL + url)
-                .content("{userId:"+formBody.get("userId")+"}")
+                .content(formBody)
                 .build()
                 .execute(callback);
     }

@@ -18,6 +18,13 @@
         <item name="android:drawablePadding">6dp</item>
         <item name="android:textSize">12sp</item>
     </style>
+    <style name="relation_radio_button_styles">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_18</item>
+    </style>
 
     <style name="recommend_item_tv_styles">
         <item name="android:layout_width">wrap_content</item>
