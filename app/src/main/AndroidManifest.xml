@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activitys.RecommendActivity">
+        <activity android:name=".ui.activitys.VerifyRecommedInfoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,7 @@
         <activity android:name=".ui.activitys.SearchActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ui.activitys.RecommendInfoActivity" />
-        <activity android:name=".ui.activitys.LoginActivity" />
+        <activity android:name=".ui.activitys.RecommendActivity" />
         <activity android:name=".ui.activitys.SignPickerActivity" />
         <activity android:name=".ui.activitys.ClaimInfoActivity" />
 
@@ -34,7 +34,8 @@
             android:value="1334" />
 
         <activity android:name=".ui.activitys.MineClaimActivity" />
-        <activity android:name=".ui.activitys.ClaimActiviy"></activity>
+        <activity android:name=".ui.activitys.ClaimActiviy" />
+        <activity android:name=".ui.activitys.LoginActivity"></activity>
     </application>
 
 </manifest>

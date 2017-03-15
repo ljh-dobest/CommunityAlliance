@@ -297,6 +297,9 @@ public class ClaimInfoActivity extends BaseMvpActivity<IClaimInfoView,ClaimInfoP
         if (country == null) {
             options3Items.add(" ");
         } else {
+            if(country.size()==0){
+                options3Items.add("");
+            }
             for (int i = 0; i < country.size(); i++) {
                 options3Items.add(country.get(i).getName());
             }

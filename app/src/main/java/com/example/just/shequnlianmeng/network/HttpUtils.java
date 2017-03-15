@@ -4,6 +4,8 @@ import android.content.Context;
 import android.os.Environment;
 
 import com.example.just.shequnlianmeng.bean.ClaimInfoBean;
+import com.example.just.shequnlianmeng.bean.RecommendBean;
+import com.example.just.shequnlianmeng.bean.VerifyRecommedInfoBean;
 import com.google.gson.Gson;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.Callback;
@@ -24,8 +26,8 @@ import okhttp3.OkHttpClient;
 public class HttpUtils {
     public static final String CACHE_PATH=
             Environment.getExternalStorageDirectory().getAbsolutePath()+"/ CommunityAlliance/";
-      public static final String IMAGE_RUL ="http://192.168.0.212:90";
-      public static final String BASE_RUL ="http://192.168.0.212:90/appapi/app";
+      public static final String IMAGE_RUL ="http://192.168.0.214:90";
+      public static final String BASE_RUL ="http://192.168.0.214:90/appapi/app";
 
 
 
@@ -429,32 +431,33 @@ public class HttpUtils {
                 .build().execute(callback);
     }
 
-    public static void postRecommend(String url,String userId, String fullName, String mobile, String sex, String hobby,
-                                     String address, String relationship,String character, String creditScore, String birthday,
-                                     String homeplace, String finishSchool, String company, String fatherName,
-                                     String motherName, String marriage, String spouseName,
-                                     String childrenName, String childrenSchool,StringCallback callback){
+    public static void postRecommend(String url, RecommendBean recommendBean, StringCallback callback){
+         Gson gson = new Gson();
+        String hobbys = gson.toJson(recommendBean.getHobby());
+        String relationships = gson.toJson(recommendBean.getRelationship());
+        String addressList = gson.toJson(recommendBean.getAddress());
+        String characterlist=gson.toJson(recommendBean.getCharacter());
         OkHttpUtils.post().url(BASE_RUL+url)
                 .addHeader("Connection", "close")
-                .addParams("userId",userId)
-                .addParams("fullName",fullName)
-                .addParams("mobile",mobile)
-                .addParams("sex",sex)
-                .addParams("hobby",hobby)
-                .addParams("address",address)
-                .addParams("relationship",relationship)
-                .addParams("character",character)
-                .addParams("creditScore",creditScore)
-                .addParams("birthday",birthday)
-                .addParams("homeplace",homeplace)
-                .addParams("finishSchool",finishSchool)
-                .addParams("company",company)
-                .addParams("fatherName",fatherName)
-                .addParams("motherName",motherName)
-                .addParams("marriage",marriage)
-                .addParams("spouseName",spouseName)
-                .addParams("childrenName",childrenName)
-                .addParams("childrenSchool",childrenSchool)
+                .addParams("userId",recommendBean.getUserId())
+                .addParams("fullName",recommendBean.getFullName())
+                .addParams("mobile",recommendBean.getMobile())
+                .addParams("sex",recommendBean.getSex())
+                .addParams("hobby",hobbys)
+                .addParams("address",addressList)
+                .addParams("relationship",relationships)
+                .addParams("character",characterlist)
+                .addParams("creditScore",recommendBean.getCreditScore())
+                .addParams("birthday",recommendBean.getBirthday())
+                .addParams("homeplace",recommendBean.getHomeplace())
+                .addParams("finishSchool",recommendBean.getFinishSchool())
+                .addParams("company",recommendBean.getCompany())
+                .addParams("fatherName",recommendBean.getFatherName())
+                .addParams("motherName",recommendBean.getMotherName())
+                .addParams("marriage",recommendBean.getMarriage())
+                .addParams("spouseName",recommendBean.getSpouseName())
+                .addParams("childrenName",recommendBean.getChildrenName())
+                .addParams("childrenSchool",recommendBean.getChildrenSchool())
                 .build().execute(callback);
         }
 
@@ -473,7 +476,7 @@ public class HttpUtils {
                 .addParams("status","0")
                 .build().execute(callback);
     }
-
+    //提交认领信息
     public static void postClaimInfo(String url, ClaimInfoBean claimInfo,StringCallback callback){
         Gson gson=new Gson();
         String hobbys = gson.toJson(claimInfo.getHobby());
@@ -499,6 +502,31 @@ public class HttpUtils {
                 .addParams("email",claimInfo.getEmail())
                 .addParams("QQ",claimInfo.getQQ())
                 .addParams("wechat",claimInfo.getWechat())
+                .build().execute(callback);
+    }
+    //提交确认个人信息
+    public static void postVerifyRecommedInfo(String url, VerifyRecommedInfoBean verifyRecommedInfo, StringCallback callback){
+        Gson gson=new Gson();
+        String hobbys = gson.toJson(verifyRecommedInfo.getHobby());
+        String address = gson.toJson(verifyRecommedInfo.getAddress());
+        OkHttpUtils.post().url(BASE_RUL+url)
+                .addHeader("Connection", "close")
+                .addParams("userId",verifyRecommedInfo.getUserId())
+                .addParams("fullName",verifyRecommedInfo.getFullName())
+                .addParams("SfullName",verifyRecommedInfo.getSfullName())
+                .addParams("mobile",verifyRecommedInfo.getMobile())
+                .addParams("sex",verifyRecommedInfo.getSex())
+                .addParams("hobby",hobbys)
+                .addParams("address",address)
+                .addParams("birthday",verifyRecommedInfo.getBirthday())
+                .addParams("homeplace",verifyRecommedInfo.getHomeplace())
+                .addParams("finishSchool",verifyRecommedInfo.getFinishSchool())
+                .addParams("degree",verifyRecommedInfo.getDegree())
+                .addParams("company",verifyRecommedInfo.getCompany())
+                .addParams("position",verifyRecommedInfo.getPosition())
+                .addParams("email",verifyRecommedInfo.getEmail())
+                .addParams("QQ",verifyRecommedInfo.getQQ())
+                .addParams("wechat",verifyRecommedInfo.getWechat())
                 .build().execute(callback);
     }
     }

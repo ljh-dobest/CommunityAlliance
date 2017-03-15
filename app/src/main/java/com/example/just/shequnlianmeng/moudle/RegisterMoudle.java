@@ -31,7 +31,7 @@ public class RegisterMoudle {
         }
 
             //信息提交服务器
-            HttpUtils.postRegisterRequest("/register", mobile, mobile, pwd, recommendId, new StringCallback() {
+            HttpUtils.postRegisterRequest("/register", userName, mobile, pwd, recommendId, new StringCallback() {
                 @Override
                 public void onError(Call call, Exception e, int id) {
                    listener.failedToRegister(e.toString());

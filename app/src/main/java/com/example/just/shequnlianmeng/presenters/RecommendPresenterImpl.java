@@ -5,13 +5,13 @@ import android.view.ViewGroup;
 
 import com.example.just.shequnlianmeng.base.presenter.BasePersenter;
 import com.example.just.shequnlianmeng.bean.ProvinceBean;
+import com.example.just.shequnlianmeng.bean.RecommendBean;
 import com.example.just.shequnlianmeng.interfaces.IRecommedPresenter;
 import com.example.just.shequnlianmeng.interfaces.IRecommedView;
 import com.example.just.shequnlianmeng.listeners.OnRecommedFinishListener;
 import com.example.just.shequnlianmeng.moudle.RecommedMoudle;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by just on 2017/3/5.
@@ -23,16 +23,11 @@ public class RecommendPresenterImpl extends BasePersenter<IRecommedView>implemen
         this.recommedMoudle = new RecommedMoudle();
     }
 
+
     @Override
-    public void verifyRecommedInfo(String userId, String fullName, String mobile, String sex,
-                                   List<String> hobby, List<String> address, List<String> relationship,List<String> character, String creditScore,
-                                   String birthday, String homeplace, String finishSchool, String company,
-                                   String fatherName, String motherName, String marriage, String spouseName,
-                                  String childrenName, String childrenSchool) {
-            recommedMoudle.recommed(userId,fullName,mobile,sex,hobby,address,relationship,character,creditScore,
-                    birthday,homeplace,finishSchool,company,fatherName, motherName,marriage,
-                    spouseName,childrenName,childrenSchool,this);
-     }
+    public void verifyRecommedInfo(RecommendBean recommendBean) {
+            recommedMoudle.recommed(recommendBean,this);
+    }
 
     @Override
     public void getParserData(Context context, String fileName) {

@@ -19,6 +19,7 @@ import com.example.just.shequnlianmeng.base.view.BaseMvpActivity;
 import com.example.just.shequnlianmeng.bean.CityBean;
 import com.example.just.shequnlianmeng.bean.CountyBean;
 import com.example.just.shequnlianmeng.bean.ProvinceBean;
+import com.example.just.shequnlianmeng.bean.RecommendBean;
 import com.example.just.shequnlianmeng.interfaces.IRecommedView;
 import com.example.just.shequnlianmeng.presenters.RecommendPresenterImpl;
 import com.example.just.shequnlianmeng.utils.T;
@@ -93,7 +94,7 @@ public class RecommendActivity extends BaseMvpActivity<IRecommedView,RecommendPr
     private String mobile;
 private String sex="1";
     private ArrayList<String> hobby=new ArrayList<>();
-    private List<String> address=new ArrayList<>();
+    private ArrayList<String> address=new ArrayList<>();
     private ArrayList<String> relationship=new ArrayList<>();
     private ArrayList<String> character=new ArrayList<>();
     private String creditScore;
@@ -168,6 +169,7 @@ private String sex="1";
                  sp_recom_jgcountys.getSelectedItem().toString()+"县";
         getHobbys(rg_recom_like);
         getCharacters(rg_recom_character);
+        relationship.add(et_recom_relationship.getText().toString());
         creditScore=et_recom_creditScore.getText().toString().trim();
         birthday=et_recom_birthday.getText().toString().trim();
         finishSchool=et_recom_school.getText().toString().trim();
@@ -261,9 +263,9 @@ private String sex="1";
                 break;
             case R.id.btn_recommend:
                 getViewData();
-                presenter.verifyRecommedInfo(userId,fullName,mobile,sex,hobby,address,relationship,character,
+                presenter.verifyRecommedInfo(new RecommendBean(userId,fullName,mobile,sex,hobby,address,relationship,character,
                         creditScore,birthday,homeplace,finishSchool,company,fatherName, motherName,marriage,
-                        spouseName,childrenName,childrenSchool);
+                        spouseName,childrenName,childrenSchool));
                 break;
             case R.id.ll_recom_relationship:
                 //弹出关系选择框
@@ -338,8 +340,11 @@ private String sex="1";
         options3Items.clear();
         ArrayList<CountyBean> country = (ArrayList<CountyBean>) citys.get(position).getSub();
         if (country == null) {
-            options3Items.add(" ");
+            options3Items.add("");
         } else {
+            if(country.size()==0){
+                options3Items.add("");
+            }
             for (int i = 0; i < country.size(); i++) {
                 options3Items.add(country.get(i).getName());
             }
