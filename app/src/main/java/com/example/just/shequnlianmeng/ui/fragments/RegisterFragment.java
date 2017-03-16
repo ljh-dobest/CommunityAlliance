@@ -27,11 +27,13 @@ public class RegisterFragment extends BaseMvpFragment<IRegisterView,RegisterPres
         void finishRegister();
     }
     @BindView(R.id.et_re_ph)
-     EditText et_phoneNum;
+     EditText et_re_ph;
+    @BindView(R.id.et_re_nickname)
+    EditText et_re_nickname;
     @BindView(R.id.et_re_pw)
-     EditText et_pw;
+     EditText et_re_pw;
     @BindView(R.id.et_re_invite_code)
-    EditText et_inviteCode;
+    EditText et_re_invite_code;
      private FinishRegisterListener listener;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,7 +51,7 @@ public class RegisterFragment extends BaseMvpFragment<IRegisterView,RegisterPres
     }
 
     private void addEditTextListener() {
-        et_phoneNum.addTextChangedListener(new TextWatcher() {
+        et_re_ph.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -57,7 +59,7 @@ public class RegisterFragment extends BaseMvpFragment<IRegisterView,RegisterPres
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if (charSequence.length() == 11) {
-                    if (!AMUtils.isMobile(et_phoneNum.getText().toString().trim())) {
+                    if (!AMUtils.isMobile(et_re_ph.getText().toString().trim())) {
                         T.showShort(getContext(), "请输入正确的手机号码");
                         return;
                     }
@@ -72,10 +74,11 @@ public class RegisterFragment extends BaseMvpFragment<IRegisterView,RegisterPres
     @OnClick(R.id.btn_register)
     public void registerOnClick(View view){
         LoadDialog.show(getContext());
-       String password = et_pw.getText().toString();
-      String  mobile = et_phoneNum.getText().toString();
-        String inviteCode = et_inviteCode.getText().toString().trim();
-       presenter.verifyRegisterInfo(mobile,mobile,password,inviteCode);
+       String password = et_re_pw.getText().toString();
+      String  mobile = et_re_ph.getText().toString();
+        String nikeName=et_re_nickname.getText().toString();
+        String inviteCode = et_re_invite_code.getText().toString().trim();
+       presenter.verifyRegisterInfo(nikeName,mobile,password,inviteCode);
     }
 
     public void setListener(FinishRegisterListener listener){
@@ -102,9 +105,10 @@ public class RegisterFragment extends BaseMvpFragment<IRegisterView,RegisterPres
     @Override
     public void succeedToRegister() {
           T.showShort(getContext(),"注册成功~~");
-        et_phoneNum.setText("");
-        et_pw.setText("");
-        et_inviteCode.setText("");
+        et_re_ph.setText("");
+        et_re_nickname.setText("");
+        et_re_pw.setText("");
+        et_re_invite_code.setText("");
         LoadDialog.dismiss(getContext());
         listener.finishRegister();
      }

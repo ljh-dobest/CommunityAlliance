@@ -7,7 +7,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/font_32</item>
+    </style>
     <style name="radio_button_styles">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -51,7 +53,44 @@
         <item name="android:gravity">center_vertical</item>
         <item name="android:orientation">horizontal</item>
     </style>
-
+<style name="claimInfo_tv_styles">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/font_30</item>
+    <item name="android:textColor">@color/col_121212</item>
+</style>
+    <style name="claimInfo_et_styles">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:textColor">@color/col_121212</item>
+    </style>
+    <style name="claimInfo_item_ll_styles">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="claimInfo_item_rb_styles">
+        <item name="android:layout_width">140px</item>
+        <item name="android:layout_height">60px</item>
+        <item name="android:layout_marginLeft">14px</item>
+        <item name="android:paddingLeft">40px</item>
+        <item name="android:paddingRight">40px</item>
+        <item name="android:background">@drawable/claiminfo_item_rb_bg</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:textColor">@color/col_11624A</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="claimInfo_item_sp_styles">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">150px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10px</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:textColor">@color/col_121212</item>
+    </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

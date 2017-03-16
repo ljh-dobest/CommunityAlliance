@@ -20,4 +20,6 @@ public interface IRecommedView {
     void getparserData(ArrayList<ProvinceBean> provinces);
     void getHobbys(ViewGroup group);
     void setHobbys(List<String> hobbys);
+    void getCharacters(ViewGroup group);
+    void setCharacters(List<String> characters);
 }

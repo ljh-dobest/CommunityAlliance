@@ -21,9 +21,9 @@ public class MainRadioGroup extends RadioGroup {
     public MainRadioGroup(Context context, AttributeSet attrs) {
         super(context, attrs);
         drawables = new Drawable[]{
-                  getResources().getDrawable(R.drawable.botm_home_buttom),
-                getResources().getDrawable(R.drawable.chat2x),
-                getResources().getDrawable(R.drawable.mine2x)
+                  getResources().getDrawable(R.drawable.main_home_bg),
+                getResources().getDrawable(R.drawable.main_chat_bg),
+                getResources().getDrawable(R.drawable.main_mine_bg)
         };
     }
 
@@ -46,7 +46,7 @@ public class MainRadioGroup extends RadioGroup {
                 Drawable drawable=drawables[i];
                 RadioButton rb = (RadioButton) getChildAt(i);
           //      int left = (int) ((getMeasuredWidth() * 0.2f) / 10);
-                int top = (int) (getMeasuredHeight() * 0.11f);
+                int top = (int) (getMeasuredHeight() * 0.12f);
                 int right = (int) (getMeasuredHeight()*0.45f);
                 int bottom = (int) (getMeasuredWidth() /5*0.5f);
           //      System.out.println("right="+right+"bottom"+bottom);

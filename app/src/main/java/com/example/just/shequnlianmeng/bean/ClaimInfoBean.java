@@ -1,5 +1,7 @@
 package com.example.just.shequnlianmeng.bean;
 
+import java.util.ArrayList;
+
 /**
  * Created by Min on 2017/3/10.
  */
@@ -10,10 +12,10 @@ public class ClaimInfoBean {
     private String fullName;
     private String mobile;
     private String sex;
-    private String hobby;
-    private String address;
+    private ArrayList<String> hobby;
+    private ArrayList<String> address;
     private String creditScore;
-    private String relationship;
+    private ArrayList<String> relationship;
     private String birthday;
     private String homeplace;
     private String finishSchool;
@@ -24,7 +26,10 @@ public class ClaimInfoBean {
     private String QQ;
     private String wechat;
 
-    public ClaimInfoBean(String userId, String claimUserId, String fullName, String mobile, String sex, String hobby, String address, String creditScore, String relationship, String birthday, String homeplace, String finishSchool, String degree, String company, String position, String email, String QQ, String wechat) {
+    public ClaimInfoBean(String userId, String claimUserId, String fullName, String mobile, String sex,
+                         ArrayList<String> hobby, ArrayList<String> address, String creditScore,
+                         ArrayList<String> relationship, String birthday, String homeplace, String finishSchool,
+                         String degree, String company, String position, String email, String QQ, String wechat) {
         this.userId = userId;
         this.claimUserId = claimUserId;
         this.fullName = fullName;
@@ -85,19 +90,19 @@ public class ClaimInfoBean {
         this.sex = sex;
     }
 
-    public String getHobby() {
+    public ArrayList<String> getHobby() {
         return hobby;
     }
 
-    public void setHobby(String hobby) {
+    public void setHobby(ArrayList<String> hobby) {
         this.hobby = hobby;
     }
 
-    public String getAddress() {
+    public ArrayList<String> getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(ArrayList<String> address) {
         this.address = address;
     }
 
@@ -109,11 +114,11 @@ public class ClaimInfoBean {
         this.creditScore = creditScore;
     }
 
-    public String getRelationship() {
+    public ArrayList<String> getRelationship() {
         return relationship;
     }
 
-    public void setRelationship(String relationship) {
+    public void setRelationship(ArrayList<String> relationship) {
         this.relationship = relationship;
     }
 

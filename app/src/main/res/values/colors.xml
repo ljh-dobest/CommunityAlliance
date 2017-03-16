@@ -42,6 +42,8 @@
     <color name="progress_background">#ededed</color>
     <color name="itemlist">#f4f4f4</color>
     <color name="act_background">#efefef</color>
+    <color name="font_white_one">#FFFFFF</color>
+    <color name="gray_normal">#666667</color>
     <color name="col_10DB9F">#10DB9F</color>
     <color name="col_DDD">#DDDDDD</color>
     <color name="col_909090">#909090</color>
@@ -49,7 +51,18 @@
     <color name="col_333333">#333333</color>
     <color name="col_A0A0A0">#A0A0A0</color>
     <color name="col_E3E3E3">#E3E3E3</color>
+<<<<<<< HEAD
+    <color name="col_121212">#121212</color>
+    <color name="col_11624A">#11624A</color>
+    <color name="col_188C88">#188C88</color>
+    <color name="col_444343">#444343</color>
+    <color name="col_666666">#666666</color>
+    <color name="col_050505">#050505</color>
+    <color name="col_10db9f">#10db9f</color>
+    <color name="col_18BC8B">#18BC8B</color>
+=======
     <color name="aam_item_border">#ebebeb</color>
+>>>>>>> e718921994b03e9a5cea7dc46a830a9c06a8af26
 
 
 

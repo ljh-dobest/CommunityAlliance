@@ -20,7 +20,17 @@ import java.util.List;
  */
 
 public class ClaimCenterRecyclerAdapter extends RecyclerView.Adapter<ClaimCenterRecyclerAdapter.MyViewHolder> {
+    public interface OnItemClickLitener
+    {
+        void onItemClick(View view, int position);
+    }
 
+    private OnItemClickLitener mOnItemClickLitener;
+
+    public void setOnItemClickLitener(OnItemClickLitener mOnItemClickLitener)
+    {
+        this.mOnItemClickLitener = mOnItemClickLitener;
+    }
     private List<ClaimPeopleBean> mDatas=new ArrayList<>();
     private Context mContext;
     private LayoutInflater inflater;
@@ -46,7 +56,7 @@ public class ClaimCenterRecyclerAdapter extends RecyclerView.Adapter<ClaimCenter
 
     //填充onCreateViewHolder方法返回的holder中的控件
     @Override
-    public void onBindViewHolder(MyViewHolder holder, final int position) {
+    public void onBindViewHolder(final MyViewHolder holder, final int position) {
         ClaimPeopleBean bean = mDatas.get(position);
         String imgUrl=bean.getUserPortraitUrl();
         if(imgUrl==null){
@@ -54,8 +64,18 @@ public class ClaimCenterRecyclerAdapter extends RecyclerView.Adapter<ClaimCenter
         }else{
             Picasso.with(mContext).load(bean.getUserPortraitUrl()).into(holder.iv_claim_lv_item);
         }
-
         holder.tv_claim_lv_item.setText(bean.getUserId());
+
+        // 如果设置了回调，则设置点击事件
+        if (mOnItemClickLitener != null) {
+            holder.iv_claim_lv_item.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int pos = holder.getLayoutPosition();
+                    mOnItemClickLitener.onItemClick(holder.itemView, pos);
+                }
+            });
+        }
     }
 
     //重写onCreateViewHolder方法，返回一个自定义的ViewHolder
@@ -64,6 +84,7 @@ public class ClaimCenterRecyclerAdapter extends RecyclerView.Adapter<ClaimCenter
 
         View view = inflater.inflate(R.layout.claim_lv_item,parent, false);
         MyViewHolder holder= new MyViewHolder(view);
+
         return holder;
     }
 

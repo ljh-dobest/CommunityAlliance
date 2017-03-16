@@ -1,11 +1,15 @@
 package com.example.just.shequnlianmeng.moudle;
 
 import android.content.Context;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
 
 import com.example.just.shequnlianmeng.bean.CityBean;
 import com.example.just.shequnlianmeng.bean.Code;
 import com.example.just.shequnlianmeng.bean.CountyBean;
 import com.example.just.shequnlianmeng.bean.ProvinceBean;
+import com.example.just.shequnlianmeng.bean.RecommendBean;
 import com.example.just.shequnlianmeng.bean.RecommendCode;
 import com.example.just.shequnlianmeng.listeners.OnRecommedFinishListener;
 import com.example.just.shequnlianmeng.network.HttpUtils;
@@ -18,7 +22,6 @@ import com.zhy.http.okhttp.callback.StringCallback;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 import okhttp3.Call;
 
@@ -27,27 +30,17 @@ import okhttp3.Call;
  */
 
 public class RecommedMoudle {
-    public void recommed(String userId, String fullName, String mobile, String sex, List<String> hobby,
-                         List<String> address, List<String> relationship,List<String> character, String creditScore,
-                         String birthday, String homeplace, String finishSchool, String company,
-                         String fatherName, String motherName, String marriage, String spouseName,
-                          String childrenName, String childrenSchool, final OnRecommedFinishListener listener) {
-      if(userId.equals("")||fullName.equals("")||mobile.equals("")||sex.equals("")||hobby.size()==0||
-              address.size()==0||relationship.size()==0||creditScore.equals("")){
+    public void recommed(RecommendBean recommendBean, final OnRecommedFinishListener listener) {
+      if(recommendBean.getUserId().equals("")||recommendBean.getFullName().equals("")||recommendBean.getMobile().equals("")||recommendBean.getSex().equals("")
+              ||recommendBean.getHobby().size()==0||recommendBean.getAddress().size()==0||recommendBean.getRelationship().size()==0
+              ||recommendBean.getCreditScore().equals("")){
           listener.showTextEmpty();
           return;
-      }else if(!AMUtils.isMobile(mobile)){
+      }else if(!AMUtils.isMobile(recommendBean.getMobile())){
                  listener.showRecommedError("请输入正确的手机号码");
           return;
       }
-          final Gson gson = new Gson();
-          String hobbys = gson.toJson(hobby);
-          String relationships = gson.toJson(relationship);
-          String addressList = gson.toJson(address);
-        String characterlist=gson.toJson(character);
-          HttpUtils.postRecommend("/friendsRecommend", userId, fullName, mobile, sex, hobbys, addressList, relationships,characterlist, creditScore,
-                  birthday, homeplace, finishSchool, company, fatherName, motherName, marriage,
-                  spouseName, childrenName, childrenSchool, new StringCallback() {
+          HttpUtils.postRecommend("/friendsRecommend",recommendBean, new StringCallback() {
                       @Override
                       public void onError(Call call, Exception e, int id) {
                           listener.showRecommedError(e.toString());
@@ -55,6 +48,7 @@ public class RecommedMoudle {
 
                       @Override
                       public void onResponse(String response, int id) {
+                          Gson gson = new Gson();
                           Type type = new TypeToken<Code<RecommendCode>>() {
                           }.getType();
                           Code<RecommendCode> code = gson.fromJson(response, type);
@@ -79,11 +73,11 @@ public class RecommedMoudle {
 
      }
 
-    public void getParserData(final Context mComtext, String fileName, final OnRecommedFinishListener listener){
+    public void getParserData(final Context mComtext, final String fileName, final OnRecommedFinishListener listener){
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        String jsonData=DataUtils.getJson(mComtext,"data.txt");
+                        String jsonData=DataUtils.getJson(mComtext,fileName);
                         //解析数据
                         Gson gson=new Gson();
                         Type type = new TypeToken<ArrayList<ProvinceBean>>() {
@@ -95,6 +89,34 @@ public class RecommedMoudle {
                 }).start();
      }
 
+    //获取选择的爱好
+    public void getHobby(ViewGroup group, OnRecommedFinishListener listener) {
+        ArrayList<String> hobbys=new ArrayList<>();
+        for (int i = 0; i < group.getChildCount(); i++) {
+            LinearLayout ll= (LinearLayout) group.getChildAt(i);
+            for (int j= 1; j < ll.getChildCount(); j++) { //j从第一个开始，跳过Textview
+                RadioButton rb= (RadioButton) ll.getChildAt(j);
+                if (rb.isChecked()){
+                    hobbys.add(rb.getText().toString());
+                }
+            }
+        }
+        listener.returnHobbys(hobbys);
+    }
+    //获取选择的性格
+    public void getCharacters(ViewGroup group, OnRecommedFinishListener listener) {
+        ArrayList<String> characters=new ArrayList<>();
+        for (int i = 0; i < group.getChildCount(); i++) {
+            LinearLayout ll= (LinearLayout) group.getChildAt(i);
+            for (int j= 1; j < ll.getChildCount(); j++) { //j从第一个开始，跳过Textview
+                RadioButton rb= (RadioButton) ll.getChildAt(j);
+                if (rb.isChecked()){
+                    characters.add(rb.getText().toString());
+                }
+            }
+        }
+        listener.returnCharacters(characters);
+    }
     private HashMap<String,Object> getMap(ArrayList<ProvinceBean> result) {
         HashMap<String,Object> map=new HashMap<>();
         ArrayList<String> options1Items=new ArrayList<>();
