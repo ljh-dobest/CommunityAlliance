@@ -2,7 +2,7 @@ package com.issp.association.presenters;
 
 import com.issp.association.base.presenter.BasePersenter;
 import com.issp.association.bean.ShareBean;
-import com.issp.association.interfaces.IShareList;
+import com.issp.association.interfaces.IShareListView;
 import com.issp.association.listeners.OnShareListener;
 import com.issp.association.model.ShareInfoModel;
 
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Created by Min on 2017/3/9.
  */
 
-public class ShareInfoPresenter extends BasePersenter<IShareList> implements OnShareListener {
+public class ShareInfoPresenter extends BasePersenter<IShareListView> implements OnShareListener {
     private ShareInfoModel recommendInfoMoudle;
 
     public ShareInfoPresenter() {

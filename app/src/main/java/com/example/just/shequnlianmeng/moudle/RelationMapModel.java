@@ -5,8 +5,12 @@ import com.example.just.shequnlianmeng.bean.RelationBean;
 import com.example.just.shequnlianmeng.listeners.RelationMapListener;
 import com.example.just.shequnlianmeng.network.HttpUtils;
 import com.example.just.shequnlianmeng.utils.GsonResponsePasare;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.zhy.http.okhttp.callback.StringCallback;
 
+import java.lang.reflect.Type;
+import java.util.List;
 import java.util.Map;
 
 import okhttp3.Call;
@@ -18,8 +22,7 @@ import okhttp3.Call;
 
 public class RelationMapModel {
     public void postRelationMap(Map<String, String> formData, final RelationMapListener listener) {
-        String data="{userId:"+formData.get("userId")+"}";
-        HttpUtils.sendFormBodyPostRequest("/directNexusChart", data, new StringCallback() {
+        HttpUtils.sendFormBodyPostRequest("/directNexusChart", formData, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
 
@@ -28,7 +31,9 @@ public class RelationMapModel {
 
             @Override
             public void onResponse(String response, int id) {
-                Code<RelationBean> code = GsonResponsePasare.parseJson(response,Code.class);
+                Type jsonType = new TypeToken<Code<RelationBean>>() {
+                }.getType();
+                Code<RelationBean> code = new Gson().fromJson(response,jsonType);
                 switch (code.getCode()){
                     case 200:
                         listener.onRelationSucceed(code.getData());

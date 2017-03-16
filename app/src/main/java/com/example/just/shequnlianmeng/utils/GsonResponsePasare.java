@@ -12,6 +12,7 @@ import java.lang.reflect.Type;
  */
 
 public class GsonResponsePasare {
+
     public static <T> T parseJson(String jsonString, Class<T> clazz) {
         T t = null;
         try {
@@ -24,6 +25,17 @@ public class GsonResponsePasare {
         }
         return t;
 
-    }
+    }public static <T> T parseJson(String jsonString,  Type jsonType) {
+        T t = null;
+        try {
+            Gson gson = new Gson();
+            t = gson.fromJson(jsonString, jsonType);
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+            System.out.println("解析json失败");
+        }
+        return t;
 
+    }
 }
