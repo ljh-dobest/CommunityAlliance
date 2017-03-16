@@ -22,8 +22,8 @@ import okhttp3.OkHttpClient;
 public class HttpUtils {
     public static final String CACHE_PATH=
             Environment.getExternalStorageDirectory().getAbsolutePath()+"/ CommunityAlliance/";
-      public static final String IMAGE_RUL ="http://192.168.0.212:90";
-      public static final String BASE_RUL ="http://192.168.0.212:90/appapi/app";
+      public static final String IMAGE_RUL ="http://192.168.0.214:90";
+      public static final String BASE_RUL ="http://192.168.0.214:90/appapi/app";
 
 
 
@@ -45,11 +45,11 @@ public class HttpUtils {
      * @param formBody  请求参数
      * @param callback  请求回调
      */
-    public static void sendFormBodyPostRequest(String url, String formBody, Callback callback) {
+    public static void sendFormBodyPostRequest(String url, Map<String, String>  formBody, Callback callback) {
         OkHttpUtils
-                .postString()
+                .post()
                 .url(BASE_RUL + url)
-                .content(formBody)
+                .params(formBody)
                 .build()
                 .execute(callback);
     }

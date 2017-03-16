@@ -10,6 +10,6 @@ import java.util.ArrayList;
  * Created by Min on 2017/3/9.
  */
 
-public interface IShareList extends BaseView {
+public interface IShareListView extends BaseView {
     void setShareListData(ArrayList<ShareBean> data);
 }
