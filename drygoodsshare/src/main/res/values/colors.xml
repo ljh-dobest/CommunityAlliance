@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="gray">#aaaaaa</color>
+    <color name="color_99">#999999</color>
+    <color name="color_33">#333333</color>
+    <color name="aam_item_border">#ebebeb</color>
 </resources>
