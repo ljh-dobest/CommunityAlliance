@@ -1,22 +1,31 @@
 package com.issp.association;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.issp.association.adapter.BannerImageLoader;
+import com.andview.refreshview.XRefreshView;
+import com.andview.refreshview.XRefreshViewFooter;
+import com.issp.association.adapter.IndexPageAdapter;
+import com.issp.association.adapter.SimpleAdapter;
 import com.issp.association.base.view.BaseMvpActivity;
 import com.issp.association.bean.ShareBean;
 import com.issp.association.interfaces.IShareListView;
 import com.issp.association.presenters.ShareInfoPresenter;
 import com.issp.association.utils.DisplayUtils;
-import com.youth.banner.Banner;
+import com.issp.association.view.BannerViewPager;
+import com.issp.association.view.CustomGifHeader;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -35,17 +44,16 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
     TextView lt_main_title;
     @BindView(R.id.lt_main_title_right)
     TextView lt_main_title_right;
-    @BindView(R.id.homepage_lv)
-    RecyclerView homepage_lv;
+    RecyclerView recyclerView;
 
-    View view_share_page_header;
-    Banner homepage_banner;
-    private ArrayList<String> imgList;
-    String[] images={"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=699105693,866957547&fm=21&gp=0.jpg",
-            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=787324823,4149955059&fm=21&gp=0.jpg",
-            "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2152422253,1846971893&fm=21&gp=0.jpg",
-            "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3258213409,1470632782&fm=21&gp=0.jpg"};
+    SimpleAdapter adapter;
+    List<ShareBean> personList = new ArrayList<ShareBean>();
+    XRefreshView xRefreshView;
+    GridLayoutManager layoutManager;
+    private int mLoadCount = 0;
 
+    private BannerViewPager mBannerViewPager;
+    private int[] mImageIds = new int[]{R.mipmap.banner, R.mipmap.banner02};// 测试图片id
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,24 +62,96 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
         initView();
     }
     private void initView(){
-        view_share_page_header = View.inflate(MainActivity.this, R.layout.view_share_page_header, null);
-        homepage_banner= (Banner) view_share_page_header.findViewById(R.id.homepage_banner);
-        initBanner();
+        xRefreshView = (XRefreshView) findViewById(R.id.xrefreshview);
+        xRefreshView.setPullLoadEnable(true);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_test_rv);
+        recyclerView.setHasFixedSize(true);
 
+        initData();
+        adapter = new SimpleAdapter(personList, this);
+        // 设置静默加载模式
+//		xRefreshView1.setSilenceLoadMore();
+        layoutManager = new GridLayoutManager(this, 1);
+        recyclerView.setLayoutManager(layoutManager);
+        headerView = adapter.setHeaderView(R.layout.bannerview, recyclerView);
+//        LayoutInflater.from(this).inflate(R.layout.bannerview, rootview);
+        mBannerViewPager = (BannerViewPager) headerView.findViewById(R.id.index_viewpager);
 
+//        adHeader = new AdHeader(this);
+//        mBannerViewPager = (LoopViewPager) adHeader.findViewById(R.id.index_viewpager);
+        initViewPager();
+        CustomGifHeader header = new CustomGifHeader(this);
+        xRefreshView.setCustomHeaderView(header);
+        recyclerView.setAdapter(adapter);
+        xRefreshView.setAutoLoadMore(false);
+        xRefreshView.setPinnedTime(1000);
+        xRefreshView.setMoveForHorizontal(true);
+//        recyclerviewAdapter.setHeaderView(headerView, recyclerView);
+        adapter.setCustomLoadMoreView(new XRefreshViewFooter(this));
+//        xRefreshView1.setPullRefreshEnable(false);
+        //设置在下拉刷新被禁用的情况下，是否允许界面被下拉,默认是true
+//        xRefreshView1.setMoveHeadWhenDisablePullRefresh(false);
+//        xRefreshView1.enablePullUpWhenLoadCompleted(false);
+//		xRefreshView1.setPullLoadEnable(false);
+//        xRefreshView1.enableRecyclerViewPullUp(false);
+        //设置静默加载时提前加载的item个数
+//		xRefreshView1.setPreLoadCount(2);
+
+        xRefreshView.setXRefreshViewListener(new XRefreshView.SimpleXRefreshListener() {
+
+            @Override
+            public void onRefresh(boolean isPullDown) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        //模拟数据加载失败的情况
+                        Random random = new Random();
+                        boolean success = random.nextBoolean();
+                        if(success){
+                            xRefreshView.stopRefresh();
+                        }else{
+                            xRefreshView.stopRefresh(false);
+                        }
+                        //或者
+//                        xRefreshView1.stopRefresh(success);
+                    }
+                }, 2000);
+            }
+
+            @Override
+            public void onLoadMore(boolean isSilence) {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        for (int i = 0; i < 6; i++) {
+                            adapter.insert(new ShareBean("标题"+i+1,"内容"+i+1),
+                                    adapter.getAdapterItemCount());
+                        }
+                        mLoadCount++;
+                        if (mLoadCount >= 3) {
+                            xRefreshView.setLoadComplete(true);
+                        } else {
+                            // 刷新完成必须调用此方法停止加载
+                            xRefreshView.stopLoadMore();
+                        }
+                    }
+                }, 1000);
+            }
+        });
     }
 
-    private void initBanner() {
-        imgList=new ArrayList<>();
-        for (int i = 0; i < images.length; i++) {
-            imgList.add(images[i]);
+    private void initData() {
+        for (int i = 0; i < 3; i++) {
+            ShareBean person = new ShareBean("标题"+i+1,"内容"+i+1);
+            personList.add(person);
         }
-        //设置图片加载器
-        homepage_banner.setImageLoader(new BannerImageLoader());
-        //设置图片集合
-        homepage_banner.setImages(imgList);
-        //banner设置方法全部调用完毕时最后调用
-        homepage_banner.start();
+    }
+
+    private View headerView;
+
+    private void initViewPager() {
+        IndexPageAdapter pageAdapter = new IndexPageAdapter(this, mImageIds);
+        mBannerViewPager.setAdapter(pageAdapter);
+        mBannerViewPager.setParent(recyclerView);
     }
 
     @Override

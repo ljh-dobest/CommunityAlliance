@@ -17,6 +17,14 @@ public class ShareBean implements Serializable{
     private String sendDate;	//发布时间
     private boolean isShow;	//是否显示
 
+    public ShareBean(){
+
+    }
+    public ShareBean(String arcTitle,String shareContent){
+        this.arcTitle=arcTitle;
+        this.shareContent=shareContent;
+
+    }
     public String getShareId() {
         return shareId;
     }

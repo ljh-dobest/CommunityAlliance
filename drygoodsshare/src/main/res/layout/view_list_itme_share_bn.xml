@@ -65,7 +65,7 @@
         android:textSize="@dimen/font_18" />
 
     <GridView
-        android:id="@+id/iv_share_img"
+        android:id="@+id/gv_share_img"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:adjustViewBounds="true"
@@ -80,6 +80,7 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/iv_share_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/lv_foot_ml_10"
@@ -94,6 +95,7 @@
             android:textSize="@dimen/font_18" />
 
         <ImageView
+            android:id="@+id/iv_like_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/lv_foot_ml_10"
@@ -108,6 +110,7 @@
             android:textSize="@dimen/font_18" />
 
         <ImageView
+            android:id="@+id/iv_comment_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/lv_foot_ml_10"
