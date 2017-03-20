@@ -1,5 +1,6 @@
 package com.issp.association;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.widget.GridLayoutManager;
@@ -19,6 +20,7 @@ import com.issp.association.base.view.BaseMvpActivity;
 import com.issp.association.bean.ShareBean;
 import com.issp.association.interfaces.IShareListView;
 import com.issp.association.presenters.ShareInfoPresenter;
+import com.issp.association.ui.activity.MinShareActivity;
 import com.issp.association.utils.DisplayUtils;
 import com.issp.association.view.BannerViewPager;
 import com.issp.association.view.CustomGifHeader;
@@ -174,6 +176,13 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
             mPopupWindow.setOutsideTouchable(true);
             TextView tv_information = (TextView) popwindow_more.findViewById(R.id.tv_information);
             TextView tv_my_share = (TextView) popwindow_more.findViewById(R.id.tv_my_share);
+            tv_my_share.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent=new Intent(MainActivity.this, MinShareActivity.class);
+                    startActivity(intent);
+                }
+            });
         }
     }
 

@@ -9,7 +9,7 @@ import java.io.Serializable;
  */
 
 public class ShareBean implements Serializable{
-    private String shareId;	//是	分享文章id
+    private String shareId;	//分享文章id
     private UserBean userId;	//发布用户id
     private String arcTitle;	//文章标题
     private String shareContent;	//文章内容

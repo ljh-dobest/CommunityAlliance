@@ -3,7 +3,7 @@
 
     <item>
         <shape>
-            <solid android:color="@color/gray" />
+            <solid android:color="@android:color/white" />
             <corners android:radius="8dp"/>
             <padding
                 android:left="@dimen/lv_dividerHeight"

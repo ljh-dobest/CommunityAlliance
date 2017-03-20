@@ -12,6 +12,9 @@ import android.widget.TextView;
 import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.issp.association.R;
 import com.issp.association.bean.ShareBean;
+import com.issp.association.bean.UserBean;
+import com.issp.association.network.HttpUtils;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -20,8 +23,10 @@ import butterknife.ButterKnife;
 
 public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapterViewHolder> {
     private List<ShareBean> list;
-    private int largeCardHeight, smallCardHeight;
+    private Context context;
     private int position;
+
+    private boolean boo=true;
 
     public SimpleAdapter(List<ShareBean> list, Context context) {
         this.list = list;
@@ -31,7 +36,26 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
     public void onBindViewHolder(SimpleAdapterViewHolder holder, int position, boolean isItem) {
         ShareBean person = list.get(position);
         holder.tv_share_title.setText(person.getArcTitle());
-        holder.tv_share_content.setText(person.getShareContent());
+        /*holder.iv_like_btn ;
+        holder.iv_comment_btn ;
+        holder.tv_like_btn .setText(person.getArcTitle());
+        holder.tv_comment_btn.setText(person.getArcTitle());*/
+        if (boo){
+            UserBean user=person.getUserId();
+//            holder.tv_share_content.setText(person.getShareContent());
+           /* Picasso.with(context).load(HttpUtils.IMAGE_RUL+user.getUserPortraitUrl())
+                    .into(holder.iv_share_icon);
+            holder.tv_share_user_Name.setText(user.getNickname());*/
+            //holder.tv_goods_share
+            /*holder.gv_share_img
+                    holder.iv_share_btn
+            holder.tv_share_btn*/
+
+        }else {
+          //  holder.tv_time.setText(person.getSendDate());
+            //holder.iv_share_img
+        }
+
         ViewGroup.LayoutParams layoutParams = holder.itemView.getLayoutParams();
 
     }
@@ -61,13 +85,15 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
     public SimpleAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType, boolean isItem) {
         View v;
         if (position < 3) {
-            v = LayoutInflater.from(parent.getContext()).inflate(
+             v = LayoutInflater.from(parent.getContext()).inflate(
                     R.layout.view_list_itme_share_rl, parent, false);
+           // boo=false;
         } else {
-            v = LayoutInflater.from(parent.getContext()).inflate(
+             v = LayoutInflater.from(parent.getContext()).inflate(
                     R.layout.view_list_itme_share, parent, false);
+            boo=true;
         }
-        SimpleAdapterViewHolder vh = new SimpleAdapterViewHolder(v, isItem);
+        SimpleAdapterViewHolder vh=new SimpleAdapterViewHolder(v, boo);
         return vh;
     }
 
@@ -89,52 +115,37 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
         TextView tv_goods_share;
         TextView tv_share_title;
         TextView tv_share_content;
-        ImageView iv_share_img;
+        GridView gv_share_img;
+
         ImageView iv_share_btn;
         ImageView iv_like_btn;
         ImageView iv_comment_btn;
+        TextView tv_share_btn;
+        TextView tv_like_btn;
+        TextView tv_comment_btn;
+        TextView tv_time;
+        ImageView iv_share_img;
 
         public SimpleAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
+
+            tv_share_title = (TextView) itemView.findViewById(R.id.tv_share_title);
+            iv_like_btn = (ImageView) itemView.findViewById(R.id.iv_like_btn);
+            iv_comment_btn = (ImageView) itemView.findViewById(R.id.iv_comment_btn);
+            tv_like_btn = (TextView) itemView.findViewById(R.id.tv_like_btn);
+            tv_comment_btn = (TextView) itemView.findViewById(R.id.tv_comment_btn);
             if (isItem) {
+                tv_share_content = (TextView) itemView.findViewById(R.id.tv_share_content);
                 iv_share_icon = (ImageView) itemView.findViewById(R.id.iv_share_icon);
                 tv_share_user_Name = (TextView) itemView.findViewById(R.id.tv_share_user_Name);
                 tv_goods_share = (TextView) itemView.findViewById(R.id.tv_goods_share);
-                tv_share_title = (TextView) itemView.findViewById(R.id.tv_share_title);
-                tv_share_content = (TextView) itemView.findViewById(R.id.tv_share_content);
-                iv_share_img = (ImageView) itemView.findViewById(R.id.iv_share_img);
-                iv_share_btn = (ImageView) itemView.findViewById(R.id.iv_share_btn);
-                iv_like_btn = (ImageView) itemView.findViewById(R.id.iv_like_btn);
-                iv_comment_btn = (ImageView) itemView.findViewById(R.id.iv_comment_btn);
-
-            }
-
-        }
-    }
-
-    public class SimpleAdapterViewHolderBN extends RecyclerView.ViewHolder {
-        ImageView iv_share_icon;
-        TextView tv_share_user_Name;
-        TextView tv_goods_share;
-        TextView tv_share_title;
-        TextView tv_share_content;
-        ImageView iv_share_img;
-        ImageView iv_share_btn;
-        ImageView iv_like_btn;
-        GridView gv_share_img;
-
-        public SimpleAdapterViewHolderBN(View itemView, boolean isItem) {
-            super(itemView);
-            if (isItem) {
-                iv_share_icon = (ImageView) itemView.findViewById(R.id.iv_share_icon);
-                tv_share_user_Name = (TextView) itemView.findViewById(R.id.tv_share_user_Name);
-                tv_goods_share = (TextView) itemView.findViewById(R.id.tv_goods_share);
-                tv_share_title = (TextView) itemView.findViewById(R.id.tv_share_title);
-                tv_share_content = (TextView) itemView.findViewById(R.id.tv_share_content);
-                iv_share_img = (ImageView) itemView.findViewById(R.id.iv_share_img);
-                iv_share_btn = (ImageView) itemView.findViewById(R.id.iv_share_btn);
-                iv_like_btn = (ImageView) itemView.findViewById(R.id.iv_like_btn);
                 gv_share_img = (GridView) itemView.findViewById(R.id.gv_share_img);
+                iv_share_btn = (ImageView) itemView.findViewById(R.id.iv_share_btn);
+                tv_share_btn = (TextView) itemView.findViewById(R.id.tv_share_btn);
+            }else {
+
+                tv_time = (TextView) itemView.findViewById(R.id.tv_time);
+                iv_share_img= (ImageView) itemView.findViewById(R.id.iv_share_img);
             }
 
         }
@@ -142,27 +153,26 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
 
     public class SimpleAdapterViewHolderRL extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.tv_share_title)
         TextView tv_share_title;
-        @BindView(R.id.tv_share_content)
         TextView tv_share_content;
-        @BindView(R.id.iv_share_btn)
         ImageView iv_share_btn;
-        @BindView(R.id.iv_like_btn)
         ImageView iv_like_btn;
-        @BindView(R.id.tv_like_btn)
         TextView tv_like_btn;
-        @BindView(R.id.iv_comment_btn)
         ImageView iv_comment_btn;
-        @BindView(R.id.tv_comment)
-        TextView tv_comment;
-        @BindView(R.id.tv_time)
+        TextView tv_comment_btn;
         TextView tv_time;
 
         public SimpleAdapterViewHolderRL(View itemView, boolean isItem) {
             super(itemView);
             if (isItem) {
-                ButterKnife.bind(this, itemView);
+
+                tv_share_title = (TextView) itemView.findViewById(R.id.tv_share_title);
+                tv_share_content = (TextView) itemView.findViewById(R.id.tv_share_content);
+                iv_share_btn = (ImageView) itemView.findViewById(R.id.iv_share_btn);
+                iv_like_btn = (ImageView) itemView.findViewById(R.id.iv_like_btn);
+                iv_comment_btn = (ImageView) itemView.findViewById(R.id.iv_comment_btn);
+                tv_comment_btn = (TextView) itemView.findViewById(R.id.tv_comment_btn);
+                tv_time = (TextView) itemView.findViewById(R.id.tv_time);
             }
 
         }

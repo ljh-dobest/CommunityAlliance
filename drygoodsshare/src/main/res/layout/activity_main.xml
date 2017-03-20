@@ -19,7 +19,7 @@
                 android:id="@+id/recycler_view_test_rv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/white"
+                android:background="@color/aam_item_border"
                 android:scrollbars="vertical" />
         </com.andview.refreshview.XRefreshView>
 

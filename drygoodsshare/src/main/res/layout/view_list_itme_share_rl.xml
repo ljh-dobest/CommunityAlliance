@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/lv_foot_ml_10"
     android:orientation="vertical"
+    android:background="@android:color/white"
     android:padding="@dimen/lv_foot_ml_10">
 
     <LinearLayout
@@ -26,18 +27,11 @@
                 android:textColor="@color/color_33"
                 android:textSize="@dimen/font_20" />
 
-            <TextView
-                android:id="@+id/tv_share_content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:maxLength="5"
-                android:text="fdsafewffsadfsafasffsdafawesdfsadfsdfassdfsdf"
-                android:textColor="@color/color_99"
-                android:textSize="@dimen/font_18" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -64,7 +58,7 @@
                     android:src="@mipmap/img_comment_btn" />
 
                 <TextView
-                    android:id="@+id/tv_comment"
+                    android:id="@+id/tv_comment_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/lv_dividerHeight"
