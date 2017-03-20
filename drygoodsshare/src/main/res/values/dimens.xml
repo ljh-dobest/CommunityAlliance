@@ -17,7 +17,7 @@
     <dimen name="lv_dividerHeight">5dp</dimen>
     <dimen name="lv_foot_ml_10">10dp</dimen>
     <dimen name="lv_foot_iv_30">30dp</dimen>
-    <dimen name="lv_foot_ml_50">40dp</dimen>
+    <dimen name="lv_foot_ml_50">50dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
 

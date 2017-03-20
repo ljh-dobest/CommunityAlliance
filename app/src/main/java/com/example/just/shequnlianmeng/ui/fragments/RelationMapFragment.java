@@ -52,7 +52,7 @@ public class RelationMapFragment extends BaseMvpFragment<IRelationMapView, Relat
     private void initDate(){
 
         Map<String, String> formData=new HashMap<String, String>(0);
-        formData.put("userId","111");
+        formData.put("userId","1113");
         presenter.postRelationMapData(formData);
     }
 
