@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginTop="1dp"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -61,7 +63,7 @@
             android:textSize="@dimen/font_16" />
 
         <TextView
-            android:id="@+id/tv_goods_share"
+            android:id="@+id/tv_comment_time"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"

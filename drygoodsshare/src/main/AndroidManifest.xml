@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.MinShareActivity"/>
+        <activity android:name=".ui.activity.CommentMessageActivity"/>
+        <activity android:name=".ui.activity.FeedForCommentActivity"/>
+        <activity android:name=".ui.activity.ReadShareActivity"/>
+
     </application>
 
 </manifest>

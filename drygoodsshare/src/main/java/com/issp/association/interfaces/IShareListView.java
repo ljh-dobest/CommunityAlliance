@@ -7,7 +7,7 @@ import com.issp.association.bean.ShareBean;
 import java.util.ArrayList;
 
 /**
- * Created by Min on 2017/3/9.
+ *Created by T-BayMax on 2017/3/13.
  */
 
 public interface IShareListView extends BaseView {

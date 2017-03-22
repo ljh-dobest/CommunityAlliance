@@ -3,10 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/lv_foot_ml_10"
+    android:background="@android:color/white"
     android:padding="@dimen/lv_foot_ml_10">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_share_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -16,19 +18,19 @@
         app:srcCompat="@mipmap/header" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_share_user_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/lv_foot_ml_10"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/iv_share_icon"
+        android:layout_toRightOf="@+id/iv_share_icon"
         android:text="用户名"
         android:textColor="@color/color_33"
         android:textSize="@dimen/font_18" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_like_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -40,7 +42,7 @@
         android:textSize="@dimen/font_18" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/iv_like_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -52,25 +54,25 @@
         android:src="@mipmap/img_like_btn_no" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/tv_share_user_Name"
         android:layout_marginTop="@dimen/lv_dividerHeight"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/iv_share_icon"
+        android:layout_toRightOf="@+id/iv_share_icon"
         android:text="评论内容"
         android:textColor="@color/color_66"
         android:textSize="@dimen/font_16" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tv_share_comment_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/iv_share_icon"
         android:layout_marginTop="@dimen/lv_dividerHeight"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/iv_share_icon"
+        android:layout_toRightOf="@+id/iv_share_icon"
         android:text="2017.03.19 14:05"
         android:textColor="@color/color_99"
         android:textSize="@dimen/font_16" />

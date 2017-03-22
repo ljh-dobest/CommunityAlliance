@@ -20,6 +20,7 @@ import com.issp.association.base.view.BaseMvpActivity;
 import com.issp.association.bean.ShareBean;
 import com.issp.association.interfaces.IShareListView;
 import com.issp.association.presenters.ShareInfoPresenter;
+import com.issp.association.ui.activity.CommentMessageActivity;
 import com.issp.association.ui.activity.MinShareActivity;
 import com.issp.association.utils.DisplayUtils;
 import com.issp.association.view.BannerViewPager;
@@ -47,6 +48,8 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
     @BindView(R.id.lt_main_title_right)
     TextView lt_main_title_right;
     RecyclerView recyclerView;
+
+    private View headerView;
 
     SimpleAdapter adapter;
     List<ShareBean> personList = new ArrayList<ShareBean>();
@@ -148,7 +151,6 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
         }
     }
 
-    private View headerView;
 
     private void initViewPager() {
         IndexPageAdapter pageAdapter = new IndexPageAdapter(this, mImageIds);
@@ -176,11 +178,21 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
             mPopupWindow.setOutsideTouchable(true);
             TextView tv_information = (TextView) popwindow_more.findViewById(R.id.tv_information);
             TextView tv_my_share = (TextView) popwindow_more.findViewById(R.id.tv_my_share);
+
+            tv_information.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent=new Intent(MainActivity.this, CommentMessageActivity.class);
+                    startActivity(intent);
+                    mPopupWindow.dismiss();
+                }
+            });
             tv_my_share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent=new Intent(MainActivity.this, MinShareActivity.class);
                     startActivity(intent);
+                    mPopupWindow.dismiss();
                 }
             });
         }

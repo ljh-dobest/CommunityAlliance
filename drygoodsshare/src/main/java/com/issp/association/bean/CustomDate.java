@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  *
  * 时间类
- * Created by Min on 2016/12/7.
+ *Created by T-BayMax on 2017/3/13.
  */
 
 public class CustomDate implements Serializable {
