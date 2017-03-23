@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="gray">#aaaaaa</color>
+    <color name="green">#73ec71</color>
+    <color name="color_99">#999999</color>
+    <color name="color_66">#666666</color>
+    <color name="color_33">#333333</color>
+    <color name="aam_item_border">#ebebeb</color>
+
+    <color name="nsdk_color_version">#ff3235</color>
+    <color name="nsdk_color_suspend">#FF0FDAA8</color>
+    <color name="nsdk_color_error">#ffe6b317</color>
+</resources>

@@ -1,6 +1,8 @@
 package com.issp.association;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.widget.GridLayoutManager;
@@ -20,6 +22,7 @@ import com.issp.association.base.view.BaseMvpActivity;
 import com.issp.association.bean.ShareBean;
 import com.issp.association.interfaces.IShareListView;
 import com.issp.association.presenters.ShareInfoPresenter;
+import com.issp.association.ui.activity.CommentMessageActivity;
 import com.issp.association.ui.activity.MinShareActivity;
 import com.issp.association.utils.DisplayUtils;
 import com.issp.association.view.BannerViewPager;
@@ -46,11 +49,15 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
     TextView lt_main_title;
     @BindView(R.id.lt_main_title_right)
     TextView lt_main_title_right;
+    @BindView(R.id.recycler_view_test_rv)
     RecyclerView recyclerView;
+    @BindView(R.id.xrefreshview)
+    XRefreshView xRefreshView;
+
+    private View headerView;
 
     SimpleAdapter adapter;
     List<ShareBean> personList = new ArrayList<ShareBean>();
-    XRefreshView xRefreshView;
     GridLayoutManager layoutManager;
     private int mLoadCount = 0;
 
@@ -64,9 +71,7 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
         initView();
     }
     private void initView(){
-        xRefreshView = (XRefreshView) findViewById(R.id.xrefreshview);
         xRefreshView.setPullLoadEnable(true);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_test_rv);
         recyclerView.setHasFixedSize(true);
 
         initData();
@@ -148,7 +153,6 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
         }
     }
 
-    private View headerView;
 
     private void initViewPager() {
         IndexPageAdapter pageAdapter = new IndexPageAdapter(this, mImageIds);
@@ -172,15 +176,27 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
             View popwindow_more = mLayoutInflater.inflate(
                     R.layout.popwindow_more, null);
             mPopupWindow = new PopupWindow(popwindow_more, WidthPixels / 3, ViewGroup.LayoutParams.WRAP_CONTENT, true);
-            mPopupWindow.showAsDropDown(lt_main_title_right, -width, 0);
+            mPopupWindow.setTouchable(true);
             mPopupWindow.setOutsideTouchable(true);
+            mPopupWindow.setBackgroundDrawable(new BitmapDrawable(getResources(), (Bitmap) null));
+            mPopupWindow.showAsDropDown(lt_main_title_right, -width, 0);
             TextView tv_information = (TextView) popwindow_more.findViewById(R.id.tv_information);
             TextView tv_my_share = (TextView) popwindow_more.findViewById(R.id.tv_my_share);
+
+            tv_information.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent=new Intent(MainActivity.this, CommentMessageActivity.class);
+                    startActivity(intent);
+                    mPopupWindow.dismiss();
+                }
+            });
             tv_my_share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent=new Intent(MainActivity.this, MinShareActivity.class);
                     startActivity(intent);
+                    mPopupWindow.dismiss();
                 }
             });
         }

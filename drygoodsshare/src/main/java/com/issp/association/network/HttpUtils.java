@@ -18,7 +18,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
 
 /**
- * Created by T-BayMax on 2016/8/30.
+ *Created by T-BayMax on 2017/3/13.
  */
 public class HttpUtils {
      public static final String URL = "http://192.168.0.212:90/appapi/app";

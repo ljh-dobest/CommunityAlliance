@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">crowdfunding</string>
+
+    <string name="str_crowd_funding_title">标题</string>
+    <string name="str_add_crowd_funding">发表\n众筹</string>
+    <string name="str_information">消息</string>
+    <string name="str_my_product_collect">我的众筹</string>
+</resources>

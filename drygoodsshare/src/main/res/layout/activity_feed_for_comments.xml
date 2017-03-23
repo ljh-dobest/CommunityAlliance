@@ -80,7 +80,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_above="@id/editText"
-        android:background="#fff">
+        android:background="@color/aam_item_border">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view_test_rv"

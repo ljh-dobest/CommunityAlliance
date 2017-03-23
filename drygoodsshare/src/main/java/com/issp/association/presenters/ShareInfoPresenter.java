@@ -9,7 +9,7 @@ import com.issp.association.model.ShareInfoModel;
 import java.util.ArrayList;
 
 /**
- * Created by Min on 2017/3/9.
+ *Created by T-BayMax on 2017/3/13.
  */
 
 public class ShareInfoPresenter extends BasePersenter<IShareListView> implements OnShareListener {

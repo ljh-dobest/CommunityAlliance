@@ -5,12 +5,12 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/lv_foot_ml_10"
     android:orientation="vertical"
-    android:background="@android:color/white"
-    android:padding="@dimen/lv_foot_ml_10">
+    android:background="@android:color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/lv_foot_ml_10"
         android:orientation="horizontal">
 
         <LinearLayout

@@ -15,7 +15,7 @@ import java.util.List;
 import okhttp3.Call;
 
 /**
- * Created by Min on 2017/3/9.
+ *Created by T-BayMax on 2017/3/13.
  */
 
 public class ShareInfoModel {

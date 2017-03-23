@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
     <LinearLayout
         android:id="@+id/ll_relation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_margin="@dimen/lv_foot_ml_10"
+        android:background="@android:color/white"
+        android:padding="@dimen/lv_foot_ml_10"
         android:orientation="horizontal">
 
         <TextView
@@ -37,7 +39,7 @@
                 android:gravity="center"
                 android:button="@null"
                 android:textSize="@dimen/font_18"
-                android:text="人脉关系" />
+                android:text="我的干货" />
 
             <RadioButton
                 android:id="@+id/rb_relation_map"
@@ -47,7 +49,7 @@
                 android:gravity="center"
                 android:button="@null"
                 android:textSize="@dimen/font_18"
-                android:text="关系图谱" />
+                android:text="收藏干货" />
 
 
         </com.issp.association.view.ShareRadioGroup>
@@ -58,17 +60,26 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/font_20"/>
     </LinearLayout>
-
+<!--
     <View
         android:id="@+id/main_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/lv_foot_ml_10"
         android:layout_below="@id/ll_relation"
-        android:background="@color/aam_item_border" />
+        android:background="@color/aam_item_border" />-->
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/relation_vp"
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/xrefreshview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/main_view"/>
-</RelativeLayout>
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_test_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aam_item_border"
+            android:scrollbars="vertical" />
+    </com.andview.refreshview.XRefreshView>
+</LinearLayout>

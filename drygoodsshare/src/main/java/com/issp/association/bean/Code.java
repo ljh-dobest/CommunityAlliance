@@ -1,7 +1,7 @@
 package com.issp.association.bean;
 
 /**
- * Created by Min on 2016/11/28.
+ *Created by T-BayMax on 2017/3/13.
  */
 
 public class Code<T> {
