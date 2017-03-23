@@ -1,7 +1,7 @@
 package com.issp.association.crowdfunding.presenters;
 
 import com.issp.association.crowdfunding.base.presenter.BasePersenter;
-import com.issp.association.crowdfunding.bean.ProductCollect;
+import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.interfaces.IProductCollectListView;
 import com.issp.association.crowdfunding.listeners.OnProductCollectListener;
 import com.issp.association.crowdfunding.model.ProductCollectModel;
@@ -24,7 +24,7 @@ public class ProductCollectPresenter extends BasePersenter<IProductCollectListVi
     }
 
     @Override
-    public void getProductCollectInfo(ArrayList<ProductCollect> data) {
+    public void getProductCollectInfo(ArrayList<ProductCollectBean> data) {
         mView.setProductCollectData(data);
     }
 

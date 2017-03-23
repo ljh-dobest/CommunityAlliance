@@ -7,7 +7,7 @@ import java.io.Serializable;
  * Created by T-BayMax on 2017/3/21.
  */
 
-public class ProductCollect implements Serializable {
+public class ProductCollectBean implements Serializable {
     private String id;	//众筹id
     private UserBean userId;		//众筹申请用户
     private String userName;	//众筹用户姓名

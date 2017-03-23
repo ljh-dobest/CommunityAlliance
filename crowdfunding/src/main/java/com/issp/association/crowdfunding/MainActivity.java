@@ -1,11 +1,13 @@
 package com.issp.association.crowdfunding;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,10 +18,13 @@ import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.XRefreshViewFooter;
 import com.issp.association.crowdfunding.adapter.IndexPageAdapter;
 import com.issp.association.crowdfunding.adapter.SimpleAdapter;
+import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
-import com.issp.association.crowdfunding.bean.ProductCollect;
+import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.interfaces.IProductCollectListView;
 import com.issp.association.crowdfunding.presenters.ProductCollectPresenter;
+import com.issp.association.crowdfunding.ui.activity.MessageActivity;
+import com.issp.association.crowdfunding.ui.activity.MinProductActivity;
 import com.issp.association.crowdfunding.utils.DisplayUtils;
 import com.issp.association.crowdfunding.view.BannerViewPager;
 import com.issp.association.crowdfunding.view.CustomGifHeader;
@@ -42,13 +47,15 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
     TextView lt_main_title;
     @BindView(R.id.lt_main_title_right)
     TextView lt_main_title_right;
+    @BindView(R.id.recycler_view_test_rv)
     RecyclerView recyclerView;
+    @BindView(R.id.xrefreshview)
+    XRefreshView xRefreshView;
 
     private View headerView;
 
     SimpleAdapter adapter;
-    List<ProductCollect> personList = new ArrayList<ProductCollect>();
-    XRefreshView xRefreshView;
+    List<ProductCollectBean> personList = new ArrayList<ProductCollectBean>();
     GridLayoutManager layoutManager;
     private int mLoadCount = 0;
 
@@ -60,6 +67,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         initView();
+        initClick();
     }
 
     @Override
@@ -68,9 +76,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
     }
 
     private void initView(){
-        xRefreshView = (XRefreshView) findViewById(R.id.xrefreshview);
         xRefreshView.setPullLoadEnable(true);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_test_rv);
         recyclerView.setHasFixedSize(true);
 
         initData();
@@ -129,7 +135,10 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
                 new Handler().postDelayed(new Runnable() {
                     public void run() {
                         for (int i = 0; i < 6; i++) {
-                            adapter.insert(new ProductCollect(),
+                            ProductCollectBean person = new ProductCollectBean();
+                            person.setTitle("标题"+i);
+                            person.setContent("内容"+i);
+                            adapter.insert(person,
                                     adapter.getAdapterItemCount());
                         }
                         mLoadCount++;
@@ -147,9 +156,19 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
 
     private void initData() {
         for (int i = 0; i < 3; i++) {
-            ProductCollect person = new ProductCollect();
+            ProductCollectBean person = new ProductCollectBean();
+            person.setTitle("标题"+i);
+            person.setContent("内容"+i);
             personList.add(person);
         }
+    }
+    private void initClick(){
+        adapter.setOnItemClickListener(new BaseRecyclerViewAdapter.OnRecyclerViewItemClickListener<ProductCollectBean>() {
+            @Override
+            public void onItemClick(View view, ProductCollectBean data) {
+                Log.e("","");
+            }
+        });
     }
 
     private void initViewPager() {
@@ -168,15 +187,17 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
             View popwindow_more = mLayoutInflater.inflate(
                     R.layout.popwindow_more, null);
             mPopupWindow = new PopupWindow(popwindow_more, WidthPixels / 3, ViewGroup.LayoutParams.WRAP_CONTENT, true);
-            mPopupWindow.showAsDropDown(lt_main_title_right, -width, 0);
+            mPopupWindow.setTouchable(true);
             mPopupWindow.setOutsideTouchable(true);
+            mPopupWindow.setBackgroundDrawable(new BitmapDrawable(getResources(), (Bitmap) null));
+            mPopupWindow.showAsDropDown(lt_main_title_right, -width, 0);
             TextView tv_information = (TextView) popwindow_more.findViewById(R.id.tv_information);
             TextView tv_my_share = (TextView) popwindow_more.findViewById(R.id.tv_my_share);
 
-          /*  tv_information.setOnClickListener(new View.OnClickListener() {
+            tv_information.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent=new Intent(MainActivity.this, CommentMessageActivity.class);
+                    Intent intent=new Intent(MainActivity.this, MessageActivity.class);
                     startActivity(intent);
                     mPopupWindow.dismiss();
                 }
@@ -184,11 +205,11 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
             tv_my_share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent=new Intent(MainActivity.this, MinShareActivity.class);
+                    Intent intent=new Intent(MainActivity.this, MinProductActivity.class);
                     startActivity(intent);
                     mPopupWindow.dismiss();
                 }
-            });*/
+            });
         }
     }
 
@@ -208,7 +229,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
     }
 
     @Override
-    public void setProductCollectData(ArrayList<ProductCollect> data) {
+    public void setProductCollectData(ArrayList<ProductCollectBean> data) {
 
     }
 }

@@ -1,4 +1,4 @@
-package com.issp.association.adapter;
+package com.issp.association.crowdfunding.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,10 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
-import com.issp.association.R;
-import com.issp.association.bean.ShareCommentBean;
-import com.issp.association.network.HttpUtils;
-import com.squareup.picasso.Picasso;
+import com.issp.association.crowdfunding.R;
+import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
+import com.issp.association.crowdfunding.bean.ProductCommentBean;
 
 import java.util.List;
 
@@ -24,13 +23,13 @@ import butterknife.ButterKnife;
  * Created by T-BayMax on 2017/3/20.
  */
 
-public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommentListAdapter.ShareCommentListAdapterViewHolder> {
+public class ProductCommentListAdapter extends BaseRecyclerViewAdapter<ProductCommentListAdapter.ShareCommentListAdapterViewHolder,ProductCommentBean> {
 
-    private List<ShareCommentBean> list;
+    private List<ProductCommentBean> list;
     private Context context;
     private int position;
 
-    public FeedForCommentListAdapter(List<ShareCommentBean> list, Context context) {
+    public ProductCommentListAdapter(List<ProductCommentBean> list, Context context) {
         this.list = list;
     }
 
@@ -38,6 +37,8 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
     public void onBindViewHolder(ShareCommentListAdapterViewHolder holder, int position, boolean isItem) {
        /*if(isItem){
        ShareCommentBean bean = list.get(position);
+
+            holder.itemView.setTag(bean);
         Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserId().getUserPortraitUrl())
                 .into(holder.ivShareIcon);
         holder.tvShareUserName.setText(bean.getUserId().getNickname());
@@ -64,7 +65,7 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
         return new ShareCommentListAdapterViewHolder(view, false);
     }
 
-    public void setData(List<ShareCommentBean> list) {
+    public void setData(List<ProductCommentBean> list) {
         this.list = list;
         notifyDataSetChanged();
     }
@@ -72,13 +73,13 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
     @Override
     public ShareCommentListAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType, boolean isItem) {
         View v = LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.view_list_itme_feed_for_comment, parent, false);
+                R.layout.view_list_itme_prduct_comment, parent, false);
 
         ShareCommentListAdapterViewHolder vh = new ShareCommentListAdapterViewHolder(v, isItem);
         return vh;
     }
 
-    public void insert(ShareCommentBean person, int position) {
+    public void insert(ProductCommentBean person, int position) {
         insert(list, person, position);
     }
 
@@ -107,12 +108,14 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
 
         public ShareCommentListAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
-            if (isItem)
-                ButterKnife.bind(this,itemView);
+            if (isItem) {
+                ButterKnife.bind(this, itemView);
+                itemView.setOnClickListener(ProductCommentListAdapter.this);
+            }
         }
     }
 
-    public ShareCommentBean getItem(int position) {
+    public ProductCommentBean getItem(int position) {
         if (position < list.size())
             return list.get(position);
         else

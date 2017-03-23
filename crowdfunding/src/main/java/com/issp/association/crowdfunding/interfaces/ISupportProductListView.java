@@ -8,10 +8,10 @@ import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import java.util.ArrayList;
 
 /**
- * 产品众筹列表
+ * 支持TA
  *Created by T-BayMax on 2017/3/13.
  */
 
-public interface IProductCollectListView extends BaseView {
-    void setProductCollectData(ArrayList<ProductCollectBean> data);
+public interface ISupportProductListView extends BaseView {
+    void setSupportProductData(ArrayList<ProductCollectBean> data);
 }

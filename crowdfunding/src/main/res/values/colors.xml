@@ -11,4 +11,8 @@
     <color name="color_66">#666666</color>
     <color name="color_33">#333333</color>
     <color name="aam_item_border">#ebebeb</color>
+
+    <color name="nsdk_color_version">#ff3235</color>
+    <color name="nsdk_color_suspend">#FF0FDAA8</color>
+    <color name="nsdk_color_error">#ffe6b317</color>
 </resources>

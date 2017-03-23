@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 25
@@ -21,10 +20,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    allprojects {
+        repositories {
+            mavenCentral()
+        }
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -34,8 +38,8 @@ dependencies {
     compile 'com.android.support:palette-v7:25.1.0'
     compile 'com.android.support:support-vector-drawable:25.1.0'
     compile 'com.android.support.constraint:constraint-layout:+'
-    compile 'com.jakewharton:butterknife:8.4.0'
-    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    /*compile 'com.jakewharton:butterknife:8.5.1'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'*/
     testCompile 'junit:junit:4.12'
     //compile 'com.miomin:shswiperefreshlayout:1.2.0'
     compile 'com.android.support:recyclerview-v7:25.2.0'
@@ -46,4 +50,6 @@ dependencies {
     compile 'com.contrarywind:Android-PickerView:3.0.7'
     compile 'com.zhy:autolayout:1.4.5'
     compile 'com.huxq17.xrefreshview:xrefreshview:3.6.2'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.jakewharton:butterknife-compiler:8.5.1'
 }

@@ -37,6 +37,7 @@
             android:background="@mipmap/add_association"
             android:text="@string/str_add_crowd_funding"
             android:textColor="@android:color/white"
+            android:paddingBottom="@dimen/border_10"
             android:textSize="@dimen/font_18"/>
     </RelativeLayout>
 

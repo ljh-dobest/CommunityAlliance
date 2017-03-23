@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_release_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/border_10"
+        android:layout_marginStart="@dimen/border_10"
+        android:layout_marginTop="@dimen/border_10"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_inform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/border_10"
+        android:layout_marginRight="@dimen/border_10"
+        android:layout_marginTop="@dimen/border_10"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tv_back_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/back"
+            android:gravity="center"
+            android:padding="@dimen/border_10"
+            android:textColor="@color/nsdk_color_suspend"
+            android:textSize="@dimen/font_16"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="返回" />
+        <TextView
+            android:id="@+id/tv_check_indent"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/border_14"
+            android:background="@color/aam_item_border"
+            android:text="已支付\n查看订单" />
+
+
+        <ImageView
+            android:id="@+id/iv_share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/border_20"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_comment_btn"
+            android:layout_toLeftOf="@+id/tv_check_indent"
+            android:layout_toStartOf="@+id/tv_check_indent" />
+
+        <ImageView
+            android:id="@+id/iv_like_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_share_btn"
+            android:layout_toStartOf="@+id/iv_share_btn"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_like_btn"
+            android:layout_marginRight="@dimen/border_20"
+            android:layout_marginEnd="@dimen/border_20" />
+
+        <ImageView
+            android:id="@+id/iv_comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/border_20"
+            android:layout_marginEnd="@dimen/border_20"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_share_btn"
+            android:layout_toLeftOf="@+id/iv_like_btn"
+            android:layout_toStartOf="@+id/iv_like_btn" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/aam_item_border"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_release_time"
+        android:layout_above="@id/textView16"
+        android:layout_margin="@dimen/border_10"
+        android:text="TextView" />
+
+</RelativeLayout>

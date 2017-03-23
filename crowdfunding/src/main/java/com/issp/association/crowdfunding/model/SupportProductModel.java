@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.issp.association.crowdfunding.bean.Code;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
-import com.issp.association.crowdfunding.listeners.OnProductCollectListener;
+import com.issp.association.crowdfunding.listeners.OnSupportProductListener;
 import com.issp.association.crowdfunding.network.HttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
@@ -15,11 +15,11 @@ import java.util.List;
 import okhttp3.Call;
 
 /**
- *Created by T-BayMax on 2017/3/13.
+ *Created by T-BayMax on 2017/3/20.
  */
 
-public class ProductCollectModel {
-    public void getProductCollectInfo(String userId, final OnProductCollectListener listener){
+public class SupportProductModel {
+    public void getSupportProductInfo(String userId, final OnSupportProductListener listener){
         if(userId==null){
             return;
         }

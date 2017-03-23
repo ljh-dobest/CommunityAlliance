@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
 
 /**
  * 消息列表item
- *
+ * <p>
  * Created by T-BayMax on 2017/3/16.
  */
 
@@ -37,13 +37,15 @@ public class ShareCommentListAdapter extends BaseRecyclerAdapter<ShareCommentLis
 
     @Override
     public void onBindViewHolder(ShareCommentListAdapterViewHolder holder, int position, boolean isItem) {
-      /*  ShareCommentBean bean = list.get(position);
+       /* if (isItem){
+        ShareCommentBean bean = list.get(position);
         Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserId().getUserPortraitUrl())
                 .into(holder.ivShareIcon);
         holder.tvShareUserName.setText(bean.getUserId().getNickname());
         holder.tvOperation.setText(bean.getContent());
         holder.tvShareTitle.setText(bean.getShareId().getArcTitle());
         holder.tvCommentTime.setText(bean.getCommentTime());
+        }
 */
 
     }
@@ -105,7 +107,8 @@ public class ShareCommentListAdapter extends BaseRecyclerAdapter<ShareCommentLis
 
         public ShareCommentListAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
-            ButterKnife.bind(itemView);
+            if (isItem)
+                ButterKnife.bind(this, itemView);
 
         }
     }

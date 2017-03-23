@@ -1,6 +1,8 @@
 package com.issp.association;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.widget.GridLayoutManager;
@@ -47,13 +49,15 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
     TextView lt_main_title;
     @BindView(R.id.lt_main_title_right)
     TextView lt_main_title_right;
+    @BindView(R.id.recycler_view_test_rv)
     RecyclerView recyclerView;
+    @BindView(R.id.xrefreshview)
+    XRefreshView xRefreshView;
 
     private View headerView;
 
     SimpleAdapter adapter;
     List<ShareBean> personList = new ArrayList<ShareBean>();
-    XRefreshView xRefreshView;
     GridLayoutManager layoutManager;
     private int mLoadCount = 0;
 
@@ -67,9 +71,7 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
         initView();
     }
     private void initView(){
-        xRefreshView = (XRefreshView) findViewById(R.id.xrefreshview);
         xRefreshView.setPullLoadEnable(true);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_test_rv);
         recyclerView.setHasFixedSize(true);
 
         initData();
@@ -174,8 +176,10 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
             View popwindow_more = mLayoutInflater.inflate(
                     R.layout.popwindow_more, null);
             mPopupWindow = new PopupWindow(popwindow_more, WidthPixels / 3, ViewGroup.LayoutParams.WRAP_CONTENT, true);
-            mPopupWindow.showAsDropDown(lt_main_title_right, -width, 0);
+            mPopupWindow.setTouchable(true);
             mPopupWindow.setOutsideTouchable(true);
+            mPopupWindow.setBackgroundDrawable(new BitmapDrawable(getResources(), (Bitmap) null));
+            mPopupWindow.showAsDropDown(lt_main_title_right, -width, 0);
             TextView tv_information = (TextView) popwindow_more.findViewById(R.id.tv_information);
             TextView tv_my_share = (TextView) popwindow_more.findViewById(R.id.tv_my_share);
 

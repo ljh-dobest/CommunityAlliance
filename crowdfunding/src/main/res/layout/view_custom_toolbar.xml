@@ -7,6 +7,7 @@
     android:fitsSystemWindows="true"
     app:contentInsetLeft="0dp"
     app:contentInsetStart="0dp"
+    android:padding="@dimen/border_10"
     app:popupTheme="@style/AppTheme">
 
     <TextView
@@ -16,6 +17,7 @@
         android:layout_marginLeft="@dimen/border_10"
         android:drawableLeft="@mipmap/back"
         android:gravity="center"
+        android:padding="@dimen/border_4"
         android:textColor="@android:color/black"
         android:textSize="@dimen/font_16"
         android:visibility="visible" />

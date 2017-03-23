@@ -1,4 +1,4 @@
-package com.issp.association.adapter;
+package com.issp.association.crowdfunding.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,10 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
-import com.issp.association.R;
-import com.issp.association.bean.ShareCommentBean;
-import com.issp.association.network.HttpUtils;
-import com.squareup.picasso.Picasso;
+import com.issp.association.crowdfunding.R;
+import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
+import com.issp.association.crowdfunding.bean.MessageBean;
 
 import java.util.List;
 
@@ -20,32 +19,33 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * 分享评论列表item
- * Created by T-BayMax on 2017/3/20.
+ * 消息列表item
+ * <p>
+ * Created by T-BayMax on 2017/3/16.
  */
 
-public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommentListAdapter.ShareCommentListAdapterViewHolder> {
-
-    private List<ShareCommentBean> list;
+public class MessageListAdapter extends BaseRecyclerViewAdapter<MessageListAdapter.ShareCommentListAdapterViewHolder,MessageBean> {
+    private List<MessageBean> list;
     private Context context;
     private int position;
 
-    public FeedForCommentListAdapter(List<ShareCommentBean> list, Context context) {
+    public MessageListAdapter(List<MessageBean> list, Context context) {
         this.list = list;
     }
 
     @Override
     public void onBindViewHolder(ShareCommentListAdapterViewHolder holder, int position, boolean isItem) {
-       /*if(isItem){
-       ShareCommentBean bean = list.get(position);
+      /*  ShareCommentBean bean = list.get(position);
+
+            holder.itemView.setTag(bean);
         Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserId().getUserPortraitUrl())
                 .into(holder.ivShareIcon);
         holder.tvShareUserName.setText(bean.getUserId().getNickname());
-        holder.tvContent.setText(bean.getContent());
-        holder.tvLikeBtn.setText(bean.getShareId().getArcTitle());
-        holder.tvShareCommentTime.setText(bean.getCommentTime());
-        }
+        holder.tvOperation.setText(bean.getContent());
+        holder.tvShareTitle.setText(bean.getShareId().getArcTitle());
+        holder.tvCommentTime.setText(bean.getCommentTime());
 */
+
     }
 
     @Override
@@ -64,7 +64,7 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
         return new ShareCommentListAdapterViewHolder(view, false);
     }
 
-    public void setData(List<ShareCommentBean> list) {
+    public void setData(List<MessageBean> list) {
         this.list = list;
         notifyDataSetChanged();
     }
@@ -72,13 +72,13 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
     @Override
     public ShareCommentListAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType, boolean isItem) {
         View v = LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.view_list_itme_feed_for_comment, parent, false);
+                R.layout.view_list_itme_message, parent, false);
 
         ShareCommentListAdapterViewHolder vh = new ShareCommentListAdapterViewHolder(v, isItem);
         return vh;
     }
 
-    public void insert(ShareCommentBean person, int position) {
+    public void insert(MessageBean person, int position) {
         insert(list, person, position);
     }
 
@@ -96,23 +96,23 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
         ImageView ivShareIcon;
         @BindView(R.id.tv_share_user_Name)
         TextView tvShareUserName;
-        @BindView(R.id.tv_like_btn)
-        TextView tvLikeBtn;
-        @BindView(R.id.iv_like_btn)
-        ImageView ivLikeBtn;
-        @BindView(R.id.tv_content)
-        TextView tvContent;
-        @BindView(R.id.tv_share_comment_time)
-        TextView tvShareCommentTime;
+        @BindView(R.id.tv_operation)
+        TextView tvOperation;
+        @BindView(R.id.tv_share_title)
+        TextView tvShareTitle;
+        @BindView(R.id.tv_comment_time)
+        TextView tvCommentTime;
 
         public ShareCommentListAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
-            if (isItem)
-                ButterKnife.bind(this,itemView);
+            if (isItem) {
+                ButterKnife.bind(this, itemView);
+                itemView.setOnClickListener(MessageListAdapter.this);
+            }
         }
     }
 
-    public ShareCommentBean getItem(int position) {
+    public MessageBean getItem(int position) {
         if (position < list.size())
             return list.get(position);
         else
