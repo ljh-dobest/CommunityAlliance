@@ -1,0 +1,102 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
+application
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:5:5-24:19
+MERGED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\84f1198646a1a1bfaf50eb57f3c2bc69f48c6a95\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.1.0] C:\Users\Administrator\.android\build-cache\2a58f5f55a48eb720a971d4849655844f6697151\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:palette-v7:25.1.0] C:\Users\Administrator\.android\build-cache\909ceb3125ab00e7e78b5b10566375213f3eb9a8\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\2c57585b2e8047809ff038d9621dfe00caf793dc\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\0b0fa425f56776274ead40f0f75ef6f38d4d5f25\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Administrator\.android\build-cache\bf6377e13b2afeec8f5fb463f3a2b72dca016485\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Administrator\.android\build-cache\bd1cc97545457698cb568c75da1dab92752867ea\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Administrator\.android\build-cache\5598f7262245e35aa67eacac36f3035b198fa8e9\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Administrator\.android\build-cache\5c39d0aa0b3708fbbdf289f312a37249a0950fb1\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Administrator\.android\build-cache\b1c1092062b53c0309b839a6018be71681b844cd\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\847eadf38b0126f7c3f9cea6ea2af47325f5cf55\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\7cb0964ed65cfb34cfb290f340be6af5626d958a\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Administrator\.android\build-cache\c95cbaab7ec7cad976da13d2426baf8e79e5cb02\output\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:11:9-40
+activity#com.issp.association.MainActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:16:27-74
+activity#com.issp.association.ui.activity.MinShareActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:19:9-65
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:19:19-63
+activity#com.issp.association.ui.activity.CommentMessageActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:20:9-71
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:20:19-69
+activity#com.issp.association.ui.activity.FeedForCommentActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:21:9-71
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:21:19-69
+activity#com.issp.association.ui.activity.ReadShareActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:22:9-66
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml:22:19-64
+uses-sdk
+INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\84f1198646a1a1bfaf50eb57f3c2bc69f48c6a95\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:25.1.0] C:\Users\Administrator\.android\build-cache\2a58f5f55a48eb720a971d4849655844f6697151\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:25.1.0] C:\Users\Administrator\.android\build-cache\909ceb3125ab00e7e78b5b10566375213f3eb9a8\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\2c57585b2e8047809ff038d9621dfe00caf793dc\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.android\build-cache\47ae1336204a8a2883d281084a6341de35313e05\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\Administrator\.android\build-cache\072da06e4f8634b9e5abbc326e977988c2fbb94c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\Administrator\.android\build-cache\4f36a58ddf48c72643ea7ee0ba527854fddb99bc\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.youth.banner:banner:1.4.9] C:\Users\Administrator\.android\build-cache\cbf2c0f19cd3a36677ea0d2928257971329433d1\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.contrarywind:Android-PickerView:3.0.7] C:\Users\Administrator\.android\build-cache\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.zhy:autolayout:1.4.5] C:\Users\Administrator\.android\build-cache\09501a7d11c9327dae519b1aaad79d156c473653\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\0b0fa425f56776274ead40f0f75ef6f38d4d5f25\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Administrator\.android\build-cache\bf6377e13b2afeec8f5fb463f3a2b72dca016485\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Administrator\.android\build-cache\bd1cc97545457698cb568c75da1dab92752867ea\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Administrator\.android\build-cache\5598f7262245e35aa67eacac36f3035b198fa8e9\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Administrator\.android\build-cache\5c39d0aa0b3708fbbdf289f312a37249a0950fb1\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Administrator\.android\build-cache\b1c1092062b53c0309b839a6018be71681b844cd\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\847eadf38b0126f7c3f9cea6ea2af47325f5cf55\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\7cb0964ed65cfb34cfb290f340be6af5626d958a\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Administrator\.android\build-cache\c95cbaab7ec7cad976da13d2426baf8e79e5cb02\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.huxq17.xrefreshview:xrefreshview:3.6.2] C:\Users\Administrator\.android\build-cache\5b1c56a9d983afe3720d6c59b281f48d0566e317\output\AndroidManifest.xml:8:5-10:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\84f1198646a1a1bfaf50eb57f3c2bc69f48c6a95\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
+		INJECTED from F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\src\main\AndroidManifest.xml
