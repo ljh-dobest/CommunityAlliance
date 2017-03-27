@@ -16,8 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:padding="@dimen/border_10"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/border_20">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -30,8 +30,9 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="@dimen/border_10"
-                android:text="认筹总额：5080.00" />
+                android:layout_marginTop="@dimen/border_20"
+                android:text="认筹总额：5080.00"
+                android:textSize="@dimen/font_28" />
 
             <TextView
                 android:id="@+id/tv_amount_total"
@@ -40,8 +41,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignTop="@+id/tv_confess_total"
-                android:layout_marginRight="@dimen/border_10"
-                android:text="目标总额：15080.00" />
+                android:layout_marginRight="@dimen/border_20"
+                android:text="目标总额：15080.00"
+                android:textSize="@dimen/font_28" />
 
             <ProgressBar
                 android:id="@+id/pb_schedule"
@@ -51,7 +53,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/tv_confess_total"
-                android:layout_marginTop="@dimen/border_10"
+                android:layout_marginTop="@dimen/border_20"
                 android:background="@color/aam_item_border" />
 
             <TextView
@@ -60,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/pb_schedule"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/border_10"
+                android:layout_marginTop="@dimen/border_20"
                 android:text="45%" />
         </RelativeLayout>
 
@@ -80,22 +82,24 @@
                 android:id="@+id/tv_support_people_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/border_10"
-                android:text="122人已支持" />
+                android:layout_marginLeft="@dimen/border_20"
+                android:text="122人已支持"
+                android:textSize="@dimen/font_28" />
 
             <ImageView
                 android:id="@+id/iv_time_remaining"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/border_10"
+                android:layout_marginLeft="@dimen/border_20"
                 app:srcCompat="@mipmap/ic_launcher_round" />
 
             <TextView
                 android:id="@+id/tv_time_remaining"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/border_10"
-                android:text="剩余22天" />
+                android:layout_marginLeft="@dimen/border_20"
+                android:text="剩余22天"
+                android:textSize="@dimen/font_28" />
         </LinearLayout>
 
     </LinearLayout>

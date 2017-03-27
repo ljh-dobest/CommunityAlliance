@@ -11,6 +11,7 @@ import com.zhy.http.okhttp.callback.StringCallback;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import okhttp3.Call;
 
@@ -19,11 +20,9 @@ import okhttp3.Call;
  */
 
 public class ProductCollectModel {
-    public void getProductCollectInfo(String userId, final OnProductCollectListener listener){
-        if(userId==null){
-            return;
-        }
-        HttpUtils.sendGsonPostRequest("/allRecommendsUsers", userId, new StringCallback() {
+    public void getProductCollectInfo(Map<String ,String> formData, final OnProductCollectListener listener){
+
+        HttpUtils.sendGsonPostRequest("/selectProduct", formData, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
               listener.showError(e.toString());

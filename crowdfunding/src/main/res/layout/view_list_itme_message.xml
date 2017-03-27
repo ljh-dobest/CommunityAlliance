@@ -12,8 +12,8 @@
 
         <ImageView
             android:id="@+id/iv_share_icon"
-            android:layout_width="@dimen/border_50"
-            android:layout_height="@dimen/border_50"
+            android:layout_width="@dimen/border_88"
+            android:layout_height="@dimen/border_88"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
@@ -30,10 +30,10 @@
             android:layout_toEndOf="@+id/iv_share_icon"
             android:layout_toRightOf="@+id/iv_share_icon"
             android:gravity="center"
-            android:padding="@dimen/border_6"
+            android:padding="@dimen/border_10"
             android:text="TextView"
             android:textColor="@color/color_33"
-            android:textSize="@dimen/font_16" />
+            android:textSize="@dimen/font_30" />
 
 
         <TextView
@@ -44,10 +44,10 @@
             android:layout_toEndOf="@+id/tv_share_user_Name"
             android:layout_toRightOf="@+id/tv_share_user_Name"
             android:gravity="center"
-            android:padding="@dimen/border_6"
+            android:padding="@dimen/border_10"
             android:text="评论你的"
             android:textColor="@color/color_99"
-            android:textSize="@dimen/font_14" />
+            android:textSize="@dimen/font_28" />
 
         <TextView
             android:id="@+id/tv_share_title"
@@ -57,10 +57,10 @@
             android:layout_toEndOf="@+id/tv_operation"
             android:layout_toRightOf="@+id/tv_operation"
             android:gravity="center"
-            android:padding="@dimen/border_6"
+            android:padding="@dimen/border_10"
             android:text="分享的标题"
             android:textColor="@color/color_33"
-            android:textSize="@dimen/font_16" />
+            android:textSize="@dimen/font_28" />
 
         <TextView
             android:id="@+id/tv_comment_time"
@@ -69,10 +69,10 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:gravity="center"
-            android:padding="@dimen/border_6"
+            android:padding="@dimen/border_10"
             android:text="2017.03.19"
             android:textColor="@color/color_99"
-            android:textSize="@dimen/font_16" />
+            android:textSize="@dimen/font_30" />
         android:text="TextView" />
     </RelativeLayout>
 

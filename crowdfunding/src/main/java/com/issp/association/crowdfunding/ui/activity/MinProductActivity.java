@@ -14,8 +14,12 @@ import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.XRefreshViewFooter;
 import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.adapter.MinProductListAdapter;
+import com.issp.association.crowdfunding.base.presenter.BasePersenter;
 import com.issp.association.crowdfunding.base.view.BaseActivity;
+import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
+import com.issp.association.crowdfunding.interfaces.IProductCollectListView;
+import com.issp.association.crowdfunding.presenters.ProductCollectPresenter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +34,7 @@ import butterknife.OnClick;
  * Created by T-BayMax on 2017/3/18.
  */
 
-public class MinProductActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {
+public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,ProductCollectPresenter> implements IProductCollectListView , RadioGroup.OnCheckedChangeListener {
 
     @BindView(R.id.lt_main_title_left)
     TextView lt_main_title_left;
@@ -60,6 +64,11 @@ public class MinProductActivity extends BaseActivity implements RadioGroup.OnChe
         ButterKnife.bind(this);
         initView();
         initData();
+    }
+
+    @Override
+    public ProductCollectPresenter initPresenter() {
+        return new ProductCollectPresenter();
     }
 
     private void initView(){
@@ -165,5 +174,25 @@ public class MinProductActivity extends BaseActivity implements RadioGroup.OnChe
     @OnClick(R.id.lt_main_title_left)
     void backClick(){
         MinProductActivity.this.finish();
+    }
+
+    @Override
+    public void showLoading() {
+
+    }
+
+    @Override
+    public void hideLoading() {
+
+    }
+
+    @Override
+    public void showError(String errorString) {
+
+    }
+
+    @Override
+    public void setProductCollectData(ArrayList<ProductCollectBean> data) {
+
     }
 }

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
     <LinearLayout
         android:id="@+id/ll_relation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:background="@android:color/white"
-        android:padding="@dimen/border_10"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/border_20">
 
         <TextView
             android:id="@+id/lt_main_title_left"
@@ -19,16 +21,16 @@
             android:layout_weight="1"
             android:drawableLeft="@mipmap/back"
             android:gravity="center"
-            android:padding="@dimen/border_10"
-            android:textSize="@dimen/font_18"/>
+            android:padding="@dimen/border_20"
+            android:textSize="@dimen/font_28" />
 
         <com.issp.association.crowdfunding.view.ShareRadioGroup
             android:id="@+id/rg_relation"
             android:layout_width="0dp"
-            android:layout_weight="4"
-            android:gravity="center"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
+            android:layout_weight="4"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <RadioButton
@@ -36,37 +38,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:button="@null"
-                android:textSize="@dimen/font_18"
-                android:text="我的众筹" />
+                android:gravity="center"
+                android:text="我的众筹"
+                android:textSize="@dimen/font_34" />
 
             <RadioButton
                 android:id="@+id/rb_relation_map"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:button="@null"
-                android:textSize="@dimen/font_18"
-                android:text="我支持过的众筹" />
+                android:gravity="center"
+                android:text="我支持过的众筹"
+                android:textSize="@dimen/font_34" />
 
 
         </com.issp.association.crowdfunding.view.ShareRadioGroup>
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/font_20"/>
+            android:layout_weight="1" />
     </LinearLayout>
-<!--
-    <View
-        android:id="@+id/main_view"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lv_foot_ml_10"
-        android:layout_below="@id/ll_relation"
-        android:background="@color/aam_item_border" />-->
+    <!--
+        <View
+            android:id="@+id/main_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lv_foot_ml_10"
+            android:layout_below="@id/ll_relation"
+            android:background="@color/aam_item_border" />-->
 
 
     <com.andview.refreshview.XRefreshView

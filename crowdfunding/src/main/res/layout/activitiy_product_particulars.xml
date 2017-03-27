@@ -11,9 +11,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="@dimen/border_10"
-        android:layout_marginStart="@dimen/border_10"
-        android:layout_marginTop="@dimen/border_10"
+        android:layout_marginLeft="@dimen/border_20"
+        android:layout_marginStart="@dimen/border_20"
+        android:layout_marginTop="@dimen/border_20"
+        android:textSize="@dimen/font_28"
+        android:textColor="@color/color_66"
         android:text="TextView" />
 
     <TextView
@@ -22,9 +24,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="@dimen/border_10"
-        android:layout_marginRight="@dimen/border_10"
-        android:layout_marginTop="@dimen/border_10"
+        android:layout_marginEnd="@dimen/border_20"
+        android:layout_marginRight="@dimen/border_20"
+        android:layout_marginTop="@dimen/border_20"
+        android:textSize="@dimen/font_28"
+        android:textColor="@color/color_33"
         android:text="TextView" />
 
     <RelativeLayout
@@ -41,9 +45,9 @@
             android:layout_height="wrap_content"
             android:drawableLeft="@mipmap/back"
             android:gravity="center"
-            android:padding="@dimen/border_10"
+            android:padding="@dimen/border_20"
             android:textColor="@color/nsdk_color_suspend"
-            android:textSize="@dimen/font_16"
+            android:textSize="@dimen/font_32"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
@@ -54,7 +58,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:padding="@dimen/border_14"
+            android:padding="@dimen/border_20"
+            android:textSize="@dimen/font_28"
             android:background="@color/aam_item_border"
             android:text="已支付\n查看订单" />
 
@@ -108,7 +113,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tv_release_time"
         android:layout_above="@id/textView16"
-        android:layout_margin="@dimen/border_10"
+        android:layout_margin="@dimen/border_20"
+        android:textSize="@dimen/font_28"
         android:text="TextView" />
 
 </RelativeLayout>

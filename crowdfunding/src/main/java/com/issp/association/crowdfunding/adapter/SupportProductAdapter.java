@@ -11,6 +11,7 @@ import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
+import com.zhy.autolayout.attr.AutoAttr;
 import com.zhy.autolayout.utils.AutoUtils;
 
 import java.util.List;
@@ -71,9 +72,7 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
     public ProductAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType, boolean isItem) {
         View v = LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.view_list_itme_support_product, parent, false);
-        AutoUtils.autoSize(v);
-
-        return new ProductAdapterViewHolder(v, isItem);
+         return new ProductAdapterViewHolder(v, isItem);
     }
 
     public void insert(ProductCollectBean person, int position) {
@@ -108,6 +107,7 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
         public ProductAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
             if (isItem) {
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
                 ButterKnife.bind(this, itemView);
                 itemView.setOnClickListener(SupportProductAdapter.this);
             }

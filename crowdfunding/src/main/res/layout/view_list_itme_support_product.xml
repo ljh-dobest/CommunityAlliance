@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/border_10"
+    android:padding="@dimen/border_20"
     android:orientation="vertical">
 
     <TextView
@@ -12,6 +12,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:textSize="@dimen/font_30"
+        android:textColor="@color/color_33"
         android:text="￥88.0" />
 
     <TextView
@@ -21,6 +23,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:textSize="@dimen/font_30"
+        android:textColor="@color/color_99"
         android:text="认筹人数2人/无限制" />
 
     <View
@@ -40,7 +44,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView7"
-        android:layout_marginTop="@dimen/border_6"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/font_30"
+        android:layout_marginTop="@dimen/border_14"
         android:text="产品名称" />
 
     <TextView
@@ -51,6 +57,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tv_product_name"
         android:layout_marginTop="@dimen/border_4"
+        android:textSize="@dimen/font_28"
+        android:textColor="@color/color_66"
         android:text="产品介绍" />
 
     <TextView
@@ -62,6 +70,8 @@
         android:layout_below="@+id/tv_product_content"
         android:layout_marginTop="@dimen/border_10"
         android:padding="@dimen/border_10"
+        android:textSize="@dimen/font_30"
+        android:textColor="@color/color_33"
         android:gravity="center"
         android:text="我要支持" />
 
@@ -73,6 +83,8 @@
         android:layout_alignBaseline="@+id/tv_min_support"
         android:layout_alignBottom="@+id/tv_min_support"
         android:layout_alignParentLeft="true"
+        android:textColor="@color/color_99"
+        android:textSize="@dimen/font_28"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>

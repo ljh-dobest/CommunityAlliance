@@ -9,23 +9,23 @@
         android:id="@+id/tv_information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/border_10"
-        android:textSize="@dimen/font_20"
+        android:padding="@dimen/border_20"
+        android:textSize="@dimen/font_30"
         android:gravity="center"
         android:text="@string/str_information"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginLeft="@dimen/border_10"
-        android:layout_marginRight="@dimen/border_10"
+        android:layout_marginLeft="@dimen/border_20"
+        android:layout_marginRight="@dimen/border_20"
         android:background="@color/gray"/>
 
     <TextView
         android:id="@+id/tv_my_share"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/border_10"
+        android:padding="@dimen/border_20"
         android:gravity="center"
-        android:textSize="@dimen/font_20"
+        android:textSize="@dimen/font_30"
         android:text="@string/str_my_product_collect"/>
 </LinearLayout>

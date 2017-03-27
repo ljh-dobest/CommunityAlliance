@@ -61,7 +61,7 @@ public class ProductCommentActivity extends BaseMvpActivity<IProductCommentListV
     }
 
     private void initView(){
-        ltMainTitle.setText("评论列表");
+        ltMainTitle.setText(getString(R.string.str_title_comment));
         xRefreshView.setPullLoadEnable(true);
 
         recyclerView.setHasFixedSize(true);

@@ -12,6 +12,8 @@ import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCommentBean;
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
 
 import java.util.List;
 
@@ -111,6 +113,7 @@ public class ProductCommentListAdapter extends BaseRecyclerViewAdapter<ProductCo
             if (isItem) {
                 ButterKnife.bind(this, itemView);
                 itemView.setOnClickListener(ProductCommentListAdapter.this);
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
             }
         }
     }
