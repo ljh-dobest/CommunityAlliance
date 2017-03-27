@@ -13,10 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <activity android:name=".ui.activitys.VerifyRecommedInfoActivity">
 =======
         <activity android:name=".ui.activitys.RelationMapActivity">
 >>>>>>> e718921994b03e9a5cea7dc46a830a9c06a8af26
+=======
+        <activity android:name=".ui.activitys.AddApplicationActivity">
+>>>>>>> bxh
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -65,7 +65,11 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
     }
 
     private void initView(){
+<<<<<<< HEAD
         ltMainTitle.setText("评论列表");
+=======
+        ltMainTitle.setText(getString(R.string.str_title_support));
+>>>>>>> bxh
         xRefreshView.setPullLoadEnable(true);
 
         recyclerView.setHasFixedSize(true);

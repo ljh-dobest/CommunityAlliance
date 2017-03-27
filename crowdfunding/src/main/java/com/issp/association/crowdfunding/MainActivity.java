@@ -16,7 +16,11 @@ import android.widget.TextView;
 
 import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.XRefreshViewFooter;
+<<<<<<< HEAD
 import com.issp.association.crowdfunding.adapter.IndexPageAdapter;
+=======
+import com.issp.association.crowdfunding.base.adpater.BannerImageLoader;
+>>>>>>> bxh
 import com.issp.association.crowdfunding.adapter.SimpleAdapter;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
@@ -26,18 +30,34 @@ import com.issp.association.crowdfunding.presenters.ProductCollectPresenter;
 import com.issp.association.crowdfunding.ui.activity.MessageActivity;
 import com.issp.association.crowdfunding.ui.activity.MinProductActivity;
 import com.issp.association.crowdfunding.utils.DisplayUtils;
+<<<<<<< HEAD
 import com.issp.association.crowdfunding.view.BannerViewPager;
 import com.issp.association.crowdfunding.view.CustomGifHeader;
 
 import java.util.ArrayList;
 import java.util.List;
+=======
+import com.issp.association.crowdfunding.view.CustomGifHeader;
+import com.youth.banner.Banner;
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+>>>>>>> bxh
 import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+<<<<<<< HEAD
 public class MainActivity extends BaseMvpActivity<IProductCollectListView,ProductCollectPresenter> implements IProductCollectListView {
+=======
+public class MainActivity extends BaseMvpActivity<IProductCollectListView, ProductCollectPresenter> implements IProductCollectListView {
+>>>>>>> bxh
 
     private PopupWindow mPopupWindow;
 
@@ -58,9 +78,23 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
     List<ProductCollectBean> personList = new ArrayList<ProductCollectBean>();
     GridLayoutManager layoutManager;
     private int mLoadCount = 0;
+<<<<<<< HEAD
 
     private BannerViewPager mBannerViewPager;
     private int[] mImageIds = new int[]{R.mipmap.banner, R.mipmap.banner02};// 测试图片id
+=======
+    private int limit = 20;
+    private int page = 1;
+
+    Banner homepage_banner;
+
+    private ArrayList<String> imgList;
+    String[] images = {"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=699105693,866957547&fm=21&gp=0.jpg",
+            "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=787324823,4149955059&fm=21&gp=0.jpg",
+            "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2152422253,1846971893&fm=21&gp=0.jpg",
+            "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3258213409,1470632782&fm=21&gp=0.jpg"};
+
+>>>>>>> bxh
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,7 +109,12 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
         return new ProductCollectPresenter();
     }
 
+<<<<<<< HEAD
     private void initView(){
+=======
+    private void initView() {
+        lt_main_title.setText(getString(R.string.str_title_main));
+>>>>>>> bxh
         xRefreshView.setPullLoadEnable(true);
         recyclerView.setHasFixedSize(true);
 
@@ -85,6 +124,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
 //		xRefreshView1.setSilenceLoadMore();
         layoutManager = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(layoutManager);
+<<<<<<< HEAD
         headerView = adapter.setHeaderView(R.layout.bannerview, recyclerView);
 //        LayoutInflater.from(this).inflate(R.layout.bannerview, rootview);
         mBannerViewPager = (BannerViewPager) headerView.findViewById(R.id.index_viewpager);
@@ -92,6 +132,13 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
 //        adHeader = new AdHeader(this);
 //        mBannerViewPager = (LoopViewPager) adHeader.findViewById(R.id.index_viewpager);
         initViewPager();
+=======
+        headerView = adapter.setHeaderView(R.layout.view_banner, recyclerView);
+
+        homepage_banner = (Banner) headerView.findViewById(R.id.homepage_banner);
+        initBanner();
+
+>>>>>>> bxh
         CustomGifHeader header = new CustomGifHeader(this);
         xRefreshView.setCustomHeaderView(header);
         recyclerView.setAdapter(adapter);
@@ -113,6 +160,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
 
             @Override
             public void onRefresh(boolean isPullDown) {
+<<<<<<< HEAD
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -128,16 +176,35 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
 //                        xRefreshView1.stopRefresh(success);
                     }
                 }, 2000);
+=======
+                page=1;
+                initData();
+                /*Random random = new Random();
+                boolean success = random.nextBoolean();
+                xRefreshView.stopRefresh(success);
+*/
+>>>>>>> bxh
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
+<<<<<<< HEAD
                 new Handler().postDelayed(new Runnable() {
                     public void run() {
                         for (int i = 0; i < 6; i++) {
                             ProductCollectBean person = new ProductCollectBean();
                             person.setTitle("标题"+i);
                             person.setContent("内容"+i);
+=======
+                page++;
+                initData();
+               /* new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        for (int i = 0; i < 6; i++) {
+                            ProductCollectBean person = new ProductCollectBean();
+                            //  person.setTitle("标题"+i);
+                            person.setObjective("内容" + i);
+>>>>>>> bxh
                             adapter.insert(person,
                                     adapter.getAdapterItemCount());
                         }
@@ -149,12 +216,17 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
                             xRefreshView.stopLoadMore();
                         }
                     }
+<<<<<<< HEAD
                 }, 1000);
+=======
+                }, 1000);*/
+>>>>>>> bxh
             }
         });
     }
 
     private void initData() {
+<<<<<<< HEAD
         for (int i = 0; i < 3; i++) {
             ProductCollectBean person = new ProductCollectBean();
             person.setTitle("标题"+i);
@@ -167,16 +239,51 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
             @Override
             public void onItemClick(View view, ProductCollectBean data) {
                 Log.e("","");
+=======
+        Map<String, String> formData = new HashMap<String, String>(0);
+        formData.put("userId", "111");
+        formData.put("type", "1");
+        formData.put("limit", limit + "");
+        formData.put("page", page + "");
+        presenter.ShareInfoPresenter(formData);
+
+    }
+
+    private void initClick() {
+        adapter.setOnItemClickListener(new BaseRecyclerViewAdapter.OnRecyclerViewItemClickListener<ProductCollectBean>() {
+            @Override
+            public void onItemClick(View view, ProductCollectBean data) {
+                Log.e("", "");
+>>>>>>> bxh
             }
         });
     }
 
+<<<<<<< HEAD
     private void initViewPager() {
         IndexPageAdapter pageAdapter = new IndexPageAdapter(this, mImageIds);
         mBannerViewPager.setAdapter(pageAdapter);
         mBannerViewPager.setParent(recyclerView);
     }
 
+=======
+    private void initBanner() {
+        imgList = new ArrayList<>();
+        for (int i = 0; i < images.length; i++) {
+            imgList.add(images[i]);
+        }
+        //设置图片加载器
+        homepage_banner.setImageLoader(new BannerImageLoader());
+        //设置图片集合
+        homepage_banner.setImages(imgList);
+        //设置滚动时间
+        homepage_banner.setDelayTime(5000);
+        //banner设置方法全部调用完毕时最后调用
+        homepage_banner.start();
+    }
+
+
+>>>>>>> bxh
     @OnClick(R.id.lt_main_title_right)
     void initPopupWindow() {
         int width = lt_main_title_right.getWidth();
@@ -186,6 +293,10 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
                     .getSystemService(LAYOUT_INFLATER_SERVICE);
             View popwindow_more = mLayoutInflater.inflate(
                     R.layout.popwindow_more, null);
+<<<<<<< HEAD
+=======
+            AutoUtils.autoSize(popwindow_more, AutoAttr.BASE_HEIGHT);
+>>>>>>> bxh
             mPopupWindow = new PopupWindow(popwindow_more, WidthPixels / 3, ViewGroup.LayoutParams.WRAP_CONTENT, true);
             mPopupWindow.setTouchable(true);
             mPopupWindow.setOutsideTouchable(true);
@@ -197,7 +308,11 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
             tv_information.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+<<<<<<< HEAD
                     Intent intent=new Intent(MainActivity.this, MessageActivity.class);
+=======
+                    Intent intent = new Intent(MainActivity.this, MessageActivity.class);
+>>>>>>> bxh
                     startActivity(intent);
                     mPopupWindow.dismiss();
                 }
@@ -205,7 +320,11 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
             tv_my_share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+<<<<<<< HEAD
                     Intent intent=new Intent(MainActivity.this, MinProductActivity.class);
+=======
+                    Intent intent = new Intent(MainActivity.this, MinProductActivity.class);
+>>>>>>> bxh
                     startActivity(intent);
                     mPopupWindow.dismiss();
                 }
@@ -225,11 +344,42 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView,Produc
 
     @Override
     public void showError(String errorString) {
+<<<<<<< HEAD
 
+=======
+        if (page == 1) {
+            xRefreshView.stopRefresh(false);
+        } else {
+            xRefreshView.stopLoadMore(false);
+        }
+>>>>>>> bxh
     }
 
     @Override
     public void setProductCollectData(ArrayList<ProductCollectBean> data) {
+<<<<<<< HEAD
 
     }
+=======
+        if (page == 1) {
+            xRefreshView.stopRefresh(true);
+        } else {
+            xRefreshView.stopLoadMore(true);
+        }
+        adapter.setData(data, page);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        homepage_banner.startAutoPlay();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        homepage_banner.stopAutoPlay();
+    }
+
+>>>>>>> bxh
 }

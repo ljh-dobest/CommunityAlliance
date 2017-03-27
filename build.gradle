@@ -12,6 +12,18 @@ buildscript {
     }
 }
 
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.2"
+}
+
+allprojects.each { p ->
+    p.buildDir "bin"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
 allprojects {
     repositories {
         maven { url "https://jitpack.io" }
@@ -20,6 +32,3 @@ allprojects {
 
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}

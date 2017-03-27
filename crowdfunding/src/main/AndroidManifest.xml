@@ -2,9 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.issp.association.crowdfunding">
 
+<<<<<<< HEAD
     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true" android:theme="@style/AppTheme">
+=======
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:name="com.issp.association.crowdfunding.App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+>>>>>>> bxh
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -12,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".ui.activity.MessageActivity"/>
         <activity android:name=".ui.activity.ProductCommentActivity"/>
         <activity android:name=".ui.activity.MinProductActivity"/>
@@ -19,6 +34,21 @@
         <activity android:name=".ui.activity.ProductParticularsActivity"/>
         <meta-data android:name="design_width" android:value="768" />
         <meta-data android:name="design_height" android:value="1280" />
+=======
+        <activity android:name=".ui.activity.MessageActivity" />
+        <activity android:name=".ui.activity.ProductCommentActivity" />
+        <activity android:name=".ui.activity.MinProductActivity" />
+        <activity android:name=".ui.activity.SupportProductActivity" />
+        <activity android:name=".ui.activity.ProductParticularsActivity" />
+        <activity android:name=".ui.activity.OrderDetailActivity"/>
+
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1340" />
+>>>>>>> bxh
     </application>
 
 </manifest>

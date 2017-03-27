@@ -36,6 +36,10 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.contrarywind:Android-PickerView:3.0.7'
     compile 'com.zhy:autolayout:1.4.5'
+<<<<<<< HEAD
     compile 'com.makeramen:roundedimageview:2.3.0'
     compile 'com.github.zcweng:switch-button:0.0.2@aar'
+=======
+    compile project(':Libraries:DroidPlugin')
+>>>>>>> bxh
 }

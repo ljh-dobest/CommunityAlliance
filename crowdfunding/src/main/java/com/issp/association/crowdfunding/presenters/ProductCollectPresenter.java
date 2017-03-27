@@ -7,6 +7,10 @@ import com.issp.association.crowdfunding.listeners.OnProductCollectListener;
 import com.issp.association.crowdfunding.model.ProductCollectModel;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
+=======
+import java.util.Map;
+>>>>>>> bxh
 
 /**
  *Created by T-BayMax on 2017/3/13.
@@ -19,8 +23,13 @@ public class ProductCollectPresenter extends BasePersenter<IProductCollectListVi
         recommendInfoMoudle = new ProductCollectModel();
     }
 
+<<<<<<< HEAD
     public void ShareInfoPresenter(String userId) {
         recommendInfoMoudle.getProductCollectInfo(userId, this);
+=======
+    public void ShareInfoPresenter(Map<String ,String> formData) {
+        recommendInfoMoudle.getProductCollectInfo(formData, this);
+>>>>>>> bxh
     }
 
     @Override

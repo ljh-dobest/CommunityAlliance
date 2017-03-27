@@ -3,9 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+<<<<<<< HEAD
     android:layout_marginTop="@dimen/border_10"
     android:background="@android:color/white"
     android:padding="@dimen/border_10">
+=======
+    android:layout_marginTop="@dimen/border_20"
+    android:background="@android:color/white"
+    android:padding="@dimen/border_20">
+>>>>>>> bxh
 
     <ImageView
         android:id="@+id/iv_share_icon"
@@ -14,7 +20,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+<<<<<<< HEAD
         android:layout_margin="@dimen/border_10"
+=======
+        android:layout_margin="@dimen/border_20"
+>>>>>>> bxh
         app:srcCompat="@mipmap/header" />
 
     <TextView
@@ -22,12 +32,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/border_10"
+=======
+        android:layout_marginTop="@dimen/border_20"
+>>>>>>> bxh
         android:layout_toEndOf="@+id/iv_share_icon"
         android:layout_toRightOf="@+id/iv_share_icon"
         android:text="用户名"
         android:textColor="@color/color_33"
+<<<<<<< HEAD
         android:textSize="@dimen/font_18" />
+=======
+        android:textSize="@dimen/font_32" />
+>>>>>>> bxh
 
     <TextView
         android:id="@+id/tv_like_btn"
@@ -36,20 +54,34 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/border_10"
         android:layout_marginLeft="@dimen/border_4"
         android:text="60"
         android:textColor="@color/color_99"
         android:textSize="@dimen/font_18" />
+=======
+        android:layout_marginTop="@dimen/border_20"
+        android:layout_marginLeft="@dimen/border_8"
+        android:text="60"
+        android:textColor="@color/color_99"
+        android:textSize="@dimen/font_30" />
+>>>>>>> bxh
 
     <ImageView
         android:id="@+id/iv_like_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+<<<<<<< HEAD
         android:layout_marginLeft="@dimen/border_30"
         android:layout_marginRight="@dimen/border_4"
         android:layout_marginTop="@dimen/border_10"
+=======
+        android:layout_marginLeft="@dimen/border_60"
+        android:layout_marginRight="@dimen/border_8"
+        android:layout_marginTop="@dimen/border_20"
+>>>>>>> bxh
         android:layout_toLeftOf="@+id/tv_like_btn"
         android:layout_toStartOf="@+id/tv_like_btn"
         android:src="@mipmap/img_like_btn_no" />
@@ -59,24 +91,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_share_user_Name"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/border_4"
+=======
+        android:layout_marginTop="@dimen/border_8"
+>>>>>>> bxh
         android:layout_toEndOf="@+id/iv_share_icon"
         android:layout_toRightOf="@+id/iv_share_icon"
         android:text="评论内容"
         android:textColor="@color/color_66"
+<<<<<<< HEAD
         android:textSize="@dimen/font_16" />
+=======
+        android:textSize="@dimen/font_28" />
+>>>>>>> bxh
 
     <TextView
         android:id="@+id/tv_share_comment_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/iv_share_icon"
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/border_4"
+=======
+        android:layout_marginTop="@dimen/border_8"
+>>>>>>> bxh
         android:layout_toEndOf="@+id/iv_share_icon"
         android:layout_toRightOf="@+id/iv_share_icon"
         android:text="2017.03.19 14:05"
         android:textColor="@color/color_99"
+<<<<<<< HEAD
         android:textSize="@dimen/font_16" />
+=======
+        android:textSize="@dimen/font_28" />
+>>>>>>> bxh
 
 
 </RelativeLayout>

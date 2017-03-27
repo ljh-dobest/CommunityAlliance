@@ -14,6 +14,11 @@ import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.bean.UserBean;
+<<<<<<< HEAD
+=======
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
+>>>>>>> bxh
 
 import java.util.List;
 
@@ -40,6 +45,7 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
             ProductCollectBean person = list.get(position);
 
             holder.itemView.setTag(person);
+<<<<<<< HEAD
             holder.tvProductTitle.setText(person.getTitle());
         /*holder.iv_like_btn ;
         holder.iv_comment_btn ;
@@ -53,6 +59,21 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
             //holder.tv_share_user_Name.setText(user.getNickname());
             //holder.tv_goods_share
             /*holder.gv_share_img
+=======
+          /*  holder.tvProductTitle.setText(person.getTitle());
+        *//*holder.iv_like_btn ;
+        holder.iv_comment_btn ;
+        holder.tv_like_btn .setText(person.getArcTitle());
+        holder.tv_comment_btn.setText(person.getArcTitle());*//*
+
+            UserBean user = person.getUserId();
+            holder.tvProductContent.setText(person.getContent());
+           *//* Picasso.with(context).load(HttpUtils.IMAGE_RUL + user.getUserPortraitUrl())
+                    .into(holder.iv_share_icon);*//*
+            //holder.tv_share_user_Name.setText(user.getNickname());
+            //holder.tv_goods_share
+            *//*holder.gv_share_img
+>>>>>>> bxh
                     holder.iv_share_btn
             holder.tv_share_btn*/
 
@@ -140,6 +161,10 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
         public MinShareListAdapterHolder(View itemView, boolean isItem) {
             super(itemView);
             if (isItem) {
+<<<<<<< HEAD
+=======
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
+>>>>>>> bxh
                 ButterKnife.bind(this, itemView);
                 itemView.setOnClickListener(MinProductListAdapter.this);
             }

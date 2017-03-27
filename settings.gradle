@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 include ':app', ':drygoodsshare', ':crowdfunding'
+=======
+include ':app', ':drygoodsshare', ':crowdfunding',':Libraries:DroidPlugin'
+>>>>>>> bxh

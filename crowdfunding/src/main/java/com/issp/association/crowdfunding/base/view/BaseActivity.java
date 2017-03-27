@@ -11,6 +11,10 @@ import android.view.MotionEvent;
 
 import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.utils.DataUtils;
+<<<<<<< HEAD
+=======
+import com.zhy.autolayout.AutoLayoutActivity;
+>>>>>>> bxh
 
 
 /**
@@ -18,7 +22,11 @@ import com.issp.association.crowdfunding.utils.DataUtils;
  * activity基类
  */
 
+<<<<<<< HEAD
 public class BaseActivity extends AppCompatActivity {
+=======
+public class BaseActivity extends AutoLayoutActivity {
+>>>>>>> bxh
 
     protected Context mContext;
 /*    protected LinearLayout mHeadLayout;

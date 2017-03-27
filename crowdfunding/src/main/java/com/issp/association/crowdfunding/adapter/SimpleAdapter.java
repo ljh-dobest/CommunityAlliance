@@ -2,6 +2,10 @@ package com.issp.association.crowdfunding.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+<<<<<<< HEAD
+=======
+import android.util.Log;
+>>>>>>> bxh
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +18,12 @@ import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.bean.UserBean;
+<<<<<<< HEAD
+=======
+import com.issp.association.crowdfunding.network.HttpUtils;
+import com.squareup.picasso.Picasso;
+import com.zhy.autolayout.attr.AutoAttr;
+>>>>>>> bxh
 import com.zhy.autolayout.utils.AutoUtils;
 
 import java.util.List;
@@ -27,7 +37,11 @@ import butterknife.ButterKnife;
  * <p>
  * Created by T-BayMax on 2017/3/16.
  */
+<<<<<<< HEAD
 public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.ProductAdapterViewHolder,ProductCollectBean> {
+=======
+public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.ProductAdapterViewHolder, ProductCollectBean> {
+>>>>>>> bxh
 
     private List<ProductCollectBean> list;
     private Context context;
@@ -43,6 +57,7 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
         if (isItem) {
             ProductCollectBean person = list.get(position);
             holder.itemView.setTag(person);
+<<<<<<< HEAD
             holder.tvProductTitle.setText(person.getTitle());
         /*holder.iv_like_btn ;
         holder.iv_comment_btn ;
@@ -65,6 +80,33 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
         }
         ViewGroup.LayoutParams layoutParams = holder.itemView.getLayoutParams();
 
+=======
+            holder.tvProductContent.setText(person.getObjective());
+            holder.tvSurplusDate.setText("剩余" + person.getDays() + "天");
+            holder.tvConfessTotal.setText("认筹总额：" + person.getContribution());
+            holder.tvAmountTotal.setText("目标总额：" + person.getCapital());
+            int schedule = (int) (person.getContribution() / person.getCapital() * 100);
+            holder.tvSchedule.setText(schedule + "%");
+            holder.pbSchedule.setProgress(schedule);
+            holder.tvLikeBtn.setText(person.getLikes()+"");
+            switch (person.getLikeStatus()) {
+                case 0:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn);
+                    break;
+                case 1:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+                    break;
+                case  2:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn_no);
+                    break;
+                case  3:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
+                    break;
+            }
+            Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
+                    .into(holder.ivProductImg);
+        }
+>>>>>>> bxh
     }
 
     @Override
@@ -83,8 +125,18 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
         return new ProductAdapterViewHolder(view, false);
     }
 
+<<<<<<< HEAD
     public void setData(List<ProductCollectBean> list) {
         this.list = list;
+=======
+    public void setData(List<ProductCollectBean> list, int page) {
+        if (page == 1) {
+            this.list = list;
+        } else {
+            this.list.addAll(list);
+        }
+
+>>>>>>> bxh
         notifyDataSetChanged();
     }
 
@@ -92,7 +144,10 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
     public ProductAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType, boolean isItem) {
         View v = LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.view_list_itme_product_collect, parent, false);
+<<<<<<< HEAD
         AutoUtils.autoSize(v);
+=======
+>>>>>>> bxh
 
         return new ProductAdapterViewHolder(v, isItem);
     }
@@ -148,6 +203,10 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
         public ProductAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
             if (isItem) {
+<<<<<<< HEAD
+=======
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
+>>>>>>> bxh
                 ButterKnife.bind(this, itemView);
                 itemView.setOnClickListener(SimpleAdapter.this);
             }
