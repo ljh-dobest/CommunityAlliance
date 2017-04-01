@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/lv_foot_ml_10"
-    android:orientation="vertical"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/lv_foot_ml_10"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="@dimen/lv_foot_ml_10">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -29,51 +30,68 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 android:gravity="bottom"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/iv_like_btn"
+                <LinearLayout
+                    android:id="@+id/ll_like"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/lv_dividerHeight"
-                    android:src="@mipmap/img_like_btn" />
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tv_like_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/lv_dividerHeight"
-                    android:text="12"
-                    android:textColor="@color/color_99"
-                    android:textSize="@dimen/font_16" />
+                    <ImageView
+                        android:id="@+id/iv_like_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/lv_dividerHeight"
+                        android:src="@mipmap/img_like_btn" />
 
-                <ImageView
-                    android:id="@+id/iv_comment_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/lv_dividerHeight"
-                    android:src="@mipmap/img_comment_btn" />
+                    <TextView
+                        android:id="@+id/tv_like_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/lv_dividerHeight"
+                        android:text="12"
+                        android:textColor="@color/color_99"
+                        android:textSize="@dimen/font_16" />
+                </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tv_comment_btn"
+                <LinearLayout
+                    android:id="@+id/ll_comment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/lv_dividerHeight"
-                    android:text="12"
-                    android:textColor="@color/color_99"
-                    android:textSize="@dimen/font_16" />
-                <TextView
-                    android:id="@+id/tv_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/font_16"
-                    android:layout_marginLeft="@dimen/lv_dividerHeight"
-                    android:padding="@dimen/lv_dividerHeight"
-                    android:textColor="@color/color_99"
-                    android:text="2017-03-16"/>
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_comment_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/lv_dividerHeight"
+                        android:src="@mipmap/img_comment_btn" />
+
+                    <TextView
+                        android:id="@+id/tv_comment_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/lv_dividerHeight"
+                        android:text="12"
+                        android:textColor="@color/color_99"
+                        android:textSize="@dimen/font_16" />
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/lv_dividerHeight"
+                        android:padding="@dimen/lv_dividerHeight"
+                        android:text="2017-03-16"
+                        android:textColor="@color/color_99"
+                        android:textSize="@dimen/font_14" />
 
             </LinearLayout>
         </LinearLayout>
@@ -82,10 +100,10 @@
             android:id="@+id/iv_share_img"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:adjustViewBounds="true"
             android:layout_weight="1"
-            android:src="@mipmap/banner02"
-            android:scaleType="fitStart" />
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@mipmap/banner02" />
 
     </LinearLayout>
 
