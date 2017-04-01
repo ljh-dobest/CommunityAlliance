@@ -16,15 +16,10 @@ import android.widget.TextView;
 
 import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.XRefreshViewFooter;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import com.issp.association.crowdfunding.adapter.IndexPageAdapter;
-=======
 import com.issp.association.crowdfunding.base.adpater.BannerImageLoader;
->>>>>>> bxh
-=======
-import com.issp.association.crowdfunding.base.adpater.BannerImageLoader;
->>>>>>> bxh
+
 import com.issp.association.crowdfunding.adapter.SimpleAdapter;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
@@ -34,16 +29,7 @@ import com.issp.association.crowdfunding.presenters.ProductCollectPresenter;
 import com.issp.association.crowdfunding.ui.activity.MessageActivity;
 import com.issp.association.crowdfunding.ui.activity.MinProductActivity;
 import com.issp.association.crowdfunding.utils.DisplayUtils;
-<<<<<<< HEAD
-<<<<<<< HEAD
 import com.issp.association.crowdfunding.view.BannerViewPager;
-import com.issp.association.crowdfunding.view.CustomGifHeader;
-
-import java.util.ArrayList;
-import java.util.List;
-=======
-=======
->>>>>>> bxh
 import com.issp.association.crowdfunding.view.CustomGifHeader;
 import com.youth.banner.Banner;
 import com.zhy.autolayout.attr.AutoAttr;
@@ -53,30 +39,20 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
+
 import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-public class MainActivity extends BaseMvpActivity<IProductCollectListView,ProductCollectPresenter> implements IProductCollectListView {
-=======
-public class MainActivity extends BaseMvpActivity<IProductCollectListView, ProductCollectPresenter> implements IProductCollectListView {
->>>>>>> bxh
-=======
 /**
  *
  * 产品众筹
  * Created by T-BayMax on 2017/3/21.
  */
 public class MainActivity extends BaseMvpActivity<IProductCollectListView, ProductCollectPresenter> implements IProductCollectListView {
->>>>>>> bxh
+
 
     private PopupWindow mPopupWindow;
 
@@ -97,14 +73,10 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
     List<ProductCollectBean> personList = new ArrayList<ProductCollectBean>();
     GridLayoutManager layoutManager;
     private int mLoadCount = 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     private BannerViewPager mBannerViewPager;
     private int[] mImageIds = new int[]{R.mipmap.banner, R.mipmap.banner02};// 测试图片id
-=======
-=======
->>>>>>> bxh
+
     private int limit = 20;
     private int page = 1;
 
@@ -116,10 +88,6 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2152422253,1846971893&fm=21&gp=0.jpg",
             "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3258213409,1470632782&fm=21&gp=0.jpg"};
 
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -134,17 +102,10 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         return new ProductCollectPresenter();
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    private void initView(){
-=======
+
     private void initView() {
         lt_main_title.setText(getString(R.string.str_title_main));
->>>>>>> bxh
-=======
-    private void initView() {
-        lt_main_title.setText(getString(R.string.str_title_main));
->>>>>>> bxh
+
         xRefreshView.setPullLoadEnable(true);
         recyclerView.setHasFixedSize(true);
 
@@ -154,27 +115,12 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 //		xRefreshView1.setSilenceLoadMore();
         layoutManager = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(layoutManager);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        headerView = adapter.setHeaderView(R.layout.bannerview, recyclerView);
-//        LayoutInflater.from(this).inflate(R.layout.bannerview, rootview);
-        mBannerViewPager = (BannerViewPager) headerView.findViewById(R.id.index_viewpager);
 
-//        adHeader = new AdHeader(this);
-//        mBannerViewPager = (LoopViewPager) adHeader.findViewById(R.id.index_viewpager);
-        initViewPager();
-=======
-=======
->>>>>>> bxh
         headerView = adapter.setHeaderView(R.layout.view_banner, recyclerView);
 
         homepage_banner = (Banner) headerView.findViewById(R.id.homepage_banner);
         initBanner();
 
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
         CustomGifHeader header = new CustomGifHeader(this);
         xRefreshView.setCustomHeaderView(header);
         recyclerView.setAdapter(adapter);
@@ -196,100 +142,24 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
             @Override
             public void onRefresh(boolean isPullDown) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        //模拟数据加载失败的情况
-                        Random random = new Random();
-                        boolean success = random.nextBoolean();
-                        if(success){
-                            xRefreshView.stopRefresh();
-                        }else{
-                            xRefreshView.stopRefresh(false);
-                        }
-                        //或者
-//                        xRefreshView1.stopRefresh(success);
-                    }
-                }, 2000);
-=======
+
                 page=1;
                 initData();
-                /*Random random = new Random();
-                boolean success = random.nextBoolean();
-                xRefreshView.stopRefresh(success);
-*/
->>>>>>> bxh
-=======
-                page=1;
-                initData();
->>>>>>> bxh
+
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            ProductCollectBean person = new ProductCollectBean();
-                            person.setTitle("标题"+i);
-                            person.setContent("内容"+i);
-=======
-                page++;
-                initData();
-               /* new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            ProductCollectBean person = new ProductCollectBean();
-                            //  person.setTitle("标题"+i);
-                            person.setObjective("内容" + i);
->>>>>>> bxh
-                            adapter.insert(person,
-                                    adapter.getAdapterItemCount());
-                        }
-                        mLoadCount++;
-                        if (mLoadCount >= 3) {
-                            xRefreshView.setLoadComplete(true);
-                        } else {
-                            // 刷新完成必须调用此方法停止加载
-                            xRefreshView.stopLoadMore();
-                        }
-                    }
-<<<<<<< HEAD
-                }, 1000);
-=======
-                }, 1000);*/
->>>>>>> bxh
-=======
+
                 page++;
                 initData();
 
->>>>>>> bxh
             }
         });
     }
 
     private void initData() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        for (int i = 0; i < 3; i++) {
-            ProductCollectBean person = new ProductCollectBean();
-            person.setTitle("标题"+i);
-            person.setContent("内容"+i);
-            personList.add(person);
-        }
-    }
-    private void initClick(){
-        adapter.setOnItemClickListener(new BaseRecyclerViewAdapter.OnRecyclerViewItemClickListener<ProductCollectBean>() {
-            @Override
-            public void onItemClick(View view, ProductCollectBean data) {
-                Log.e("","");
-=======
-=======
->>>>>>> bxh
+
         Map<String, String> formData = new HashMap<String, String>(0);
         formData.put("userId", "111");
         formData.put("type", "1");
@@ -304,25 +174,18 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             @Override
             public void onItemClick(View view, ProductCollectBean data) {
                 Log.e("", "");
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
+
             }
         });
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     private void initViewPager() {
         IndexPageAdapter pageAdapter = new IndexPageAdapter(this, mImageIds);
         mBannerViewPager.setAdapter(pageAdapter);
         mBannerViewPager.setParent(recyclerView);
     }
 
-=======
-=======
->>>>>>> bxh
+
     private void initBanner() {
         imgList = new ArrayList<>();
         for (int i = 0; i < images.length; i++) {
@@ -338,16 +201,12 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         homepage_banner.start();
     }
 
-<<<<<<< HEAD
 
->>>>>>> bxh
-=======
     @OnClick(R.id.lt_main_title_left)
     void leftClick(){
         MainActivity.this.finish();
     }
 
->>>>>>> bxh
     @OnClick(R.id.lt_main_title_right)
     void initPopupWindow() {
         int width = lt_main_title_right.getWidth();
@@ -357,14 +216,9 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
                     .getSystemService(LAYOUT_INFLATER_SERVICE);
             View popwindow_more = mLayoutInflater.inflate(
                     R.layout.popwindow_more, null);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
             AutoUtils.autoSize(popwindow_more, AutoAttr.BASE_HEIGHT);
->>>>>>> bxh
-=======
-            AutoUtils.autoSize(popwindow_more, AutoAttr.BASE_HEIGHT);
->>>>>>> bxh
+
             mPopupWindow = new PopupWindow(popwindow_more, WidthPixels / 3, ViewGroup.LayoutParams.WRAP_CONTENT, true);
             mPopupWindow.setTouchable(true);
             mPopupWindow.setOutsideTouchable(true);
@@ -376,15 +230,9 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             tv_information.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    Intent intent=new Intent(MainActivity.this, MessageActivity.class);
-=======
+
                     Intent intent = new Intent(MainActivity.this, MessageActivity.class);
->>>>>>> bxh
-=======
-                    Intent intent = new Intent(MainActivity.this, MessageActivity.class);
->>>>>>> bxh
+
                     startActivity(intent);
                     mPopupWindow.dismiss();
                 }
@@ -392,15 +240,9 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             tv_my_share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    Intent intent=new Intent(MainActivity.this, MinProductActivity.class);
-=======
+
                     Intent intent = new Intent(MainActivity.this, MinProductActivity.class);
->>>>>>> bxh
-=======
-                    Intent intent = new Intent(MainActivity.this, MinProductActivity.class);
->>>>>>> bxh
+
                     startActivity(intent);
                     mPopupWindow.dismiss();
                 }
@@ -420,32 +262,18 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
     @Override
     public void showError(String errorString) {
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-=======
->>>>>>> bxh
         if (page == 1) {
             xRefreshView.stopRefresh(false);
         } else {
             xRefreshView.stopLoadMore(false);
         }
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
+
     }
 
     @Override
     public void setProductCollectData(ArrayList<ProductCollectBean> data) {
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-    }
-=======
-=======
->>>>>>> bxh
         if (page == 1) {
             xRefreshView.stopRefresh(true);
         } else {
@@ -466,8 +294,4 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         homepage_banner.stopAutoPlay();
     }
 
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
 }

@@ -24,10 +24,7 @@ import com.issp.association.bean.ShareBean;
 import com.issp.association.interfaces.IShareListView;
 import com.issp.association.presenters.ShareInfoPresenter;
 import com.issp.association.ui.activity.CommentMessageActivity;
-<<<<<<< HEAD
-=======
 import com.issp.association.ui.activity.FeedForCommentActivity;
->>>>>>> bxh
 import com.issp.association.ui.activity.MinShareActivity;
 import com.issp.association.ui.activity.ReadShareActivity;
 import com.issp.association.utils.DisplayUtils;
@@ -65,11 +62,7 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
     XRefreshView xRefreshView;
 
     private View headerView;
-<<<<<<< HEAD
-=======
-
     private boolean isRefresh;
->>>>>>> bxh
 
     SimpleAdapter adapter;
     List<ShareBean> personList = new ArrayList<ShareBean>();
@@ -90,13 +83,9 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
         ButterKnife.bind(this);
         initView();
     }
-<<<<<<< HEAD
-    private void initView(){
-=======
 
     private void initView() {
         lt_main_title.setText("干货分享");
->>>>>>> bxh
         xRefreshView.setPullLoadEnable(true);
         recyclerView.setHasFixedSize(true);
 
@@ -219,11 +208,7 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
             tv_information.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-<<<<<<< HEAD
-                    Intent intent=new Intent(MainActivity.this, CommentMessageActivity.class);
-=======
                     Intent intent = new Intent(MainActivity.this, CommentMessageActivity.class);
->>>>>>> bxh
                     startActivity(intent);
                     mPopupWindow.dismiss();
                 }

@@ -16,31 +16,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@android:color/white"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:padding="@dimen/border_10">
-=======
         android:padding="@dimen/border_20">
->>>>>>> bxh
-=======
-        android:padding="@dimen/border_20">
->>>>>>> bxh
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            android:layout_marginLeft="@dimen/border_10"
-            android:layout_marginRight="@dimen/border_4"
-=======
             android:layout_marginLeft="@dimen/border_20"
             android:layout_marginRight="@dimen/border_20"
->>>>>>> bxh
-=======
-            android:layout_marginLeft="@dimen/border_20"
-            android:layout_marginRight="@dimen/border_20"
->>>>>>> bxh
             android:src="@mipmap/header" />
 
         <TextView
@@ -49,15 +31,7 @@
             android:gravity="center_vertical"
             android:text="分享标题"
             android:textColor="@color/color_33"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            android:textSize="@dimen/font_18" />
-=======
             android:textSize="@dimen/font_34" />
->>>>>>> bxh
-=======
-            android:textSize="@dimen/font_34" />
->>>>>>> bxh
     </LinearLayout>
 
     <View
@@ -68,28 +42,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:layout_marginLeft="@dimen/border_4"
-=======
         android:layout_marginLeft="@dimen/border_8"
->>>>>>> bxh
-=======
-        android:layout_marginLeft="@dimen/border_8"
->>>>>>> bxh
         android:padding="@dimen/border_10"
         android:text="评论（50）"
         android:background="@android:color/white"
         android:textColor="@color/color_33"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:textSize="@dimen/font_18" />
-=======
         android:textSize="@dimen/font_28" />
->>>>>>> bxh
-=======
-        android:textSize="@dimen/font_28" />
->>>>>>> bxh
 
     <View
         android:layout_width="match_parent"
@@ -108,25 +66,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:ems="10"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:layout_margin="@dimen/border_4"
-        android:background="@color/aam_item_border"
-        android:inputType="textPersonName"
-        android:textColorHint="@color/color_99"
-        android:paddingLeft="@dimen/border_10"
-=======
-=======
->>>>>>> bxh
         android:layout_margin="@dimen/border_8"
         android:background="@color/aam_item_border"
         android:inputType="textPersonName"
         android:textColorHint="@color/color_99"
         android:paddingLeft="@dimen/border_20"
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
         android:hint="输入你的评论内容" />
 
     <com.andview.refreshview.XRefreshView

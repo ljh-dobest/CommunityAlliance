@@ -22,12 +22,10 @@
         </activity>
         <activity android:name=".ui.activity.MinShareActivity"/>
         <activity android:name=".ui.activity.CommentMessageActivity"/>
-<<<<<<< HEAD
-        <activity android:name=".ui.activity.FeedForCommentActivity"/>
-=======
+
         <activity android:name=".ui.activity.FeedForCommentActivity"
             android:windowSoftInputMode="stateHidden"/>
->>>>>>> bxh
+
         <activity android:name=".ui.activity.ReadShareActivity"/>
 
     </application>

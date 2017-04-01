@@ -1,43 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white">
-=======
-=======
->>>>>>> bxh
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical">
 
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
     <LinearLayout
         android:id="@+id/ll_relation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:gravity="center"
-        android:background="@android:color/white"
-        android:padding="@dimen/border_10"
-        android:orientation="horizontal">
-=======
-=======
->>>>>>> bxh
         android:background="@android:color/white"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="@dimen/border_20">
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
 
         <TextView
             android:id="@+id/lt_main_title_left"
@@ -46,39 +22,16 @@
             android:layout_weight="1"
             android:drawableLeft="@mipmap/back"
             android:gravity="center"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            android:padding="@dimen/border_10"
-            android:textSize="@dimen/font_18"/>
-=======
             android:padding="@dimen/border_20"
             android:textSize="@dimen/font_28" />
->>>>>>> bxh
-=======
-            android:padding="@dimen/border_20"
-            android:textSize="@dimen/font_28" />
->>>>>>> bxh
 
         <com.issp.association.crowdfunding.view.ShareRadioGroup
             android:id="@+id/rg_relation"
             android:layout_width="0dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            android:layout_weight="4"
-            android:gravity="center"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-=======
-=======
->>>>>>> bxh
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             android:layout_weight="4"
             android:gravity="center"
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
             android:orientation="horizontal">
 
             <RadioButton
@@ -86,68 +39,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                android:gravity="center"
-                android:button="@null"
-                android:textSize="@dimen/font_18"
-                android:text="我的众筹" />
-=======
-=======
->>>>>>> bxh
                 android:button="@null"
                 android:gravity="center"
                 android:text="我的众筹"
                 android:textSize="@dimen/font_34" />
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
 
             <RadioButton
                 android:id="@+id/rb_relation_map"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                android:gravity="center"
-                android:button="@null"
-                android:textSize="@dimen/font_18"
-                android:text="我支持过的众筹" />
-=======
-=======
->>>>>>> bxh
                 android:button="@null"
                 android:gravity="center"
                 android:text="我支持过的众筹"
                 android:textSize="@dimen/font_34" />
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
-
 
         </com.issp.association.crowdfunding.view.ShareRadioGroup>
 
         <TextView
             android:layout_width="0dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/font_20"/>
-    </LinearLayout>
-<!--
-    <View
-        android:id="@+id/main_view"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lv_foot_ml_10"
-        android:layout_below="@id/ll_relation"
-        android:background="@color/aam_item_border" />-->
-=======
-=======
->>>>>>> bxh
             android:layout_height="wrap_content"
             android:layout_weight="1" />
     </LinearLayout>
@@ -158,10 +68,7 @@
             android:layout_height="@dimen/lv_foot_ml_10"
             android:layout_below="@id/ll_relation"
             android:background="@color/aam_item_border" />-->
-<<<<<<< HEAD
->>>>>>> bxh
-=======
->>>>>>> bxh
+
 
 
     <com.andview.refreshview.XRefreshView

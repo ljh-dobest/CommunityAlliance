@@ -14,14 +14,8 @@ public class App extends Application {
     public void onCreate()
     {
         super.onCreate();
-<<<<<<< HEAD
-<<<<<<< HEAD
-        AutoLayoutConifg.getInstance().useDeviceSize();
-=======
+
         AutoLayoutConifg.getInstance().useDeviceSize().init(this);
->>>>>>> bxh
-=======
-        AutoLayoutConifg.getInstance().useDeviceSize().init(this);
->>>>>>> bxh
+
     }
 }

@@ -2,15 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    android:padding="@dimen/border_10"
-=======
+
     android:padding="@dimen/border_20"
->>>>>>> bxh
-=======
-    android:padding="@dimen/border_20"
->>>>>>> bxh
+
     android:orientation="vertical">
 
     <TextView
@@ -20,16 +14,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         android:textSize="@dimen/font_30"
         android:textColor="@color/color_33"
->>>>>>> bxh
-=======
-        android:textSize="@dimen/font_30"
-        android:textColor="@color/color_33"
->>>>>>> bxh
         android:text="￥88.0" />
 
     <TextView
@@ -39,16 +25,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         android:textSize="@dimen/font_30"
         android:textColor="@color/color_99"
->>>>>>> bxh
-=======
-        android:textSize="@dimen/font_30"
-        android:textColor="@color/color_99"
->>>>>>> bxh
         android:text="认筹人数2人/无限制" />
 
     <View
@@ -68,19 +46,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView7"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:layout_marginTop="@dimen/border_6"
-=======
         android:textColor="@color/color_33"
         android:textSize="@dimen/font_30"
         android:layout_marginTop="@dimen/border_14"
->>>>>>> bxh
-=======
-        android:textColor="@color/color_33"
-        android:textSize="@dimen/font_30"
-        android:layout_marginTop="@dimen/border_14"
->>>>>>> bxh
         android:text="产品名称" />
 
     <TextView
@@ -91,16 +59,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tv_product_name"
         android:layout_marginTop="@dimen/border_4"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         android:textSize="@dimen/font_28"
         android:textColor="@color/color_66"
->>>>>>> bxh
-=======
-        android:textSize="@dimen/font_28"
-        android:textColor="@color/color_66"
->>>>>>> bxh
         android:text="产品介绍" />
 
     <TextView
@@ -112,16 +72,8 @@
         android:layout_below="@+id/tv_product_content"
         android:layout_marginTop="@dimen/border_10"
         android:padding="@dimen/border_10"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         android:textSize="@dimen/font_30"
         android:textColor="@color/color_33"
->>>>>>> bxh
-=======
-        android:textSize="@dimen/font_30"
-        android:textColor="@color/color_33"
->>>>>>> bxh
         android:gravity="center"
         android:text="我要支持" />
 
@@ -133,16 +85,8 @@
         android:layout_alignBaseline="@+id/tv_min_support"
         android:layout_alignBottom="@+id/tv_min_support"
         android:layout_alignParentLeft="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         android:textColor="@color/color_99"
         android:textSize="@dimen/font_28"
->>>>>>> bxh
-=======
-        android:textColor="@color/color_99"
-        android:textSize="@dimen/font_28"
->>>>>>> bxh
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>

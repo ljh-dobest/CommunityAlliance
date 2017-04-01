@@ -32,19 +32,15 @@ import butterknife.ButterKnife;
  * <p>
  * Created by T-BayMax on 2017/3/16.
  */
-<<<<<<< HEAD
-public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapterViewHolder> {
-=======
+
 public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapterViewHolder> implements View.OnClickListener {
->>>>>>> bxh
+
     private List<ShareBean> list;
     private static Context context;
     private int position;
 
-<<<<<<< HEAD
-=======
     private OnItemClickListener onItemClickListener;
->>>>>>> bxh
+
 
     public SimpleAdapter(List<ShareBean> list, Context context) {
         this.context = context;
@@ -55,29 +51,6 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
     public void onBindViewHolder(SimpleAdapterViewHolder holder, int position, boolean isItem) {
         if (isItem) {
             ShareBean person = list.get(position);
-<<<<<<< HEAD
-            holder.tv_share_title.setText(person.getArcTitle());
-        /*holder.iv_like_btn ;
-        holder.iv_comment_btn ;
-        holder.tv_like_btn .setText(person.getArcTitle());
-        holder.tv_comment_btn.setText(person.getArcTitle());*/
-            if (position < 3) {
-                //holder.tv_time.setText(person.getSendDate());
-                //holder.iv_share_img
-            } else {
-                UserBean user = person.getUserId();
-                holder.tv_share_content.setText(person.getShareContent());
-           /* Picasso.with(context).load(HttpUtils.IMAGE_RUL + user.getUserPortraitUrl())
-                    .into(holder.iv_share_icon);*/
-                //holder.tv_share_user_Name.setText(user.getNickname());
-                //holder.tv_goods_share
-            /*holder.gv_share_img
-                    holder.iv_share_btn
-            holder.tv_share_btn*/
-            }
-        }
-        ViewGroup.LayoutParams layoutParams = holder.itemView.getLayoutParams();
-=======
 
             holder.ll_item.setTag(person);
             holder.ll_like.setTag(person);
@@ -111,7 +84,6 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
             holder.ll_comment.setOnClickListener(this);
         }
 
->>>>>>> bxh
 
     }
 
@@ -144,15 +116,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
     @Override
     public SimpleAdapterViewHolder onCreateViewHolder(ViewGroup parent, int viewType, boolean isItem) {
         View v;
-<<<<<<< HEAD
-        if (position < 3) {
-            v = LayoutInflater.from(parent.getContext()).inflate(
-                    R.layout.view_list_itme_share_rl, parent, false);
-        } else {
-            v = LayoutInflater.from(parent.getContext()).inflate(
-                    R.layout.view_list_itme_share, parent, false);
-        }
-=======
+
         // if (position < 3) {
         v = LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.view_list_itme_share_rl, parent, false);
@@ -160,7 +124,6 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
             v = LayoutInflater.from(parent.getContext()).inflate(
                     R.layout.view_list_itme_share, parent, false);
         }*/
->>>>>>> bxh
         SimpleAdapterViewHolder vh = new SimpleAdapterViewHolder(v, isItem);
         return vh;
     }
@@ -211,14 +174,10 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
         TextView tv_comment_btn;
         TextView tv_time;
         ImageView iv_share_img;
-
-<<<<<<< HEAD
-=======
         LinearLayout ll_item;
         LinearLayout ll_like;
         LinearLayout ll_comment;
 
->>>>>>> bxh
         public SimpleAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
             if (isItem) {
@@ -227,11 +186,9 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
                 iv_comment_btn = (ImageView) itemView.findViewById(R.id.iv_comment_btn);
                 tv_like_btn = (TextView) itemView.findViewById(R.id.tv_like_btn);
                 tv_comment_btn = (TextView) itemView.findViewById(R.id.tv_comment_btn);
-<<<<<<< HEAD
-                if (isItem) {
-=======
+
                /* if (isItem) {
->>>>>>> bxh
+
                     tv_share_content = (TextView) itemView.findViewById(R.id.tv_share_content);
                     iv_share_icon = (ImageView) itemView.findViewById(R.id.iv_share_icon);
                     tv_share_user_Name = (TextView) itemView.findViewById(R.id.tv_share_user_Name);
@@ -239,13 +196,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
                     gv_share_img = (GridView) itemView.findViewById(R.id.gv_share_img);
                     iv_share_btn = (ImageView) itemView.findViewById(R.id.iv_share_btn);
                     tv_share_btn = (TextView) itemView.findViewById(R.id.tv_share_btn);
-<<<<<<< HEAD
-                } else {
 
-                    tv_time = (TextView) itemView.findViewById(R.id.tv_time);
-                    iv_share_img = (ImageView) itemView.findViewById(R.id.iv_share_img);
-                }
-=======
                 } else {*/
 
                 tv_time = (TextView) itemView.findViewById(R.id.tv_time);
@@ -254,7 +205,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
                 ll_like = (LinearLayout) itemView.findViewById(R.id.ll_like);
                 ll_comment = (LinearLayout) itemView.findViewById(R.id.ll_comment);
                 //}
->>>>>>> bxh
+
             }
         }
     }

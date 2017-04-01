@@ -1,12 +1,8 @@
 package com.issp.association.ui.activity;
 
-<<<<<<< HEAD
-=======
 import android.content.Intent;
->>>>>>> bxh
+
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -17,30 +13,19 @@ import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.XRefreshViewFooter;
 import com.issp.association.R;
 import com.issp.association.adapter.FeedForCommentListAdapter;
-import com.issp.association.adapter.ShareCommentListAdapter;
 import com.issp.association.base.view.BaseMvpActivity;
-<<<<<<< HEAD
-import com.issp.association.bean.ShareCommentBean;
-import com.issp.association.interfaces.IFeedForCommentListView;
-import com.issp.association.presenters.FeedForCommentPresenter;
-import com.issp.association.view.CustomGifHeader;
 
-import java.util.ArrayList;
-import java.util.List;
-=======
 import com.issp.association.bean.ShareBean;
 import com.issp.association.bean.ShareCommentBean;
 import com.issp.association.interfaces.IFeedForCommentListView;
 import com.issp.association.presenters.FeedForCommentPresenter;
 import com.issp.association.utils.T;
-import com.issp.association.view.CustomGifHeader;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
->>>>>>> bxh
-import java.util.Random;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -61,20 +46,16 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
     TextView ltMainTitleRight;
     @BindView(R.id.editText)
     EditText editText;
-<<<<<<< HEAD
-=======
+
     @BindView(R.id.tv_submit_comment)
     TextView tvSubmitComment;
->>>>>>> bxh
+
     @BindView(R.id.recycler_view_test_rv)
     RecyclerView recyclerView;
     @BindView(R.id.xrefreshview)
     XRefreshView xRefreshView;
 
-<<<<<<< HEAD
 
-    private View headerView;
-=======
     private View headerView;
 
     private boolean isRefresh = true;
@@ -89,7 +70,7 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
     FeedForCommentListAdapter adapter;
 
     private ShareBean shareBean;
->>>>>>> bxh
+
 
     List<ShareCommentBean> personList = new ArrayList<ShareCommentBean>();
     LinearLayoutManager layoutManager;
@@ -103,19 +84,12 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
         initView();
     }
 
-<<<<<<< HEAD
-    private void initView(){
-        ltMainTitle.setText("评论列表");
-        xRefreshView.setPullLoadEnable(true);
-
-=======
     private void initView() {
         ltMainTitle.setText("评论列表");
         Intent intent = getIntent();
         shareBean = (ShareBean) intent.getSerializableExtra("bean");
 
         xRefreshView.setPullLoadEnable(true);
->>>>>>> bxh
         recyclerView.setHasFixedSize(true);
 
         initData();
@@ -127,11 +101,9 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
         // 静默加载模式不能设置footerview
         recyclerView.setAdapter(adapter);
         //设置刷新完成以后，headerview固定的时间
-<<<<<<< HEAD
-        xRefreshView.setPinnedTime(1000);
-=======
+
         xRefreshView.setPinnedTime(1500);
->>>>>>> bxh
+
         xRefreshView.setMoveForHorizontal(true);
         xRefreshView.setPullLoadEnable(true);
         xRefreshView.setAutoLoadMore(false);
@@ -151,86 +123,13 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
 
             @Override
             public void onRefresh(boolean isPullDown) {
-<<<<<<< HEAD
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        //模拟数据加载失败的情况
-                        Random random = new Random();
-                        boolean success = random.nextBoolean();
-                        if(success){
-                            xRefreshView.stopRefresh();
-                        }else{
-                            xRefreshView.stopRefresh(false);
-                        }
-                        //或者
-//                        xRefreshView1.stopRefresh(success);
-                    }
-                }, 2000);
-=======
                 page = 1;
                 initData();
->>>>>>> bxh
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
-<<<<<<< HEAD
-                new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            ShareCommentBean person = new ShareCommentBean();
-                            adapter.insert(person,
-                                    adapter.getAdapterItemCount());
-                        }
-                        mLoadCount++;
-                        if (mLoadCount >= 3) {
-                            xRefreshView.setLoadComplete(true);
-                        } else {
-                            // 刷新完成必须调用此方法停止加载
-                            xRefreshView.stopLoadMore();
-                        }
-                    }
-                }, 1000);
-            }
-        });
-    }
 
-    private void initData() {
-        for (int i = 0; i < 3; i++) {
-            ShareCommentBean person = new ShareCommentBean();
-            personList.add(person);
-        }
-    }
-    @OnClick(R.id.lt_main_title_left)
-    void leftClick(){
-        FeedForCommentActivity.this.finish();
-    }
-
-    @Override
-    public FeedForCommentPresenter initPresenter() {
-        return new FeedForCommentPresenter();
-    }
-
-    @Override
-    public void showLoading() {
-
-    }
-
-    @Override
-    public void hideLoading() {
-
-    }
-
-    @Override
-    public void showError(String errorString) {
-
-    }
-
-    @Override
-    public void setFeedForCommentListData(ArrayList<ShareCommentBean> data) {
-
-=======
                 page++;
                 initData();
             }
@@ -315,6 +214,6 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
             return false;
         }
         return true;
->>>>>>> bxh
+
     }
 }

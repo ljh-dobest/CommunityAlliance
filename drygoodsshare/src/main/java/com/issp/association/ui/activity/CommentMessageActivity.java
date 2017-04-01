@@ -77,11 +77,8 @@ public class CommentMessageActivity extends BaseMvpActivity<ICommentMessageListV
         // 静默加载模式不能设置footerview
         recyclerView.setAdapter(adapter);
         //设置刷新完成以后，headerview固定的时间
-<<<<<<< HEAD
-        xRefreshView.setPinnedTime(1000);
-=======
+
         xRefreshView.setPinnedTime(1500);
->>>>>>> bxh
         xRefreshView.setMoveForHorizontal(true);
         xRefreshView.setPullLoadEnable(true);
         xRefreshView.setAutoLoadMore(false);

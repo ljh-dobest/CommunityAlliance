@@ -11,9 +11,5 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Fields from default config.
-<<<<<<< HEAD
-  public static final String AUTHORITY_NAME = "com.morgoo.droidplugin_stub";
-=======
   public static final String AUTHORITY_NAME = "com.ike.shequlianmeng";
->>>>>>> bxh
 }

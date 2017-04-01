@@ -14,14 +14,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+*
  * 众筹详情
->>>>>>> bxh
-=======
- * 众筹详情
->>>>>>> bxh
+*
  * Created by T-BayMax on 2017/3/23.
  */
 

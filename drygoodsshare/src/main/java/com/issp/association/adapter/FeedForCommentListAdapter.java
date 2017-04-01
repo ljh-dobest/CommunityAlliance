@@ -36,28 +36,16 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
 
     @Override
     public void onBindViewHolder(ShareCommentListAdapterViewHolder holder, int position, boolean isItem) {
-<<<<<<< HEAD
-       /*if(isItem){
-       ShareCommentBean bean = list.get(position);
-        Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserId().getUserPortraitUrl())
-                .into(holder.ivShareIcon);
-        holder.tvShareUserName.setText(bean.getUserId().getNickname());
-        holder.tvContent.setText(bean.getContent());
-        holder.tvLikeBtn.setText(bean.getShareId().getArcTitle());
-        holder.tvShareCommentTime.setText(bean.getCommentTime());
-        }
-*/
-=======
-       if(isItem){
-       ShareCommentBean bean = list.get(position);
-        Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getAvatarImage())
-                .into(holder.ivShareIcon);
-        holder.tvShareUserName.setText(bean.getNickname());
-        holder.tvContent.setText(bean.getContent());
-       // holder.tvLikeBtn.setText(bean.getShareId().getArcTitle());
-        holder.tvShareCommentTime.setText(bean.getCommentTime());
-        }
->>>>>>> bxh
+
+       if(isItem) {
+           ShareCommentBean bean = list.get(position);
+           Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getAvatarImage())
+                   .into(holder.ivShareIcon);
+           holder.tvShareUserName.setText(bean.getNickname());
+           holder.tvContent.setText(bean.getContent());
+           // holder.tvLikeBtn.setText(bean.getShareId().getArcTitle());
+           holder.tvShareCommentTime.setText(bean.getCommentTime());
+       }
     }
 
     @Override
@@ -75,11 +63,7 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
     public ShareCommentListAdapterViewHolder getViewHolder(View view) {
         return new ShareCommentListAdapterViewHolder(view, false);
     }
-<<<<<<< HEAD
 
-    public void setData(List<ShareCommentBean> list) {
-        this.list = list;
-=======
     public void setData(List<ShareCommentBean> list,int page) {
         if (page == 1) {
             this.list = list;
@@ -87,7 +71,6 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
             this.list.addAll(list);
         }
 
->>>>>>> bxh
         notifyDataSetChanged();
     }
 

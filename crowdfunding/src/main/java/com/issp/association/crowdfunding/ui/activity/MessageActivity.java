@@ -57,15 +57,9 @@ public class MessageActivity extends BaseMvpActivity<IMessageListView, MessagePr
     }
 
     private void initView(){
-<<<<<<< HEAD
-<<<<<<< HEAD
-        ltMainTitle.setText("消息");
-=======
+
         ltMainTitle.setText(getString(R.string.str_information));
->>>>>>> bxh
-=======
-        ltMainTitle.setText(getString(R.string.str_information));
->>>>>>> bxh
+
         recyclerView.setHasFixedSize(true);
 
         initData();
