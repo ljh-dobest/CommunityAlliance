@@ -47,6 +47,10 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
         if (isItem) {
             ProductCollectBean person = list.get(position);
             holder.itemView.setTag(person);
+            Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
+                    .into(holder.ivProductIcon);
+
+            holder.tvProductUserName.setText(person.getNickname());
             holder.tvProductContent.setText(person.getObjective());
             holder.tvSurplusDate.setText("剩余" + person.getDays() + "天");
             holder.tvConfessTotal.setText("认筹总额：" + person.getContribution());

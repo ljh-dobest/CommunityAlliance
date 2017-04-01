@@ -41,6 +41,11 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ *
+ * 产品众筹
+ * Created by T-BayMax on 2017/3/21.
+ */
 public class MainActivity extends BaseMvpActivity<IProductCollectListView, ProductCollectPresenter> implements IProductCollectListView {
 
     private PopupWindow mPopupWindow;
@@ -126,34 +131,13 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             public void onRefresh(boolean isPullDown) {
                 page=1;
                 initData();
-                /*Random random = new Random();
-                boolean success = random.nextBoolean();
-                xRefreshView.stopRefresh(success);
-*/
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
                 page++;
                 initData();
-               /* new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            ProductCollectBean person = new ProductCollectBean();
-                            //  person.setTitle("标题"+i);
-                            person.setObjective("内容" + i);
-                            adapter.insert(person,
-                                    adapter.getAdapterItemCount());
-                        }
-                        mLoadCount++;
-                        if (mLoadCount >= 3) {
-                            xRefreshView.setLoadComplete(true);
-                        } else {
-                            // 刷新完成必须调用此方法停止加载
-                            xRefreshView.stopLoadMore();
-                        }
-                    }
-                }, 1000);*/
+
             }
         });
     }
@@ -192,6 +176,10 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         homepage_banner.start();
     }
 
+    @OnClick(R.id.lt_main_title_left)
+    void leftClick(){
+        MainActivity.this.finish();
+    }
 
     @OnClick(R.id.lt_main_title_right)
     void initPopupWindow() {

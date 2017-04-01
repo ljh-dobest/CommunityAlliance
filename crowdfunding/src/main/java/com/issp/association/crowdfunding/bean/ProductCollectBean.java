@@ -8,8 +8,10 @@ import java.io.Serializable;
  */
 
 public class ProductCollectBean implements Serializable {
-    private String id;	//众筹id
- private String objective;//众筹目的
+    private String id;    //众筹id
+    private String nickname;
+    private String userPortraitUrl;
+    private String objective;//众筹目的
     private double capital;//需众筹总金额
     private double contribution;//已筹备资金
     private double percent;//已筹备百分比
@@ -24,6 +26,22 @@ public class ProductCollectBean implements Serializable {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getUserPortraitUrl() {
+        return userPortraitUrl;
+    }
+
+    public void setUserPortraitUrl(String userPortraitUrl) {
+        this.userPortraitUrl = userPortraitUrl;
     }
 
     public String getObjective() {

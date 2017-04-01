@@ -22,7 +22,7 @@ import okhttp3.Call;
 public class ProductCollectModel {
     public void getProductCollectInfo(Map<String ,String> formData, final OnProductCollectListener listener){
 
-        HttpUtils.sendGsonPostRequest("/selectProduct", formData, new StringCallback() {
+        HttpUtils.sendGsonPostRequest("/selectProductList", formData, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
               listener.showError(e.toString());
