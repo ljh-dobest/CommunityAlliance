@@ -38,8 +38,13 @@
             android:text="@string/str_add_crowd_funding"
             android:textColor="@android:color/white"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:paddingBottom="@dimen/border_10"
             android:textSize="@dimen/font_18"/>
+=======
+            android:paddingBottom="@dimen/border_16"
+            android:textSize="@dimen/font_34"/>
+>>>>>>> bxh
 =======
             android:paddingBottom="@dimen/border_16"
             android:textSize="@dimen/font_34"/>

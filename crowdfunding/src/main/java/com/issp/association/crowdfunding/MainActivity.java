@@ -17,7 +17,11 @@ import android.widget.TextView;
 import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.XRefreshViewFooter;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.issp.association.crowdfunding.adapter.IndexPageAdapter;
+=======
+import com.issp.association.crowdfunding.base.adpater.BannerImageLoader;
+>>>>>>> bxh
 =======
 import com.issp.association.crowdfunding.base.adpater.BannerImageLoader;
 >>>>>>> bxh
@@ -31,12 +35,15 @@ import com.issp.association.crowdfunding.ui.activity.MessageActivity;
 import com.issp.association.crowdfunding.ui.activity.MinProductActivity;
 import com.issp.association.crowdfunding.utils.DisplayUtils;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.issp.association.crowdfunding.view.BannerViewPager;
 import com.issp.association.crowdfunding.view.CustomGifHeader;
 
 import java.util.ArrayList;
 import java.util.List;
 =======
+=======
+>>>>>>> bxh
 import com.issp.association.crowdfunding.view.CustomGifHeader;
 import com.youth.banner.Banner;
 import com.zhy.autolayout.attr.AutoAttr;
@@ -46,6 +53,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 import java.util.Random;
 
@@ -54,8 +64,17 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class MainActivity extends BaseMvpActivity<IProductCollectListView,ProductCollectPresenter> implements IProductCollectListView {
 =======
+public class MainActivity extends BaseMvpActivity<IProductCollectListView, ProductCollectPresenter> implements IProductCollectListView {
+>>>>>>> bxh
+=======
+/**
+ *
+ * 产品众筹
+ * Created by T-BayMax on 2017/3/21.
+ */
 public class MainActivity extends BaseMvpActivity<IProductCollectListView, ProductCollectPresenter> implements IProductCollectListView {
 >>>>>>> bxh
 
@@ -79,10 +98,13 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
     GridLayoutManager layoutManager;
     private int mLoadCount = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private BannerViewPager mBannerViewPager;
     private int[] mImageIds = new int[]{R.mipmap.banner, R.mipmap.banner02};// 测试图片id
 =======
+=======
+>>>>>>> bxh
     private int limit = 20;
     private int page = 1;
 
@@ -94,6 +116,9 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2152422253,1846971893&fm=21&gp=0.jpg",
             "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3258213409,1470632782&fm=21&gp=0.jpg"};
 
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -110,7 +135,12 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private void initView(){
+=======
+    private void initView() {
+        lt_main_title.setText(getString(R.string.str_title_main));
+>>>>>>> bxh
 =======
     private void initView() {
         lt_main_title.setText(getString(R.string.str_title_main));
@@ -125,6 +155,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         layoutManager = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(layoutManager);
 <<<<<<< HEAD
+<<<<<<< HEAD
         headerView = adapter.setHeaderView(R.layout.bannerview, recyclerView);
 //        LayoutInflater.from(this).inflate(R.layout.bannerview, rootview);
         mBannerViewPager = (BannerViewPager) headerView.findViewById(R.id.index_viewpager);
@@ -133,11 +164,16 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 //        mBannerViewPager = (LoopViewPager) adHeader.findViewById(R.id.index_viewpager);
         initViewPager();
 =======
+=======
+>>>>>>> bxh
         headerView = adapter.setHeaderView(R.layout.view_banner, recyclerView);
 
         homepage_banner = (Banner) headerView.findViewById(R.id.homepage_banner);
         initBanner();
 
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
         CustomGifHeader header = new CustomGifHeader(this);
         xRefreshView.setCustomHeaderView(header);
@@ -160,6 +196,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
             @Override
             public void onRefresh(boolean isPullDown) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -184,10 +221,15 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
                 xRefreshView.stopRefresh(success);
 */
 >>>>>>> bxh
+=======
+                page=1;
+                initData();
+>>>>>>> bxh
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 new Handler().postDelayed(new Runnable() {
                     public void run() {
@@ -221,11 +263,17 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 =======
                 }, 1000);*/
 >>>>>>> bxh
+=======
+                page++;
+                initData();
+
+>>>>>>> bxh
             }
         });
     }
 
     private void initData() {
+<<<<<<< HEAD
 <<<<<<< HEAD
         for (int i = 0; i < 3; i++) {
             ProductCollectBean person = new ProductCollectBean();
@@ -240,6 +288,8 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             public void onItemClick(View view, ProductCollectBean data) {
                 Log.e("","");
 =======
+=======
+>>>>>>> bxh
         Map<String, String> formData = new HashMap<String, String>(0);
         formData.put("userId", "111");
         formData.put("type", "1");
@@ -254,11 +304,15 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             @Override
             public void onItemClick(View view, ProductCollectBean data) {
                 Log.e("", "");
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
             }
         });
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     private void initViewPager() {
         IndexPageAdapter pageAdapter = new IndexPageAdapter(this, mImageIds);
@@ -267,6 +321,8 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
     }
 
 =======
+=======
+>>>>>>> bxh
     private void initBanner() {
         imgList = new ArrayList<>();
         for (int i = 0; i < images.length; i++) {
@@ -282,6 +338,14 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         homepage_banner.start();
     }
 
+<<<<<<< HEAD
+
+>>>>>>> bxh
+=======
+    @OnClick(R.id.lt_main_title_left)
+    void leftClick(){
+        MainActivity.this.finish();
+    }
 
 >>>>>>> bxh
     @OnClick(R.id.lt_main_title_right)
@@ -294,6 +358,10 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             View popwindow_more = mLayoutInflater.inflate(
                     R.layout.popwindow_more, null);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            AutoUtils.autoSize(popwindow_more, AutoAttr.BASE_HEIGHT);
+>>>>>>> bxh
 =======
             AutoUtils.autoSize(popwindow_more, AutoAttr.BASE_HEIGHT);
 >>>>>>> bxh
@@ -309,7 +377,11 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
                 @Override
                 public void onClick(View v) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     Intent intent=new Intent(MainActivity.this, MessageActivity.class);
+=======
+                    Intent intent = new Intent(MainActivity.this, MessageActivity.class);
+>>>>>>> bxh
 =======
                     Intent intent = new Intent(MainActivity.this, MessageActivity.class);
 >>>>>>> bxh
@@ -321,7 +393,11 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
                 @Override
                 public void onClick(View v) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     Intent intent=new Intent(MainActivity.this, MinProductActivity.class);
+=======
+                    Intent intent = new Intent(MainActivity.this, MinProductActivity.class);
+>>>>>>> bxh
 =======
                     Intent intent = new Intent(MainActivity.this, MinProductActivity.class);
 >>>>>>> bxh
@@ -345,22 +421,31 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
     @Override
     public void showError(String errorString) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> bxh
         if (page == 1) {
             xRefreshView.stopRefresh(false);
         } else {
             xRefreshView.stopLoadMore(false);
         }
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
     }
 
     @Override
     public void setProductCollectData(ArrayList<ProductCollectBean> data) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     }
 =======
+=======
+>>>>>>> bxh
         if (page == 1) {
             xRefreshView.stopRefresh(true);
         } else {
@@ -381,5 +466,8 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         homepage_banner.stopAutoPlay();
     }
 
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 }

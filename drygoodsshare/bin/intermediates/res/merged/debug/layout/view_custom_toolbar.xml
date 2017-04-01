@@ -16,7 +16,11 @@
         android:layout_marginLeft="10dp"
         android:drawableLeft="@mipmap/back"
         android:gravity="center"
+<<<<<<< HEAD
         android:textColor="@android:color/black"
+=======
+        android:textColor="@android:color/holo_green_light"
+>>>>>>> bxh
         android:textSize="@dimen/font_16"
         android:visibility="visible" />
 

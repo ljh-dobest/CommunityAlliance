@@ -15,15 +15,21 @@ import com.andview.refreshview.XRefreshViewFooter;
 import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.adapter.MinProductListAdapter;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.issp.association.crowdfunding.base.view.BaseActivity;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 =======
+=======
+>>>>>>> bxh
 import com.issp.association.crowdfunding.base.presenter.BasePersenter;
 import com.issp.association.crowdfunding.base.view.BaseActivity;
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.interfaces.IProductCollectListView;
 import com.issp.association.crowdfunding.presenters.ProductCollectPresenter;
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 
 import java.util.ArrayList;
@@ -40,7 +46,11 @@ import butterknife.OnClick;
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class MinProductActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {
+=======
+public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,ProductCollectPresenter> implements IProductCollectListView , RadioGroup.OnCheckedChangeListener {
+>>>>>>> bxh
 =======
 public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,ProductCollectPresenter> implements IProductCollectListView , RadioGroup.OnCheckedChangeListener {
 >>>>>>> bxh
@@ -76,12 +86,18 @@ public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> bxh
     @Override
     public ProductCollectPresenter initPresenter() {
         return new ProductCollectPresenter();
     }
 
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
     private void initView(){
         xRefreshView.setPullLoadEnable(true);
@@ -188,7 +204,10 @@ public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,
         MinProductActivity.this.finish();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> bxh
 
     @Override
     public void showLoading() {
@@ -209,5 +228,8 @@ public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,
     public void setProductCollectData(ArrayList<ProductCollectBean> data) {
 
     }
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 }

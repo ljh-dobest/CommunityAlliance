@@ -13,8 +13,13 @@
         <ImageView
             android:id="@+id/iv_share_icon"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_width="@dimen/border_50"
             android:layout_height="@dimen/border_50"
+=======
+            android:layout_width="@dimen/border_88"
+            android:layout_height="@dimen/border_88"
+>>>>>>> bxh
 =======
             android:layout_width="@dimen/border_88"
             android:layout_height="@dimen/border_88"
@@ -36,15 +41,21 @@
             android:layout_toRightOf="@+id/iv_share_icon"
             android:gravity="center"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_6"
             android:text="TextView"
             android:textColor="@color/color_33"
             android:textSize="@dimen/font_16" />
 =======
+=======
+>>>>>>> bxh
             android:padding="@dimen/border_10"
             android:text="TextView"
             android:textColor="@color/color_33"
             android:textSize="@dimen/font_30" />
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 
 
@@ -57,15 +68,21 @@
             android:layout_toRightOf="@+id/tv_share_user_Name"
             android:gravity="center"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_6"
             android:text="评论你的"
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_14" />
 =======
+=======
+>>>>>>> bxh
             android:padding="@dimen/border_10"
             android:text="评论你的"
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_28" />
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 
         <TextView
@@ -77,15 +94,21 @@
             android:layout_toRightOf="@+id/tv_operation"
             android:gravity="center"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_6"
             android:text="分享的标题"
             android:textColor="@color/color_33"
             android:textSize="@dimen/font_16" />
 =======
+=======
+>>>>>>> bxh
             android:padding="@dimen/border_10"
             android:text="分享的标题"
             android:textColor="@color/color_33"
             android:textSize="@dimen/font_28" />
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 
         <TextView
@@ -96,15 +119,21 @@
             android:layout_alignParentRight="true"
             android:gravity="center"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_6"
             android:text="2017.03.19"
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_16" />
 =======
+=======
+>>>>>>> bxh
             android:padding="@dimen/border_10"
             android:text="2017.03.19"
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_30" />
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
         android:text="TextView" />
     </RelativeLayout>

@@ -21,6 +21,7 @@ public final class R {
         public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f090090;
     }
     public static final class drawable {
+<<<<<<< HEAD
         public static final int xrefresh_ok = 0x7f02006d;
         public static final int xrefreshview_arrow = 0x7f02006e;
     }
@@ -38,6 +39,25 @@ public final class R {
         public static final int xrefreshview_header_progressbar = 0x7f0e0104;
         public static final int xrefreshview_header_text = 0x7f0e0101;
         public static final int xrefreshview_header_time = 0x7f0e0108;
+=======
+        public static final int xrefresh_ok = 0x7f02006e;
+        public static final int xrefreshview_arrow = 0x7f02006f;
+    }
+    public static final class id {
+        public static final int item_touch_helper_previous_elevation = 0x7f0e0008;
+        public static final int left_images = 0x7f0e010d;
+        public static final int right_text = 0x7f0e0111;
+        public static final int xrefreshview_footer_click_textview = 0x7f0e010b;
+        public static final int xrefreshview_footer_content = 0x7f0e0108;
+        public static final int xrefreshview_footer_hint_textview = 0x7f0e010a;
+        public static final int xrefreshview_footer_progressbar = 0x7f0e0109;
+        public static final int xrefreshview_header_arrow = 0x7f0e010e;
+        public static final int xrefreshview_header_hint_textview = 0x7f0e0112;
+        public static final int xrefreshview_header_ok = 0x7f0e0110;
+        public static final int xrefreshview_header_progressbar = 0x7f0e010f;
+        public static final int xrefreshview_header_text = 0x7f0e010c;
+        public static final int xrefreshview_header_time = 0x7f0e0113;
+>>>>>>> bxh
     }
     public static final class layout {
         public static final int xrefreshview_footer = 0x7f040052;

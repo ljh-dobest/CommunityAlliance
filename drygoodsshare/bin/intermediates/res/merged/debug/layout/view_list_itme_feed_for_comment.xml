@@ -49,8 +49,13 @@
         android:layout_marginLeft="@dimen/lv_foot_iv_30"
         android:layout_marginRight="@dimen/lv_dividerHeight"
         android:layout_marginTop="@dimen/lv_foot_ml_10"
+<<<<<<< HEAD
         android:layout_toLeftOf="@+id/textView3"
         android:layout_toStartOf="@+id/textView3"
+=======
+        android:layout_toLeftOf="@+id/tv_like_btn"
+        android:layout_toStartOf="@+id/tv_like_btn"
+>>>>>>> bxh
         android:src="@mipmap/img_like_btn_no" />
 
     <TextView

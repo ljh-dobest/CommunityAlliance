@@ -12,15 +12,21 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginLeft="@dimen/border_10"
         android:layout_marginStart="@dimen/border_10"
         android:layout_marginTop="@dimen/border_10"
 =======
+=======
+>>>>>>> bxh
         android:layout_marginLeft="@dimen/border_20"
         android:layout_marginStart="@dimen/border_20"
         android:layout_marginTop="@dimen/border_20"
         android:textSize="@dimen/font_28"
         android:textColor="@color/color_66"
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
         android:text="TextView" />
 
@@ -31,15 +37,21 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginEnd="@dimen/border_10"
         android:layout_marginRight="@dimen/border_10"
         android:layout_marginTop="@dimen/border_10"
 =======
+=======
+>>>>>>> bxh
         android:layout_marginEnd="@dimen/border_20"
         android:layout_marginRight="@dimen/border_20"
         android:layout_marginTop="@dimen/border_20"
         android:textSize="@dimen/font_28"
         android:textColor="@color/color_33"
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
         android:text="TextView" />
 
@@ -58,9 +70,15 @@
             android:drawableLeft="@mipmap/back"
             android:gravity="center"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_10"
             android:textColor="@color/nsdk_color_suspend"
             android:textSize="@dimen/font_16"
+=======
+            android:padding="@dimen/border_20"
+            android:textColor="@color/nsdk_color_suspend"
+            android:textSize="@dimen/font_32"
+>>>>>>> bxh
 =======
             android:padding="@dimen/border_20"
             android:textColor="@color/nsdk_color_suspend"
@@ -77,7 +95,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_14"
+=======
+            android:padding="@dimen/border_20"
+            android:textSize="@dimen/font_28"
+>>>>>>> bxh
 =======
             android:padding="@dimen/border_20"
             android:textSize="@dimen/font_28"
@@ -136,7 +159,12 @@
         android:layout_below="@+id/tv_release_time"
         android:layout_above="@id/textView16"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_margin="@dimen/border_10"
+=======
+        android:layout_margin="@dimen/border_20"
+        android:textSize="@dimen/font_28"
+>>>>>>> bxh
 =======
         android:layout_margin="@dimen/border_20"
         android:textSize="@dimen/font_28"

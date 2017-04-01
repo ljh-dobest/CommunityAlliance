@@ -24,7 +24,12 @@ import okhttp3.Cookie;
 /**
  * Apk操作, 包含删除\安装\卸载\启动Apk
  * <p>
+<<<<<<< HEAD
  *  @author T-BayMax
+=======
+ *
+ * @author T-BayMax
+>>>>>>> bxh
  */
 public class ApkOperator {
 
@@ -66,9 +71,15 @@ public class ApkOperator {
      * @return [0:成功, 1:已安装, -1:连接失败, -2:权限不足, -3:安装失败]
      */
     public String installApk(final ApkItem item) {
+<<<<<<< HEAD
         String res="成功";
         if (!PluginManager.getInstance().isConnected()) {
             res= "连接失败"; // 连接失败
+=======
+        String res = "成功";
+        if (!PluginManager.getInstance().isConnected()) {
+            return "连接失败"; // 连接失败
+>>>>>>> bxh
         }
         FileUtils fileUtils = new FileUtils();
         if (isApkInstall(item)) {
@@ -79,7 +90,11 @@ public class ApkOperator {
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
+<<<<<<< HEAD
             res=  "已安装"; // 已安装
+=======
+            return "已安装"; // 已安装
+>>>>>>> bxh
         }
 
         try {
@@ -87,11 +102,19 @@ public class ApkOperator {
             fileUtils.deleteFile(item.apkFile);
             boolean isRequestPermission = (result == PluginManager.INSTALL_FAILED_NO_REQUESTEDPERMISSION);
             if (isRequestPermission) {
+<<<<<<< HEAD
                 res=  "权限不足";
             }
         } catch (RemoteException e) {
             e.printStackTrace();
             res=  "安装失败";
+=======
+                return "权限不足";
+            }
+        } catch (RemoteException e) {
+            e.printStackTrace();
+            return "安装失败";
+>>>>>>> bxh
         }
         return res;
     }
@@ -101,7 +124,11 @@ public class ApkOperator {
         PackageInfo info = null;
         try {
             info = PluginManager.getInstance().getPackageInfo(apkItem.packageInfo.packageName, 0);
+<<<<<<< HEAD
            // openApk(apkItem);
+=======
+            // openApk(apkItem);
+>>>>>>> bxh
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -122,6 +149,7 @@ public class ApkOperator {
         }
         return boo;
     }
+<<<<<<< HEAD
     public String versionCode(ApkItem apkItem){
         PackageInfo info = null;
         String code="0";
@@ -131,6 +159,18 @@ public class ApkOperator {
         } catch (RemoteException e) {
             e.printStackTrace();
             code="0";
+=======
+
+    public String versionCode(ApkItem apkItem) {
+        PackageInfo info = null;
+        String code = "0";
+        try {
+            info = PluginManager.getInstance().getPackageInfo(apkItem.packageInfo.packageName, 0);
+            code = info.versionName;
+        } catch (RemoteException e) {
+            e.printStackTrace();
+            code = "0";
+>>>>>>> bxh
         }
         return code;
     }

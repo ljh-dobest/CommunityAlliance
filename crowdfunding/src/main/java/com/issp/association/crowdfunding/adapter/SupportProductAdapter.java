@@ -12,6 +12,10 @@ import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import com.zhy.autolayout.attr.AutoAttr;
+>>>>>>> bxh
 =======
 import com.zhy.autolayout.attr.AutoAttr;
 >>>>>>> bxh
@@ -76,9 +80,13 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
         View v = LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.view_list_itme_support_product, parent, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
         AutoUtils.autoSize(v);
 
         return new ProductAdapterViewHolder(v, isItem);
+=======
+         return new ProductAdapterViewHolder(v, isItem);
+>>>>>>> bxh
 =======
          return new ProductAdapterViewHolder(v, isItem);
 >>>>>>> bxh
@@ -117,6 +125,10 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
             super(itemView);
             if (isItem) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
+>>>>>>> bxh
 =======
                 AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
 >>>>>>> bxh

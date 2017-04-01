@@ -4,9 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
     android:layout_marginTop="@dimen/border_10"
     android:background="@android:color/white"
     android:padding="@dimen/border_10">
+=======
+    android:layout_marginTop="@dimen/border_20"
+    android:background="@android:color/white"
+    android:padding="@dimen/border_20">
+>>>>>>> bxh
 =======
     android:layout_marginTop="@dimen/border_20"
     android:background="@android:color/white"
@@ -21,7 +27,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_margin="@dimen/border_10"
+=======
+        android:layout_margin="@dimen/border_20"
+>>>>>>> bxh
 =======
         android:layout_margin="@dimen/border_20"
 >>>>>>> bxh
@@ -33,7 +43,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/border_10"
+=======
+        android:layout_marginTop="@dimen/border_20"
+>>>>>>> bxh
 =======
         android:layout_marginTop="@dimen/border_20"
 >>>>>>> bxh
@@ -42,7 +56,11 @@
         android:text="用户名"
         android:textColor="@color/color_33"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:textSize="@dimen/font_18" />
+=======
+        android:textSize="@dimen/font_32" />
+>>>>>>> bxh
 =======
         android:textSize="@dimen/font_32" />
 >>>>>>> bxh
@@ -55,17 +73,23 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/border_10"
         android:layout_marginLeft="@dimen/border_4"
         android:text="60"
         android:textColor="@color/color_99"
         android:textSize="@dimen/font_18" />
 =======
+=======
+>>>>>>> bxh
         android:layout_marginTop="@dimen/border_20"
         android:layout_marginLeft="@dimen/border_8"
         android:text="60"
         android:textColor="@color/color_99"
         android:textSize="@dimen/font_30" />
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 
     <ImageView
@@ -74,9 +98,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginLeft="@dimen/border_30"
         android:layout_marginRight="@dimen/border_4"
         android:layout_marginTop="@dimen/border_10"
+=======
+        android:layout_marginLeft="@dimen/border_60"
+        android:layout_marginRight="@dimen/border_8"
+        android:layout_marginTop="@dimen/border_20"
+>>>>>>> bxh
 =======
         android:layout_marginLeft="@dimen/border_60"
         android:layout_marginRight="@dimen/border_8"
@@ -92,7 +122,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_share_user_Name"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/border_4"
+=======
+        android:layout_marginTop="@dimen/border_8"
+>>>>>>> bxh
 =======
         android:layout_marginTop="@dimen/border_8"
 >>>>>>> bxh
@@ -101,7 +135,11 @@
         android:text="评论内容"
         android:textColor="@color/color_66"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:textSize="@dimen/font_16" />
+=======
+        android:textSize="@dimen/font_28" />
+>>>>>>> bxh
 =======
         android:textSize="@dimen/font_28" />
 >>>>>>> bxh
@@ -112,7 +150,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/iv_share_icon"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginTop="@dimen/border_4"
+=======
+        android:layout_marginTop="@dimen/border_8"
+>>>>>>> bxh
 =======
         android:layout_marginTop="@dimen/border_8"
 >>>>>>> bxh
@@ -121,7 +163,11 @@
         android:text="2017.03.19 14:05"
         android:textColor="@color/color_99"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:textSize="@dimen/font_16" />
+=======
+        android:textSize="@dimen/font_28" />
+>>>>>>> bxh
 =======
         android:textSize="@dimen/font_28" />
 >>>>>>> bxh

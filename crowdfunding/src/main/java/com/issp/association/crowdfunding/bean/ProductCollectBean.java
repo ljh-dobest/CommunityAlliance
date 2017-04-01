@@ -8,6 +8,7 @@ import java.io.Serializable;
  */
 
 public class ProductCollectBean implements Serializable {
+<<<<<<< HEAD
     private String id;	//众筹id
 <<<<<<< HEAD
     private UserBean userId;		//众筹申请用户
@@ -24,6 +25,12 @@ public class ProductCollectBean implements Serializable {
     private String reason;		//原因（审核不通过详情）
 =======
  private String objective;//众筹目的
+=======
+    private String id;    //众筹id
+    private String nickname;
+    private String userPortraitUrl;
+    private String objective;//众筹目的
+>>>>>>> bxh
     private double capital;//需众筹总金额
     private double contribution;//已筹备资金
     private double percent;//已筹备百分比
@@ -31,6 +38,9 @@ public class ProductCollectBean implements Serializable {
     private double days;//剩余筹备天数
     private int likeStatus;//是否点赞 0未点赞，1已点赞
     private int likes;//点赞数量
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 
     public String getId() {
@@ -41,6 +51,7 @@ public class ProductCollectBean implements Serializable {
         this.id = id;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public UserBean getUserId() {
         return userId;
@@ -129,6 +140,24 @@ public class ProductCollectBean implements Serializable {
     public void setReason(String reason) {
         this.reason = reason;
 =======
+=======
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getUserPortraitUrl() {
+        return userPortraitUrl;
+    }
+
+    public void setUserPortraitUrl(String userPortraitUrl) {
+        this.userPortraitUrl = userPortraitUrl;
+    }
+
+>>>>>>> bxh
     public String getObjective() {
         return objective;
     }
@@ -191,6 +220,9 @@ public class ProductCollectBean implements Serializable {
 
     public void setLikes(int likes) {
         this.likes = likes;
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
     }
 }

@@ -15,7 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginLeft="@dimen/border_10"
+=======
+        android:layout_marginLeft="@dimen/border_20"
+>>>>>>> bxh
 =======
         android:layout_marginLeft="@dimen/border_20"
 >>>>>>> bxh
@@ -24,7 +28,11 @@
         android:padding="@dimen/border_4"
         android:textColor="@android:color/black"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:textSize="@dimen/font_16"
+=======
+        android:textSize="@dimen/font_28"
+>>>>>>> bxh
 =======
         android:textSize="@dimen/font_28"
 >>>>>>> bxh
@@ -38,7 +46,11 @@
         android:text="@string/str_crowd_funding_title"
         android:textColor="@android:color/black"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:textSize="@dimen/font_24"
+=======
+        android:textSize="@dimen/font_48"
+>>>>>>> bxh
 =======
         android:textSize="@dimen/font_48"
 >>>>>>> bxh
@@ -50,17 +62,23 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginRight="@dimen/border_10"
         android:drawableRight="@mipmap/more"
         android:gravity="center"
         android:textColor="@android:color/black"
         android:textSize="@dimen/font_16"
 =======
+=======
+>>>>>>> bxh
         android:layout_marginRight="@dimen/border_20"
         android:drawableRight="@mipmap/more"
         android:gravity="center"
         android:textColor="@android:color/black"
         android:textSize="@dimen/font_28"
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
         android:visibility="visible" />
 

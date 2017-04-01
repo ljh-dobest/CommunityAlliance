@@ -7,6 +7,7 @@ import com.issp.association.listeners.OnShareListener;
 import com.issp.association.model.ShareInfoModel;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 /**
  *Created by T-BayMax on 2017/3/13.
@@ -19,13 +20,21 @@ public class ShareInfoPresenter extends BasePersenter<IShareListView> implements
         recommendInfoMoudle = new ShareInfoModel();
     }
 
-    public void ShareInfoPresenter(String userId) {
-        recommendInfoMoudle.getShareInfo(userId, this);
+    public void ShareInfoPresenter(Map<String, String> formData) {
+        recommendInfoMoudle.getShareInfo(formData, this);
+    }
+    public void sharePraiseInfoPresenter(Map<String, String> formData) {
+        recommendInfoMoudle.getSharePraiseInfo(formData, this);
     }
 
     @Override
     public void getShareInfo(ArrayList<ShareBean> data) {
         mView.setShareListData(data);
+    }
+
+    @Override
+    public void sharePraiseInfo(String data) {
+        mView.sharePraise(data);
     }
 
     @Override

@@ -12,6 +12,10 @@ import android.view.MotionEvent;
 import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.utils.DataUtils;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import com.zhy.autolayout.AutoLayoutActivity;
+>>>>>>> bxh
 =======
 import com.zhy.autolayout.AutoLayoutActivity;
 >>>>>>> bxh
@@ -23,7 +27,11 @@ import com.zhy.autolayout.AutoLayoutActivity;
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class BaseActivity extends AppCompatActivity {
+=======
+public class BaseActivity extends AutoLayoutActivity {
+>>>>>>> bxh
 =======
 public class BaseActivity extends AutoLayoutActivity {
 >>>>>>> bxh

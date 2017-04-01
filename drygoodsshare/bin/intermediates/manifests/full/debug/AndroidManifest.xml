@@ -8,6 +8,13 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="25" />
 
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+>>>>>>> bxh
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,7 +31,13 @@
         </activity>
         <activity android:name="com.issp.association.ui.activity.MinShareActivity" />
         <activity android:name="com.issp.association.ui.activity.CommentMessageActivity" />
+<<<<<<< HEAD
         <activity android:name="com.issp.association.ui.activity.FeedForCommentActivity" />
+=======
+        <activity
+            android:name="com.issp.association.ui.activity.FeedForCommentActivity"
+            android:windowSoftInputMode="stateHidden" />
+>>>>>>> bxh
         <activity android:name="com.issp.association.ui.activity.ReadShareActivity" />
     </application>
 

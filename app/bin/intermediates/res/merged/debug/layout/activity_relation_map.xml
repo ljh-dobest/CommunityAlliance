@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_relation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/lv_dividerHeight"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/lv_foot_ml_10"
+            android:text="返回"
+            android:textSize="@dimen/font_20"/>
+
+        <com.example.just.shequnlianmeng.views.RelationMapRadioGroup
+            android:id="@+id/rg_relation"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_connection"
+                style="@style/relation_radio_button_styles"
+                android:text="人脉关系" />
+
+            <RadioButton
+                android:id="@+id/rb_relation_map"
+                style="@style/relation_radio_button_styles"
+                android:text="关系图谱" />
+
+
+        </com.example.just.shequnlianmeng.views.RelationMapRadioGroup>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_20"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lv_foot_ml_10"
+        android:layout_below="@id/ll_relation"
+        android:background="@color/aam_item_border" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/relation_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_view"/>
+</RelativeLayout>

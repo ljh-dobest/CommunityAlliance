@@ -5,4 +5,9 @@
     <string name="str_information">消息</string>
     <string name="str_my_share">我的干货</string>
     <string name="str_add_share">发表\n干货</string>
+
+    <string name="xrefreshview_refresh_days_ago">%1s天前</string>
+    <string name="xrefreshview_refresh_hours_ago">%1s小时前</string>
+    <string name="xrefreshview_refresh_justnow">刚刚</string>
+    <string name="xrefreshview_refresh_minutes_ago">%1s分钟前</string>
 </resources>

@@ -11,7 +11,11 @@
                     "endOffset": 116
                 },
                 "from": {
+<<<<<<< HEAD
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\0b0fa425f56776274ead40f0f75ef6f38d4d5f25\\output\\res\\values-v16\\values-v16.xml",
+=======
+                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\values-v16\\values-v16.xml",
+>>>>>>> bxh
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

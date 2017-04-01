@@ -8,7 +8,13 @@
     android:background="@android:color/white"
     android:orientation="vertical"
 <<<<<<< HEAD
+<<<<<<< HEAD
     android:padding="@dimen/border_10">
+=======
+    app:layout_auto_basewidth="height"
+    app:layout_auto_baseheight="width"
+    android:padding="@dimen/border_20">
+>>>>>>> bxh
 =======
     app:layout_auto_basewidth="height"
     app:layout_auto_baseheight="width"
@@ -24,8 +30,13 @@
         <ImageView
             android:id="@+id/iv_product_icon"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_width="@dimen/border_42"
             android:layout_height="@dimen/border_42"
+=======
+            android:layout_width="@dimen/border_88"
+            android:layout_height="@dimen/border_88"
+>>>>>>> bxh
 =======
             android:layout_width="@dimen/border_88"
             android:layout_height="@dimen/border_88"
@@ -40,15 +51,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_marginLeft="@dimen/border_10"
             android:text="TextView"
             android:textColor="@color/color_33"
             android:textSize="@dimen/font_18" />
 =======
+=======
+>>>>>>> bxh
             android:layout_marginLeft="@dimen/border_20"
             android:text="TextView"
             android:textColor="@color/color_33"
             android:textSize="@dimen/font_34" />
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 
         <TextView
@@ -63,7 +80,11 @@
             android:text="产品众筹"
             android:textColor="@color/color_99"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:textSize="@dimen/font_18" />
+=======
+            android:textSize="@dimen/font_22" />
+>>>>>>> bxh
 =======
             android:textSize="@dimen/font_22" />
 >>>>>>> bxh
@@ -76,18 +97,25 @@
         <ImageView
             android:id="@+id/iv_product_img"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
 =======
             android:layout_width="0dp"
+=======
+            android:layout_width="match_parent"
+>>>>>>> bxh
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:scaleType="fitXY"
+<<<<<<< HEAD
             android:adjustViewBounds="true"
+>>>>>>> bxh
+=======
 >>>>>>> bxh
             app:srcCompat="@mipmap/banner02" />
 
@@ -97,8 +125,14 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_bright"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_10"
             android:text="剩余22天"
+=======
+            android:padding="@dimen/border_20"
+            android:text="剩余22天"
+            android:textSize="@dimen/font_30"
+>>>>>>> bxh
 =======
             android:padding="@dimen/border_20"
             android:text="剩余22天"
@@ -116,7 +150,11 @@
         android:text="fdsafewffsadfsafasfsdfsdf"
         android:textColor="@color/color_33"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:textSize="@dimen/font_20" />
+=======
+        android:textSize="@dimen/font_38" />
+>>>>>>> bxh
 =======
         android:textSize="@dimen/font_38" />
 >>>>>>> bxh
@@ -129,7 +167,11 @@
         android:text="fdsafewffsadfsafasffsdafawesdfsadfsdfassdfsdf"
         android:textColor="@color/color_99"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:textSize="@dimen/font_18" />
+=======
+        android:textSize="@dimen/font_28" />
+>>>>>>> bxh
 =======
         android:textSize="@dimen/font_28" />
 >>>>>>> bxh
@@ -146,7 +188,12 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_marginTop="@dimen/border_10"
+=======
+            android:layout_marginTop="@dimen/border_20"
+            android:textSize="@dimen/font_28"
+>>>>>>> bxh
 =======
             android:layout_marginTop="@dimen/border_20"
             android:textSize="@dimen/font_28"
@@ -161,7 +208,12 @@
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/tv_confess_total"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_marginRight="@dimen/border_10"
+=======
+            android:layout_marginRight="@dimen/border_20"
+            android:textSize="@dimen/font_28"
+>>>>>>> bxh
 =======
             android:layout_marginRight="@dimen/border_20"
             android:textSize="@dimen/font_28"
@@ -178,7 +230,11 @@
             android:layout_below="@+id/tv_confess_total"
             android:layout_marginTop="@dimen/border_10"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:background="@color/aam_item_border" />
+=======
+            android:progressDrawable="@drawable/progressbar" />
+>>>>>>> bxh
 =======
             android:progressDrawable="@drawable/progressbar" />
 >>>>>>> bxh
@@ -190,7 +246,12 @@
             android:layout_below="@+id/pb_schedule"
             android:layout_centerHorizontal="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_marginTop="@dimen/border_10"
+=======
+            android:layout_marginTop="@dimen/border_20"
+            android:textSize="@dimen/font_28"
+>>>>>>> bxh
 =======
             android:layout_marginTop="@dimen/border_20"
             android:textSize="@dimen/font_28"
@@ -210,7 +271,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_10"
+=======
+            android:padding="@dimen/border_20"
+>>>>>>> bxh
 =======
             android:padding="@dimen/border_20"
 >>>>>>> bxh
@@ -221,15 +286,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_10"
             android:text="12"
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_18" />
 =======
+=======
+>>>>>>> bxh
             android:padding="@dimen/border_20"
             android:text="12"
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_24" />
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 
         <ImageView
@@ -237,7 +308,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_10"
+=======
+            android:padding="@dimen/border_20"
+>>>>>>> bxh
 =======
             android:padding="@dimen/border_20"
 >>>>>>> bxh
@@ -251,7 +326,11 @@
             android:text="12"
             android:textColor="@color/color_99"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:textSize="@dimen/font_18" />
+=======
+            android:textSize="@dimen/font_24" />
+>>>>>>> bxh
 =======
             android:textSize="@dimen/font_24" />
 >>>>>>> bxh
@@ -261,7 +340,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_10"
+=======
+            android:padding="@dimen/border_20"
+>>>>>>> bxh
 =======
             android:padding="@dimen/border_20"
 >>>>>>> bxh
@@ -272,15 +355,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:padding="@dimen/border_10"
             android:text="12"
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_18" />
 =======
+=======
+>>>>>>> bxh
             android:padding="@dimen/border_20"
             android:text="12"
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_24" />
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
     </LinearLayout>
 

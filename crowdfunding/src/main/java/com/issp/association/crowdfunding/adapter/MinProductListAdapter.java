@@ -15,6 +15,11 @@ import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.bean.UserBean;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
+>>>>>>> bxh
 =======
 import com.zhy.autolayout.attr.AutoAttr;
 import com.zhy.autolayout.utils.AutoUtils;
@@ -46,6 +51,7 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
 
             holder.itemView.setTag(person);
 <<<<<<< HEAD
+<<<<<<< HEAD
             holder.tvProductTitle.setText(person.getTitle());
         /*holder.iv_like_btn ;
         holder.iv_comment_btn ;
@@ -60,6 +66,8 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
             //holder.tv_goods_share
             /*holder.gv_share_img
 =======
+=======
+>>>>>>> bxh
           /*  holder.tvProductTitle.setText(person.getTitle());
         *//*holder.iv_like_btn ;
         holder.iv_comment_btn ;
@@ -73,6 +81,9 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
             //holder.tv_share_user_Name.setText(user.getNickname());
             //holder.tv_goods_share
             *//*holder.gv_share_img
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
                     holder.iv_share_btn
             holder.tv_share_btn*/
@@ -162,6 +173,10 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
             super(itemView);
             if (isItem) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
+>>>>>>> bxh
 =======
                 AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
 >>>>>>> bxh

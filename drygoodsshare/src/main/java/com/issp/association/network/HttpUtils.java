@@ -21,8 +21,8 @@ import okhttp3.RequestBody;
  *Created by T-BayMax on 2017/3/13.
  */
 public class HttpUtils {
-     public static final String URL = "http://192.168.0.212:90/appapi/app";
-    public static final String IMAGE_RUL = "http://192.168.0.212:90";
+     public static final String URL = "http://192.168.0.100:90/appapi/app";
+    public static final String IMAGE_RUL = "http://192.168.0.100:90";
     private static final String TAG = "HttpClient-Request";
 
     /**

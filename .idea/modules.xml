@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/crowdfunding/crowdfunding.iml" filepath="$PROJECT_DIR$/crowdfunding/crowdfunding.iml" />
       <module fileurl="file://$PROJECT_DIR$/drygoodsshare/drygoodsshare.iml" filepath="$PROJECT_DIR$/drygoodsshare/drygoodsshare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inspirationtosell/inspirationtosell.iml" filepath="$PROJECT_DIR$/inspirationtosell/inspirationtosell.iml" />
     </modules>
   </component>
 </project>

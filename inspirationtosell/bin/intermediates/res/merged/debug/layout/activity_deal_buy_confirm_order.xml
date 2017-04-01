@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aam_item_border"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_custom_toolbar" />
+    <RelativeLayout
+        android:layout_marginTop="@dimen/border_20"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_deal_buy_icon"
+            android:layout_width="@dimen/border_114"
+            android:layout_height="@dimen/border_114"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@mipmap/header" />
+
+        <TextView
+            android:id="@+id/tv_deal_buy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/iv_deal_buy_icon"
+            android:layout_toRightOf="@+id/iv_deal_buy_icon"
+            android:textSize="@dimen/font_30"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/iv_deal_Contribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_deal_buy_icon"
+            android:layout_toRightOf="@+id/iv_deal_buy_icon"
+            android:src="@mipmap/img_collect_btn_"
+            android:layout_toEndOf="@+id/iv_deal_buy_icon" />
+
+        <TextView
+            android:id="@+id/tv_deal_Contribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_deal_Contribution"
+            android:layout_toEndOf="@+id/iv_deal_Contribution"
+            android:layout_toRightOf="@+id/iv_deal_Contribution"
+            android:paddingLeft="@dimen/border_10"
+            android:text="TextView" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:padding="@dimen/border_20"
+        android:layout_marginTop="@dimen/border_20"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/font_28"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/border_20"
+            android:text="合计" />
+
+        <TextView
+            android:id="@+id/tv_deal_Contribution_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_28"
+            android:paddingLeft="@dimen/border_10"
+            android:layout_marginRight="@dimen/border_20"
+            android:layout_alignTop="@+id/textView6"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_deal_Contribution_total"
+            android:layout_toLeftOf="@+id/tv_deal_Contribution_total"
+            android:layout_toStartOf="@+id/tv_deal_Contribution_total"
+            android:src="@mipmap/img_collect_btn_" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_buy_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/font_34"
+        android:layout_margin="@dimen/border_40"
+        android:background="@drawable/shape_buy_button"
+        android:padding="@dimen/border_20"
+        android:text="确认支付" />
+
+</LinearLayout>

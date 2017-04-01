@@ -13,6 +13,11 @@ import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.MessageBean;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
+>>>>>>> bxh
 =======
 import com.zhy.autolayout.attr.AutoAttr;
 import com.zhy.autolayout.utils.AutoUtils;
@@ -114,6 +119,10 @@ public class MessageListAdapter extends BaseRecyclerViewAdapter<MessageListAdapt
                 ButterKnife.bind(this, itemView);
                 itemView.setOnClickListener(MessageListAdapter.this);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
+>>>>>>> bxh
 =======
                 AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
 >>>>>>> bxh

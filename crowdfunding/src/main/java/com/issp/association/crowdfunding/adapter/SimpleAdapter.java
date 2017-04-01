@@ -3,6 +3,10 @@ package com.issp.association.crowdfunding.adapter;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import android.util.Log;
+>>>>>>> bxh
 =======
 import android.util.Log;
 >>>>>>> bxh
@@ -19,6 +23,12 @@ import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.bean.UserBean;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import com.issp.association.crowdfunding.network.HttpUtils;
+import com.squareup.picasso.Picasso;
+import com.zhy.autolayout.attr.AutoAttr;
+>>>>>>> bxh
 =======
 import com.issp.association.crowdfunding.network.HttpUtils;
 import com.squareup.picasso.Picasso;
@@ -38,7 +48,11 @@ import butterknife.ButterKnife;
  * Created by T-BayMax on 2017/3/16.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.ProductAdapterViewHolder,ProductCollectBean> {
+=======
+public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.ProductAdapterViewHolder, ProductCollectBean> {
+>>>>>>> bxh
 =======
 public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.ProductAdapterViewHolder, ProductCollectBean> {
 >>>>>>> bxh
@@ -57,6 +71,7 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
         if (isItem) {
             ProductCollectBean person = list.get(position);
             holder.itemView.setTag(person);
+<<<<<<< HEAD
 <<<<<<< HEAD
             holder.tvProductTitle.setText(person.getTitle());
         /*holder.iv_like_btn ;
@@ -81,6 +96,12 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
         ViewGroup.LayoutParams layoutParams = holder.itemView.getLayoutParams();
 
 =======
+=======
+            Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
+                    .into(holder.ivProductIcon);
+
+            holder.tvProductUserName.setText(person.getNickname());
+>>>>>>> bxh
             holder.tvProductContent.setText(person.getObjective());
             holder.tvSurplusDate.setText("剩余" + person.getDays() + "天");
             holder.tvConfessTotal.setText("认筹总额：" + person.getContribution());
@@ -106,6 +127,9 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
             Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
                     .into(holder.ivProductImg);
         }
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
     }
 
@@ -126,9 +150,12 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public void setData(List<ProductCollectBean> list) {
         this.list = list;
 =======
+=======
+>>>>>>> bxh
     public void setData(List<ProductCollectBean> list, int page) {
         if (page == 1) {
             this.list = list;
@@ -136,6 +163,9 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
             this.list.addAll(list);
         }
 
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
         notifyDataSetChanged();
     }
@@ -145,7 +175,10 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
         View v = LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.view_list_itme_product_collect, parent, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
         AutoUtils.autoSize(v);
+=======
+>>>>>>> bxh
 =======
 >>>>>>> bxh
 
@@ -204,6 +237,10 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
             super(itemView);
             if (isItem) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
+>>>>>>> bxh
 =======
                 AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
 >>>>>>> bxh

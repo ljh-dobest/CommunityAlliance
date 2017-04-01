@@ -15,6 +15,10 @@ import butterknife.ButterKnife;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * 众筹详情
+>>>>>>> bxh
 =======
  * 众筹详情
 >>>>>>> bxh

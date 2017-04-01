@@ -17,6 +17,24 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    defaultConfig {
+        multiDexEnabled true
+    }
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+
+    }
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+    productFlavors {
+    }
+}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
 }
 
 dependencies {
@@ -37,8 +55,12 @@ dependencies {
     compile 'com.contrarywind:Android-PickerView:3.0.7'
     compile 'com.zhy:autolayout:1.4.5'
 <<<<<<< HEAD
+<<<<<<< HEAD
     compile 'com.makeramen:roundedimageview:2.3.0'
     compile 'com.github.zcweng:switch-button:0.0.2@aar'
+=======
+    compile project(':Libraries:DroidPlugin')
+>>>>>>> bxh
 =======
     compile project(':Libraries:DroidPlugin')
 >>>>>>> bxh

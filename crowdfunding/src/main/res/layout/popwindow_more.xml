@@ -10,8 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:padding="@dimen/border_10"
         android:textSize="@dimen/font_20"
+=======
+        android:padding="@dimen/border_20"
+        android:textSize="@dimen/font_30"
+>>>>>>> bxh
 =======
         android:padding="@dimen/border_20"
         android:textSize="@dimen/font_30"
@@ -22,8 +27,13 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginLeft="@dimen/border_10"
         android:layout_marginRight="@dimen/border_10"
+=======
+        android:layout_marginLeft="@dimen/border_20"
+        android:layout_marginRight="@dimen/border_20"
+>>>>>>> bxh
 =======
         android:layout_marginLeft="@dimen/border_20"
         android:layout_marginRight="@dimen/border_20"
@@ -35,9 +45,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:padding="@dimen/border_10"
         android:gravity="center"
         android:textSize="@dimen/font_20"
+=======
+        android:padding="@dimen/border_20"
+        android:gravity="center"
+        android:textSize="@dimen/font_30"
+>>>>>>> bxh
 =======
         android:padding="@dimen/border_20"
         android:gravity="center"

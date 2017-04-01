@@ -28,6 +28,7 @@ public final class R {
     public static final class drawable {
         public static final int black_background = 0x7f020055;
         public static final int gray_radius = 0x7f02005e;
+<<<<<<< HEAD
         public static final int white_radius = 0x7f02006c;
     }
     public static final class id {
@@ -38,15 +39,35 @@ public final class R {
         public static final int center_crop = 0x7f0e0042;
         public static final int center_inside = 0x7f0e0043;
         public static final int circleIndicator = 0x7f0e00a6;
+=======
+        public static final int white_radius = 0x7f02006d;
+    }
+    public static final class id {
+        public static final int bannerContainer = 0x7f0e00b8;
+        public static final int bannerTitle = 0x7f0e00bd;
+        public static final int bannerViewPager = 0x7f0e00b9;
+        public static final int center = 0x7f0e0041;
+        public static final int center_crop = 0x7f0e0042;
+        public static final int center_inside = 0x7f0e0043;
+        public static final int circleIndicator = 0x7f0e00ba;
+>>>>>>> bxh
         public static final int fit_center = 0x7f0e0044;
         public static final int fit_end = 0x7f0e0045;
         public static final int fit_start = 0x7f0e0046;
         public static final int fit_xy = 0x7f0e0047;
+<<<<<<< HEAD
         public static final int indicatorInside = 0x7f0e00ab;
         public static final int matrix = 0x7f0e0048;
         public static final int numIndicator = 0x7f0e00a7;
         public static final int numIndicatorInside = 0x7f0e00aa;
         public static final int titleView = 0x7f0e00a8;
+=======
+        public static final int indicatorInside = 0x7f0e00bf;
+        public static final int matrix = 0x7f0e0048;
+        public static final int numIndicator = 0x7f0e00bb;
+        public static final int numIndicatorInside = 0x7f0e00be;
+        public static final int titleView = 0x7f0e00bc;
+>>>>>>> bxh
     }
     public static final class layout {
         public static final int banner = 0x7f040021;

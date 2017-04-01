@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
@@ -23,13 +24,22 @@ import com.issp.association.bean.ShareBean;
 import com.issp.association.interfaces.IShareListView;
 import com.issp.association.presenters.ShareInfoPresenter;
 import com.issp.association.ui.activity.CommentMessageActivity;
+<<<<<<< HEAD
+=======
+import com.issp.association.ui.activity.FeedForCommentActivity;
+>>>>>>> bxh
 import com.issp.association.ui.activity.MinShareActivity;
+import com.issp.association.ui.activity.ReadShareActivity;
 import com.issp.association.utils.DisplayUtils;
+import com.issp.association.utils.L;
+import com.issp.association.utils.T;
 import com.issp.association.view.BannerViewPager;
 import com.issp.association.view.CustomGifHeader;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import butterknife.BindView;
@@ -55,14 +65,24 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
     XRefreshView xRefreshView;
 
     private View headerView;
+<<<<<<< HEAD
+=======
+
+    private boolean isRefresh;
+>>>>>>> bxh
 
     SimpleAdapter adapter;
     List<ShareBean> personList = new ArrayList<ShareBean>();
     GridLayoutManager layoutManager;
     private int mLoadCount = 0;
 
+
+    private int limit = 20;
+    private int page = 1;
+
     private BannerViewPager mBannerViewPager;
     private int[] mImageIds = new int[]{R.mipmap.banner, R.mipmap.banner02};// 测试图片id
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,7 +90,13 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
         ButterKnife.bind(this);
         initView();
     }
+<<<<<<< HEAD
     private void initView(){
+=======
+
+    private void initView() {
+        lt_main_title.setText("干货分享");
+>>>>>>> bxh
         xRefreshView.setPullLoadEnable(true);
         recyclerView.setHasFixedSize(true);
 
@@ -91,7 +117,7 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
         xRefreshView.setCustomHeaderView(header);
         recyclerView.setAdapter(adapter);
         xRefreshView.setAutoLoadMore(false);
-        xRefreshView.setPinnedTime(1000);
+        xRefreshView.setPinnedTime(1500);
         xRefreshView.setMoveForHorizontal(true);
 //        recyclerviewAdapter.setHeaderView(headerView, recyclerView);
         adapter.setCustomLoadMoreView(new XRefreshViewFooter(this));
@@ -108,49 +134,56 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
 
             @Override
             public void onRefresh(boolean isPullDown) {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        //模拟数据加载失败的情况
-                        Random random = new Random();
-                        boolean success = random.nextBoolean();
-                        if(success){
-                            xRefreshView.stopRefresh();
-                        }else{
-                            xRefreshView.stopRefresh(false);
-                        }
-                        //或者
-//                        xRefreshView1.stopRefresh(success);
-                    }
-                }, 2000);
+                page = 1;
+                initData();
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
-                new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            adapter.insert(new ShareBean("标题"+i+1,"内容"+i+1),
-                                    adapter.getAdapterItemCount());
-                        }
-                        mLoadCount++;
-                        if (mLoadCount >= 3) {
-                            xRefreshView.setLoadComplete(true);
-                        } else {
-                            // 刷新完成必须调用此方法停止加载
-                            xRefreshView.stopLoadMore();
-                        }
-                    }
-                }, 1000);
+                page++;
+                initData();
+            }
+        });
+        adapter.setOnItemClickListener(new SimpleAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, ShareBean bean) {
+                Intent intent = new Intent(MainActivity.this, ReadShareActivity.class);
+                intent.putExtra("bean", bean);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onLikeClick(View view, ShareBean bean) {
+                isRefresh=false;
+                Map<String, String> formData = new HashMap<String, String>(0);
+                formData.put("userId", "111");
+                formData.put("shareId", bean.getId());
+                formData.put("praise", "1");
+                tv_like_btn = (TextView) view.findViewById(R.id.tv_like_btn);
+                iv_like_btn = (ImageView) view.findViewById(R.id.iv_like_btn);
+
+                presenter.sharePraiseInfoPresenter(formData);
+            }
+
+            @Override
+            public void onCommentClick(View view, ShareBean bean) {
+                Intent intent = new Intent(MainActivity.this, FeedForCommentActivity.class);
+                intent.putExtra("bean", bean);
+                startActivity(intent);
             }
         });
     }
 
+    TextView tv_like_btn;
+    ImageView iv_like_btn;
+
     private void initData() {
-        for (int i = 0; i < 3; i++) {
-            ShareBean person = new ShareBean("标题"+i+1,"内容"+i+1);
-            personList.add(person);
-        }
+        isRefresh = true;
+        Map<String, String> formData = new HashMap<String, String>(0);
+        formData.put("userId", "111");
+        formData.put("page", page + "");
+        presenter.ShareInfoPresenter(formData);
+
     }
 
 
@@ -186,7 +219,11 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
             tv_information.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+<<<<<<< HEAD
                     Intent intent=new Intent(MainActivity.this, CommentMessageActivity.class);
+=======
+                    Intent intent = new Intent(MainActivity.this, CommentMessageActivity.class);
+>>>>>>> bxh
                     startActivity(intent);
                     mPopupWindow.dismiss();
                 }
@@ -194,7 +231,7 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
             tv_my_share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent=new Intent(MainActivity.this, MinShareActivity.class);
+                    Intent intent = new Intent(MainActivity.this, MinShareActivity.class);
                     startActivity(intent);
                     mPopupWindow.dismiss();
                 }
@@ -214,11 +251,30 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
 
     @Override
     public void showError(String errorString) {
-
+        if (isRefresh)
+            if (page == 1) {
+                xRefreshView.stopRefresh(false);
+            } else {
+                xRefreshView.stopLoadMore(false);
+            }
+        T.showShort(MainActivity.this, errorString);
     }
 
     @Override
     public void setShareListData(ArrayList<ShareBean> data) {
+        if (page == 1) {
+            xRefreshView.stopRefresh(true);
+        } else {
+            xRefreshView.stopLoadMore(true);
+        }
+        adapter.setData(data, page);
+    }
 
+    @Override
+    public void sharePraise(String data) {
+        int likes = Integer.parseInt(tv_like_btn.getText().toString().trim());
+        tv_like_btn.setText((likes + 1) + "");
+        iv_like_btn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+        T.showShort(MainActivity.this, data);
     }
 }

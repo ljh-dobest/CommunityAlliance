@@ -3,6 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <dimen name="font_12">12sp</dimen>
     <dimen name="font_14">14sp</dimen>
     <dimen name="font_16">16sp</dimen>
@@ -35,6 +36,8 @@
     <dimen name="border_88">88dp</dimen>
     <dimen name="border_114">114dp</dimen>
 =======
+=======
+>>>>>>> bxh
     <dimen name="font_12">12px</dimen>
     <dimen name="font_14">14px</dimen>
     <dimen name="font_16">16px</dimen>
@@ -72,6 +75,9 @@
     <dimen name="border_88">88px</dimen>
     <dimen name="border_114">114px</dimen>
     <dimen name="border_400">400px</dimen>
+<<<<<<< HEAD
+>>>>>>> bxh
+=======
 >>>>>>> bxh
 
 </resources>

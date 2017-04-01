@@ -22,11 +22,16 @@ import okhttp3.RequestBody;
  */
 public class HttpUtils {
 <<<<<<< HEAD
+<<<<<<< HEAD
      public static final String URL = "http://192.168.0.212:90/appapi/app";
     public static final String IMAGE_RUL = "http://192.168.0.212:90";
 =======
      public static final String URL = "http://192.168.0.209:90/appapi/app";
     public static final String IMAGE_RUL = "http://192.168.0.209:90";
+>>>>>>> bxh
+=======
+     public static final String URL = "http://192.168.0.100:90/appapi/app";
+    public static final String IMAGE_RUL = "http://192.168.0.100:90";
 >>>>>>> bxh
     private static final String TAG = "HttpClient-Request";
 
