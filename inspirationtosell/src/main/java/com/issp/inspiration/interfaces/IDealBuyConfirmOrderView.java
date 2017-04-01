@@ -13,8 +13,7 @@ import java.util.List;
  *Created by T-BayMax on 2017/3/20.
  */
 
-public interface IDealBuyCommentListView extends BaseView {
-    void setDealBuyCommentListData(List<DealBuyCommentBean> data);
-    void setAddCommentData(String data);
+public interface IDealBuyConfirmOrderView extends BaseView {
+    void setConfirmOrderData(String data);
     boolean checkInputInfo();
 }

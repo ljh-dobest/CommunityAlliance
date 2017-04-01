@@ -1,4 +1,4 @@
-package com.issp.association.view;
+package com.issp.inspiration.view;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.andview.refreshview.callback.IHeaderCallBack;
-import com.issp.association.R;
+import com.issp.inspiration.R;
 
 public class CustomGifHeader extends LinearLayout implements IHeaderCallBack {
     private GifView gifView1;

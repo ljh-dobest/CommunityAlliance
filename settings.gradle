@@ -1,1 +1,1 @@
-include ':app', ':drygoodsshare', ':crowdfunding',':Libraries:DroidPlugin'
+include ':app', ':drygoodsshare', ':crowdfunding', ':Libraries:DroidPlugin', ':inspirationtosell'

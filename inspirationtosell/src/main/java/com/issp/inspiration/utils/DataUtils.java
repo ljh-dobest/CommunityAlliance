@@ -1,4 +1,4 @@
-package com.issp.association.utils;
+package com.issp.inspiration.utils;
 
 /**
  * Created by Min on 2016/12/7.
@@ -9,7 +9,7 @@ import android.content.Context;
 import android.content.res.AssetManager;
 
 
-import com.issp.association.bean.CustomDate;
+import com.issp.inspiration.bean.CustomDate;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/border_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/border_10">
+
+        <TextView
+            android:id="@+id/tv_order_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="标题"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/font_32" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_order_detail_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_light"
+                android:padding="@dimen/border_10"
+                android:text="未发货"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/font_32" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_order_detail_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="3"
+        android:padding="@dimen/border_10"
+        android:text="内容"
+        android:textColor="@color/color_66"
+        android:textSize="@dimen/font_28" />
+
+    <TextView
+        android:id="@+id/tv_order_detail_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/border_10"
+        android:text="备注"
+        android:textColor="@color/color_66"
+        android:textSize="@dimen/font_30" />
+</LinearLayout>

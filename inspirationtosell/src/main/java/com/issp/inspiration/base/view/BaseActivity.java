@@ -1,4 +1,4 @@
-package com.issp.association.base.view;
+package com.issp.inspiration.base.view;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -9,8 +9,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
-import com.issp.association.R;
-import com.issp.association.utils.DataUtils;
+import com.issp.inspiration.R;
+import com.issp.inspiration.utils.DataUtils;
 
 
 /**

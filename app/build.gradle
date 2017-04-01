@@ -17,6 +17,24 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    defaultConfig {
+        multiDexEnabled true
+    }
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+
+    }
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+    productFlavors {
+    }
+}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
 }
 
 dependencies {

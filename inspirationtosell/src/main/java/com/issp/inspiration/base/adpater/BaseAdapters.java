@@ -1,4 +1,4 @@
-package com.issp.association.base.adpater;
+package com.issp.inspiration.base.adpater;
 
 import android.content.Context;
 import android.view.LayoutInflater;

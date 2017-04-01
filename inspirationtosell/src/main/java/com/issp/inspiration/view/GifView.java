@@ -1,4 +1,4 @@
-package com.issp.association.view;
+package com.issp.inspiration.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.issp.association.R;
+import com.issp.inspiration.R;
 
 
 public class GifView extends View

@@ -7,6 +7,7 @@ import com.issp.association.listeners.OnFeedForCommentListListener;
 import com.issp.association.model.FeedForCommentModel;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 /**
  *Created by T-BayMax on 2017/3/20.
@@ -19,13 +20,21 @@ public class FeedForCommentPresenter extends BasePersenter<IFeedForCommentListVi
         recommendInfoMoudle = new FeedForCommentModel();
     }
 
-    public void ShareInfoPresenter(String userId) {
-        recommendInfoMoudle.getFeedCommentInfo(userId, this);
+    public void FeedCommentInfo( Map<String, String> formData ) {
+        recommendInfoMoudle.getFeedCommentInfo(formData, this);
+    }
+    public void addFeedCommentInfo( Map<String, String> formData ) {
+        recommendInfoMoudle.addCommentInfo(formData, this);
     }
 
     @Override
     public void getFeedCommentInfo(ArrayList<ShareCommentBean> data) {
         mView.setFeedForCommentListData(data);
+    }
+
+    @Override
+    public void getAddCommentInfo(String data) {
+        mView.setAddCommentData(data);
     }
 
     @Override

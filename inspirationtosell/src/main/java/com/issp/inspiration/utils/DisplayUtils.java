@@ -1,4 +1,4 @@
-package com.issp.association.utils;
+package com.issp.inspiration.utils;
 
 import android.app.Activity;
 import android.content.Context;

@@ -1,8 +1,9 @@
-package com.issp.association.bean;
+package com.issp.inspiration.bean;
 
 
 
-import com.issp.association.utils.DataUtils;
+
+import com.issp.inspiration.utils.DataUtils;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.issp.association.crowdfunding;
+package com.issp.inspiration;
 
 
 import android.app.Application;

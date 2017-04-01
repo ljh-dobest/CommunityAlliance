@@ -1,11 +1,10 @@
-package com.issp.association.utils;
+package com.issp.inspiration.utils;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 
 import com.andview.refreshview.utils.Utils;
-import com.issp.association.R;
+import com.issp.inspiration.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

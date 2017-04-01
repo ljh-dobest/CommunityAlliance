@@ -11,5 +11,6 @@ import java.util.ArrayList;
 
 public interface OnFeedForCommentListListener {
     void getFeedCommentInfo(ArrayList<ShareCommentBean> data);
+    void getAddCommentInfo(String data);
     void showError(String errorString);
 }

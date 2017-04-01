@@ -1,4 +1,4 @@
-package com.issp.association.bean;
+package com.issp.inspiration.bean;
 
 import java.io.Serializable;
 

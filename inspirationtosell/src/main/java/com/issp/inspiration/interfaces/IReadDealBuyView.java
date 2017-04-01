@@ -1,17 +1,15 @@
-package com.issp.association.interfaces;
+package com.issp.inspiration.interfaces;
 
 
-import com.issp.association.base.view.BaseView;
-import com.issp.association.bean.ShareBean;
-
-import java.util.ArrayList;
+import com.issp.inspiration.base.view.BaseView;
+import com.issp.inspiration.bean.DealBuyBean;
 
 /**
  * Created by T-BayMax on 2017/3/13.
  */
 
-public interface IReadShareView extends BaseView {
-    void setReadShareData(ShareBean data);
+public interface IReadDealBuyView extends BaseView {
+    void setDealBuyData(DealBuyBean data);
 
-    void sharePraise(String data);
+    void dealBuyPraise(String data);
 }

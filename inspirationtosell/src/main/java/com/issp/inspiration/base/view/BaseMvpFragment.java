@@ -1,4 +1,4 @@
-package com.issp.association.base.view;
+package com.issp.inspiration.base.view;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.issp.association.base.presenter.BasePersenter;
+import com.issp.inspiration.base.presenter.BasePersenter;
 
 
 /**

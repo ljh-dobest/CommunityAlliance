@@ -1,4 +1,4 @@
-package com.issp.association.base.presenter;
+package com.issp.inspiration.base.presenter;
 
 /**
  * Created by Min on 2017/3/8.

@@ -24,13 +24,13 @@ import butterknife.ButterKnife;
  * Created by T-BayMax on 2017/3/20.
  */
 
-public class DaelBuyCommentListAdapter extends BaseRecyclerViewAdapter<DaelBuyCommentListAdapter.ShareCommentListAdapterViewHolder,DealBuyCommentBean> {
+public class DealBuyCommentListAdapter extends BaseRecyclerViewAdapter<DealBuyCommentListAdapter.ShareCommentListAdapterViewHolder,DealBuyCommentBean> {
 
     private List<DealBuyCommentBean> list;
     private Context context;
     private int position;
 
-    public DaelBuyCommentListAdapter(List<DealBuyCommentBean> list, Context context) {
+    public DealBuyCommentListAdapter(List<DealBuyCommentBean> list, Context context) {
         this.list = list;
     }
 
@@ -66,8 +66,13 @@ public class DaelBuyCommentListAdapter extends BaseRecyclerViewAdapter<DaelBuyCo
         return new ShareCommentListAdapterViewHolder(view, false);
     }
 
-    public void setData(List<DealBuyCommentBean> list) {
-        this.list = list;
+    public void setData(List<DealBuyCommentBean> list,int page) {
+        if (page==1){
+
+            this.list = list;
+        }else {
+            this.list.addAll(list);
+        }
         notifyDataSetChanged();
     }
 
@@ -111,7 +116,7 @@ public class DaelBuyCommentListAdapter extends BaseRecyclerViewAdapter<DaelBuyCo
             super(itemView);
             if (isItem) {
                 ButterKnife.bind(this, itemView);
-                itemView.setOnClickListener(DaelBuyCommentListAdapter.this);
+                itemView.setOnClickListener(DealBuyCommentListAdapter.this);
                 AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
             }
         }

@@ -1,26 +1,26 @@
-package com.issp.association.bean;
+package com.issp.inspiration.bean;
 
 import java.io.Serializable;
 
 /**
  *
- * 干货分享评论
+ * 灵感贩卖评论
  * Created by T-BayMax on 2017/3/13.
  */
 
-public class ShareCommentBean implements Serializable {
-    private ShareBean shareId;//干货分享id
+public class DealBuyCommentBean implements Serializable {
+    private DealBuyBean shareId;//干灵感贩卖id
     private String userId;//评论用户id
     private String nickname;
     private String avatarImage;
     private String content;	//评论内容
     private String commentTime;//  评论时间
 
-    public ShareBean getShareId() {
+    public DealBuyBean getShareId() {
         return shareId;
     }
 
-    public void setShareId(ShareBean shareId) {
+    public void setShareId(DealBuyBean shareId) {
         this.shareId = shareId;
     }
 

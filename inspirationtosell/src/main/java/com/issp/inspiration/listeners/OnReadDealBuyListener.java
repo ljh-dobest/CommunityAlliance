@@ -1,18 +1,16 @@
-package com.issp.association.listeners;
+package com.issp.inspiration.listeners;
 
 
-import com.issp.association.bean.ShareBean;
-
-import java.util.ArrayList;
+import com.issp.inspiration.bean.DealBuyBean;
 
 /**
  * Created by T-BayMax on 2017/3/13.
  */
 
-public interface OnReadShareListener {
-    void getReadShareInfo(ShareBean data);
+public interface OnReadDealBuyListener {
+    void getReadDealBuyInfo(DealBuyBean data);
 
-    void sharePraiseInfo(String data);
+    void dealBuyPraiseInfo(String data);
 
     void showError(String errorString);
 }

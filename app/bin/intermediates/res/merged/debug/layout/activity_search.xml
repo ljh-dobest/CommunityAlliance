@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.just.shequnlianmeng.ui.activitys.SearchActivity">
+ <EditText
+     android:id="@+id/et_search_something"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="@string/searchSomething"
+     android:textSize="@dimen/font_28"
+     android:textColor="@color/col_A0A0A0"
+     android:textStyle="bold"
+     android:background="@color/col_E3E3E3"
+     />
+<RelativeLayout
+    android:layout_marginTop="8dp"
+    android:background="@color/col_DDD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_search_ls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="历史记录"
+        android:textStyle="bold"
+        android:textColor="@color/col_A0A0A0"
+        android:textSize="@dimen/font_26"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/tv_search_ls"
+        android:id="@+id/rv_search"
+        android:background="@color/col_DDD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_below="@id/rv_search"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_search_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/col_A0A0A0"
+        android:text="清除历史记录"
+        android:textSize="@dimen/font_26"/>
+</RelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -12,4 +12,6 @@ import java.util.ArrayList;
 
 public interface IFeedForCommentListView extends BaseView {
     void setFeedForCommentListData(ArrayList<ShareCommentBean> data);
+    void setAddCommentData(String data);
+    boolean checkInputInfo();
 }

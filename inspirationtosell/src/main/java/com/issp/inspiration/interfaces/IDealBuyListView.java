@@ -1,8 +1,8 @@
-package com.issp.association.interfaces;
+package com.issp.inspiration.interfaces;
 
 
-import com.issp.association.base.view.BaseView;
-import com.issp.association.bean.ShareBean;
+import com.issp.inspiration.base.view.BaseView;
+import com.issp.inspiration.bean.DealBuyBean;
 
 import java.util.ArrayList;
 
@@ -10,8 +10,8 @@ import java.util.ArrayList;
  * Created by T-BayMax on 2017/3/13.
  */
 
-public interface IShareListView extends BaseView {
-    void setShareListData(ArrayList<ShareBean> data);
+public interface IDealBuyListView extends BaseView {
+    void setDealBuyListData(ArrayList<DealBuyBean> data);
 
-    void sharePraise(String data);
+    void dealBuyPraise(String data);
 }

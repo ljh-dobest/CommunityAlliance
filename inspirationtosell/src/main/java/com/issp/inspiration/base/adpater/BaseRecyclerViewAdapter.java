@@ -1,4 +1,4 @@
-package com.issp.association.crowdfunding.base.adpater;
+package com.issp.inspiration.base.adpater;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -14,7 +14,7 @@ public class BaseRecyclerViewAdapter<T extends RecyclerView.ViewHolder,  O> exte
 
     public OnRecyclerViewItemClickListener mOnItemClickListener = null;
     public static interface OnRecyclerViewItemClickListener<B> {
-        void onItemClick(View view , B data);
+        void onItemClick(View view, B data);
     }
 
     @Override

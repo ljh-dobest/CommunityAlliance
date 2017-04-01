@@ -1,26 +1,24 @@
-package com.issp.association.presenters;
+package com.issp.inspiration.presenters;
 
-import com.issp.association.base.presenter.BasePersenter;
-import com.issp.association.bean.ShareBean;
-import com.issp.association.interfaces.IReadShareView;
-import com.issp.association.interfaces.IShareListView;
-import com.issp.association.listeners.OnReadShareListener;
-import com.issp.association.listeners.OnShareListener;
-import com.issp.association.model.ReadShareInfoModel;
-import com.issp.association.model.ShareInfoModel;
 
-import java.util.ArrayList;
+import com.issp.inspiration.base.presenter.BasePersenter;
+import com.issp.inspiration.bean.DealBuyBean;
+import com.issp.inspiration.interfaces.IDealBuyListView;
+import com.issp.inspiration.interfaces.IReadDealBuyView;
+import com.issp.inspiration.listeners.OnReadDealBuyListener;
+import com.issp.inspiration.model.ReadDealBuyInfoModel;
+
 import java.util.Map;
 
 /**
  * Created by T-BayMax on 2017/3/13.
  */
 
-public class ReadShareInfoPresenter extends BasePersenter<IReadShareView> implements OnReadShareListener {
-    private ReadShareInfoModel recommendInfoMoudle;
+public class ReadDealBuyInfoPresenter extends BasePersenter<IReadDealBuyView> implements OnReadDealBuyListener {
+    private ReadDealBuyInfoModel recommendInfoMoudle;
 
-    public ReadShareInfoPresenter() {
-        recommendInfoMoudle = new ReadShareInfoModel();
+    public ReadDealBuyInfoPresenter() {
+        recommendInfoMoudle = new ReadDealBuyInfoModel();
     }
 
     public void ReadShareInfoPresenter(Map<String, String> formData) {
@@ -32,13 +30,13 @@ public class ReadShareInfoPresenter extends BasePersenter<IReadShareView> implem
     }
 
     @Override
-    public void getReadShareInfo(ShareBean data) {
-        mView.setReadShareData(data);
+    public void getReadDealBuyInfo(DealBuyBean data) {
+        mView.setDealBuyData(data);
     }
 
     @Override
-    public void sharePraiseInfo(String data) {
-        mView.sharePraise(data);
+    public void dealBuyPraiseInfo(String data) {
+        mView.dealBuyPraise(data);
     }
 
     @Override

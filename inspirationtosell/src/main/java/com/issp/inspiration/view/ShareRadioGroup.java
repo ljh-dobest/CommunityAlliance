@@ -1,4 +1,4 @@
-package com.issp.association.view;
+package com.issp.inspiration.view;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.issp.association.R;
+import com.issp.inspiration.R;
 
 
 /**

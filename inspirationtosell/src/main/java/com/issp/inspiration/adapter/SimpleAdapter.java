@@ -1,7 +1,6 @@
-package com.issp.association.adapter;
+package com.issp.inspiration.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,19 +11,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
-import com.issp.association.R;
-import com.issp.association.bean.ShareBean;
-import com.issp.association.bean.UserBean;
-import com.issp.association.network.HttpUtils;
-import com.issp.association.utils.DataUtils;
-import com.issp.association.utils.DateConversionUtils;
+import com.issp.inspiration.R;
+import com.issp.inspiration.bean.DealBuyBean;
+import com.issp.inspiration.network.HttpUtils;
+import com.issp.inspiration.utils.DateConversionUtils;
 import com.squareup.picasso.Picasso;
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
 
-import java.text.ParseException;
 import java.util.List;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 
 /**
@@ -33,13 +28,13 @@ import butterknife.ButterKnife;
  * Created by T-BayMax on 2017/3/16.
  */
 public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapterViewHolder> implements View.OnClickListener {
-    private List<ShareBean> list;
+    private List<DealBuyBean> list;
     private static Context context;
     private int position;
 
     private OnItemClickListener onItemClickListener;
 
-    public SimpleAdapter(List<ShareBean> list, Context context) {
+    public SimpleAdapter(List<DealBuyBean> list, Context context) {
         this.context = context;
         this.list = list;
     }
@@ -47,7 +42,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
     @Override
     public void onBindViewHolder(SimpleAdapterViewHolder holder, int position, boolean isItem) {
         if (isItem) {
-            ShareBean person = list.get(position);
+            DealBuyBean person = list.get(position);
 
             holder.ll_item.setTag(person);
             holder.ll_like.setTag(person);
@@ -56,7 +51,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
 
             holder.tv_share_title.setText(person.getTitle());
             holder.tv_time.setText(DateConversionUtils.setRefreshTime(context, person.getTime(), "yyyy-MM-dd HH:mm:ss"));
-            holder.tv_like_btn.setText(person.getLikes() + "");
+           /* holder.tv_like_btn.setText(person.getLikes() + "");
             switch (person.getLikesStatus()) {
                 case 0:
                     holder.iv_like_btn.setImageResource(R.mipmap.img_like_btn);
@@ -70,7 +65,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
                 case 3:
                     holder.iv_like_btn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
                     break;
-            }
+            }*/
 
             if (null != person.getImage()) {
                 Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
@@ -100,7 +95,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
         return new SimpleAdapterViewHolder(view, false);
     }
 
-    public void setData(List<ShareBean> list, int page) {
+    public void setData(List<DealBuyBean> list, int page) {
         if (page == 1) {
             this.list = list;
         } else {
@@ -115,7 +110,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
         View v;
         // if (position < 3) {
         v = LayoutInflater.from(parent.getContext()).inflate(
-                R.layout.view_list_itme_share_rl, parent, false);
+                R.layout.view_list_itme_inspiration_rl, parent, false);
        /* } else {
             v = LayoutInflater.from(parent.getContext()).inflate(
                     R.layout.view_list_itme_share, parent, false);
@@ -124,7 +119,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
         return vh;
     }
 
-    public void insert(ShareBean person, int position) {
+    public void insert(DealBuyBean person, int position) {
         insert(list, person, position);
     }
 
@@ -143,13 +138,13 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ll_comment:
-                onItemClickListener.onCommentClick(v, (ShareBean) v.getTag());
+                onItemClickListener.onCommentClick(v, (DealBuyBean) v.getTag());
                 break;
             case R.id.ll_like:
-                onItemClickListener.onLikeClick(v, (ShareBean) v.getTag());
+                onItemClickListener.onLikeClick(v, (DealBuyBean) v.getTag());
                 break;
             case R.id.ll_item:
-                onItemClickListener.onItemClick(v, (ShareBean) v.getTag());
+                onItemClickListener.onItemClick(v, (DealBuyBean) v.getTag());
                 break;
         }
     }
@@ -178,6 +173,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
         public SimpleAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
             if (isItem) {
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
                 tv_share_title = (TextView) itemView.findViewById(R.id.tv_share_title);
                 iv_like_btn = (ImageView) itemView.findViewById(R.id.iv_like_btn);
                 iv_comment_btn = (ImageView) itemView.findViewById(R.id.iv_comment_btn);
@@ -203,7 +199,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
         }
     }
 
-    public ShareBean getItem(int position) {
+    public DealBuyBean getItem(int position) {
         if (position < list.size())
             return list.get(position);
         else
@@ -211,10 +207,10 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
     }
 
     public interface OnItemClickListener {
-        public void onItemClick(View view, ShareBean bean);
+        public void onItemClick(View view, DealBuyBean bean);
 
-        public void onLikeClick(View view, ShareBean bean);
+        public void onLikeClick(View view, DealBuyBean bean);
 
-        public void onCommentClick(View view, ShareBean bean);
+        public void onCommentClick(View view, DealBuyBean bean);
     }
 }

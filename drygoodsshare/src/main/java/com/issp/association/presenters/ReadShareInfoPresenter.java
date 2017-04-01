@@ -2,31 +2,43 @@ package com.issp.association.presenters;
 
 import com.issp.association.base.presenter.BasePersenter;
 import com.issp.association.bean.ShareBean;
+import com.issp.association.interfaces.IReadShareView;
 import com.issp.association.interfaces.IShareListView;
+import com.issp.association.listeners.OnReadShareListener;
 import com.issp.association.listeners.OnShareListener;
+import com.issp.association.model.ReadShareInfoModel;
 import com.issp.association.model.ShareInfoModel;
 
 import java.util.ArrayList;
 import java.util.Map;
 
 /**
- *Created by T-BayMax on 2017/3/13.
+ * Created by T-BayMax on 2017/3/13.
  */
 
-public class ShareInfoPresenter extends BasePersenter<IShareListView> implements OnShareListener {
-    private ShareInfoModel recommendInfoMoudle;
+public class ReadShareInfoPresenter extends BasePersenter<IReadShareView> implements OnReadShareListener {
+    private ReadShareInfoModel recommendInfoMoudle;
 
-    public ShareInfoPresenter() {
-        recommendInfoMoudle = new ShareInfoModel();
+    public ReadShareInfoPresenter() {
+        recommendInfoMoudle = new ReadShareInfoModel();
     }
 
-    public void ShareInfoPresenter(Map<String, String> formData) {
-        recommendInfoMoudle.getShareInfo(formData, this);
+    public void ReadShareInfoPresenter(Map<String, String> formData) {
+        recommendInfoMoudle.getReadShareInfo(formData, this);
+    }
+
+    public void sharePraiseInfoPresenter(Map<String, String> formData) {
+        recommendInfoMoudle.getSharePraiseInfo(formData, this);
     }
 
     @Override
-    public void getShareInfo(ArrayList<ShareBean> data) {
-        mView.setShareListData(data);
+    public void getReadShareInfo(ShareBean data) {
+        mView.setReadShareData(data);
+    }
+
+    @Override
+    public void sharePraiseInfo(String data) {
+        mView.sharePraise(data);
     }
 
     @Override

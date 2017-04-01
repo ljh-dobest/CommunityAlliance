@@ -24,7 +24,8 @@ import okhttp3.Cookie;
 /**
  * Apk操作, 包含删除\安装\卸载\启动Apk
  * <p>
- *  @author T-BayMax
+ *
+ * @author T-BayMax
  */
 public class ApkOperator {
 
@@ -66,9 +67,9 @@ public class ApkOperator {
      * @return [0:成功, 1:已安装, -1:连接失败, -2:权限不足, -3:安装失败]
      */
     public String installApk(final ApkItem item) {
-        String res="成功";
+        String res = "成功";
         if (!PluginManager.getInstance().isConnected()) {
-            res= "连接失败"; // 连接失败
+            return "连接失败"; // 连接失败
         }
         FileUtils fileUtils = new FileUtils();
         if (isApkInstall(item)) {
@@ -79,7 +80,7 @@ public class ApkOperator {
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
-            res=  "已安装"; // 已安装
+            return "已安装"; // 已安装
         }
 
         try {
@@ -87,11 +88,11 @@ public class ApkOperator {
             fileUtils.deleteFile(item.apkFile);
             boolean isRequestPermission = (result == PluginManager.INSTALL_FAILED_NO_REQUESTEDPERMISSION);
             if (isRequestPermission) {
-                res=  "权限不足";
+                return "权限不足";
             }
         } catch (RemoteException e) {
             e.printStackTrace();
-            res=  "安装失败";
+            return "安装失败";
         }
         return res;
     }
@@ -101,7 +102,7 @@ public class ApkOperator {
         PackageInfo info = null;
         try {
             info = PluginManager.getInstance().getPackageInfo(apkItem.packageInfo.packageName, 0);
-           // openApk(apkItem);
+            // openApk(apkItem);
         } catch (RemoteException e) {
             e.printStackTrace();
         }
@@ -122,15 +123,16 @@ public class ApkOperator {
         }
         return boo;
     }
-    public String versionCode(ApkItem apkItem){
+
+    public String versionCode(ApkItem apkItem) {
         PackageInfo info = null;
-        String code="0";
+        String code = "0";
         try {
             info = PluginManager.getInstance().getPackageInfo(apkItem.packageInfo.packageName, 0);
-            code=info.versionName ;
+            code = info.versionName;
         } catch (RemoteException e) {
             e.printStackTrace();
-            code="0";
+            code = "0";
         }
         return code;
     }

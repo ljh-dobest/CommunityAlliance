@@ -1,5 +1,6 @@
 package com.issp.association.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.widget.GridLayoutManager;
@@ -15,13 +16,17 @@ import com.issp.association.R;
 import com.issp.association.adapter.FeedForCommentListAdapter;
 import com.issp.association.adapter.ShareCommentListAdapter;
 import com.issp.association.base.view.BaseMvpActivity;
+import com.issp.association.bean.ShareBean;
 import com.issp.association.bean.ShareCommentBean;
 import com.issp.association.interfaces.IFeedForCommentListView;
 import com.issp.association.presenters.FeedForCommentPresenter;
+import com.issp.association.utils.T;
 import com.issp.association.view.CustomGifHeader;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import butterknife.BindView;
@@ -43,18 +48,28 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
     TextView ltMainTitleRight;
     @BindView(R.id.editText)
     EditText editText;
+    @BindView(R.id.tv_submit_comment)
+    TextView tvSubmitComment;
     @BindView(R.id.recycler_view_test_rv)
     RecyclerView recyclerView;
     @BindView(R.id.xrefreshview)
     XRefreshView xRefreshView;
 
-
     private View headerView;
+
+    private boolean isRefresh = true;
 
     List<ShareCommentBean> personList = new ArrayList<ShareCommentBean>();
     LinearLayoutManager layoutManager;
     private int mLoadCount = 0;
+
+    private int limit = 20;
+    private int page = 1;
+
     FeedForCommentListAdapter adapter;
+
+    private ShareBean shareBean;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,10 +78,12 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
         initView();
     }
 
-    private void initView(){
+    private void initView() {
         ltMainTitle.setText("评论列表");
-        xRefreshView.setPullLoadEnable(true);
+        Intent intent = getIntent();
+        shareBean = (ShareBean) intent.getSerializableExtra("bean");
 
+        xRefreshView.setPullLoadEnable(true);
         recyclerView.setHasFixedSize(true);
 
         initData();
@@ -78,7 +95,7 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
         // 静默加载模式不能设置footerview
         recyclerView.setAdapter(adapter);
         //设置刷新完成以后，headerview固定的时间
-        xRefreshView.setPinnedTime(1000);
+        xRefreshView.setPinnedTime(1500);
         xRefreshView.setMoveForHorizontal(true);
         xRefreshView.setPullLoadEnable(true);
         xRefreshView.setAutoLoadMore(false);
@@ -98,54 +115,46 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
 
             @Override
             public void onRefresh(boolean isPullDown) {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        //模拟数据加载失败的情况
-                        Random random = new Random();
-                        boolean success = random.nextBoolean();
-                        if(success){
-                            xRefreshView.stopRefresh();
-                        }else{
-                            xRefreshView.stopRefresh(false);
-                        }
-                        //或者
-//                        xRefreshView1.stopRefresh(success);
-                    }
-                }, 2000);
+                page = 1;
+                initData();
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
-                new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            ShareCommentBean person = new ShareCommentBean();
-                            adapter.insert(person,
-                                    adapter.getAdapterItemCount());
-                        }
-                        mLoadCount++;
-                        if (mLoadCount >= 3) {
-                            xRefreshView.setLoadComplete(true);
-                        } else {
-                            // 刷新完成必须调用此方法停止加载
-                            xRefreshView.stopLoadMore();
-                        }
-                    }
-                }, 1000);
+                page++;
+                initData();
             }
         });
+
     }
 
     private void initData() {
-        for (int i = 0; i < 3; i++) {
-            ShareCommentBean person = new ShareCommentBean();
-            personList.add(person);
-        }
+        isRefresh = true;
+        Map<String, String> formData = new HashMap<String, String>(0);
+        formData.put("shareId", shareBean.getId());
+        presenter.FeedCommentInfo(formData);
     }
+
     @OnClick(R.id.lt_main_title_left)
-    void leftClick(){
+    void leftClick() {
         FeedForCommentActivity.this.finish();
+    }
+
+    @OnClick(R.id.editText)
+    void commentClick() {
+        tvSubmitComment.setVisibility(View.VISIBLE);
+    }
+
+    @OnClick(R.id.tv_submit_comment)
+    void submitCommentClick() {
+        if (checkInputInfo()) {
+            isRefresh = false;
+            Map<String, String> formData = new HashMap<String, String>(0);
+            formData.put("shareId", shareBean.getId());
+            formData.put("userId", "111");
+            formData.put("content", editText.getText().toString().trim());
+            presenter.addFeedCommentInfo(formData);
+        }
     }
 
     @Override
@@ -165,11 +174,36 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
 
     @Override
     public void showError(String errorString) {
-
+        if (isRefresh)
+            if (page == 1) {
+                xRefreshView.stopRefresh(false);
+            } else {
+                xRefreshView.stopLoadMore(false);
+            }
+        T.showShort(FeedForCommentActivity.this, errorString);
     }
 
     @Override
     public void setFeedForCommentListData(ArrayList<ShareCommentBean> data) {
+        if (page == 1) {
+            xRefreshView.stopRefresh(true);
+        } else {
+            xRefreshView.stopLoadMore(true);
+        }
+        adapter.setData(data, page);
+    }
 
+    @Override
+    public void setAddCommentData(String data) {
+        T.showShort(FeedForCommentActivity.this, data);
+        tvSubmitComment.setVisibility(View.GONE);
+    }
+
+    @Override
+    public boolean checkInputInfo() {
+        if (editText.getText().toString().equals("")) {
+            return false;
+        }
+        return true;
     }
 }

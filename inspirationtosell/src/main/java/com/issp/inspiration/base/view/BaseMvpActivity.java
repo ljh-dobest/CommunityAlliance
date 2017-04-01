@@ -1,9 +1,9 @@
-package com.issp.association.base.view;
+package com.issp.inspiration.base.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.issp.association.base.presenter.BasePersenter;
+import com.issp.inspiration.base.presenter.BasePersenter;
 
 
 /**

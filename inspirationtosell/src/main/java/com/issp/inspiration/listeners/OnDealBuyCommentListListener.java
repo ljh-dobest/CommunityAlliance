@@ -1,15 +1,17 @@
-package com.issp.association.crowdfunding.listeners;
+package com.issp.inspiration.listeners;
 
 
-import com.issp.association.crowdfunding.bean.ProductCommentBean;
+import com.issp.inspiration.bean.DealBuyCommentBean;
 
-import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  *Created by T-BayMax on 2017/3/20.
  */
 
-public interface OnProductCommentListListener {
-    void getProductCommentInfo(ArrayList<ProductCommentBean> data);
+public interface OnDealBuyCommentListListener {
+    void getDealBuyCommentInfo(List<DealBuyCommentBean> data);
+    void getAddCommentInfo(String data);
     void showError(String errorString);
 }

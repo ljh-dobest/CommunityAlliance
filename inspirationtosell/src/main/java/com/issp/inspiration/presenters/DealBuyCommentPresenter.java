@@ -1,32 +1,40 @@
-package com.issp.association.crowdfunding.presenters;
+package com.issp.inspiration.presenters;
 
 
-import com.issp.association.crowdfunding.base.presenter.BasePersenter;
-import com.issp.association.crowdfunding.bean.ProductCommentBean;
-import com.issp.association.crowdfunding.interfaces.IProductCommentListView;
-import com.issp.association.crowdfunding.listeners.OnProductCommentListListener;
-import com.issp.association.crowdfunding.model.ProductCommentModel;
+import com.issp.inspiration.base.presenter.BasePersenter;
+import com.issp.inspiration.bean.DealBuyCommentBean;
+import com.issp.inspiration.interfaces.IDealBuyCommentListView;
+import com.issp.inspiration.listeners.OnDealBuyCommentListListener;
+import com.issp.inspiration.model.DealBuyCommentModel;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  *Created by T-BayMax on 2017/3/20.
  */
 
-public class ProductCommentPresenter extends BasePersenter<IProductCommentListView> implements OnProductCommentListListener {
-    private ProductCommentModel recommendInfoMoudle;
+public class DealBuyCommentPresenter extends BasePersenter<IDealBuyCommentListView> implements OnDealBuyCommentListListener {
+    private DealBuyCommentModel recommendInfoMoudle;
 
-    public ProductCommentPresenter() {
-        recommendInfoMoudle = new ProductCommentModel();
+    public DealBuyCommentPresenter() {
+        recommendInfoMoudle = new DealBuyCommentModel();
     }
 
-    public void ShareInfoPresenter(String userId) {
-        recommendInfoMoudle.getProductCommentInfo(userId, this);
+    public void DealBuyCommentInfo( Map<String, String> formData ) {
+        recommendInfoMoudle.getDealBuyCommentInfo(formData, this);
+    }
+    public void addDealBuyCommentInfo( Map<String, String> formData ) {
+        recommendInfoMoudle.addCommentInfo(formData, this);
+    }
+    @Override
+    public void getDealBuyCommentInfo(List<DealBuyCommentBean> data) {
+        mView.setDealBuyCommentListData(data);
     }
 
     @Override
-    public void getProductCommentInfo(ArrayList<ProductCommentBean> data) {
-        mView.setProductCommentListData(data);
+    public void getAddCommentInfo(String data) {
+        mView.setAddCommentData(data);
     }
 
     @Override

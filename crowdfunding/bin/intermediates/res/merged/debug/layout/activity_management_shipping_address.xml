@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aam_item_border"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_custom_toolbar" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/border_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/border_50"
+        android:paddingLeft="@dimen/border_20"
+        android:paddingRight="@dimen/border_20"
+        android:paddingTop="@dimen/border_50">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add" />
+
+        <TextView
+            android:id="@+id/tv_shipping_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加收货地址"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/font_32" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/border_20"
+        android:text="其他信息"
+        android:textColor="@color/color_66"
+        android:textSize="@dimen/font_30" />
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/xrefreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_test_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aam_item_border"
+            android:scrollbars="vertical" />
+    </com.andview.refreshview.XRefreshView>
+
+</LinearLayout>

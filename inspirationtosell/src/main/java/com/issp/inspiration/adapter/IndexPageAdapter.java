@@ -1,4 +1,4 @@
-package com.issp.association.adapter;
+package com.issp.inspiration.adapter;
 
 import android.content.Context;
 import android.os.Parcelable;
@@ -9,7 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 
-import com.issp.association.R;
+import com.issp.inspiration.R;
+
 
 public class IndexPageAdapter extends PagerAdapter {
 

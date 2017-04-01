@@ -1,17 +1,14 @@
-package com.issp.association.model;
+package com.issp.inspiration.model;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.issp.association.bean.Code;
-import com.issp.association.bean.ShareBean;
-import com.issp.association.listeners.OnReadShareListener;
-import com.issp.association.listeners.OnShareListener;
-import com.issp.association.network.HttpUtils;
+import com.issp.inspiration.bean.Code;
+import com.issp.inspiration.bean.DealBuyBean;
+import com.issp.inspiration.listeners.OnReadDealBuyListener;
+import com.issp.inspiration.network.HttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 import okhttp3.Call;
@@ -20,8 +17,8 @@ import okhttp3.Call;
  * Created by T-BayMax on 2017/3/13.
  */
 
-public class ReadShareInfoModel {
-    public void getReadShareInfo(Map<String, String> formData, final OnReadShareListener listener) {
+public class ReadDealBuyInfoModel {
+    public void getReadShareInfo(Map<String, String> formData, final OnReadDealBuyListener listener) {
 
         HttpUtils.sendGsonPostRequest("/shareDetails", formData, new StringCallback() {
             @Override
@@ -32,13 +29,13 @@ public class ReadShareInfoModel {
             @Override
             public void onResponse(String response, int id) {
                 Gson gson = new Gson();
-                Type type = new TypeToken<Code<ShareBean>>() {
+                Type type = new TypeToken<Code<DealBuyBean>>() {
                 }.getType();
-                Code<ShareBean> code = gson.fromJson(response, type);
+                Code<DealBuyBean> code = gson.fromJson(response, type);
                 switch (code.getCode()) {
                     case 200:
-                        ShareBean data = (ShareBean) code.getData();
-                        listener.getReadShareInfo(data);
+                        DealBuyBean data = (DealBuyBean) code.getData();
+                        listener.getReadDealBuyInfo(data);
                         break;
                     case 0:
                         listener.showError("查询失败");
@@ -48,7 +45,7 @@ public class ReadShareInfoModel {
         });
     }
 
-    public void getSharePraiseInfo(Map<String, String> formData, final OnReadShareListener listener) {
+    public void getSharePraiseInfo(Map<String, String> formData, final OnReadDealBuyListener listener) {
 
         HttpUtils.sendGsonPostRequest("/sharePraise", formData, new StringCallback() {
             @Override
@@ -64,7 +61,7 @@ public class ReadShareInfoModel {
                 Code code = gson.fromJson(response, type);
                 switch (code.getCode()) {
                     case 200:
-                        listener.sharePraiseInfo("点赞成功");
+                        listener.dealBuyPraiseInfo("点赞成功");
                         break;
                     case 100:
                         listener.showError("已点赞");

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.issp.association.crowdfunding"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.issp.association.crowdfunding.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.issp.association.crowdfunding.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.MessageActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.ProductCommentActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.MinProductActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.SupportProductActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.ProductParticularsActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.OrderDetailActivity" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1340" />
+    </application>
+
+</manifest>

@@ -1,4 +1,4 @@
-package com.issp.association.view;
+package com.issp.inspiration.view;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -8,7 +8,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
-import com.issp.association.R;
+import com.issp.inspiration.R;
+
 
 /**
  * Created by T-BayMax on 2017/3/13.
