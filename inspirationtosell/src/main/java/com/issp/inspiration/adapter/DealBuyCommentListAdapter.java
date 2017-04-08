@@ -10,7 +10,10 @@ import android.widget.TextView;
 
 import com.issp.inspiration.R;
 import com.issp.inspiration.base.adpater.BaseRecyclerViewAdapter;
+import com.issp.inspiration.bean.CommentsBean;
 import com.issp.inspiration.bean.DealBuyCommentBean;
+import com.issp.inspiration.network.HttpUtils;
+import com.squareup.picasso.Picasso;
 import com.zhy.autolayout.attr.AutoAttr;
 import com.zhy.autolayout.utils.AutoUtils;
 
@@ -26,28 +29,27 @@ import butterknife.ButterKnife;
 
 public class DealBuyCommentListAdapter extends BaseRecyclerViewAdapter<DealBuyCommentListAdapter.ShareCommentListAdapterViewHolder,DealBuyCommentBean> {
 
-    private List<DealBuyCommentBean> list;
+    private List<CommentsBean> list;
     private Context context;
     private int position;
 
-    public DealBuyCommentListAdapter(List<DealBuyCommentBean> list, Context context) {
+    public DealBuyCommentListAdapter(List<CommentsBean> list, Context context) {
         this.list = list;
     }
 
     @Override
     public void onBindViewHolder(ShareCommentListAdapterViewHolder holder, int position, boolean isItem) {
-       /*if(isItem){
-       ShareCommentBean bean = list.get(position);
+        if (isItem) {
+            CommentsBean bean = list.get(position);
 
             holder.itemView.setTag(bean);
-        Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserId().getUserPortraitUrl())
-                .into(holder.ivShareIcon);
-        holder.tvShareUserName.setText(bean.getUserId().getNickname());
-        holder.tvContent.setText(bean.getContent());
-        holder.tvLikeBtn.setText(bean.getShareId().getArcTitle());
-        holder.tvShareCommentTime.setText(bean.getCommentTime());
+            Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserPortraitUrl())
+                    .into(holder.ivShareIcon);
+            holder.tvShareUserName.setText(bean.getNickname());
+            holder.tvContent.setText(bean.getContent());
+            //holder.tvLikeBtn.setText(bean.getShareId().getArcTitle());
+            holder.tvShareCommentTime.setText(bean.getCommentTime());
         }
-*/
     }
 
     @Override
@@ -66,7 +68,7 @@ public class DealBuyCommentListAdapter extends BaseRecyclerViewAdapter<DealBuyCo
         return new ShareCommentListAdapterViewHolder(view, false);
     }
 
-    public void setData(List<DealBuyCommentBean> list,int page) {
+    public void setData(List<CommentsBean> list,int page) {
         if (page==1){
 
             this.list = list;
@@ -85,7 +87,7 @@ public class DealBuyCommentListAdapter extends BaseRecyclerViewAdapter<DealBuyCo
         return vh;
     }
 
-    public void insert(DealBuyCommentBean person, int position) {
+    public void insert(CommentsBean person, int position) {
         insert(list, person, position);
     }
 
@@ -122,7 +124,7 @@ public class DealBuyCommentListAdapter extends BaseRecyclerViewAdapter<DealBuyCo
         }
     }
 
-    public DealBuyCommentBean getItem(int position) {
+    public CommentsBean getItem(int position) {
         if (position < list.size())
             return list.get(position);
         else

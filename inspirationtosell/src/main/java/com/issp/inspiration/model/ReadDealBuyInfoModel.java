@@ -20,7 +20,7 @@ import okhttp3.Call;
 public class ReadDealBuyInfoModel {
     public void getReadShareInfo(Map<String, String> formData, final OnReadDealBuyListener listener) {
 
-        HttpUtils.sendGsonPostRequest("/shareDetails", formData, new StringCallback() {
+        HttpUtils.sendGsonPostRequest("/selectDealBuy", formData, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
                 listener.showError(e.toString());

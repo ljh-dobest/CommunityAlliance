@@ -50,7 +50,7 @@ public class ShareInfoModel {
 
     public void getSharePraiseInfo(Map<String, String> formData, final OnShareListener listener) {
 
-        HttpUtils.sendGsonPostRequest("/sharePraise", formData, new StringCallback() {
+        HttpUtils.sendGsonPostRequest("/userPraise", formData, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
                 listener.showError(e.toString());

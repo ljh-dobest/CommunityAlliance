@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
@@ -28,7 +29,10 @@ import com.issp.association.crowdfunding.interfaces.IProductCollectListView;
 import com.issp.association.crowdfunding.presenters.ProductCollectPresenter;
 import com.issp.association.crowdfunding.ui.activity.MessageActivity;
 import com.issp.association.crowdfunding.ui.activity.MinProductActivity;
+import com.issp.association.crowdfunding.ui.activity.ProductCommentActivity;
+import com.issp.association.crowdfunding.ui.activity.ProductParticularsActivity;
 import com.issp.association.crowdfunding.utils.DisplayUtils;
+import com.issp.association.crowdfunding.utils.T;
 import com.issp.association.crowdfunding.view.BannerViewPager;
 import com.issp.association.crowdfunding.view.CustomGifHeader;
 import com.youth.banner.Banner;
@@ -47,7 +51,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- *
  * 产品众筹
  * Created by T-BayMax on 2017/3/21.
  */
@@ -80,6 +83,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
     private int limit = 20;
     private int page = 1;
 
+    private boolean isRefresh;
     Banner homepage_banner;
 
     private ArrayList<String> imgList;
@@ -102,6 +106,8 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         return new ProductCollectPresenter();
     }
 
+    TextView tv_like_btn;
+    ImageView iv_like_btn;
 
     private void initView() {
         lt_main_title.setText(getString(R.string.str_title_main));
@@ -143,7 +149,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             @Override
             public void onRefresh(boolean isPullDown) {
 
-                page=1;
+                page = 1;
                 initData();
 
             }
@@ -156,10 +162,39 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
             }
         });
+        adapter.setOnItemClickListener(new SimpleAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, ProductCollectBean bean) {
+                Intent intent = new Intent(MainActivity.this, ProductParticularsActivity.class);
+                intent.putExtra("bean", bean);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onLikeClick(View view, ProductCollectBean bean) {
+                isRefresh = false;
+                Map<String, String> formData = new HashMap<String, String>(0);
+                formData.put("userId", "111");
+                formData.put("shareId", bean.getId());
+                formData.put("praise", "1");
+                tv_like_btn = (TextView) view.findViewById(R.id.tv_like_btn);
+                iv_like_btn = (ImageView) view.findViewById(R.id.iv_like_btn);
+
+                presenter.ShareInfoPresenter(formData);
+            }
+
+            @Override
+            public void onCommentClick(View view, ProductCollectBean bean) {
+                Intent intent = new Intent(MainActivity.this, ProductCommentActivity.class);
+                intent.putExtra("bean", bean);
+                startActivity(intent);
+
+            }
+        });
     }
 
     private void initData() {
-
+        isRefresh = true;
         Map<String, String> formData = new HashMap<String, String>(0);
         formData.put("userId", "111");
         formData.put("type", "1");
@@ -203,7 +238,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
 
     @OnClick(R.id.lt_main_title_left)
-    void leftClick(){
+    void leftClick() {
         MainActivity.this.finish();
     }
 
@@ -262,13 +297,13 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
     @Override
     public void showError(String errorString) {
-
-        if (page == 1) {
-            xRefreshView.stopRefresh(false);
-        } else {
-            xRefreshView.stopLoadMore(false);
-        }
-
+        if (isRefresh)
+            if (page == 1) {
+                xRefreshView.stopRefresh(false);
+            } else {
+                xRefreshView.stopLoadMore(false);
+            }
+        T.showShort(MainActivity.this, errorString);
     }
 
     @Override

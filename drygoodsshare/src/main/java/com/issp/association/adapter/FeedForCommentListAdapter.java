@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.issp.association.R;
+import com.issp.association.bean.CommentsBean;
 import com.issp.association.bean.ShareCommentBean;
 import com.issp.association.network.HttpUtils;
 import com.squareup.picasso.Picasso;
@@ -26,11 +27,11 @@ import butterknife.ButterKnife;
 
 public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommentListAdapter.ShareCommentListAdapterViewHolder> {
 
-    private List<ShareCommentBean> list;
+    private List<CommentsBean> list;
     private Context context;
     private int position;
 
-    public FeedForCommentListAdapter(List<ShareCommentBean> list, Context context) {
+    public FeedForCommentListAdapter(List<CommentsBean> list, Context context) {
         this.list = list;
     }
 
@@ -38,8 +39,8 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
     public void onBindViewHolder(ShareCommentListAdapterViewHolder holder, int position, boolean isItem) {
 
        if(isItem) {
-           ShareCommentBean bean = list.get(position);
-           Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getAvatarImage())
+           CommentsBean bean = list.get(position);
+           Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserPortraitUrl())
                    .into(holder.ivShareIcon);
            holder.tvShareUserName.setText(bean.getNickname());
            holder.tvContent.setText(bean.getContent());
@@ -64,7 +65,7 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
         return new ShareCommentListAdapterViewHolder(view, false);
     }
 
-    public void setData(List<ShareCommentBean> list,int page) {
+    public void setData(List<CommentsBean> list,int page) {
         if (page == 1) {
             this.list = list;
         } else {
@@ -83,7 +84,7 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
         return vh;
     }
 
-    public void insert(ShareCommentBean person, int position) {
+    public void insert(CommentsBean person, int position) {
         insert(list, person, position);
     }
 
@@ -117,7 +118,7 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
         }
     }
 
-    public ShareCommentBean getItem(int position) {
+    public CommentsBean getItem(int position) {
         if (position < list.size())
             return list.get(position);
         else

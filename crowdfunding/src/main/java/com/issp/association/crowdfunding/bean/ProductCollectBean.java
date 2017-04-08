@@ -11,6 +11,7 @@ public class ProductCollectBean implements Serializable {
 
     private String id;    //众筹id
     private String nickname;
+    private String title;        //标题
     private String userPortraitUrl;
     private String objective;//众筹目的
 
@@ -21,6 +22,12 @@ public class ProductCollectBean implements Serializable {
     private double days;//剩余筹备天数
     private int likeStatus;//是否点赞 0未点赞，1已点赞
     private int likes;//点赞数量
+
+    private String content;         //众筹内容
+    private String time;            //发布时间
+    private int totalPayNumber;    //已购买用户数量
+    private ProductRewardBean productReward;
+
 
 
     public String getId() {
@@ -37,6 +44,14 @@ public class ProductCollectBean implements Serializable {
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getUserPortraitUrl() {
@@ -110,5 +125,37 @@ public class ProductCollectBean implements Serializable {
     public void setLikes(int likes) {
         this.likes = likes;
 
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public int getTotalPayNumber() {
+        return totalPayNumber;
+    }
+
+    public void setTotalPayNumber(int totalPayNumber) {
+        this.totalPayNumber = totalPayNumber;
+    }
+
+    public ProductRewardBean getProductReward() {
+        return productReward;
+    }
+
+    public void setProductReward(ProductRewardBean productReward) {
+        this.productReward = productReward;
     }
 }

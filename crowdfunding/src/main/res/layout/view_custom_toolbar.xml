@@ -21,7 +21,7 @@
         android:gravity="center"
         android:padding="@dimen/border_4"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/font_28"
+        android:textSize="@dimen/font_30"
         android:visibility="visible" />
 
     <TextView
@@ -43,7 +43,7 @@
         android:drawableRight="@mipmap/more"
         android:gravity="center"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/font_28"
+        android:textSize="@dimen/font_30"
         android:visibility="visible" />
 
 </com.issp.association.crowdfunding.view.CustomToolbar>

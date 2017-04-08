@@ -79,7 +79,7 @@ public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoP
     }
 
     private void initView() {
-        lt_main_title.setText("干货分享");
+        lt_main_title.setText("灵感贩卖");
         xRefreshView.setPullLoadEnable(true);
         recyclerView.setHasFixedSize(true);
 

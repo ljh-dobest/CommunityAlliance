@@ -3,6 +3,7 @@ package com.issp.association.model;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.issp.association.bean.Code;
+import com.issp.association.bean.CommentsBean;
 import com.issp.association.bean.ShareBean;
 import com.issp.association.bean.ShareCommentBean;
 import com.issp.association.listeners.OnFeedForCommentListListener;
@@ -19,30 +20,33 @@ import java.util.Map;
 import okhttp3.Call;
 
 /**
- *Created by T-BayMax on 2017/3/20.
+ * Created by T-BayMax on 2017/3/20.
  */
 
 public class FeedForCommentModel {
 
-    public void getFeedCommentInfo(Map<String, String> formData , final OnFeedForCommentListListener listener){
+    public void getFeedCommentInfo(Map<String, String> formData, final OnFeedForCommentListListener listener) {
 
-        HttpUtils.sendGsonPostRequest("/allShareComment", formData, new StringCallback() {
+        HttpUtils.sendGsonPostRequest("/selectArticleComment", formData, new StringCallback() {
 
             @Override
             public void onError(Call call, Exception e, int id) {
-              listener.showError(e.toString());
+                listener.showError(e.toString());
             }
 
             @Override
             public void onResponse(String response, int id) {
-                Gson gson=new Gson();
-                Type type = new TypeToken<Code<List<ShareBean>>>() {
+                Gson gson = new Gson();
+                Type type = new TypeToken<Code<ShareCommentBean>>() {
                 }.getType();
-                Code<List<ShareCommentBean>> code = gson.fromJson(response,type);
+                Code<ShareCommentBean> code = gson.fromJson(response, type);
                 switch (code.getCode()) {
                     case 200:
-                        ArrayList<ShareCommentBean> data= (ArrayList<ShareCommentBean>) code.getData();
-                        listener.getFeedCommentInfo(data);
+                        if (null != code.getData()) {
+                            ShareCommentBean shareCommentBeen = code.getData();
+                            List<CommentsBean> data = shareCommentBeen.getComments();
+                            listener.getFeedCommentInfo(data);
+                        }
                         break;
                     case 0:
                         listener.showError("查询失败");
@@ -52,9 +56,9 @@ public class FeedForCommentModel {
         });
     }
 
-    public void addCommentInfo(Map<String, String> formData , final OnFeedForCommentListListener listener){
+    public void addCommentInfo(Map<String, String> formData, final OnFeedForCommentListListener listener) {
 
-        HttpUtils.sendGsonPostRequest("/shareComment", formData, new StringCallback() {
+        HttpUtils.sendGsonPostRequest("/articleComment", formData, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
                 listener.showError(e.toString());
@@ -62,13 +66,13 @@ public class FeedForCommentModel {
 
             @Override
             public void onResponse(String response, int id) {
-                Gson gson=new Gson();
+                Gson gson = new Gson();
                 Type type = new TypeToken<Code<List<ShareBean>>>() {
                 }.getType();
-                Code<List<ShareCommentBean>> code = gson.fromJson(response,type);
+                Code<List<ShareCommentBean>> code = gson.fromJson(response, type);
                 switch (code.getCode()) {
                     case 200:
-                       // ArrayList<ShareCommentBean> data= (ArrayList<ShareCommentBean>) code.getData();
+                        // ArrayList<ShareCommentBean> data= (ArrayList<ShareCommentBean>) code.getData();
                         listener.getAddCommentInfo("评论成功");
                         break;
                     case 0:

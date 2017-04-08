@@ -20,6 +20,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
 /**
@@ -27,12 +28,12 @@ import butterknife.ButterKnife;
  * <p>
  * Created by T-BayMax on 2017/3/16.
  */
-public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProductAdapter.ProductAdapterViewHolder,ProductCollectBean> {
+public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProductAdapter.ProductAdapterViewHolder, ProductCollectBean> {
 
     private List<ProductCollectBean> list;
     private Context context;
     private int position;
-
+    private OnItemClickListener onItemClickListener;
 
     public SupportProductAdapter(List<ProductCollectBean> list, Context context) {
         this.list = list;
@@ -41,7 +42,7 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
     @Override
     public void onBindViewHolder(ProductAdapterViewHolder holder, int position, boolean isItem) {
         if (isItem) {
-            ProductCollectBean person=list.get(position);
+            ProductCollectBean person = list.get(position);
             holder.itemView.setTag(person);
 
         }
@@ -75,7 +76,7 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
         View v = LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.view_list_itme_support_product, parent, false);
 
-         return new ProductAdapterViewHolder(v, isItem);
+        return new ProductAdapterViewHolder(v, isItem);
 
     }
 
@@ -116,6 +117,11 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
                 itemView.setOnClickListener(SupportProductAdapter.this);
             }
         }
+
+        @OnClick(R.id.tv_min_support)
+        void SupportClick(View v) {
+            onItemClickListener.onSupportClick(v, (ProductCollectBean) v.getTag());
+        }
     }
 
     public ProductCollectBean getItem(int position) {
@@ -125,5 +131,17 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
             return null;
     }
 
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
+
+
+    public interface OnItemClickListener {
+        public void onItemClick(View view, ProductCollectBean bean);
+
+        public void onSupportClick(View view, ProductCollectBean bean);
+
+    }
 
 }

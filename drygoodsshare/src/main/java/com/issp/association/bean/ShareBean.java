@@ -25,6 +25,7 @@ public class ShareBean implements Serializable{
     private String time;
     private int likes;
     private int likesStatus;
+    private String synopsis;
 
     public ShareBean(){
 
@@ -161,5 +162,13 @@ public class ShareBean implements Serializable{
 
     public void setLikesStatus(int likesStatus) {
         this.likesStatus = likesStatus;
+    }
+
+    public String getSynopsis() {
+        return synopsis;
+    }
+
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
     }
 }

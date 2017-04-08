@@ -2,12 +2,13 @@ package com.issp.association.crowdfunding.presenters;
 
 
 import com.issp.association.crowdfunding.base.presenter.BasePersenter;
-import com.issp.association.crowdfunding.bean.ProductCommentBean;
+import com.issp.association.crowdfunding.bean.CommentsBean;
 import com.issp.association.crowdfunding.interfaces.IProductCommentListView;
 import com.issp.association.crowdfunding.listeners.OnProductCommentListListener;
 import com.issp.association.crowdfunding.model.ProductCommentModel;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  *Created by T-BayMax on 2017/3/20.
@@ -20,12 +21,12 @@ public class ProductCommentPresenter extends BasePersenter<IProductCommentListVi
         recommendInfoMoudle = new ProductCommentModel();
     }
 
-    public void ShareInfoPresenter(String userId) {
-        recommendInfoMoudle.getProductCommentInfo(userId, this);
+    public void productCommentInfoPresenter(Map<String, String> formData) {
+        recommendInfoMoudle.getProductCommentInfo(formData, this);
     }
 
     @Override
-    public void getProductCommentInfo(ArrayList<ProductCommentBean> data) {
+    public void getProductCommentInfo(List<CommentsBean> data) {
         mView.setProductCommentListData(data);
     }
 

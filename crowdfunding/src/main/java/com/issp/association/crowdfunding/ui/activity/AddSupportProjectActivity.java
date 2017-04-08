@@ -1,8 +1,10 @@
 package com.issp.association.crowdfunding.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.issp.association.crowdfunding.R;
@@ -49,6 +51,8 @@ public class AddSupportProjectActivity extends BaseMvpActivity<IAddSupportProjec
     ImageView ivZhifubao;
     @BindView(R.id.iv_weixin)
     ImageView ivWeixin;
+    @BindView(R.id.ll_add_address)
+    LinearLayout llAddAddress;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,7 +68,7 @@ public class AddSupportProjectActivity extends BaseMvpActivity<IAddSupportProjec
     }
 
     private void initView() {
-        ltMainTitle.setText(getString(R.string.str_add_shipping_address));
+        ltMainTitle.setText(getString(R.string.str_add_support_project));
 
     }
 
@@ -85,6 +89,11 @@ public class AddSupportProjectActivity extends BaseMvpActivity<IAddSupportProjec
         }
     }
 
+    @OnClick(R.id.ll_add_address)
+    void addAddress(){
+        Intent intent=new Intent(AddSupportProjectActivity.this,AddShippingAddressActivity.class);
+       startActivity(intent);
+    }
     @Override
     public void showLoading() {
 

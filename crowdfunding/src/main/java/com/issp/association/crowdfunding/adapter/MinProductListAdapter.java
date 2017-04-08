@@ -15,6 +15,8 @@ import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.bean.UserBean;
 
+import com.issp.association.crowdfunding.network.HttpUtils;
+import com.squareup.picasso.Picasso;
 import com.zhy.autolayout.attr.AutoAttr;
 import com.zhy.autolayout.utils.AutoUtils;
 
@@ -42,25 +44,37 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
     public void onBindViewHolder(MinShareListAdapterHolder holder, int position, boolean isItem) {
         if (isItem) {
             ProductCollectBean person = list.get(position);
-
             holder.itemView.setTag(person);
 
-            holder.tvProductTitle.setText(person.getTitle());
-        /*holder.iv_like_btn ;
-        holder.iv_comment_btn ;
-        holder.tv_like_btn .setText(person.getArcTitle());
-        holder.tv_comment_btn.setText(person.getArcTitle());*/
+            Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
+                    .into(holder.ivProductIcon);
 
-            UserBean user = person.getUserId();
-            holder.tvProductContent.setText(person.getContent());
-           /* Picasso.with(context).load(HttpUtils.IMAGE_RUL + user.getUserPortraitUrl())
-                    .into(holder.iv_share_icon);*/
-            //holder.tv_share_user_Name.setText(user.getNickname());
-            //holder.tv_goods_share
-            /*holder.gv_share_img
-                    holder.iv_share_btn
-            holder.tv_share_btn*/
-
+            holder.tvProductUserName.setText(person.getNickname());
+holder.tvProductTitle.setText(person.getTitle());
+            holder.tvProductContent.setText(person.getObjective());
+            holder.tvSurplusDate.setText("剩余" + person.getDays() + "天");
+            holder.tvConfessTotal.setText("认筹总额：" + person.getContribution());
+            holder.tvAmountTotal.setText("目标总额：" + person.getCapital());
+            int schedule = (int) (person.getContribution() / person.getCapital() * 100);
+            holder.tvSchedule.setText(schedule + "%");
+            holder.pbSchedule.setProgress(schedule);
+            holder.tvLikeBtn.setText(person.getLikes()+"");
+            switch (person.getLikeStatus()) {
+                case 0:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn);
+                    break;
+                case 1:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+                    break;
+                case  2:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn_no);
+                    break;
+                case  3:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
+                    break;
+            }
+            Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
+                    .into(holder.ivProductImg);
         }
     }
 

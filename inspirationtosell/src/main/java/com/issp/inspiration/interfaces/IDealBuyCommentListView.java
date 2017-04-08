@@ -4,6 +4,7 @@ package com.issp.inspiration.interfaces;
 
 
 import com.issp.inspiration.base.view.BaseView;
+import com.issp.inspiration.bean.CommentsBean;
 import com.issp.inspiration.bean.DealBuyCommentBean;
 
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
  */
 
 public interface IDealBuyCommentListView extends BaseView {
-    void setDealBuyCommentListData(List<DealBuyCommentBean> data);
+    void setDealBuyCommentListData(List<CommentsBean> data);
     void setAddCommentData(String data);
     boolean checkInputInfo();
 }

@@ -17,12 +17,18 @@ import com.issp.association.crowdfunding.adapter.MinProductListAdapter;
 
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
+import com.issp.association.crowdfunding.interfaces.IMinProductListView;
 import com.issp.association.crowdfunding.interfaces.IProductCollectListView;
+import com.issp.association.crowdfunding.presenters.MinProductPresenter;
 import com.issp.association.crowdfunding.presenters.ProductCollectPresenter;
+import com.issp.association.crowdfunding.utils.T;
+import com.issp.association.crowdfunding.view.CustomerFooter;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import butterknife.BindView;
@@ -34,7 +40,7 @@ import butterknife.OnClick;
  * Created by T-BayMax on 2017/3/18.
  */
 
-public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,ProductCollectPresenter> implements IProductCollectListView , RadioGroup.OnCheckedChangeListener {
+public class MinProductActivity extends BaseMvpActivity<IMinProductListView, MinProductPresenter> implements IMinProductListView, RadioGroup.OnCheckedChangeListener {
 
 
     @BindView(R.id.lt_main_title_left)
@@ -55,6 +61,8 @@ public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,
     LinearLayoutManager layoutManager;
     private int mLoadCount = 0;
     MinProductListAdapter adapter;
+    private int page = 1;
+    private int type = 1;
 
     private RadioButton radioButtons[];
 
@@ -68,11 +76,11 @@ public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,
     }
 
     @Override
-    public ProductCollectPresenter initPresenter() {
-        return new ProductCollectPresenter();
+    public MinProductPresenter initPresenter() {
+        return new MinProductPresenter();
     }
 
-    private void initView(){
+    private void initView() {
         xRefreshView.setPullLoadEnable(true);
 
         recyclerView.setHasFixedSize(true);
@@ -93,10 +101,10 @@ public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,
 
         //当需要使用数据不满一屏时不显示点击加载更多的效果时，解注释下面的三行代码
         //并注释掉第四行代码
-      /*  CustomerFooter customerFooter = new CustomerFooter(this);
+        CustomerFooter customerFooter = new CustomerFooter(this);
         customerFooter.setRecyclerView(recyclerView);
-       adapter.setCustomLoadMoreView(customerFooter);*/
-        adapter.setCustomLoadMoreView(new XRefreshViewFooter(this));
+       adapter.setCustomLoadMoreView(customerFooter);
+       // adapter.setCustomLoadMoreView(new XRefreshViewFooter(this));
         xRefreshView.enableReleaseToLoadMore(true);
         xRefreshView.enableRecyclerViewPullUp(true);
         xRefreshView.enablePullUpWhenLoadCompleted(true);
@@ -106,50 +114,23 @@ public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,
 
             @Override
             public void onRefresh(boolean isPullDown) {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        //模拟数据加载失败的情况
-                        Random random = new Random();
-                        boolean success = random.nextBoolean();
-                        if(success){
-                            xRefreshView.stopRefresh();
-                        }else{
-                            xRefreshView.stopRefresh(false);
-                        }
-                        //或者
-//                        xRefreshView1.stopRefresh(success);
-                    }
-                }, 2000);
+                page=1;
+                 initData();
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
-                new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            ProductCollectBean person = new ProductCollectBean();
-                            adapter.insert(person,
-                                    adapter.getAdapterItemCount());
-                        }
-                        mLoadCount++;
-                        if (mLoadCount >= 3) {
-                            xRefreshView.setLoadComplete(true);
-                        } else {
-                            // 刷新完成必须调用此方法停止加载
-                            xRefreshView.stopLoadMore();
-                        }
-                    }
-                }, 1000);
+                page++;
+                  initData();
             }
         });
     }
 
     private void initData() {
-        for (int i = 0; i < 3; i++) {
-            ProductCollectBean person = new ProductCollectBean();
-            personList.add(person);
-        }
+        Map<String, String> formData = new HashMap<String, String>(0);
+        formData.put("userId", "110");
+        formData.put("type", type + "");
+        presenter.ShareInfoPresenter(formData);
     }
 
     private void initShareData() {
@@ -172,9 +153,24 @@ public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,
         }
 
     }
+
     @OnClick(R.id.lt_main_title_left)
-    void backClick(){
+    void backClick() {
         MinProductActivity.this.finish();
+    }
+
+    @OnClick(R.id.rb_connection)
+    void connectionClick() {
+        type = 1;
+        adapter.clear();
+        initData();
+    }
+
+    @OnClick(R.id.rb_relation_map)
+    void relationMapClick() {
+        type = 2;
+        adapter.clear();
+        initData();
     }
 
     @Override
@@ -189,11 +185,30 @@ public class MinProductActivity extends BaseMvpActivity<IProductCollectListView,
 
     @Override
     public void showError(String errorString) {
-
+        if (page == 1) {
+            xRefreshView.stopRefresh(false);
+        } else {
+            xRefreshView.stopLoadMore(false);
+        }
+        T.showShort(MinProductActivity.this, errorString);
     }
 
     @Override
-    public void setProductCollectData(ArrayList<ProductCollectBean> data) {
+    public void setMinProductListData(List<ProductCollectBean> data) {
+        if (page == 1) {
+            xRefreshView.stopRefresh(true);
+        } else {
+            xRefreshView.stopLoadMore(true);
+        }
+        if (data.size()==0) {
+            if (type==1){
+                T.showShort(MinProductActivity.this,"你还没有发布不过众筹");
+            }else {
+                T.showShort(MinProductActivity.this,"你还没有支持任何众筹");
+            }
 
+        }else {
+            adapter.setData(data);
+        }
     }
 }

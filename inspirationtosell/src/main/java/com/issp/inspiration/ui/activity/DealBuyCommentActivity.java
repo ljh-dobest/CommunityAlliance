@@ -2,7 +2,6 @@ package com.issp.inspiration.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -14,6 +13,7 @@ import com.andview.refreshview.XRefreshViewFooter;
 import com.issp.inspiration.R;
 import com.issp.inspiration.adapter.DealBuyCommentListAdapter;
 import com.issp.inspiration.base.view.BaseMvpActivity;
+import com.issp.inspiration.bean.CommentsBean;
 import com.issp.inspiration.bean.DealBuyBean;
 import com.issp.inspiration.bean.DealBuyCommentBean;
 import com.issp.inspiration.interfaces.IDealBuyCommentListView;
@@ -24,7 +24,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,7 +55,7 @@ public class DealBuyCommentActivity extends BaseMvpActivity<IDealBuyCommentListV
 
         private boolean isRefresh = true;
 
-        List<DealBuyCommentBean> personList = new ArrayList<DealBuyCommentBean>();
+        List<CommentsBean> personList = new ArrayList<CommentsBean>();
         LinearLayoutManager layoutManager;
         private int mLoadCount = 0;
 
@@ -65,7 +64,7 @@ public class DealBuyCommentActivity extends BaseMvpActivity<IDealBuyCommentListV
 
     DealBuyCommentListAdapter adapter;
 
-        private DealBuyBean shareBean;
+        private DealBuyBean bean;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -78,7 +77,7 @@ public class DealBuyCommentActivity extends BaseMvpActivity<IDealBuyCommentListV
         private void initView() {
             ltMainTitle.setText("评论列表");
             Intent intent = getIntent();
-            shareBean = (DealBuyBean) intent.getSerializableExtra("bean");
+            bean = (DealBuyBean) intent.getSerializableExtra("bean");
 
             xRefreshView.setPullLoadEnable(true);
             recyclerView.setHasFixedSize(true);
@@ -128,7 +127,9 @@ public class DealBuyCommentActivity extends BaseMvpActivity<IDealBuyCommentListV
         private void initData() {
             isRefresh = true;
             Map<String, String> formData = new HashMap<String, String>(0);
-            formData.put("shareId", shareBean.getId());
+            formData.put("articleId", bean.getId());
+            formData.put("userId", bean.getUserId());
+            formData.put("type","3");
             presenter.DealBuyCommentInfo(formData);
         }
 
@@ -147,8 +148,9 @@ public class DealBuyCommentActivity extends BaseMvpActivity<IDealBuyCommentListV
             if (checkInputInfo()) {
                 isRefresh = false;
                 Map<String, String> formData = new HashMap<String, String>(0);
-                formData.put("shareId", shareBean.getId());
+                formData.put("articleId", bean.getId());
                 formData.put("userId", "111");
+                formData.put("type","5");
                 formData.put("content", editText.getText().toString().trim());
                 presenter.addDealBuyCommentInfo(formData);
             }
@@ -181,7 +183,7 @@ public class DealBuyCommentActivity extends BaseMvpActivity<IDealBuyCommentListV
         }
 
         @Override
-        public void setDealBuyCommentListData(List<DealBuyCommentBean> data) {
+        public void setDealBuyCommentListData(List<CommentsBean> data) {
             if (page == 1) {
                 xRefreshView.stopRefresh(true);
             } else {

@@ -1,26 +1,36 @@
 package com.issp.association.ui.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.IdRes;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.XRefreshViewFooter;
+import com.issp.association.MainActivity;
 import com.issp.association.R;
 import com.issp.association.adapter.FeedForCommentListAdapter;
 import com.issp.association.adapter.MinShareListAdapter;
 import com.issp.association.base.view.BaseActivity;
+import com.issp.association.base.view.BaseMvpActivity;
 import com.issp.association.bean.ShareBean;
 import com.issp.association.bean.ShareCommentBean;
+import com.issp.association.interfaces.IMinShareListView;
+import com.issp.association.presenters.MinShareInfoPresenter;
+import com.issp.association.utils.T;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import butterknife.BindView;
@@ -32,7 +42,7 @@ import butterknife.OnClick;
  * Created by T-BayMax on 2017/3/18.
  */
 
-public class MinShareActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {
+public class MinShareActivity extends BaseMvpActivity<IMinShareListView, MinShareInfoPresenter> implements IMinShareListView, RadioGroup.OnCheckedChangeListener {
 
     @BindView(R.id.lt_main_title_left)
     TextView lt_main_title_left;
@@ -53,6 +63,10 @@ public class MinShareActivity extends BaseActivity implements RadioGroup.OnCheck
     private int mLoadCount = 0;
     MinShareListAdapter adapter;
 
+
+    private boolean isRefresh;
+    private int page = 1;
+    private int type;
     private RadioButton radioButtons[];
 
     @Override
@@ -62,9 +76,15 @@ public class MinShareActivity extends BaseActivity implements RadioGroup.OnCheck
         ButterKnife.bind(this);
         initView();
         initData();
+        initClick();
     }
 
-    private void initView(){
+    @Override
+    public MinShareInfoPresenter initPresenter() {
+        return new MinShareInfoPresenter();
+    }
+
+    private void initView() {
         xRefreshView.setPullLoadEnable(true);
 
         recyclerView.setHasFixedSize(true);
@@ -99,50 +119,63 @@ public class MinShareActivity extends BaseActivity implements RadioGroup.OnCheck
 
             @Override
             public void onRefresh(boolean isPullDown) {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        //模拟数据加载失败的情况
-                        Random random = new Random();
-                        boolean success = random.nextBoolean();
-                        if(success){
-                            xRefreshView.stopRefresh();
-                        }else{
-                            xRefreshView.stopRefresh(false);
-                        }
-                        //或者
-//                        xRefreshView1.stopRefresh(success);
-                    }
-                }, 2000);
+                page = 1;
+                initData();
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
-                new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            ShareBean person = new ShareBean();
-                            adapter.insert(person,
-                                    adapter.getAdapterItemCount());
-                        }
-                        mLoadCount++;
-                        if (mLoadCount >= 3) {
-                            xRefreshView.setLoadComplete(true);
-                        } else {
-                            // 刷新完成必须调用此方法停止加载
-                            xRefreshView.stopLoadMore();
-                        }
-                    }
-                }, 1000);
+                page++;
+                initData();
             }
         });
     }
 
     private void initData() {
-        for (int i = 0; i < 3; i++) {
-            ShareBean person = new ShareBean();
-            personList.add(person);
-        }
+        // isRefresh = true;
+        Map<String, String> formData = new HashMap<String, String>(0);
+        formData.put("userId", "110");
+        // formData.put("page", page + "");
+        presenter.MinShareInfoPresenter(formData);
+    }
+
+    TextView tv_like_btn;
+    ImageView iv_like_btn;
+    private void initClick() {
+        adapter.setOnItemClickListener(new MinShareListAdapter.OnItemClickListener() {
+            @Override
+            public void onShareClick(View view, ShareBean bean) {
+
+            }
+
+            @Override
+            public void onItemClick(View view, ShareBean bean) {
+                Intent intent = new Intent(MinShareActivity.this, ReadShareActivity.class);
+                intent.putExtra("bean", bean);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onLikeClick(View view, ShareBean bean) {
+                isRefresh = false;
+                Map<String, String> formData = new HashMap<String, String>(0);
+                formData.put("userId", "111");
+                formData.put("articleId", bean.getId());
+                formData.put("type", "3");
+                formData.put("status", "1");
+                tv_like_btn = (TextView) view.findViewById(R.id.tv_like_btn);
+                iv_like_btn = (ImageView) view.findViewById(R.id.iv_like_btn);
+
+                presenter.sharePraiseInfoPresenter(formData);
+            }
+
+            @Override
+            public void onCommentClick(View view, ShareBean bean) {
+                Intent intent = new Intent(MinShareActivity.this, FeedForCommentActivity.class);
+                intent.putExtra("bean", bean);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initShareData() {
@@ -165,8 +198,66 @@ public class MinShareActivity extends BaseActivity implements RadioGroup.OnCheck
         }
 
     }
+
     @OnClick(R.id.lt_main_title_left)
-    void backClick(){
+    void backClick() {
         MinShareActivity.this.finish();
+    }
+
+    @OnClick(R.id.rb_connection)
+    void connectionClick() {
+        type = 1;
+        adapter.clear();
+        initData();
+    }
+
+    @OnClick(R.id.rb_relation_map)
+    void relationMapClick() {
+        type = 2;
+        adapter.clear();
+        initData();
+    }
+
+    @Override
+    public void showLoading() {
+
+    }
+
+    @Override
+    public void hideLoading() {
+
+    }
+
+    @Override
+    public void showError(String errorString) {
+        if (isRefresh)
+            if (page == 1) {
+                xRefreshView.stopRefresh(false);
+            } else {
+                xRefreshView.stopLoadMore(false);
+            }
+        T.showShort(MinShareActivity.this, errorString);
+    }
+
+    @Override
+    public void setMinShareListData(List<ShareBean> data) {
+        if (page == 1) {
+            xRefreshView.stopRefresh(true);
+        } else {
+            xRefreshView.stopLoadMore(true);
+        }
+        if (data.size() < 1) {
+            T.showShort(MinShareActivity.this, "没有了");
+            return;
+        }
+        adapter.setData(data, page);
+    }
+
+    @Override
+    public void sharePraise(String data) {
+        int likes = Integer.parseInt(tv_like_btn.getText().toString().trim());
+        tv_like_btn.setText((likes + 1) + "");
+        iv_like_btn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+        T.showShort(MinShareActivity.this, data);
     }
 }

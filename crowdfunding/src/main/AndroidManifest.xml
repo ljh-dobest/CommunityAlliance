@@ -6,8 +6,8 @@
     <!-- if you want to load images from a file OR from the internet -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
-        android:allowBackup="true"
         android:name="com.issp.association.crowdfunding.App"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -22,13 +22,22 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.activity.MessageActivity"/>
-        <activity android:name=".ui.activity.ProductCommentActivity"/>
-        <activity android:name=".ui.activity.MinProductActivity"/>
-        <activity android:name=".ui.activity.SupportProductActivity"/>
-        <activity android:name=".ui.activity.ProductParticularsActivity"/>
-        <meta-data android:name="design_width" android:value="768" />
-        <meta-data android:name="design_height" android:value="1280" />
+        <activity android:name=".ui.activity.AddShippingAddressActivity" />
+        <activity android:name=".ui.activity.AddSupportProjectActivity" />
+        <activity android:name=".ui.activity.ManagementShippingAddressActivity" />
+        <activity android:name=".ui.activity.MessageActivity" />
+        <activity android:name=".ui.activity.MinProductActivity" />
+        <activity android:name=".ui.activity.OrderDetailActivity"/>
+        <activity android:name=".ui.activity.ProductCommentActivity" />
+        <activity android:name=".ui.activity.ProductParticularsActivity" />
+        <activity android:name=".ui.activity.SupportProductActivity" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
     </application>
 
 </manifest>

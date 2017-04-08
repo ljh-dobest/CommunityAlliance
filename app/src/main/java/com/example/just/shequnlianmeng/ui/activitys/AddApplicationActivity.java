@@ -1,10 +1,5 @@
 package com.example.just.shequnlianmeng.ui.activitys;
 
-<<<<<<< HEAD
-import android.os.Bundle;
-import android.widget.GridView;
-import android.widget.TextView;
-=======
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
@@ -14,17 +9,14 @@ import android.os.RemoteException;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
->>>>>>> bxh
+
 
 import com.example.just.shequnlianmeng.R;
 import com.example.just.shequnlianmeng.adapter.AddApplicationAdapter;
 import com.example.just.shequnlianmeng.base.presenter.BasePersenter;
 import com.example.just.shequnlianmeng.base.view.BaseActivity;
 import com.example.just.shequnlianmeng.base.view.BaseMvpActivity;
-<<<<<<< HEAD
-import com.example.just.shequnlianmeng.bean.ApplyListItem;
 
-=======
 import com.example.just.shequnlianmeng.bean.ApkItem;
 import com.example.just.shequnlianmeng.bean.ApplyListItem;
 import com.example.just.shequnlianmeng.utils.ApkOperator;
@@ -35,17 +27,16 @@ import com.morgoo.droidplugin.pm.PluginManager;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
->>>>>>> bxh
+
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-<<<<<<< HEAD
-=======
+
 import butterknife.OnItemClick;
->>>>>>> bxh
+
 
 /**
  * Created by T-BayMax on 2017/3/27.
@@ -65,24 +56,20 @@ public class AddApplicationActivity extends BaseActivity {
     private List<ApplyListItem> list;
     private AddApplicationAdapter adapter;
 
-<<<<<<< HEAD
-=======
     private ApkOperator mApkOperator; // Apk操作
     private List<String> listApk;
     private static String pageName = "app";
 
->>>>>>> bxh
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_application);
         ButterKnife.bind(this);
         initData();
-<<<<<<< HEAD
-=======
+
         writeToSDFromInput();
         apkTask();
->>>>>>> bxh
+
     }
 
     @OnClick(R.id.lt_main_title_left)
@@ -91,20 +78,8 @@ public class AddApplicationActivity extends BaseActivity {
     }
 
     private void initData() {
-<<<<<<< HEAD
-        list=new ArrayList<ApplyListItem>(0);
-        list.add(new ApplyListItem("干货分享",R.mipmap.ganhuo,0));
-        list.add(new ApplyListItem("灵感贩卖",R.mipmap.linggan,0));
-        list.add(new ApplyListItem("认领中心",R.mipmap.lingyang,0));
-        list.add(new ApplyListItem("直播中心",R.mipmap.zhibo,0));
-        list.add(new ApplyListItem("联盟打车",R.mipmap.dache,0));
-        list.add(new ApplyListItem("求助中心",R.mipmap.qiuzhu,0));
-        adapter=new AddApplicationAdapter(list,AddApplicationActivity.this);
-        gvApplication.setAdapter(adapter);
-    }
 
 
-=======
         list = new ArrayList<ApplyListItem>(0);
         list.add(new ApplyListItem("shareApp", "干货分享", R.mipmap.ganhuo, 1, "com.issp.association", 0));
         list.add(new ApplyListItem("", "灵感贩卖", R.mipmap.linggan, 1, "", 0));
@@ -230,5 +205,5 @@ public class AddApplicationActivity extends BaseActivity {
         }
 
     }
->>>>>>> bxh
+
 }

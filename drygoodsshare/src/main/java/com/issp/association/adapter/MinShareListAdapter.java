@@ -5,14 +5,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.issp.association.R;
 import com.issp.association.bean.ShareBean;
 import com.issp.association.bean.UserBean;
+import com.issp.association.network.HttpUtils;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -23,11 +25,14 @@ import butterknife.ButterKnife;
  * Created by T-BayMax on 2017/3/20.
  */
 
-public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter.MinShareListAdapterHolder> {
+public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter.MinShareListAdapterHolder> implements View.OnClickListener {
+
     private List<ShareBean> list;
     private Context context;
     private int position;
+    private UserBean userBean;
 
+    private OnItemClickListener onItemClickListener;
 
     public MinShareListAdapter(List<ShareBean> list, Context context) {
         this.list = list;
@@ -37,22 +42,43 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
     public void onBindViewHolder(MinShareListAdapterHolder holder, int position, boolean isItem) {
         if (isItem) {
             ShareBean person = list.get(position);
-            holder.tvShareTitle.setText(person.getArcTitle());
-        /*holder.iv_like_btn ;
-        holder.iv_comment_btn ;
-        holder.tv_like_btn .setText(person.getArcTitle());
-        holder.tv_comment_btn.setText(person.getArcTitle());*/
+            holder.llItem.setTag(person);
+            holder.llShare.setTag(person);
+            holder.llLike.setTag(person);
+            holder.llComment.setTag(person);
 
-            UserBean user = person.getUserId();
-            holder.tvShareContent.setText(person.getShareContent());
-           /* Picasso.with(context).load(HttpUtils.IMAGE_RUL + user.getUserPortraitUrl())
-                    .into(holder.iv_share_icon);*/
-            //holder.tv_share_user_Name.setText(user.getNickname());
-            //holder.tv_goods_share
-            /*holder.gv_share_img
-                    holder.iv_share_btn
-            holder.tv_share_btn*/
+      /*      holder.ll_item.setTag(person);
+            holder.ll_like.setTag(person);
+            holder.ll_comment.setTag(person);*/
+           /* Picasso.with(context).load(HttpUtils.IMAGE_RUL + userBean.getUserPortraitUrl())
+                    .into(holder.ivShareIcon);
+            holder.tvShareUserName.setText(userBean.getNickname());*/
+            holder.tvShareUserName.setText(person.getNickname());
+            holder.tvShareContent.setText(person.getSynopsis());
+            holder.tvShareTitle.setText(person.getTitle());
+            holder.tvLikeBtn.setText(person.getLikes() + "");
+            switch (person.getLikesStatus()) {
+                case 0:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn);
+                    break;
+                case 1:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+                    break;
+                case 2:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn_no);
+                    break;
+                case 3:
+                    holder.ivLikeBtn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
+                    break;
+            }
 
+            if (null != person.getImage()) {
+                Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
+                        .into(holder.ivShareImg);
+            }
+          /*  holder.ll_item.setOnClickListener(this);
+            holder.ll_like.setOnClickListener(this);
+            holder.ll_comment.setOnClickListener(this);*/
         }
     }
 
@@ -72,8 +98,13 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
         return new MinShareListAdapterHolder(view, false);
     }
 
-    public void setData(List<ShareBean> list) {
-        this.list = list;
+    public void setData(List<ShareBean> list, int page) {
+        if (page == 1) {
+            this.list = list;
+        } else {
+            this.list.addAll(list);
+        }
+
         notifyDataSetChanged();
     }
 
@@ -123,13 +154,25 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
         ImageView ivCommentBtn;
         @BindView(R.id.tv_comment_btn)
         TextView tvCommentBtn;
+        @BindView(R.id.ll_item)
+        LinearLayout llItem;
+        @BindView(R.id.ll_share)
+        LinearLayout llShare;
+        @BindView(R.id.ll_like)
+        LinearLayout llLike;
+        @BindView(R.id.ll_comment)
+        LinearLayout llComment;
 
         public MinShareListAdapterHolder(View itemView, boolean isItem) {
             super(itemView);
-            if (isItem)
+            if (isItem) {
                 ButterKnife.bind(this, itemView);
 
-
+                llItem.setOnClickListener(MinShareListAdapter.this);
+                llShare.setOnClickListener(MinShareListAdapter.this);
+                llLike.setOnClickListener(MinShareListAdapter.this);
+                llComment.setOnClickListener(MinShareListAdapter.this);
+            }
         }
     }
 
@@ -138,6 +181,37 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
             return list.get(position);
         else
             return null;
+    }
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.ll_share:
+                onItemClickListener.onShareClick(v, (ShareBean) v.getTag());
+                break;
+            case R.id.ll_comment:
+                onItemClickListener.onCommentClick(v, (ShareBean) v.getTag());
+                break;
+            case R.id.ll_like:
+                onItemClickListener.onLikeClick(v, (ShareBean) v.getTag());
+                break;
+            case R.id.ll_item:
+                onItemClickListener.onItemClick(v, (ShareBean) v.getTag());
+                break;
+        }
+    }
+
+    public interface OnItemClickListener {
+        public void onShareClick(View view,ShareBean bean);
+        public void onItemClick(View view, ShareBean bean);
+
+        public void onLikeClick(View view, ShareBean bean);
+
+        public void onCommentClick(View view, ShareBean bean);
     }
 
 }

@@ -3,9 +3,9 @@ package com.issp.association.crowdfunding.interfaces;
 
 
 import com.issp.association.crowdfunding.base.view.BaseView;
-import com.issp.association.crowdfunding.bean.ProductCommentBean;
+import com.issp.association.crowdfunding.bean.CommentsBean;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 产品众筹评论
@@ -13,5 +13,5 @@ import java.util.ArrayList;
  */
 
 public interface IProductCommentListView extends BaseView {
-    void setProductCommentListData(ArrayList<ProductCommentBean> data);
+    void setProductCommentListData(List<CommentsBean> data);
 }

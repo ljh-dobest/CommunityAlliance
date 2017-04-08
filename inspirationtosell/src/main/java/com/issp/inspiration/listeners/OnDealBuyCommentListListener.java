@@ -1,6 +1,7 @@
 package com.issp.inspiration.listeners;
 
 
+import com.issp.inspiration.bean.CommentsBean;
 import com.issp.inspiration.bean.DealBuyCommentBean;
 
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
  */
 
 public interface OnDealBuyCommentListListener {
-    void getDealBuyCommentInfo(List<DealBuyCommentBean> data);
+    void getDealBuyCommentInfo(List<CommentsBean> data);
     void getAddCommentInfo(String data);
     void showError(String errorString);
 }

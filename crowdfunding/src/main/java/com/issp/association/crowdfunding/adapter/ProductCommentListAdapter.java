@@ -8,11 +8,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
+import com.issp.association.crowdfunding.bean.CommentsBean;
 import com.issp.association.crowdfunding.bean.ProductCommentBean;
 
+import com.issp.association.crowdfunding.network.HttpUtils;
+import com.squareup.picasso.Picasso;
 import com.zhy.autolayout.attr.AutoAttr;
 import com.zhy.autolayout.utils.AutoUtils;
 
@@ -29,28 +31,27 @@ import butterknife.ButterKnife;
 
 public class ProductCommentListAdapter extends BaseRecyclerViewAdapter<ProductCommentListAdapter.ShareCommentListAdapterViewHolder,ProductCommentBean> {
 
-    private List<ProductCommentBean> list;
+    private List<CommentsBean> list;
     private Context context;
     private int position;
 
-    public ProductCommentListAdapter(List<ProductCommentBean> list, Context context) {
+    public ProductCommentListAdapter(List<CommentsBean> list, Context context) {
         this.list = list;
     }
 
     @Override
     public void onBindViewHolder(ShareCommentListAdapterViewHolder holder, int position, boolean isItem) {
-       /*if(isItem){
-       ShareCommentBean bean = list.get(position);
+       if(isItem){
+           CommentsBean bean = list.get(position);
 
             holder.itemView.setTag(bean);
-        Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserId().getUserPortraitUrl())
+        Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserPortraitUrl())
                 .into(holder.ivShareIcon);
-        holder.tvShareUserName.setText(bean.getUserId().getNickname());
+        holder.tvShareUserName.setText(bean.getNickname());
         holder.tvContent.setText(bean.getContent());
-        holder.tvLikeBtn.setText(bean.getShareId().getArcTitle());
+        //holder.tvLikeBtn.setText(bean.getShareId().getArcTitle());
         holder.tvShareCommentTime.setText(bean.getCommentTime());
         }
-*/
     }
 
     @Override
@@ -69,8 +70,13 @@ public class ProductCommentListAdapter extends BaseRecyclerViewAdapter<ProductCo
         return new ShareCommentListAdapterViewHolder(view, false);
     }
 
-    public void setData(List<ProductCommentBean> list) {
-        this.list = list;
+    public void setData(List<CommentsBean> list, int page) {
+        if (page == 1) {
+            this.list = list;
+        } else {
+            this.list.addAll(list);
+        }
+
         notifyDataSetChanged();
     }
 
@@ -83,7 +89,7 @@ public class ProductCommentListAdapter extends BaseRecyclerViewAdapter<ProductCo
         return vh;
     }
 
-    public void insert(ProductCommentBean person, int position) {
+    public void insert(CommentsBean person, int position) {
         insert(list, person, position);
     }
 
@@ -122,7 +128,7 @@ public class ProductCommentListAdapter extends BaseRecyclerViewAdapter<ProductCo
         }
     }
 
-    public ProductCommentBean getItem(int position) {
+    public CommentsBean getItem(int position) {
         if (position < list.size())
             return list.get(position);
         else

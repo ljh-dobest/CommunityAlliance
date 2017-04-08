@@ -1,24 +1,22 @@
 package com.issp.association.crowdfunding.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.XRefreshViewFooter;
 import com.issp.association.crowdfunding.R;
-import com.issp.association.crowdfunding.adapter.ProductCommentListAdapter;
 import com.issp.association.crowdfunding.adapter.SupportProductAdapter;
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
-import com.issp.association.crowdfunding.bean.ProductCommentBean;
-import com.issp.association.crowdfunding.interfaces.IProductCommentListView;
 import com.issp.association.crowdfunding.interfaces.ISupportProductListView;
-import com.issp.association.crowdfunding.presenters.ProductCommentPresenter;
 import com.issp.association.crowdfunding.presenters.SupportProductPresenter;
 
 import java.util.ArrayList;
@@ -36,55 +34,69 @@ import butterknife.OnClick;
 
 public class SupportProductActivity extends BaseMvpActivity<ISupportProductListView, SupportProductPresenter> implements ISupportProductListView {
 
+
     @BindView(R.id.lt_main_title_left)
     TextView ltMainTitleLeft;
     @BindView(R.id.lt_main_title)
     TextView ltMainTitle;
     @BindView(R.id.lt_main_title_right)
     TextView ltMainTitleRight;
-    @BindView(R.id.editText)
-    EditText editText;
+    @BindView(R.id.tv_confess_total)
+    TextView tvConfessTotal;
+    @BindView(R.id.tv_amount_total)
+    TextView tvAmountTotal;
+    @BindView(R.id.pb_schedule)
+    ProgressBar pbSchedule;
+    @BindView(R.id.tv_schedule)
+    TextView tvSchedule;
+    @BindView(R.id.iv_support_people_number)
+    ImageView ivSupportPeopleNumber;
+    @BindView(R.id.tv_support_people_number)
+    TextView tvSupportPeopleNumber;
+    @BindView(R.id.iv_time_remaining)
+    ImageView ivTimeRemaining;
+    @BindView(R.id.tv_time_remaining)
+    TextView tvTimeRemaining;
     @BindView(R.id.recycler_view_test_rv)
-    RecyclerView recyclerView;
+    RecyclerView recyclerViewTestRv;
     @BindView(R.id.xrefreshview)
-    XRefreshView xRefreshView;
-
-
+    XRefreshView xrefreshview;
     private View headerView;
 
     List<ProductCollectBean> personList = new ArrayList<ProductCollectBean>();
     LinearLayoutManager layoutManager;
     private int mLoadCount = 0;
     SupportProductAdapter adapter;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_comments);
+        setContentView(R.layout.activity_support_product);
         ButterKnife.bind(this);
         initView();
     }
 
-    private void initView(){
+    private void initView() {
 
         ltMainTitle.setText(getString(R.string.str_title_support));
 
-        xRefreshView.setPullLoadEnable(true);
+        xrefreshview.setPullLoadEnable(true);
 
-        recyclerView.setHasFixedSize(true);
+        recyclerViewTestRv.setHasFixedSize(true);
 
         initData();
         adapter = new SupportProductAdapter(personList, this);
         // 设置静默加载模式
 //		xRefreshView1.setSilenceLoadMore();
         layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
+        recyclerViewTestRv.setLayoutManager(layoutManager);
         // 静默加载模式不能设置footerview
-        recyclerView.setAdapter(adapter);
+        recyclerViewTestRv.setAdapter(adapter);
         //设置刷新完成以后，headerview固定的时间
-        xRefreshView.setPinnedTime(1000);
-        xRefreshView.setMoveForHorizontal(true);
-        xRefreshView.setPullLoadEnable(true);
-        xRefreshView.setAutoLoadMore(false);
+        xrefreshview.setPinnedTime(1000);
+        xrefreshview.setMoveForHorizontal(true);
+        xrefreshview.setPullLoadEnable(true);
+        xrefreshview.setAutoLoadMore(false);
 
         //当需要使用数据不满一屏时不显示点击加载更多的效果时，解注释下面的三行代码
         //并注释掉第四行代码
@@ -92,12 +104,12 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
         customerFooter.setRecyclerView(recyclerView);
        adapter.setCustomLoadMoreView(customerFooter);*/
         adapter.setCustomLoadMoreView(new XRefreshViewFooter(this));
-        xRefreshView.enableReleaseToLoadMore(true);
-        xRefreshView.enableRecyclerViewPullUp(true);
-        xRefreshView.enablePullUpWhenLoadCompleted(true);
+        xrefreshview.enableReleaseToLoadMore(true);
+        xrefreshview.enableRecyclerViewPullUp(true);
+        xrefreshview.enablePullUpWhenLoadCompleted(true);
 
 
-        xRefreshView.setXRefreshViewListener(new XRefreshView.SimpleXRefreshListener() {
+        xrefreshview.setXRefreshViewListener(new XRefreshView.SimpleXRefreshListener() {
 
             @Override
             public void onRefresh(boolean isPullDown) {
@@ -107,10 +119,10 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
                         //模拟数据加载失败的情况
                         Random random = new Random();
                         boolean success = random.nextBoolean();
-                        if(success){
-                            xRefreshView.stopRefresh();
-                        }else{
-                            xRefreshView.stopRefresh(false);
+                        if (success) {
+                            xrefreshview.stopRefresh();
+                        } else {
+                            xrefreshview.stopRefresh(false);
                         }
                         //或者
 //                        xRefreshView1.stopRefresh(success);
@@ -129,13 +141,26 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
                         }
                         mLoadCount++;
                         if (mLoadCount >= 3) {
-                            xRefreshView.setLoadComplete(true);
+                            xrefreshview.setLoadComplete(true);
                         } else {
                             // 刷新完成必须调用此方法停止加载
-                            xRefreshView.stopLoadMore();
+                            xrefreshview.stopLoadMore();
                         }
                     }
                 }, 1000);
+            }
+        });
+        adapter.setOnItemClickListener(new SupportProductAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, ProductCollectBean bean) {
+
+            }
+
+            @Override
+            public void onSupportClick(View view, ProductCollectBean bean) {
+                Intent intent = new Intent(SupportProductActivity.this, AddSupportProjectActivity.class);
+                intent.putExtra("bean", bean);
+                startActivity(intent);
             }
         });
     }
@@ -146,8 +171,9 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
             personList.add(person);
         }
     }
+
     @OnClick(R.id.lt_main_title_left)
-    void leftClick(){
+    void leftClick() {
         SupportProductActivity.this.finish();
     }
 

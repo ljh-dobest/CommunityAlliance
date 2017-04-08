@@ -11,6 +11,7 @@ import com.issp.inspiration.bean.DealBuyBean;
 import com.issp.inspiration.interfaces.IDealBuyConfirmOrderView;
 import com.issp.inspiration.presenters.DealBuyCommentPresenter;
 import com.issp.inspiration.presenters.DealBuyConfirmOrderPresenter;
+import com.issp.inspiration.utils.T;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,6 +21,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
+ * 确认订单
  * Created by T-BayMax on 2017/3/31.
  */
 
@@ -50,6 +52,7 @@ public class DealBuyConfirmOrderActivity extends BaseMvpActivity<IDealBuyConfirm
     TextView tvBuyButton;
 
     DealBuyBean bean;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,23 +61,29 @@ public class DealBuyConfirmOrderActivity extends BaseMvpActivity<IDealBuyConfirm
         initData();
     }
 
-    private void initData(){
+    private void initData() {
         ltMainTitleLeft.setText("返回");
         ltMainTitle.setText("确认订单");
         Intent intent = getIntent();
         bean = (DealBuyBean) intent.getSerializableExtra("bean");
+        if (null != bean) {
+            tvDealBuyTitle.setText(bean.getTitle());
+            tvDealContribution.setText("贡献币" + bean.getDealContribution());
+            tvDealContributionTotal.setText("贡献币" + bean.getDealContribution());
+        }
     }
 
     @OnClick(R.id.lt_main_title_left)
-    void leftClick(){
+    void leftClick() {
         DealBuyConfirmOrderActivity.this.finish();
     }
+
     @OnClick(R.id.tv_buy_button)
-    void buyClick(){
+    void buyClick() {
         if (checkInputInfo()) {
             Map<String, String> formData = new HashMap<String, String>(0);
-            formData.put("userId",bean.getUserId());
-            formData.put("id",bean.getId());
+            formData.put("userId", bean.getUserId());
+            formData.put("articleId", bean.getId());
             presenter.addDealBuyCommentInfo(formData);
         }
     }
@@ -91,17 +100,22 @@ public class DealBuyConfirmOrderActivity extends BaseMvpActivity<IDealBuyConfirm
 
     @Override
     public void showError(String errorString) {
-
+        T.showShort(DealBuyConfirmOrderActivity.this, errorString);
     }
 
     @Override
     public void setConfirmOrderData(String data) {
+        T.showShort(DealBuyConfirmOrderActivity.this, data);
+        DealBuyConfirmOrderActivity.this.finish();
 
     }
 
     @Override
     public boolean checkInputInfo() {
-        return false;
+        if (null != bean.getId())
+            return true;
+        else
+            return false;
     }
 
     @Override

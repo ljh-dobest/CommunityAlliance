@@ -6,18 +6,7 @@ package com.example.just.shequnlianmeng.bean;
  */
 
 public class ApplyListItem {
-<<<<<<< HEAD
-    private String appName;
-    private int appImg;
-    private int status;
 
-    public ApplyListItem(String appName, int appImg, int status) {
-        this.appName = appName;
-        this.appImg = appImg;
-        this.status = status;
-    }
-
-=======
 
     public CharSequence title; // 标题
     private String appName;
@@ -44,7 +33,7 @@ public class ApplyListItem {
         this.title = title;
     }
 
->>>>>>> bxh
+
     public String getAppName() {
         return appName;
     }
@@ -53,8 +42,6 @@ public class ApplyListItem {
         this.appName = appName;
     }
 
-<<<<<<< HEAD
-=======
     public String getVersionName() {
         return versionName;
     }
@@ -79,7 +66,6 @@ public class ApplyListItem {
         this.packageName = packageName;
     }
 
->>>>>>> bxh
     public int getAppImg() {
         return appImg;
     }

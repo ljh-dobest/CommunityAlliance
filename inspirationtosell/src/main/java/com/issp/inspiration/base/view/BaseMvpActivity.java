@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.issp.inspiration.base.presenter.BasePersenter;
+import com.zhy.autolayout.AutoLayoutActivity;
 
 
 /**
@@ -15,7 +16,7 @@ import com.issp.inspiration.base.presenter.BasePersenter;
  *
  */
 
-public abstract class BaseMvpActivity<V,T extends BasePersenter<V>> extends AppCompatActivity{
+public abstract class BaseMvpActivity<V,T extends BasePersenter<V>> extends AutoLayoutActivity {
     public T presenter;
 
     @Override

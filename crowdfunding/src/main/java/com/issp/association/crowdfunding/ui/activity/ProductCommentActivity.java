@@ -1,7 +1,6 @@
 package com.issp.association.crowdfunding.ui.activity;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -13,13 +12,16 @@ import com.andview.refreshview.XRefreshViewFooter;
 import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.adapter.ProductCommentListAdapter;
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
-import com.issp.association.crowdfunding.bean.ProductCommentBean;
+import com.issp.association.crowdfunding.bean.CommentsBean;
+import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.interfaces.IProductCommentListView;
 import com.issp.association.crowdfunding.presenters.ProductCommentPresenter;
+import com.issp.association.crowdfunding.utils.T;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -46,12 +48,17 @@ public class ProductCommentActivity extends BaseMvpActivity<IProductCommentListV
     XRefreshView xRefreshView;
 
 
-    private View headerView;
+    private int page = 1;
+    private boolean isRefresh = true;
 
-    List<ProductCommentBean> personList = new ArrayList<ProductCommentBean>();
+    private View headerView;
+    ProductCollectBean bean;
+
+    List<CommentsBean> personList = new ArrayList<CommentsBean>();
     LinearLayoutManager layoutManager;
     private int mLoadCount = 0;
     ProductCommentListAdapter adapter;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,8 +67,8 @@ public class ProductCommentActivity extends BaseMvpActivity<IProductCommentListV
         initView();
     }
 
-    private void initView(){
-
+    private void initView() {
+        bean = (ProductCollectBean) getIntent().getSerializableExtra("bean");
         ltMainTitle.setText(getString(R.string.str_title_comment));
 
         xRefreshView.setPullLoadEnable(true);
@@ -97,53 +104,29 @@ public class ProductCommentActivity extends BaseMvpActivity<IProductCommentListV
 
             @Override
             public void onRefresh(boolean isPullDown) {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        //模拟数据加载失败的情况
-                        Random random = new Random();
-                        boolean success = random.nextBoolean();
-                        if(success){
-                            xRefreshView.stopRefresh();
-                        }else{
-                            xRefreshView.stopRefresh(false);
-                        }
-                        //或者
-//                        xRefreshView1.stopRefresh(success);
-                    }
-                }, 2000);
+               page=1;
+                initData();
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
-                new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            ProductCommentBean person = new ProductCommentBean();
-                            adapter.insert(person,
-                                    adapter.getAdapterItemCount());
-                        }
-                        mLoadCount++;
-                        if (mLoadCount >= 3) {
-                            xRefreshView.setLoadComplete(true);
-                        } else {
-                            // 刷新完成必须调用此方法停止加载
-                            xRefreshView.stopLoadMore();
-                        }
-                    }
-                }, 1000);
+               page++;
+                initData();
             }
         });
     }
 
     private void initData() {
-        for (int i = 0; i < 3; i++) {
-            ProductCommentBean person = new ProductCommentBean();
-            personList.add(person);
-        }
+        isRefresh = true;
+        Map<String, String> formData = new HashMap<String, String>(0);
+        formData.put("articleId", bean.getId());
+        formData.put("userId", "111");
+        formData.put("type", "3");
+        presenter.productCommentInfoPresenter(formData);
     }
+
     @OnClick(R.id.lt_main_title_left)
-    void leftClick(){
+    void leftClick() {
         ProductCommentActivity.this.finish();
     }
 
@@ -164,11 +147,22 @@ public class ProductCommentActivity extends BaseMvpActivity<IProductCommentListV
 
     @Override
     public void showError(String errorString) {
-
+        if (isRefresh)
+            if (page == 1) {
+                xRefreshView.stopRefresh(false);
+            } else {
+                xRefreshView.stopLoadMore(false);
+            }
+        T.showShort(ProductCommentActivity.this, errorString);
     }
 
     @Override
-    public void setProductCommentListData(ArrayList<ProductCommentBean> data) {
-
+    public void setProductCommentListData(List<CommentsBean> data) {
+        if (page == 1) {
+            xRefreshView.stopRefresh(true);
+        } else {
+            xRefreshView.stopLoadMore(true);
+        }
+        adapter.setData(data, page);
     }
 }

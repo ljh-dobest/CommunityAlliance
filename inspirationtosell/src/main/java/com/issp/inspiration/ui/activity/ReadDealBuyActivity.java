@@ -1,8 +1,13 @@
 package com.issp.inspiration.ui.activity;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -14,6 +19,7 @@ import com.issp.inspiration.bean.DealBuyBean;
 import com.issp.inspiration.interfaces.IReadDealBuyView;
 import com.issp.inspiration.network.HttpUtils;
 import com.issp.inspiration.presenters.ReadDealBuyInfoPresenter;
+import com.issp.inspiration.utils.DisplayUtils;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
@@ -104,6 +110,34 @@ public class ReadDealBuyActivity extends BaseMvpActivity<IReadDealBuyView, ReadD
         presenter.ReadShareInfoPresenter(formData);
     }
 
+    public void showComfirmDialog() {
+        final AlertDialog ComfirmDialog = new AlertDialog.Builder(this).create();
+        ComfirmDialog.show();
+        Window window = ComfirmDialog.getWindow();
+        WindowManager.LayoutParams  lp= ComfirmDialog.getWindow().getAttributes();
+        lp.width=DisplayUtils.dp2px(ReadDealBuyActivity.this,300);//定义宽度
+        lp.height=DisplayUtils.dp2px(ReadDealBuyActivity.this,200);//定义高度
+        ComfirmDialog.getWindow().setAttributes(lp);
+        window.setContentView(R.layout.comfirm_dialog_layout);
+        Button btn_comfirm_dialog_comfirm = (Button) window.findViewById(R.id.btn_comfirm_dialog_comfirm);
+        ImageView iv_comfirm_dialog_cancel= (ImageView) window.findViewById(R.id.iv_comfirm_dialog_cancel);
+        btn_comfirm_dialog_comfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ReadDealBuyActivity.this,DealBuyConfirmOrderActivity.class);
+                intent.putExtra("bean",bean);
+                startActivity(intent);
+                ComfirmDialog.dismiss();
+            }
+        });
+        iv_comfirm_dialog_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ComfirmDialog.dismiss();
+            }
+        });
+    }
+
     @Override
     public ReadDealBuyInfoPresenter initPresenter() {
         return new ReadDealBuyInfoPresenter();
@@ -127,9 +161,7 @@ public class ReadDealBuyActivity extends BaseMvpActivity<IReadDealBuyView, ReadD
 
     @OnClick(R.id.tv_buy)
     void buyClick(){
-        Intent intent=new Intent(ReadDealBuyActivity.this,DealBuyConfirmOrderActivity.class);
-        intent.putExtra("bean",bean);
-        startActivity(intent);
+       showComfirmDialog();
     }
 
     @OnClick(R.id.ll_like)

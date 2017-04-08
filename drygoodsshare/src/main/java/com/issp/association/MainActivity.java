@@ -146,8 +146,9 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
                 isRefresh=false;
                 Map<String, String> formData = new HashMap<String, String>(0);
                 formData.put("userId", "111");
-                formData.put("shareId", bean.getId());
-                formData.put("praise", "1");
+                formData.put("articleId", bean.getId());
+                formData.put("type","3");
+                formData.put("status", "1");
                 tv_like_btn = (TextView) view.findViewById(R.id.tv_like_btn);
                 iv_like_btn = (ImageView) view.findViewById(R.id.iv_like_btn);
 

@@ -24,7 +24,7 @@ public class DealBuyConfirmOrderModel {
 
     public void addConfirmOrderInfo(Map<String, String> formData , final OnDealBuyConfirmOrderListener listener){
 
-        HttpUtils.sendGsonPostRequest("/shareComment", formData, new StringCallback() {
+        HttpUtils.sendGsonPostRequest("/payDealBuy", formData, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
                 listener.showError(e.toString());
@@ -33,16 +33,16 @@ public class DealBuyConfirmOrderModel {
             @Override
             public void onResponse(String response, int id) {
                 Gson gson=new Gson();
-                Type type = new TypeToken<Code<List<DealBuyCommentBean>>>() {
+                Type type = new TypeToken<Code>() {
                 }.getType();
-                Code<List<DealBuyCommentBean>> code = gson.fromJson(response,type);
+                Code code = gson.fromJson(response,type);
                 switch (code.getCode()) {
                     case 200:
                         // ArrayList<ShareCommentBean> data= (ArrayList<ShareCommentBean>) code.getData();
-                        listener.getConfirmOrderInfo("评论成功");
+                        listener.getConfirmOrderInfo("购买成功");
                         break;
                     case 0:
-                        listener.showError("评论失败");
+                        listener.showError("sorry！你的贡献币不足");
                         break;
                 }
             }

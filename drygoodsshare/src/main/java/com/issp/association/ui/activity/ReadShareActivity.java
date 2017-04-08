@@ -13,6 +13,7 @@ import com.issp.association.bean.ShareBean;
 import com.issp.association.interfaces.IReadShareView;
 import com.issp.association.network.HttpUtils;
 import com.issp.association.presenters.ReadShareInfoPresenter;
+import com.issp.association.utils.T;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
@@ -121,8 +122,9 @@ public class ReadShareActivity extends BaseMvpActivity<IReadShareView, ReadShare
     void likeClick() {
         Map<String, String> formData = new HashMap<String, String>(0);
         formData.put("userId", "111");
-        formData.put("shareId", bean.getId());
-        formData.put("praise", "1");
+        formData.put("articleId", bean.getId());
+        formData.put("type","3");
+        formData.put("status", "1");
         presenter.sharePraiseInfoPresenter(formData);
     }
 
@@ -134,7 +136,7 @@ public class ReadShareActivity extends BaseMvpActivity<IReadShareView, ReadShare
     }
     @Override
     public void showError(String errorString) {
-
+        T.showShort(ReadShareActivity.this,errorString);
     }
 
     @Override
@@ -145,10 +147,27 @@ public class ReadShareActivity extends BaseMvpActivity<IReadShareView, ReadShare
         Picasso.with(ReadShareActivity.this).load(HttpUtils.IMAGE_RUL + data.getUserPortraitUrl()).into(ivShareIcon);
         wvContent.loadData(data.getContent(), "text/html; charset=UTF-8", null);
         tvLikeBtn.setText(data.getLikes() + "");
+        switch (data.getLikesStatus()) {
+            case 0:
+                ivLikeBtn.setImageResource(R.mipmap.img_like_btn);
+                break;
+            case 1:
+                ivLikeBtn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+                break;
+            case 2:
+                ivLikeBtn.setImageResource(R.mipmap.img_like_btn_no);
+                break;
+            case 3:
+                ivLikeBtn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
+                break;
+        }
     }
 
     @Override
     public void sharePraise(String data) {
-
+        int likes = Integer.parseInt(tvLikeBtn.getText().toString().trim());
+        tvLikeBtn.setText((likes + 1) + "");
+        ivLikeBtn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+        T.showShort(ReadShareActivity.this, data);
     }
 }

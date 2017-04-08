@@ -2,6 +2,7 @@ package com.issp.inspiration.presenters;
 
 
 import com.issp.inspiration.base.presenter.BasePersenter;
+import com.issp.inspiration.bean.CommentsBean;
 import com.issp.inspiration.bean.DealBuyCommentBean;
 import com.issp.inspiration.interfaces.IDealBuyCommentListView;
 import com.issp.inspiration.listeners.OnDealBuyCommentListListener;
@@ -28,7 +29,7 @@ public class DealBuyCommentPresenter extends BasePersenter<IDealBuyCommentListVi
         recommendInfoMoudle.addCommentInfo(formData, this);
     }
     @Override
-    public void getDealBuyCommentInfo(List<DealBuyCommentBean> data) {
+    public void getDealBuyCommentInfo(List<CommentsBean> data) {
         mView.setDealBuyCommentListData(data);
     }
 

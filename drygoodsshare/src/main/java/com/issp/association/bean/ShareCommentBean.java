@@ -1,6 +1,7 @@
 package com.issp.association.bean;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  *
@@ -9,27 +10,19 @@ import java.io.Serializable;
  */
 
 public class ShareCommentBean implements Serializable {
-    private ShareBean shareId;//干货分享id
-    private String userId;//评论用户id
-    private String nickname;
-    private String avatarImage;
-    private String content;	//评论内容
-    private String commentTime;//  评论时间
+    private String title;             //求助问题标题
+    private String nickname;          //回答者昵称
+    private String userPortraitUrl;      //回答者头像
+    private String content;           //回答内容
+    private String time;             //回答时间
+    private List<CommentsBean> comments;           //以下为评论区
 
-    public ShareBean getShareId() {
-        return shareId;
+    public String getTitle() {
+        return title;
     }
 
-    public void setShareId(ShareBean shareId) {
-        this.shareId = shareId;
-    }
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getNickname() {
@@ -40,12 +33,12 @@ public class ShareCommentBean implements Serializable {
         this.nickname = nickname;
     }
 
-    public String getAvatarImage() {
-        return avatarImage;
+    public String getUserPortraitUrl() {
+        return userPortraitUrl;
     }
 
-    public void setAvatarImage(String avatarImage) {
-        this.avatarImage = avatarImage;
+    public void setUserPortraitUrl(String userPortraitUrl) {
+        this.userPortraitUrl = userPortraitUrl;
     }
 
     public String getContent() {
@@ -56,11 +49,19 @@ public class ShareCommentBean implements Serializable {
         this.content = content;
     }
 
-    public String getCommentTime() {
-        return commentTime;
+    public String getTime() {
+        return time;
     }
 
-    public void setCommentTime(String commentTime) {
-        this.commentTime = commentTime;
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public List<CommentsBean> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<CommentsBean> comments) {
+        this.comments = comments;
     }
 }

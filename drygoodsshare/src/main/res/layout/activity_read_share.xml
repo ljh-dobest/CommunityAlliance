@@ -30,6 +30,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/tv_title"
+            android:paddingLeft="@dimen/lv_foot_ml_10"
             app:srcCompat="@mipmap/header" />
 
         <TextView

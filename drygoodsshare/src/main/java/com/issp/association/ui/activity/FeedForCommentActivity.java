@@ -15,6 +15,7 @@ import com.issp.association.R;
 import com.issp.association.adapter.FeedForCommentListAdapter;
 import com.issp.association.base.view.BaseMvpActivity;
 
+import com.issp.association.bean.CommentsBean;
 import com.issp.association.bean.ShareBean;
 import com.issp.association.bean.ShareCommentBean;
 import com.issp.association.interfaces.IFeedForCommentListView;
@@ -60,7 +61,7 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
 
     private boolean isRefresh = true;
 
-    List<ShareCommentBean> personList = new ArrayList<ShareCommentBean>();
+    List<CommentsBean> personList = new ArrayList<CommentsBean>();
     LinearLayoutManager layoutManager;
     private int mLoadCount = 0;
 
@@ -72,10 +73,6 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
     private ShareBean shareBean;
 
 
-    List<ShareCommentBean> personList = new ArrayList<ShareCommentBean>();
-    LinearLayoutManager layoutManager;
-    private int mLoadCount = 0;
-    FeedForCommentListAdapter adapter;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -140,7 +137,9 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
     private void initData() {
         isRefresh = true;
         Map<String, String> formData = new HashMap<String, String>(0);
-        formData.put("shareId", shareBean.getId());
+        formData.put("articleId", shareBean.getId());
+        formData.put("userId","111");
+        formData.put("type","3");
         presenter.FeedCommentInfo(formData);
     }
 
@@ -159,8 +158,9 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
         if (checkInputInfo()) {
             isRefresh = false;
             Map<String, String> formData = new HashMap<String, String>(0);
-            formData.put("shareId", shareBean.getId());
+            formData.put("articleId", shareBean.getId());
             formData.put("userId", "111");
+            formData.put("type","3");
             formData.put("content", editText.getText().toString().trim());
             presenter.addFeedCommentInfo(formData);
         }
@@ -193,7 +193,7 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
     }
 
     @Override
-    public void setFeedForCommentListData(ArrayList<ShareCommentBean> data) {
+    public void setFeedForCommentListData(List<CommentsBean> data) {
         if (page == 1) {
             xRefreshView.stopRefresh(true);
         } else {

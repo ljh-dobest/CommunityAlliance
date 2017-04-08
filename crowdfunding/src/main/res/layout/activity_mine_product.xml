@@ -23,7 +23,7 @@
             android:drawableLeft="@mipmap/back"
             android:gravity="center"
             android:padding="@dimen/border_20"
-            android:textSize="@dimen/font_28" />
+            android:textSize="@dimen/font_30" />
 
         <com.issp.association.crowdfunding.view.ShareRadioGroup
             android:id="@+id/rg_relation"

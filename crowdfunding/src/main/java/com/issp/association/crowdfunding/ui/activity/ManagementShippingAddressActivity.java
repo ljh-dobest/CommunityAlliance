@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * 订单详情
+ * 添加收货地址
  * Created by T-BayMax on 2017/3/25.
  */
 

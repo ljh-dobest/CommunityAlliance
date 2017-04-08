@@ -1,6 +1,7 @@
 package com.issp.association.presenters;
 
 import com.issp.association.base.presenter.BasePersenter;
+import com.issp.association.bean.CommentsBean;
 import com.issp.association.bean.ShareCommentBean;
 import com.issp.association.interfaces.IFeedForCommentListView;
 import com.issp.association.listeners.OnFeedForCommentListListener;
@@ -8,6 +9,7 @@ import com.issp.association.model.FeedForCommentModel;
 
 import java.util.ArrayList;
 
+import java.util.List;
 import java.util.Map;
 
 
@@ -31,7 +33,7 @@ public class FeedForCommentPresenter extends BasePersenter<IFeedForCommentListVi
     }
 
     @Override
-    public void getFeedCommentInfo(ArrayList<ShareCommentBean> data) {
+    public void getFeedCommentInfo(List<CommentsBean> data) {
         mView.setFeedForCommentListData(data);
     }
 
