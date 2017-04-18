@@ -12,5 +12,6 @@ import java.util.ArrayList;
 
 public interface OnProductParticularsListener {
     void getProductParticularsInfo(ProductCollectBean data);
+    void userPraise(String data);
     void showError(String errorString);
 }

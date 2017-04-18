@@ -28,10 +28,17 @@ public class ProductParticularsPresenter extends BasePersenter<IProductParticula
     public void productCommentInfoPresenter(Map<String, String> formData) {
         recommendInfoMoudle.getProductParticularsInfo(formData, this);
     }
-
+    public void postUserPraise(Map<String,String> formData){
+        recommendInfoMoudle.postUserPraise(formData,this);
+    }
     @Override
     public void getProductParticularsInfo(ProductCollectBean data) {
         mView.setProductParticularsInfoData(data);
+    }
+
+    @Override
+    public void userPraise(String data) {
+
     }
 
     @Override

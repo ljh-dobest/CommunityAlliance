@@ -29,7 +29,7 @@
         android:layout_marginTop="@dimen/border_20"
         android:textSize="@dimen/font_28"
         android:textColor="@color/color_33"
-        android:text="TextView" />
+        android:text="举报" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -60,8 +60,8 @@
             android:layout_alignParentRight="true"
             android:padding="@dimen/border_20"
             android:textSize="@dimen/font_28"
-            android:background="@color/aam_item_border"
-            android:text="已支付\n查看订单" />
+            android:background="@android:color/holo_green_light"
+            android:text="@string/str_check_indent_no"/>
 
 
         <ImageView
@@ -106,12 +106,20 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"/>
     <TextView
-        android:id="@+id/tv_comment"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_release_time"
+        android:layout_margin="@dimen/border_20"
+        android:textSize="@dimen/font_32"
+        android:text="TextView" />
+    <WebView
+        android:id="@+id/wv_comment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/tv_release_time"
+        android:layout_below="@+id/tv_title"
         android:layout_above="@id/textView16"
         android:layout_margin="@dimen/border_20"
         android:textSize="@dimen/font_28"

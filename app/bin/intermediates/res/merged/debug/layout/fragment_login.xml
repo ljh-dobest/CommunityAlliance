@@ -1,11 +1,12 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
   >
     <!-- 登录 -->
-    <LinearLayout
+    <com.zhy.autolayout.AutoLinearLayout
         android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:id="@+id/email_login_form"
@@ -19,7 +20,7 @@
             <AutoCompleteTextView
                 android:id="@+id/et_userName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="90px"
                 android:hint="@string/prompt_user"
                 android:inputType="textPhonetic"
                 android:maxLines="1"/>
@@ -27,13 +28,14 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="40px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/et_login_pw"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="90px"
                 android:hint="@string/prompt_password"
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/action_sign_in_short"
@@ -43,25 +45,24 @@
         </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:textColor="@color/white"
-            android:background="@color/blue"
+            android:textColor="@color/col_444343"
+            android:background="@drawable/btn_login"
             android:id="@+id/sign_in_btn"
-            style="?android:textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="600px"
+            android:layout_height="80px"
+            android:layout_marginTop="92px"
             android:text="@string/login"
             android:textStyle="bold" />
-        <TextView
-            android:textSize="@dimen/font_12"
-            android:id="@+id/tv_forget_pw"
-            android:textColor="@color/blue"
-            android:layout_gravity="end"
-            android:layout_margin="10dp"
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:text="@string/forget_passwork"/>
+        <!--<TextView-->
+            <!--android:textSize="@dimen/font_12"-->
+            <!--android:id="@+id/tv_forget_pw"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="@string/forget_passwork"/>-->
 
-    </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
 
-</LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

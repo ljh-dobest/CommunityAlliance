@@ -31,7 +31,7 @@ import butterknife.OnClick;
  * Created by T-BayMax on 2017/3/16.
  */
 
-public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.ProductAdapterViewHolder, ProductCollectBean>  {
+public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.ProductAdapterViewHolder, ProductCollectBean> {
 
 
     private List<ProductCollectBean> list;
@@ -83,6 +83,9 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
             }
             Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
                     .into(holder.ivProductImg);
+            holder.llItem.setOnClickListener(this);
+            holder.llComment.setOnClickListener(this);
+            holder.llLike.setOnClickListener(this);
         }
 
     }
@@ -185,17 +188,21 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
             }
         }
 
-        @OnClick(R.id.ll_like)
-        void likeClick(View v){
-            onItemClickListener.onLikeClick(v, (ProductCollectBean) v.getTag());
-        }
-        @OnClick(R.id.ll_comment)
-        void commentClick(View v){
-            onItemClickListener.onCommentClick(v, (ProductCollectBean) v.getTag());
-        }
-        @OnClick(R.id.ll_item)
-        void itemClick(View v){
-            onItemClickListener.onItemClick(v, (ProductCollectBean) v.getTag());
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.ll_like:
+                onItemClickListener.onLikeClick(v, (ProductCollectBean) v.getTag());
+                break;
+            case R.id.ll_comment:
+                onItemClickListener.onCommentClick(v, (ProductCollectBean) v.getTag());
+                break;
+            case R.id.ll_item:
+                onItemClickListener.onItemClick(v, (ProductCollectBean) v.getTag());
+                break;
+
         }
     }
 
@@ -209,7 +216,6 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
     }
-
 
 
     public interface OnItemClickListener {

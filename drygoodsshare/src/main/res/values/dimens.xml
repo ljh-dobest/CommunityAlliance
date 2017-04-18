@@ -2,23 +2,50 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="font_12">12dp</dimen>
-    <dimen name="font_14">14dp</dimen>
-    <dimen name="font_16">16dp</dimen>
-    <dimen name="font_18">18dp</dimen>
-    <dimen name="font_20">20dp</dimen>
-    <dimen name="font_22">22dp</dimen>
-    <dimen name="font_24">24dp</dimen>
-    <dimen name="font_26">26dp</dimen>
-    <dimen name="font_28">28dp</dimen>
-    <dimen name="font_48">48dp</dimen>
-    <dimen name="lv_item_icon">40dp</dimen>
-    <dimen name="lv_item_header">50dp</dimen>
-    <dimen name="lv_dividerHeight">5dp</dimen>
-    <dimen name="lv_foot_ml_10">10dp</dimen>
-    <dimen name="lv_foot_iv_30">30dp</dimen>
-    <dimen name="lv_foot_ml_50">50dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="font_12">12px</dimen>
+    <dimen name="font_14">14px</dimen>
+    <dimen name="font_16">16px</dimen>
+    <dimen name="font_18">18px</dimen>
+    <dimen name="font_20">20px</dimen>
+    <dimen name="font_22">22px</dimen>
+    <dimen name="font_24">24px</dimen>
+    <dimen name="font_26">26px</dimen>
+    <dimen name="font_28">28px</dimen>
+    <dimen name="font_30">30px</dimen>
+    <dimen name="font_32">32px</dimen>
+    <dimen name="font_34">34px</dimen>
+    <dimen name="font_36">36px</dimen>
+    <dimen name="font_38">38px</dimen>
+    <dimen name="font_48">48px</dimen>
+
+    <dimen name="border_2">2px</dimen>
+    <dimen name="border_4">4px</dimen>
+    <dimen name="border_6">6px</dimen>
+    <dimen name="border_8">8px</dimen>
+    <dimen name="border_10">10px</dimen>
+    <dimen name="border_14">14px</dimen>
+    <dimen name="border_16">16px</dimen>
+    <dimen name="border_18">18px</dimen>
+    <dimen name="border_20">20px</dimen>
+    <dimen name="border_22">22px</dimen>
+    <dimen name="border_26">26px</dimen>
+    <dimen name="border_28">28px</dimen>
+    <dimen name="border_30">30px</dimen>
+    <dimen name="border_36">36px</dimen>
+    <dimen name="border_34">34px</dimen>
+    <dimen name="border_38">38px</dimen>
+    <dimen name="border_40">40px</dimen>
+    <dimen name="border_42">42px</dimen>
+    <dimen name="border_50">50px</dimen>
+    <dimen name="border_60">60px</dimen>
+    <dimen name="border_70">70px</dimen>
+    <dimen name="border_80">80px</dimen>
+    <dimen name="border_88">88px</dimen>
+    <dimen name="border_98">98px</dimen>
+    <dimen name="border_114">114px</dimen>
+    <dimen name="border_140">140px</dimen>
+    <dimen name="border_210">210px</dimen>
+    <dimen name="border_400">400px</dimen>
 
 
 </resources>

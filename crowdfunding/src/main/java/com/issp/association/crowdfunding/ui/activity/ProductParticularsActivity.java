@@ -2,20 +2,19 @@ package com.issp.association.crowdfunding.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.issp.association.crowdfunding.MainActivity;
 import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.interfaces.IProductParticularsInfoView;
-import com.issp.association.crowdfunding.network.HttpUtils;
 import com.issp.association.crowdfunding.presenters.ProductParticularsPresenter;
-import com.squareup.picasso.Picasso;
+import com.issp.association.crowdfunding.utils.T;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -74,16 +73,17 @@ public class ProductParticularsActivity extends BaseMvpActivity<IProductParticul
     }
 
     @OnClick(R.id.tv_back_left)
-    void leftClick(){
+    void leftClick() {
         ProductParticularsActivity.this.finish();
     }
 
     @OnClick(R.id.tv_check_indent)
-    void checkIndentClick(){
-        Intent intent=new Intent(ProductParticularsActivity.this,SupportProductActivity.class);
-        intent.putExtra("bean",bean);
+    void checkIndentClick() {
+        Intent intent = new Intent(ProductParticularsActivity.this, SupportProductActivity.class);
+        intent.putExtra("bean", bean);
         startActivity(intent);
     }
+
     @Override
     public ProductParticularsPresenter initPresenter() {
         return new ProductParticularsPresenter();
@@ -101,7 +101,7 @@ public class ProductParticularsActivity extends BaseMvpActivity<IProductParticul
 
     @Override
     public void showError(String errorString) {
-
+        T.showLong(ProductParticularsActivity.this,errorString);
     }
 
     @Override
@@ -126,5 +126,34 @@ public class ProductParticularsActivity extends BaseMvpActivity<IProductParticul
       /*  Picasso.with(ProductParticularsActivity.this).load(HttpUtils.IMAGE_RUL + bean.getImage())
                 .into(iv);*/
 
+    }
+
+    @Override
+    public void userPraise(String data) {
+        ivLikeBtn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+        T.showLong(ProductParticularsActivity.this,data);
+    }
+
+    @OnClick({R.id.iv_share_btn, R.id.iv_like_btn, R.id.iv_comment_btn,R.id.tv_check_indent})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.iv_share_btn:
+                break;
+            case R.id.iv_like_btn:
+                Map<String, String> formData = new HashMap<String, String>(0);
+                formData.put("userId", "111");
+                formData.put("articleId", bean.getId());
+                formData.put("type", "1");
+                formData.put("status","1");
+                presenter.postUserPraise(formData);
+                break;
+            case R.id.iv_comment_btn:
+                Intent intent = new Intent(ProductParticularsActivity.this, FeedForCommentActivity.class);
+                intent.putExtra("bean", bean);
+                startActivity(intent);
+                break;
+            case R.id.tv_check_indent:
+                break;
+        }
     }
 }

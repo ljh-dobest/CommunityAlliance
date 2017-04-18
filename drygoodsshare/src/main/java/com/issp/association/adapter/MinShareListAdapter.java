@@ -15,6 +15,8 @@ import com.issp.association.bean.ShareBean;
 import com.issp.association.bean.UserBean;
 import com.issp.association.network.HttpUtils;
 import com.squareup.picasso.Picasso;
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
 
 import java.util.List;
 
@@ -30,7 +32,6 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
     private List<ShareBean> list;
     private Context context;
     private int position;
-    private UserBean userBean;
 
     private OnItemClickListener onItemClickListener;
 
@@ -41,23 +42,24 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
     @Override
     public void onBindViewHolder(MinShareListAdapterHolder holder, int position, boolean isItem) {
         if (isItem) {
-            ShareBean person = list.get(position);
-            holder.llItem.setTag(person);
-            holder.llShare.setTag(person);
-            holder.llLike.setTag(person);
-            holder.llComment.setTag(person);
+            ShareBean bean = list.get(position);
+            holder.llItem.setTag(bean);
+            holder.llShare.setTag(bean);
+            holder.llLike.setTag(bean);
+            holder.llComment.setTag(bean);
 
-      /*      holder.ll_item.setTag(person);
-            holder.ll_like.setTag(person);
-            holder.ll_comment.setTag(person);*/
-           /* Picasso.with(context).load(HttpUtils.IMAGE_RUL + userBean.getUserPortraitUrl())
-                    .into(holder.ivShareIcon);
-            holder.tvShareUserName.setText(userBean.getNickname());*/
-            holder.tvShareUserName.setText(person.getNickname());
-            holder.tvShareContent.setText(person.getSynopsis());
-            holder.tvShareTitle.setText(person.getTitle());
-            holder.tvLikeBtn.setText(person.getLikes() + "");
-            switch (person.getLikesStatus()) {
+      /*      holder.ll_item.setTag(bean);
+            holder.ll_like.setTag(bean);
+            holder.ll_comment.setTag(bean);*/
+            if (null != bean.getUserPortraitUrl()) {
+                Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getUserPortraitUrl())
+                        .into(holder.ivShareIcon);
+            }
+            holder.tvShareUserName.setText(bean.getNickname());
+            holder.tvShareContent.setText(bean.getSynopsis());
+            holder.tvShareTitle.setText(bean.getTitle());
+            holder.tvLikeBtn.setText(bean.getLikes() + "");
+            switch (bean.getLikesStatus()) {
                 case 0:
                     holder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn);
                     break;
@@ -72,10 +74,13 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
                     break;
             }
 
-            if (null != person.getImage()) {
-                Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
+            if (null != bean.getImage()) {
+                Picasso.with(context).load(HttpUtils.IMAGE_RUL + bean.getImage())
                         .into(holder.ivShareImg);
             }
+
+            holder.tvCommentBtn.setText("" + bean.getCommentNumber());
+            holder.tvLikeBtn.setText("" + bean.getLikes());
           /*  holder.ll_item.setOnClickListener(this);
             holder.ll_like.setOnClickListener(this);
             holder.ll_comment.setOnClickListener(this);*/
@@ -168,6 +173,7 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
             if (isItem) {
                 ButterKnife.bind(this, itemView);
 
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
                 llItem.setOnClickListener(MinShareListAdapter.this);
                 llShare.setOnClickListener(MinShareListAdapter.this);
                 llLike.setOnClickListener(MinShareListAdapter.this);
@@ -206,7 +212,8 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
     }
 
     public interface OnItemClickListener {
-        public void onShareClick(View view,ShareBean bean);
+        public void onShareClick(View view, ShareBean bean);
+
         public void onItemClick(View view, ShareBean bean);
 
         public void onLikeClick(View view, ShareBean bean);

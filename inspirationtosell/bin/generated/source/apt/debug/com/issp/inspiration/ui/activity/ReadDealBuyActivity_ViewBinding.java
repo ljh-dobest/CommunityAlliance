@@ -7,7 +7,6 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -19,13 +18,13 @@ import java.lang.Override;
 public class ReadDealBuyActivity_ViewBinding implements Unbinder {
   private ReadDealBuyActivity target;
 
-  private View view2131624193;
+  private View view2131624196;
 
-  private View view2131624111;
+  private View view2131624112;
 
-  private View view2131624114;
+  private View view2131624115;
 
-  private View view2131624120;
+  private View view2131624121;
 
   @UiThread
   public ReadDealBuyActivity_ViewBinding(ReadDealBuyActivity target) {
@@ -39,7 +38,7 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624193 = view;
+    view2131624196 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +58,7 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     target.tvLikeBtn = Utils.findRequiredViewAsType(source, R.id.tv_like_btn, "field 'tvLikeBtn'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ll_like, "field 'llLike' and method 'likeClick'");
     target.llLike = Utils.castView(view, R.id.ll_like, "field 'llLike'", LinearLayout.class);
-    view2131624111 = view;
+    view2131624112 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,7 +69,7 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     target.tvCommentBtn = Utils.findRequiredViewAsType(source, R.id.tv_comment_btn, "field 'tvCommentBtn'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ll_comment, "field 'llComment' and method 'commentClick'");
     target.llComment = Utils.castView(view, R.id.ll_comment, "field 'llComment'", LinearLayout.class);
-    view2131624114 = view;
+    view2131624115 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,19 +81,18 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     target.llBuy = Utils.findRequiredViewAsType(source, R.id.ll_buy, "field 'llBuy'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.tv_buy, "field 'tvBuy' and method 'buyClick'");
     target.tvBuy = Utils.castView(view, R.id.tv_buy, "field 'tvBuy'", TextView.class);
-    view2131624120 = view;
+    view2131624121 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.buyClick();
       }
     });
-    target.ivPlay = Utils.findRequiredViewAsType(source, R.id.iv_play, "field 'ivPlay'", ImageView.class);
-    target.pbPlay = Utils.findRequiredViewAsType(source, R.id.pb_play, "field 'pbPlay'", ProgressBar.class);
     target.llPlay = Utils.findRequiredViewAsType(source, R.id.ll_play, "field 'llPlay'", LinearLayout.class);
     target.tvPlayTime = Utils.findRequiredViewAsType(source, R.id.tv_play_time, "field 'tvPlayTime'", TextView.class);
     target.llBuyAndPlay = Utils.findRequiredViewAsType(source, R.id.ll_buy_and_play, "field 'llBuyAndPlay'", LinearLayout.class);
     target.wvContent = Utils.findRequiredViewAsType(source, R.id.wv_content, "field 'wvContent'", WebView.class);
+    target.wvPlay = Utils.findRequiredViewAsType(source, R.id.wv_play, "field 'wvPlay'", WebView.class);
   }
 
   @Override
@@ -124,20 +122,19 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     target.textView2 = null;
     target.llBuy = null;
     target.tvBuy = null;
-    target.ivPlay = null;
-    target.pbPlay = null;
     target.llPlay = null;
     target.tvPlayTime = null;
     target.llBuyAndPlay = null;
     target.wvContent = null;
+    target.wvPlay = null;
 
-    view2131624193.setOnClickListener(null);
-    view2131624193 = null;
-    view2131624111.setOnClickListener(null);
-    view2131624111 = null;
-    view2131624114.setOnClickListener(null);
-    view2131624114 = null;
-    view2131624120.setOnClickListener(null);
-    view2131624120 = null;
+    view2131624196.setOnClickListener(null);
+    view2131624196 = null;
+    view2131624112.setOnClickListener(null);
+    view2131624112 = null;
+    view2131624115.setOnClickListener(null);
+    view2131624115 = null;
+    view2131624121.setOnClickListener(null);
+    view2131624121 = null;
   }
 }

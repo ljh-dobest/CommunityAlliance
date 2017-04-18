@@ -9,68 +9,18 @@ import java.io.Serializable;
  */
 
 public class ShareBean implements Serializable{
-    private String id;
-    private String nickname;
-    private String userPortraitUrl;
-    private String shareId;	//分享文章id
-    private UserBean userId;	//发布用户id
-    private String arcTitle;	//文章标题
-    private String shareContent;	//文章内容
-    private String content;	//文章内容
-    private ShareTypeBean typeId;	//文章类型id
-    private String sendDate;	//发布时间
-    private boolean isShow;	//是否显示
-    private String title;
-    private String image;
-    private String time;
-    private int likes;
-    private int likesStatus;
-    private String synopsis;
-
-    public ShareBean(){
-
-    }
-    public ShareBean(String arcTitle,String shareContent){
-        this.arcTitle=arcTitle;
-        this.shareContent=shareContent;
-
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getShareId() {
-        return shareId;
-    }
-
-    public void setShareId(String shareId) {
-        this.shareId = shareId;
-    }
-
-    public UserBean getUserId() {
-        return userId;
-    }
-
-    public void setUserId(UserBean userId) {
-        this.userId = userId;
-    }
-
-    public String getArcTitle() {
-        return arcTitle;
-    }
-
-    public void setArcTitle(String arcTitle) {
-        this.arcTitle = arcTitle;
-    }
-
-    public String getShareContent() {
-        return shareContent;
-    }
+    private String nickname;       //用户昵称
+    private String userPortraitUrl;   //用户头像
+    private String id;              //干货id
+    private String title;            //标题
+    private String synopsis;        //简介内容
+    private String content;         //干货内容
+    private String image;          //图片
+    private String time;           //发布时间
+    private int likes;           //点赞总数
+    private int likesStatus;   //1当前用户已点赞 0未点赞
+    private int commentNumber;   //评论数量
+    private int collectionNumber; //收藏数量
 
     public String getNickname() {
         return nickname;
@@ -88,40 +38,12 @@ public class ShareBean implements Serializable{
         this.userPortraitUrl = userPortraitUrl;
     }
 
-    public void setShareContent(String shareContent) {
-        this.shareContent = shareContent;
+    public String getId() {
+        return id;
     }
 
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public ShareTypeBean getTypeId() {
-        return typeId;
-    }
-
-    public void setTypeId(ShareTypeBean typeId) {
-        this.typeId = typeId;
-    }
-
-    public String getSendDate() {
-        return sendDate;
-    }
-
-    public void setSendDate(String sendDate) {
-        this.sendDate = sendDate;
-    }
-
-    public boolean isShow() {
-        return isShow;
-    }
-
-    public void setShow(boolean show) {
-        isShow = show;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -130,6 +52,22 @@ public class ShareBean implements Serializable{
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getSynopsis() {
+        return synopsis;
+    }
+
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public String getImage() {
@@ -164,11 +102,19 @@ public class ShareBean implements Serializable{
         this.likesStatus = likesStatus;
     }
 
-    public String getSynopsis() {
-        return synopsis;
+    public int getCommentNumber() {
+        return commentNumber;
     }
 
-    public void setSynopsis(String synopsis) {
-        this.synopsis = synopsis;
+    public void setCommentNumber(int commentNumber) {
+        this.commentNumber = commentNumber;
+    }
+
+    public int getCollectionNumber() {
+        return collectionNumber;
+    }
+
+    public void setCollectionNumber(int collectionNumber) {
+        this.collectionNumber = collectionNumber;
     }
 }

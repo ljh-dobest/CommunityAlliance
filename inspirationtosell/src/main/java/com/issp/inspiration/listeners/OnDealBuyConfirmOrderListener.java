@@ -1,11 +1,6 @@
 package com.issp.inspiration.listeners;
 
 
-import com.issp.inspiration.bean.DealBuyCommentBean;
-
-import java.util.List;
-
-
 /**
  *Created by T-BayMax on 2017/3/20.
  */

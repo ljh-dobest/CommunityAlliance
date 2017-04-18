@@ -27,6 +27,7 @@ import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.interfaces.IProductCollectListView;
 import com.issp.association.crowdfunding.presenters.ProductCollectPresenter;
+import com.issp.association.crowdfunding.ui.activity.FeedForCommentActivity;
 import com.issp.association.crowdfunding.ui.activity.MessageActivity;
 import com.issp.association.crowdfunding.ui.activity.MinProductActivity;
 import com.issp.association.crowdfunding.ui.activity.ProductCommentActivity;
@@ -98,7 +99,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         initView();
-        initClick();
+        //initClick();
     }
 
     @Override
@@ -175,17 +176,18 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
                 isRefresh = false;
                 Map<String, String> formData = new HashMap<String, String>(0);
                 formData.put("userId", "111");
-                formData.put("shareId", bean.getId());
-                formData.put("praise", "1");
+                formData.put("articleId", bean.getId());
+                formData.put("type", "1");
+                formData.put("status","1");
                 tv_like_btn = (TextView) view.findViewById(R.id.tv_like_btn);
                 iv_like_btn = (ImageView) view.findViewById(R.id.iv_like_btn);
 
-                presenter.ShareInfoPresenter(formData);
+                presenter.postUserPraise(formData);
             }
 
             @Override
             public void onCommentClick(View view, ProductCollectBean bean) {
-                Intent intent = new Intent(MainActivity.this, ProductCommentActivity.class);
+                Intent intent = new Intent(MainActivity.this, FeedForCommentActivity.class);
                 intent.putExtra("bean", bean);
                 startActivity(intent);
 
@@ -203,7 +205,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         presenter.ShareInfoPresenter(formData);
 
     }
-
+/*
     private void initClick() {
         adapter.setOnItemClickListener(new BaseRecyclerViewAdapter.OnRecyclerViewItemClickListener<ProductCollectBean>() {
             @Override
@@ -212,7 +214,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
             }
         });
-    }
+    }*/
 
     private void initViewPager() {
         IndexPageAdapter pageAdapter = new IndexPageAdapter(this, mImageIds);
@@ -315,6 +317,11 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
             xRefreshView.stopLoadMore(true);
         }
         adapter.setData(data, page);
+    }
+
+    @Override
+    public void userPraise(String data) {
+
     }
 
     @Override

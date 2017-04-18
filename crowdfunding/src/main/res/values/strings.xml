@@ -13,4 +13,6 @@
     <string name="str_order_detail">订单详情</string>
     <string name="str_add_shipping_address">新增收货地址</string>
     <string name="str_add_support_project">支持项目</string>
+    <string name="str_check_indent">已支付\n查看订单</string>
+    <string name="str_check_indent_no">我要支持</string>
 </resources>

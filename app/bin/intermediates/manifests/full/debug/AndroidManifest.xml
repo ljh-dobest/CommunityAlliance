@@ -179,19 +179,22 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.just.shequnlianmeng.ui.activitys.SearchActivity" />
-        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.RecommendActivity" />
-        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.RecommendInfoActivity" />
-        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.LoginActivity" />
         <activity android:name="com.example.just.shequnlianmeng.MainActivity" />
+        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.RecommendInfoActivity" />
+        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.RecommendActivity" />
+        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.SignPickerActivity" />
+        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.ClaimInfoActivity" />
 
         <meta-data
             android:name="design_width"
-            android:value="768" />
+            android:value="750" />
         <meta-data
             android:name="design_height"
-            android:value="1280" />
+            android:value="1334" />
 
-        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.ClaimInfoActivity" />
+        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.MineClaimActivity" />
+        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.ClaimActiviy" />
+        <activity android:name="com.example.just.shequnlianmeng.ui.activitys.LoginActivity" />
         <!-- 插件管理服务，提供插件的包管理，进程管理。 -->
         <service
             android:name="com.morgoo.droidplugin.PluginManagerService"
@@ -5037,6 +5040,11 @@
             android:exported="false"
             android:label="@string/stub_name_povider"
             android:process=":PluginP08" />
+
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService" />
+        <service
+            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
+            android:process=":filedownloader" />
     </application>
 
 </manifest>

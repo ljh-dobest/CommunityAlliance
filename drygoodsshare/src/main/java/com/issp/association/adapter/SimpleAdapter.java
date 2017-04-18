@@ -19,6 +19,8 @@ import com.issp.association.network.HttpUtils;
 import com.issp.association.utils.DataUtils;
 import com.issp.association.utils.DateConversionUtils;
 import com.squareup.picasso.Picasso;
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
 
 import java.text.ParseException;
 import java.util.List;
@@ -74,6 +76,8 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
                     holder.iv_like_btn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
                     break;
             }
+            holder.tv_comment_btn.setText(""+person.getCommentNumber());
+            holder.tv_like_btn.setText(""+person.getLikes());
 
             if (null != person.getImage()) {
                 Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
@@ -181,6 +185,8 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
         public SimpleAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
             if (isItem) {
+
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
                 tv_share_title = (TextView) itemView.findViewById(R.id.tv_share_title);
                 iv_like_btn = (ImageView) itemView.findViewById(R.id.iv_like_btn);
                 iv_comment_btn = (ImageView) itemView.findViewById(R.id.iv_comment_btn);

@@ -31,6 +31,7 @@
         <activity android:name=".ui.activity.ProductCommentActivity" />
         <activity android:name=".ui.activity.ProductParticularsActivity" />
         <activity android:name=".ui.activity.SupportProductActivity" />
+        <activity android:name=".ui.activity.FeedForCommentActivity"/>
 
         <meta-data
             android:name="design_width"

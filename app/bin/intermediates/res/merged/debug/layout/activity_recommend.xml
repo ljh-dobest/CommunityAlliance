@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_recommend"
     android:layout_width="match_parent"
@@ -9,317 +9,428 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:scrollbars="none">
-    <LinearLayout
+    <com.zhy.autolayout.AutoLinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-    <TextView
-        android:background="@color/blue2"
-        android:padding="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="推荐好友"
-        android:textSize="@dimen/font_20" />
-
-    <LinearLayout
-    style="@style/recommend_item_ll_styles"
-        >
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="好友姓名:(必填)" />
-
-        <EditText
-            android:id="@+id/et_recom_name"
-            style="@style/recommend_item_et_styles" />
-    </LinearLayout>
-
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="好友电话:(必填)" />
-
-        <EditText
-            android:id="@+id/et_recom_mobile"
-            android:inputType="number"
-            style="@style/recommend_item_et_styles" />
-    </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="性别:(必填)" />
-        <RadioGroup
-            android:id="@+id/rg_recom_sex"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <RadioButton
-                android:id="@+id/rb_recom_man"
-                style="@style/recommend_item_rb_styles"
-                android:text="男" />
-            <RadioButton
-                android:id="@+id/rb_recom_women"
-                style="@style/recommend_item_rb_styles"
-                android:text="女" />
-        </RadioGroup>
-    </LinearLayout>
-        <LinearLayout
-            style="@style/recommend_item_ll_styles">
-            <TextView
-                style="@style/recommend_item_tv_styles"
-                android:text="关系:(必填)" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/ll_recom_character"
+        <com.zhy.autolayout.AutoRelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton
-                android:id="@+id/rb_recom_df"
-                style="@style/recommend_item_rb_styles"
-                android:text="大方" />
-            <RadioButton
-                android:id="@+id/rb_recom_sl"
-                style="@style/recommend_item_rb_styles"
-                android:text="善良" />
-            <RadioButton
-                android:id="@+id/rb_recom_zb"
-                style="@style/recommend_item_rb_styles"
-                android:text="装X" />
-            <RadioButton
-                android:id="@+id/rb_recom_db"
-                style="@style/recommend_item_rb_styles"
-                android:text="逗比" />
-            <RadioButton
-                android:id="@+id/rb_recom_ck"
-                style="@style/recommend_item_rb_styles"
-                android:text="诚恳" />
-        </LinearLayout>
-    <TextView
-        style="@style/recommend_item_tv_styles"
-        android:text="好友爱好(必填)："/>
-    <RadioGroup
-        android:id="@+id/rg_recom_like"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <LinearLayout
-            style="@style/recommend_item_ll_styles">
-        <RadioButton
-            android:id="@+id/rb_recom_pingpangqiu"
-            style="@style/recommend_item_rb_styles"
-            android:text="乒乓球" />
-        <RadioButton
-            android:id="@+id/rb_recom_yumaoqiu"
-            style="@style/recommend_item_rb_styles"
-            android:text="羽毛球"/>
-        <RadioButton
-            android:id="@+id/rb_recom_movie"
-            style="@style/recommend_item_rb_styles"
-            android:text="看电影"/>
-        <RadioButton
-            android:id="@+id/rb_recom_zhaijia"
-            style="@style/recommend_item_rb_styles"
-            android:text="宅在家"/>
-            <RadioButton
-                android:id="@+id/rb_recom_gezhongchi"
-                style="@style/recommend_item_rb_styles"
-                android:text="吃"/>
-    </LinearLayout>
-        <LinearLayout
-            style="@style/recommend_item_ll_styles">
-            <RadioButton
-                android:id="@+id/rb_recom_basketball"
-                style="@style/recommend_item_rb_styles"
-                android:text="篮球" />
-            <RadioButton
-                android:id="@+id/rb_recom_bybike"
-                style="@style/recommend_item_rb_styles"
-                android:text="骑行"/>
-            <RadioButton
-                android:id="@+id/rb_recom_readbook"
-                style="@style/recommend_item_rb_styles"
-                android:text="看书"/>
-            <RadioButton
-                android:id="@+id/rb_recom_run"
-                style="@style/recommend_item_rb_styles"
-                android:text="跑步"/>
-            <RadioButton
-                android:id="@+id/rb_recom_chat"
-                style="@style/recommend_item_rb_styles"
-                android:text="聊天"/>
-            <RadioButton
-                android:id="@+id/rb_recom_ludaima"
-                style="@style/recommend_item_rb_styles"
-                android:text="旅游"/>
-        </LinearLayout>
-    </RadioGroup>
-        <LinearLayout
-         style="@style/recommend_item_ll_styles">
+            android:background="@color/white"
+            android:padding="5dp">
             <TextView
-                style="@style/recommend_item_tv_styles"
-                android:text="地址(必填):" />
-        </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <Spinner
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/sp_recom_province"
+                android:id="@+id/tv_recom_back"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quxiao"
+                android:textStyle="bold"
+                android:textColor="@color/col_121212"
+                android:textSize="@dimen/font_28" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/woyaotuijian"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20" />
             />
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="省"/>
-        <Spinner
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/sp_recom_city"
-            />
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="市"/>
-        <Spinner
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/sp_recom_county"
-            />
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="(区)/县"/>
-    </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="详细位置:(必填)" />
-        <EditText
-            android:id="@+id/et_recom_addressdetail"
-            style="@style/recommend_item_et_styles" />
-    </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="关系:(必填)" />
-    </LinearLayout>
-        <LinearLayout
-            android:id="@+id/ll_recom_relationship"
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton
-                android:id="@+id/rb_recom_qinren"
-                style="@style/recommend_item_rb_styles"
-                android:text="亲人" />
-            <RadioButton
-                android:id="@+id/rb_recom_qinglv"
-                style="@style/recommend_item_rb_styles"
-                android:text="情侣" />
-            <RadioButton
-                android:id="@+id/rb_recom_tongshi"
-                style="@style/recommend_item_rb_styles"
-                android:text="同事" />
-            <RadioButton
-                android:id="@+id/rb_recom_xiaoyou"
-                style="@style/recommend_item_rb_styles"
-                android:text="校友" />
-            <RadioButton
-                android:id="@+id/rb_recom_laoxiang"
-                style="@style/recommend_item_rb_styles"
-                android:text="老乡" />
-        </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="信誉分:(必填)" />
-        <EditText
-            android:id="@+id/et_recom_creditScore"
-            android:inputType="number"
-            style="@style/recommend_item_et_styles" />
-    </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="生日:" />
-      <EditText
-          android:id="@+id/et_recom_birthday"
-          style="@style/recommend_item_et_styles"/>
-    </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="籍贯:" />
-        <EditText
-            android:id="@+id/et_recom_homeplace"
-            style="@style/recommend_item_et_styles" />
-    </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="毕业学校:" />
-        <EditText
-            android:id="@+id/et_recom_school"
-            style="@style/recommend_item_et_styles" />
-    </LinearLayout>
-        <LinearLayout
-            style="@style/recommend_item_ll_styles">
+            android:background="@color/col_999999"
+            android:layout_height="20px"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical">
             <TextView
-                style="@style/recommend_item_tv_styles"
-                android:text="公司:" />
+                android:id="@+id/tv_claiminfo_name"
+                style="@style/claimInfo_tv_styles"
+                android:text="姓名:"/>
             <EditText
-                android:id="@+id/et_recom_company"
-                style="@style/recommend_item_et_styles" />
-        </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
+                android:layout_toRightOf="@id/tv_claiminfo_name"
+                android:layout_marginLeft="31px"
+                android:id="@+id/et_recom_name"
+                style="@style/claimInfo_et_styles"
+                android:text="孟小宝"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center_vertical">
         <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="父亲名字:" />
+            android:id="@+id/tv_claiminfo_phone"
+            style="@style/claimInfo_tv_styles"
+            android:text="电话:"/>
         <EditText
-            android:id="@+id/et_recom_dadName"
-            style="@style/recommend_item_et_styles" />
-    </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="母亲名字:" />
-        <EditText
-            android:id="@+id/et_recom_momName"
-            style="@style/recommend_item_et_styles" />
-    </LinearLayout>
-    <LinearLayout
-        style="@style/recommend_item_ll_styles">
-        <TextView
-            style="@style/recommend_item_tv_styles"
-            android:text="婚姻状况::" />
+            android:layout_toRightOf="@id/tv_claiminfo_phone"
+            android:layout_marginLeft="31px"
+            android:id="@+id/et_recom_mobile"
+            style="@style/claimInfo_et_styles"
+            android:text="13211232131313"
+            />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="性别:" />
+            <RadioGroup
+                android:id="@+id/rg_recom_sex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <RadioButton
+                    android:id="@+id/rb_recom_man"
+                    style="@style/claimInfo_tv_styles"
+                    android:textSize="40px"
+                    android:text="男" />
+                <RadioButton
+                    android:id="@+id/rb_recom_women"
+                    style="@style/claimInfo_tv_styles"
+                    android:textSize="40px"
+                    android:text="女" />
+            </RadioGroup>
+        </com.zhy.autolayout.AutoLinearLayout>
         <RadioGroup
-            android:id="@+id/rg_recom_marriage"
-            android:layout_width="0dp"
+            android:id="@+id/rg_recom_like"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <RadioButton
-                android:id="@+id/rb_recom_unmarriage"
-                style="@style/recommend_item_rb_styles"
-                android:text="未婚" />
-            <RadioButton
-                android:id="@+id/rb_recom_marriage"
-                style="@style/recommend_item_rb_styles"
-                android:text="已婚" />
+            android:orientation="vertical">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                style="@style/claimInfo_item_ll_styles"
+                >
+                <TextView
+                    style="@style/claimInfo_tv_styles"
+                    android:text="爱好:"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_recom_like1"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="跳舞" />
+                <RadioButton
+                    android:id="@+id/rb_recom_like2"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="唱歌"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_like3"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="画画"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_like4"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="钢琴"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="14px"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                style="@style/claimInfo_item_ll_styles"
+                >
+                <TextView
+                    style="@style/claimInfo_tv_styles"
+                    android:text="爱好:"
+                    android:visibility="invisible"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_recom_like5"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="睡觉" />
+                <RadioButton
+                    android:id="@+id/rb_recom_like6"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="看电影"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_like7"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="吃饭打豆豆"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="14px"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                style="@style/claimInfo_item_ll_styles"
+                >
+                <TextView
+                    style="@style/claimInfo_tv_styles"
+                    android:text="爱好:"
+                    android:textColor="@color/white"
+                    android:visibility="invisible"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_recom_like8"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="韩流" />
+                <RadioButton
+                    android:id="@+id/rb_recom_like9"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="综艺"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_like10"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="看书"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_like11"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="爬山"/>
+            </com.zhy.autolayout.AutoLinearLayout>
         </RadioGroup>
-    </LinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="地址:" />
+            <Spinner
+                style="@style/claimInfo_item_sp_styles"
+                android:id="@+id/sp_recom_province"
+                />
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="省"/>
+            <Spinner
+                style="@style/claimInfo_item_sp_styles"
+                android:id="@+id/sp_recom_city"
+                />
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="市"/>
+            <Spinner
+                style="@style/claimInfo_item_sp_styles"
+                android:id="@+id/sp_recom_county"
+                />
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="(区)/县"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_recom_relationship"
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="关系:"/>
+            <EditText
+                android:layout_marginLeft="31px"
+                android:id="@+id/et_recom_relationship"
+                style="@style/claimInfo_et_styles"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_recom_creditScore"
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="信誉分:"/>
+            <EditText
+                android:layout_marginLeft="31px"
+                android:id="@+id/et_recom_creditScore"
+                style="@style/claimInfo_et_styles"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_claiminfo_birthday"
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="生日:"/>
+            <EditText
+                android:layout_marginLeft="31px"
+                android:id="@+id/et_recom_birthday"
+                style="@style/claimInfo_et_styles"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <RadioGroup
+            android:id="@+id/rg_recom_character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                style="@style/claimInfo_item_ll_styles"
+                >
+                <TextView
+                    style="@style/claimInfo_tv_styles"
+                    android:text="性格:"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_recom_character1"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="可爱" />
+                <RadioButton
+                    android:id="@+id/rb_recom_character2"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="逗逼"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_character3"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="淑女"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_character4"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="贤惠"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="14px"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                style="@style/claimInfo_item_ll_styles"
+                >
+                <TextView
+                    style="@style/claimInfo_tv_styles"
+                    android:text="性格:"
+                    android:visibility="invisible"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_recom_character5"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="努力" />
+                <RadioButton
+                    android:id="@+id/rb_recom_character6"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="好看的"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_character7"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="热心帮助人"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_marginTop="14px"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                style="@style/claimInfo_item_ll_styles"
+                >
+                <TextView
+                    style="@style/claimInfo_tv_styles"
+                    android:text="性格:"
+                    android:textColor="@color/white"
+                    android:visibility="invisible"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_recom_character8"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="好学" />
+                <RadioButton
+                    android:id="@+id/rb_recom_character9"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="懒惰"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_character10"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="活泼"/>
+                <RadioButton
+                    android:id="@+id/rb_recom_character11"
+                    style="@style/claimInfo_item_rb_styles"
+                    android:text="爱心"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </RadioGroup>
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/claimInfo_item_ll_styles"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="籍贯:" />
+            <Spinner
+                style="@style/claimInfo_item_sp_styles"
+                android:id="@+id/sp_recom_jgprovince"
+                />
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="省"/>
+            <Spinner
+                style="@style/claimInfo_item_sp_styles"
+                android:id="@+id/sp_recom_jgcitys"
+                />
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="市"/>
+            <Spinner
+                style="@style/claimInfo_item_sp_styles"
+                android:id="@+id/sp_recom_jgcountys"
+                />
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="(区)/县"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="毕业学校:"/>
+            <EditText
+                android:layout_marginLeft="31px"
+                android:id="@+id/et_recom_school"
+                style="@style/claimInfo_et_styles"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="公司:"/>
+            <EditText
+                android:layout_marginLeft="31px"
+                android:id="@+id/et_recom_company"
+                style="@style/claimInfo_et_styles"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="父亲名字:"/>
+            <EditText
+                android:layout_marginLeft="31px"
+                android:id="@+id/et_recom_dadName"
+                style="@style/claimInfo_et_styles"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="母亲名字:"/>
+            <EditText
+                android:layout_marginLeft="31px"
+                android:id="@+id/et_recom_momName"
+                style="@style/claimInfo_et_styles"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            style="@style/claimInfo_item_ll_styles">
+            <TextView
+                style="@style/claimInfo_tv_styles"
+                android:text="婚姻状况:" />
+            <RadioGroup
+                android:id="@+id/rg_recom_marriage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <RadioButton
+                    android:id="@+id/rb_recom_unmarriage"
+                    style="@style/claimInfo_tv_styles"
+                    android:textSize="40px"
+                    android:text="未婚" />
+                <RadioButton
+                    android:id="@+id/rb_recom_marriage"
+                    style="@style/claimInfo_tv_styles"
+                    android:textSize="40px"
+                    android:text="已婚" />
+            </RadioGroup>
+        </com.zhy.autolayout.AutoLinearLayout>
         <LinearLayout
             android:id="@+id/ll_recomm_marriaged"
             android:layout_width="match_parent"
@@ -360,7 +471,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="马上推荐"/>
-</LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
 
 </ScrollView>
-</RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

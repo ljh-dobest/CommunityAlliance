@@ -21,6 +21,10 @@ public class MinShareActivity_ViewBinding implements Unbinder {
 
   private View view2131624098;
 
+  private View view2131624100;
+
+  private View view2131624101;
+
   @UiThread
   public MinShareActivity_ViewBinding(MinShareActivity target) {
     this(target, target.getWindow().getDecorView());
@@ -41,8 +45,24 @@ public class MinShareActivity_ViewBinding implements Unbinder {
       }
     });
     target.radioGroup = Utils.findRequiredViewAsType(source, R.id.rg_relation, "field 'radioGroup'", RadioGroup.class);
-    target.rb_connection = Utils.findRequiredViewAsType(source, R.id.rb_connection, "field 'rb_connection'", RadioButton.class);
-    target.rb_relation_map = Utils.findRequiredViewAsType(source, R.id.rb_relation_map, "field 'rb_relation_map'", RadioButton.class);
+    view = Utils.findRequiredView(source, R.id.rb_connection, "field 'rb_connection' and method 'connectionClick'");
+    target.rb_connection = Utils.castView(view, R.id.rb_connection, "field 'rb_connection'", RadioButton.class);
+    view2131624100 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.connectionClick();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.rb_relation_map, "field 'rb_relation_map' and method 'relationMapClick'");
+    target.rb_relation_map = Utils.castView(view, R.id.rb_relation_map, "field 'rb_relation_map'", RadioButton.class);
+    view2131624101 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.relationMapClick();
+      }
+    });
     target.recyclerView = Utils.findRequiredViewAsType(source, R.id.recycler_view_test_rv, "field 'recyclerView'", RecyclerView.class);
     target.xRefreshView = Utils.findRequiredViewAsType(source, R.id.xrefreshview, "field 'xRefreshView'", XRefreshView.class);
   }
@@ -63,5 +83,9 @@ public class MinShareActivity_ViewBinding implements Unbinder {
 
     view2131624098.setOnClickListener(null);
     view2131624098 = null;
+    view2131624100.setOnClickListener(null);
+    view2131624100 = null;
+    view2131624101.setOnClickListener(null);
+    view2131624101 = null;
   }
 }

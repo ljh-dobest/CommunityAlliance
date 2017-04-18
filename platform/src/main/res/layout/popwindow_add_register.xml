@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/border_20"
+        android:layout_marginStart="@dimen/border_20"
+        android:layout_marginTop="@dimen/border_40"
+        android:text="@string/str_add_register_title"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/font_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/border_20"
+        android:layout_marginRight="@dimen/border_20"
+        android:layout_marginTop="@dimen/border_40"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/border_50"
+        android:layout_marginStart="@dimen/border_50"
+        android:layout_marginTop="@dimen/border_50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_user_name"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/font_30" />
+
+        <EditText
+            android:id="@+id/et_userName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_70"
+            android:layout_marginRight="@dimen/border_50"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/font_30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/border_50"
+        android:layout_marginStart="@dimen/border_50"
+        android:layout_marginTop="@dimen/border_50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_user_phone"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/font_30" />
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_70"
+            android:layout_marginRight="@dimen/border_50"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/font_30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/border_50"
+        android:layout_marginStart="@dimen/border_50"
+        android:layout_marginTop="@dimen/border_50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_user_weixin"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/font_30" />
+
+        <EditText
+            android:id="@+id/et_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_70"
+            android:layout_marginRight="@dimen/border_50"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/font_30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/border_50"
+        android:layout_marginStart="@dimen/border_50"
+        android:layout_marginTop="@dimen/border_50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_user_company"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/font_30" />
+
+        <EditText
+            android:id="@+id/et_company"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_70"
+            android:layout_marginRight="@dimen/border_50"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/font_30" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/str_confirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/border_50"
+        android:textSize="@dimen/font_32"
+        android:background="@color/color_10"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

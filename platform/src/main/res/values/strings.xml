@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">InspirationToSell</string>
+    <string name="str_platform_title">平台活动</string>
+    <string name="str_title_left">返回</string>
+    <string name="str_information">消息</string>
+    <string name="str_inspiration_my_deal_buy">我的</string>
+    <string name="str_apply">立即报名</string>
+
+<string name="str_add_register_title">填写报名信息</string>
+    <string name="str_user_name">姓名：</string>
+    <string name="str_user_phone">手机：</string>
+    <string name="str_user_weixin">微信：</string>
+    <string name="str_user_company">公司：</string>
+    <string name="str_confirm">确认报名</string>
+</resources>

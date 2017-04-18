@@ -11,6 +11,7 @@
         android:layout_marginTop="@dimen/border_20"
         android:layout_width="match_parent"
         android:background="@android:color/white"
+        android:padding="@dimen/border_10"
         android:layout_height="wrap_content">
 
         <ImageView
@@ -20,6 +21,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:paddingLeft="@dimen/border_10"
             app:srcCompat="@mipmap/header" />
 
         <TextView

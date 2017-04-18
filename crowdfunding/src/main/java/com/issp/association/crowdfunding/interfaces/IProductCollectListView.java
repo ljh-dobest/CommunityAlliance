@@ -14,4 +14,5 @@ import java.util.ArrayList;
 
 public interface IProductCollectListView extends BaseView {
     void setProductCollectData(ArrayList<ProductCollectBean> data);
+    void userPraise(String data);
 }

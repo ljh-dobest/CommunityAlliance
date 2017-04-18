@@ -1,7 +1,6 @@
 package com.issp.inspiration.bean;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * 评论内容
@@ -15,7 +14,14 @@ public class CommentsBean implements Serializable{
     private String userPortraitUrl;   //头像
     private String content;         //评论内容
     private String  commentTime;    //评论时间  Y-m-d  H:i:s
-    private List<ReplyUsersBean> replyUsers;//回复用户信息（没有回复为空）
+    private int likes;           //评论点赞数量
+    private int likesStatus;  //1当前用户已点赞  0未点赞
+
+    private String fromUserId;      //被回复用户id
+    private String fromNickname;   //被回复用户昵称
+    private String fromPortraitUrl;     //被回复头像
+    private String fromContent;      //被回复的内容
+
 
     public String getId() {
         return id;
@@ -65,11 +71,51 @@ public class CommentsBean implements Serializable{
         this.commentTime = commentTime;
     }
 
-    public List<ReplyUsersBean> getReplyUsers() {
-        return replyUsers;
+    public int getLikes() {
+        return likes;
     }
 
-    public void setReplyUsers(List<ReplyUsersBean> replyUsers) {
-        this.replyUsers = replyUsers;
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
+
+    public int getLikesStatus() {
+        return likesStatus;
+    }
+
+    public void setLikesStatus(int likesStatus) {
+        this.likesStatus = likesStatus;
+    }
+
+    public String getFromUserId() {
+        return fromUserId;
+    }
+
+    public void setFromUserId(String fromUserId) {
+        this.fromUserId = fromUserId;
+    }
+
+    public String getFromNickname() {
+        return fromNickname;
+    }
+
+    public void setFromNickname(String fromNickname) {
+        this.fromNickname = fromNickname;
+    }
+
+    public String getFromPortraitUrl() {
+        return fromPortraitUrl;
+    }
+
+    public void setFromPortraitUrl(String fromPortraitUrl) {
+        this.fromPortraitUrl = fromPortraitUrl;
+    }
+
+    public String getFromContent() {
+        return fromContent;
+    }
+
+    public void setFromContent(String fromContent) {
+        this.fromContent = fromContent;
     }
 }

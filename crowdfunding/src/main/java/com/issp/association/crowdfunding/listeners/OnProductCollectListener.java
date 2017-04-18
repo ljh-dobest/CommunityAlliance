@@ -11,5 +11,6 @@ import java.util.ArrayList;
 
 public interface OnProductCollectListener {
     void getProductCollectInfo(ArrayList<ProductCollectBean> data);
+    void userPraise(String data);
     void showError(String errorString);
 }

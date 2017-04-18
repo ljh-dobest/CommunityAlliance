@@ -49,7 +49,7 @@ public class DealBuyInfoModel {
 
     public void getDealBuyPraiseInfo(Map<String, String> formData, final OnDealBuyListener listener) {
 
-        HttpUtils.sendGsonPostRequest("/sharePraise", formData, new StringCallback() {
+        HttpUtils.sendGsonPostRequest("/userPraise", formData, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
                 listener.showError(e.toString());

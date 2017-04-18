@@ -50,4 +50,38 @@ public class ProductCollectModel {
             }
         });
     }
+
+    /**
+     * 点赞
+     * @param formData
+     * @param listener
+     */
+    public void postUserPraise(Map<String, String> formData, final OnProductCollectListener listener) {
+
+        HttpUtils.sendGsonPostRequest("/userPraise", formData, new StringCallback() {
+            @Override
+            public void onError(Call call, Exception e, int id) {
+                listener.showError(e.toString());
+            }
+
+            @Override
+            public void onResponse(String response, int id) {
+                Gson gson = new Gson();
+                Type type = new TypeToken<Code>() {
+                }.getType();
+                Code code = gson.fromJson(response, type);
+                switch (code.getCode()) {
+                    case 200:
+                        listener.userPraise("点赞成功");
+                        break;
+                    case 100:
+                        listener.showError(code.getMsgs());
+                        break;
+                    case 0:
+                        listener.showError("评论失败");
+                        break;
+                }
+            }
+        });
+    }
 }

@@ -27,10 +27,18 @@ public class ProductCollectPresenter extends BasePersenter<IProductCollectListVi
         recommendInfoMoudle.getProductCollectInfo(formData, this);
 
     }
+    public void postUserPraise(Map<String,String> formData){
+        recommendInfoMoudle.postUserPraise(formData,this);
+    }
 
     @Override
     public void getProductCollectInfo(ArrayList<ProductCollectBean> data) {
         mView.setProductCollectData(data);
+    }
+
+    @Override
+    public void userPraise(String data) {
+
     }
 
     @Override

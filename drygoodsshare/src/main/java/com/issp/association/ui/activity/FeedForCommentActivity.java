@@ -1,7 +1,6 @@
 package com.issp.association.ui.activity;
 
 import android.content.Intent;
-
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,10 +13,8 @@ import com.andview.refreshview.XRefreshViewFooter;
 import com.issp.association.R;
 import com.issp.association.adapter.FeedForCommentListAdapter;
 import com.issp.association.base.view.BaseMvpActivity;
-
 import com.issp.association.bean.CommentsBean;
 import com.issp.association.bean.ShareBean;
-import com.issp.association.bean.ShareCommentBean;
 import com.issp.association.interfaces.IFeedForCommentListView;
 import com.issp.association.presenters.FeedForCommentPresenter;
 import com.issp.association.utils.T;
@@ -26,7 +23,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -60,6 +56,7 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
     private View headerView;
 
     private boolean isRefresh = true;
+    private boolean isComment=false;
 
     List<CommentsBean> personList = new ArrayList<CommentsBean>();
     LinearLayoutManager layoutManager;
@@ -70,7 +67,7 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
 
     FeedForCommentListAdapter adapter;
 
-    private ShareBean shareBean;
+    private ShareBean bean;
 
 
     @Override
@@ -79,17 +76,18 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
         setContentView(R.layout.activity_feed_for_comments);
         ButterKnife.bind(this);
         initView();
+        initData();
+        initItemClick();
     }
 
     private void initView() {
         ltMainTitle.setText("评论列表");
         Intent intent = getIntent();
-        shareBean = (ShareBean) intent.getSerializableExtra("bean");
+        bean = (ShareBean) intent.getSerializableExtra("bean");
 
         xRefreshView.setPullLoadEnable(true);
         recyclerView.setHasFixedSize(true);
 
-        initData();
         adapter = new FeedForCommentListAdapter(personList, this);
         // 设置静默加载模式
 //		xRefreshView1.setSilenceLoadMore();
@@ -137,7 +135,7 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
     private void initData() {
         isRefresh = true;
         Map<String, String> formData = new HashMap<String, String>(0);
-        formData.put("articleId", shareBean.getId());
+        formData.put("articleId", bean.getId());
         formData.put("userId","111");
         formData.put("type","3");
         presenter.FeedCommentInfo(formData);
@@ -150,6 +148,7 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
 
     @OnClick(R.id.editText)
     void commentClick() {
+        isComment=false;
         tvSubmitComment.setVisibility(View.VISIBLE);
     }
 
@@ -158,12 +157,40 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
         if (checkInputInfo()) {
             isRefresh = false;
             Map<String, String> formData = new HashMap<String, String>(0);
-            formData.put("articleId", shareBean.getId());
+            if (isComment){
+                formData.put("commentId",commentsBean.getId());
+            }
+            formData.put("articleId", bean.getId());
             formData.put("userId", "111");
             formData.put("type","3");
             formData.put("content", editText.getText().toString().trim());
             presenter.addFeedCommentInfo(formData);
         }
+    }
+    FeedForCommentListAdapter.AdapterViewHolder viewHolder;
+    CommentsBean commentsBean;
+    void initItemClick(){
+        adapter.setOnItemClickListener(new FeedForCommentListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(FeedForCommentListAdapter.AdapterViewHolder viewHolder, CommentsBean bean) {
+                isComment=true;
+                editText.requestFocus();
+                tvSubmitComment.setVisibility(View.VISIBLE);
+                editText.setHint("回复"+bean.getNickname());
+            }
+
+            @Override
+            public void onLikeClick(FeedForCommentListAdapter.AdapterViewHolder viewHolder, CommentsBean bean) {
+                isRefresh = false;
+                Map<String, String> formData = new HashMap<String, String>(0);
+                formData.put("userId", "111");
+                formData.put("commentId",bean.getId());
+                formData.put("status", bean.getLikesStatus()==0?"1":"0");
+                presenter.addCommentLikes(formData);
+                FeedForCommentActivity.this.viewHolder=viewHolder;
+                FeedForCommentActivity.this.commentsBean=bean;
+            }
+        });
     }
 
     @Override
@@ -203,9 +230,24 @@ public class FeedForCommentActivity extends BaseMvpActivity<IFeedForCommentListV
     }
 
     @Override
+    public void commentLikes(String data) {
+        if (commentsBean.getLikesStatus() == 0) {
+            viewHolder.ivLikeBtn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
+            viewHolder.tvLikeBtn.setText((commentsBean.getLikes()+1)+"");
+            T.showLong(FeedForCommentActivity.this,"点赞成功！");
+        } else {
+            viewHolder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn_no);
+            viewHolder.tvLikeBtn.setText((commentsBean.getLikes()-1)+"");
+            T.showLong(FeedForCommentActivity.this,"取消点赞！");
+        }
+    }
+
+    @Override
     public void setAddCommentData(String data) {
         T.showShort(FeedForCommentActivity.this, data);
         tvSubmitComment.setVisibility(View.GONE);
+        editText.setText("");
+        editText.setHint("输入你的评论内容");
     }
 
     @Override

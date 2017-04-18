@@ -36,11 +36,13 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="@dimen/border_20"
+
         android:layout_marginLeft="@dimen/border_8"
+        android:layout_marginTop="@dimen/border_20"
         android:text="60"
         android:textColor="@color/color_99"
         android:textSize="@dimen/font_30" />
+
 
     <ImageView
         android:id="@+id/iv_like_btn"

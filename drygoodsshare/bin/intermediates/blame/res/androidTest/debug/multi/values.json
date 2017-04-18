@@ -11,11 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-<<<<<<< HEAD
-                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\e9fdb28e31ee9a64613c8e4525ad8506050fed36\\output\\res\\values\\values.xml",
-=======
                     "file": "C:\\Users\\Administrator\\.android\\build-cache\\2a58ec96d0ff7642d1accc273d8cd40ddc8d8841\\output\\res\\values\\values.xml",
->>>>>>> bxh
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

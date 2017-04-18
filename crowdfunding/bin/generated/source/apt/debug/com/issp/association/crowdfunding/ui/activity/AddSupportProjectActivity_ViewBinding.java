@@ -6,6 +6,7 @@ import android.support.annotation.UiThread;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -17,9 +18,11 @@ import java.lang.Override;
 public class AddSupportProjectActivity_ViewBinding implements Unbinder {
   private AddSupportProjectActivity target;
 
-  private View view2131624117;
+  private View view2131624121;
 
-  private View view2131624098;
+  private View view2131624102;
+
+  private View view2131624099;
 
   @UiThread
   public AddSupportProjectActivity_ViewBinding(AddSupportProjectActivity target) {
@@ -34,7 +37,7 @@ public class AddSupportProjectActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624117 = view;
+    view2131624121 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,8 +54,17 @@ public class AddSupportProjectActivity_ViewBinding implements Unbinder {
     target.etUserPhone = Utils.findRequiredViewAsType(source, R.id.et_user_phone, "field 'etUserPhone'", EditText.class);
     target.ivZhifubao = Utils.findRequiredViewAsType(source, R.id.iv_zhifubao, "field 'ivZhifubao'", ImageView.class);
     target.ivWeixin = Utils.findRequiredViewAsType(source, R.id.iv_weixin, "field 'ivWeixin'", ImageView.class);
+    view = Utils.findRequiredView(source, R.id.ll_add_address, "field 'llAddAddress' and method 'addAddress'");
+    target.llAddAddress = Utils.castView(view, R.id.ll_add_address, "field 'llAddAddress'", LinearLayout.class);
+    view2131624102 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.addAddress();
+      }
+    });
     view = Utils.findRequiredView(source, R.id.btn_address_submit, "method 'addressSubmit'");
-    view2131624098 = view;
+    view2131624099 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -79,10 +91,13 @@ public class AddSupportProjectActivity_ViewBinding implements Unbinder {
     target.etUserPhone = null;
     target.ivZhifubao = null;
     target.ivWeixin = null;
+    target.llAddAddress = null;
 
-    view2131624117.setOnClickListener(null);
-    view2131624117 = null;
-    view2131624098.setOnClickListener(null);
-    view2131624098 = null;
+    view2131624121.setOnClickListener(null);
+    view2131624121 = null;
+    view2131624102.setOnClickListener(null);
+    view2131624102 = null;
+    view2131624099.setOnClickListener(null);
+    view2131624099 = null;
   }
 }

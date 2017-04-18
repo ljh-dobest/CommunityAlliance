@@ -4,8 +4,20 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\lingyang.png"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\close.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\close.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\login.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\login.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\dache.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\dache.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\recommed.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\recommed.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\linggan.png",
@@ -26,6 +38,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ganhuo.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\ganhuo.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\download.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\download.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",

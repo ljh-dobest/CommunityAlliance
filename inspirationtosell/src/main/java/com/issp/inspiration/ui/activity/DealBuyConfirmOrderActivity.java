@@ -9,9 +9,10 @@ import com.issp.inspiration.R;
 import com.issp.inspiration.base.view.BaseMvpActivity;
 import com.issp.inspiration.bean.DealBuyBean;
 import com.issp.inspiration.interfaces.IDealBuyConfirmOrderView;
-import com.issp.inspiration.presenters.DealBuyCommentPresenter;
+import com.issp.inspiration.network.HttpUtils;
 import com.issp.inspiration.presenters.DealBuyConfirmOrderPresenter;
 import com.issp.inspiration.utils.T;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -53,6 +54,8 @@ public class DealBuyConfirmOrderActivity extends BaseMvpActivity<IDealBuyConfirm
 
     DealBuyBean bean;
 
+    private static final int REQUEST_CODE = 1;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +70,9 @@ public class DealBuyConfirmOrderActivity extends BaseMvpActivity<IDealBuyConfirm
         Intent intent = getIntent();
         bean = (DealBuyBean) intent.getSerializableExtra("bean");
         if (null != bean) {
+            if (null != bean.getUserPortraitUrl())
+                Picasso.with(DealBuyConfirmOrderActivity.this).load(HttpUtils.IMAGE_RUL + bean.getUserPortraitUrl())
+                        .into(ivDealBuyIcon);
             tvDealBuyTitle.setText(bean.getTitle());
             tvDealContribution.setText("贡献币" + bean.getDealContribution());
             tvDealContributionTotal.setText("贡献币" + bean.getDealContribution());
@@ -105,6 +111,8 @@ public class DealBuyConfirmOrderActivity extends BaseMvpActivity<IDealBuyConfirm
 
     @Override
     public void setConfirmOrderData(String data) {
+        Intent intent = new Intent();
+        setResult(REQUEST_CODE, intent);
         T.showShort(DealBuyConfirmOrderActivity.this, data);
         DealBuyConfirmOrderActivity.this.finish();
 

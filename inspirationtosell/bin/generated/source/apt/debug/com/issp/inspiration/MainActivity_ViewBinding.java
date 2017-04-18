@@ -16,7 +16,7 @@ import java.lang.Override;
 public class MainActivity_ViewBinding implements Unbinder {
   private MainActivity target;
 
-  private View view2131624195;
+  private View view2131624198;
 
   @UiThread
   public MainActivity_ViewBinding(MainActivity target) {
@@ -32,7 +32,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.lt_main_title = Utils.findRequiredViewAsType(source, R.id.lt_main_title, "field 'lt_main_title'", TextView.class);
     view = Utils.findRequiredView(source, R.id.lt_main_title_right, "field 'lt_main_title_right' and method 'initPopupWindow'");
     target.lt_main_title_right = Utils.castView(view, R.id.lt_main_title_right, "field 'lt_main_title_right'", TextView.class);
-    view2131624195 = view;
+    view2131624198 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +56,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.recyclerView = null;
     target.xRefreshView = null;
 
-    view2131624195.setOnClickListener(null);
-    view2131624195 = null;
+    view2131624198.setOnClickListener(null);
+    view2131624198 = null;
   }
 }

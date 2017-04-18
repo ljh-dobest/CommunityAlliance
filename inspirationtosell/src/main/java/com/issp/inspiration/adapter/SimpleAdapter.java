@@ -50,9 +50,11 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
 
 
             holder.tv_share_title.setText(person.getTitle());
-            holder.tv_time.setText(DateConversionUtils.setRefreshTime(context, person.getTime(), "yyyy-MM-dd HH:mm:ss"));
-           /* holder.tv_like_btn.setText(person.getLikes() + "");
-            switch (person.getLikesStatus()) {
+            if (null != person.getTime())
+                holder.tv_time.setText(DateConversionUtils.setRefreshTime(context, person.getTime(), "yyyy-MM-dd HH:mm:ss"));
+            holder.tv_like_btn.setText(person.getLikes() + "");
+            holder.tv_comment_btn.setText(person.getCommentNumber()+"");
+            switch (person.getStatusLikes()) {
                 case 0:
                     holder.iv_like_btn.setImageResource(R.mipmap.img_like_btn);
                     break;
@@ -65,7 +67,7 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
                 case 3:
                     holder.iv_like_btn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
                     break;
-            }*/
+            }
 
             if (null != person.getImage()) {
                 Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
@@ -131,9 +133,10 @@ public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapt
         clear(list);
     }
 
-    public void setOnItemClickListener (OnItemClickListener onItemClickListener){
-        this.onItemClickListener=onItemClickListener;
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
     }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

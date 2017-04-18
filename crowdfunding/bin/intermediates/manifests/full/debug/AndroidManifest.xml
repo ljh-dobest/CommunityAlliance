@@ -27,19 +27,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.AddShippingAddressActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.AddSupportProjectActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.ManagementShippingAddressActivity" />
         <activity android:name="com.issp.association.crowdfunding.ui.activity.MessageActivity" />
-        <activity android:name="com.issp.association.crowdfunding.ui.activity.ProductCommentActivity" />
         <activity android:name="com.issp.association.crowdfunding.ui.activity.MinProductActivity" />
-        <activity android:name="com.issp.association.crowdfunding.ui.activity.SupportProductActivity" />
-        <activity android:name="com.issp.association.crowdfunding.ui.activity.ProductParticularsActivity" />
         <activity android:name="com.issp.association.crowdfunding.ui.activity.OrderDetailActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.ProductCommentActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.ProductParticularsActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.SupportProductActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.FeedForCommentActivity" />
 
         <meta-data
             android:name="design_width"
-            android:value="750" />
+            android:value="768" />
         <meta-data
             android:name="design_height"
-            android:value="1340" />
+            android:value="1280" />
     </application>
 
 </manifest>

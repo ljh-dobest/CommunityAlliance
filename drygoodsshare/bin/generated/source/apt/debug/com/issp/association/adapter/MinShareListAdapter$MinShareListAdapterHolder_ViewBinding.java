@@ -5,6 +5,7 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
@@ -32,6 +33,10 @@ public class MinShareListAdapter$MinShareListAdapterHolder_ViewBinding implement
     target.tvLikeBtn = Utils.findRequiredViewAsType(source, R.id.tv_like_btn, "field 'tvLikeBtn'", TextView.class);
     target.ivCommentBtn = Utils.findRequiredViewAsType(source, R.id.iv_comment_btn, "field 'ivCommentBtn'", ImageView.class);
     target.tvCommentBtn = Utils.findRequiredViewAsType(source, R.id.tv_comment_btn, "field 'tvCommentBtn'", TextView.class);
+    target.llItem = Utils.findRequiredViewAsType(source, R.id.ll_item, "field 'llItem'", LinearLayout.class);
+    target.llShare = Utils.findRequiredViewAsType(source, R.id.ll_share, "field 'llShare'", LinearLayout.class);
+    target.llLike = Utils.findRequiredViewAsType(source, R.id.ll_like, "field 'llLike'", LinearLayout.class);
+    target.llComment = Utils.findRequiredViewAsType(source, R.id.ll_comment, "field 'llComment'", LinearLayout.class);
   }
 
   @Override
@@ -53,5 +58,9 @@ public class MinShareListAdapter$MinShareListAdapterHolder_ViewBinding implement
     target.tvLikeBtn = null;
     target.ivCommentBtn = null;
     target.tvCommentBtn = null;
+    target.llItem = null;
+    target.llShare = null;
+    target.llLike = null;
+    target.llComment = null;
   }
 }

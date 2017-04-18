@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
@@ -22,7 +23,7 @@
             android:drawableLeft="@mipmap/back"
             android:gravity="center"
             android:padding="@dimen/border_20"
-            android:textSize="@dimen/font_28" />
+            android:textSize="@dimen/font_30" />
 
         <com.issp.association.crowdfunding.view.ShareRadioGroup
             android:id="@+id/rg_relation"
@@ -53,7 +54,6 @@
                 android:text="我支持过的众筹"
                 android:textSize="@dimen/font_34" />
 
-
         </com.issp.association.crowdfunding.view.ShareRadioGroup>
 
         <TextView
@@ -68,6 +68,7 @@
             android:layout_height="@dimen/lv_foot_ml_10"
             android:layout_below="@id/ll_relation"
             android:background="@color/aam_item_border" />-->
+
 
 
     <com.andview.refreshview.XRefreshView

@@ -13,15 +13,19 @@ public class ApplyListItem {
     public String versionName; // 版本名称
     public int versionCode; // 版本号
     private String packageName;
+    private String path;
+    private String url;
     private int appImg;
     private int status;
 
-    public ApplyListItem(String title, String appName, int appImg, int versionCode, String packageName, int status) {
+    public ApplyListItem(String title, String appName, int appImg, int versionCode, String packageName,String path,String url, int status) {
         this.title=title;
         this.appName = appName;
         this.appImg = appImg;
         this.versionCode = versionCode;
         this.packageName = packageName;
+        this.path=path;
+        this.url=url;
         this.status = status;
     }
 
@@ -80,5 +84,21 @@ public class ApplyListItem {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

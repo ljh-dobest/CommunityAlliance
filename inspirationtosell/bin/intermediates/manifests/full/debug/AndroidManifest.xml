@@ -28,8 +28,9 @@
             </intent-filter>
         </activity>
         <activity android:name="com.issp.inspiration.ui.activity.ReadDealBuyActivity" />
-        <activity android:name="com.issp.inspiration.ui.activity.DealBuyCommentActivity" />
         <activity android:name="com.issp.inspiration.ui.activity.DealBuyConfirmOrderActivity" />
+        <activity android:name="com.issp.inspiration.ui.activity.CommentMessageActivity" />
+        <activity android:name="com.issp.inspiration.ui.activity.FeedForCommentActivity" />
 
         <meta-data
             android:name="design_width"

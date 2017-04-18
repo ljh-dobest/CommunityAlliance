@@ -5,6 +5,7 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import butterknife.Unbinder;
@@ -38,6 +39,9 @@ public class SimpleAdapter$ProductAdapterViewHolder_ViewBinding implements Unbin
     target.tvLikeBtn = Utils.findRequiredViewAsType(source, R.id.tv_like_btn, "field 'tvLikeBtn'", TextView.class);
     target.ivCommentBtn = Utils.findRequiredViewAsType(source, R.id.iv_comment_btn, "field 'ivCommentBtn'", ImageView.class);
     target.tvCommentBtn = Utils.findRequiredViewAsType(source, R.id.tv_comment_btn, "field 'tvCommentBtn'", TextView.class);
+    target.llLike = Utils.findRequiredViewAsType(source, R.id.ll_like, "field 'llLike'", LinearLayout.class);
+    target.llComment = Utils.findRequiredViewAsType(source, R.id.ll_comment, "field 'llComment'", LinearLayout.class);
+    target.llItem = Utils.findRequiredViewAsType(source, R.id.ll_item, "field 'llItem'", LinearLayout.class);
   }
 
   @Override
@@ -64,5 +68,8 @@ public class SimpleAdapter$ProductAdapterViewHolder_ViewBinding implements Unbin
     target.tvLikeBtn = null;
     target.ivCommentBtn = null;
     target.tvCommentBtn = null;
+    target.llLike = null;
+    target.llComment = null;
+    target.llItem = null;
   }
 }

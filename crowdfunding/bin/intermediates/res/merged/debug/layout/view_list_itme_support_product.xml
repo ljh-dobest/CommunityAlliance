@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:padding="@dimen/border_20"
+
     android:orientation="vertical">
 
     <TextView
@@ -69,9 +71,10 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tv_product_content"
         android:layout_marginTop="@dimen/border_10"
-        android:padding="@dimen/border_10"
+        android:padding="@dimen/border_20"
         android:textSize="@dimen/font_30"
         android:textColor="@color/color_33"
+        android:background="@drawable/submit_comment_bkg"
         android:gravity="center"
         android:text="我要支持" />
 

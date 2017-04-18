@@ -12,16 +12,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_search_view.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_deal_buy_confirm_order.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_deal_buy_confirm_order.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_deal_buy_comments.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_deal_buy_comments.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_deal_buy_confirm_order.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_deal_buy_confirm_order.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
@@ -104,6 +104,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_feed_for_comment.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\view_list_itme_feed_for_comment.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
@@ -132,12 +136,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_comment_message.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\view_list_itme_comment_message.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\view_custom_toolbar.xml",
@@ -172,16 +180,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_action.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\popwindow_more.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\popwindow_more.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_item_header.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\popwindow_more.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\popwindow_more.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
@@ -200,20 +208,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_deal_buy_comment.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\view_list_itme_deal_buy_comment.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\comfirm_dialog_layout.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\comfirm_dialog_layout.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
@@ -260,16 +268,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\pickerview_options.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\\output\\res\\layout\\pickerview_options.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_comment_message.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_comment_message.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
@@ -282,6 +294,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_feed_for_comments.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_feed_for_comments.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",

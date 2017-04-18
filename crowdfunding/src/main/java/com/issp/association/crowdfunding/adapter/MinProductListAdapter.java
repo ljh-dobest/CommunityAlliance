@@ -30,7 +30,7 @@ import butterknife.ButterKnife;
  * Created by T-BayMax on 2017/3/20.
  */
 
-public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductListAdapter.MinShareListAdapterHolder,ProductCollectBean> {
+public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductListAdapter.MinShareListAdapterHolder, ProductCollectBean> {
     private List<ProductCollectBean> list;
     private Context context;
     private int position;
@@ -50,7 +50,7 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
                     .into(holder.ivProductIcon);
 
             holder.tvProductUserName.setText(person.getNickname());
-holder.tvProductTitle.setText(person.getTitle());
+            holder.tvProductTitle.setText(person.getTitle());
             holder.tvProductContent.setText(person.getObjective());
             holder.tvSurplusDate.setText("剩余" + person.getDays() + "天");
             holder.tvConfessTotal.setText("认筹总额：" + person.getContribution());
@@ -58,7 +58,7 @@ holder.tvProductTitle.setText(person.getTitle());
             int schedule = (int) (person.getContribution() / person.getCapital() * 100);
             holder.tvSchedule.setText(schedule + "%");
             holder.pbSchedule.setProgress(schedule);
-            holder.tvLikeBtn.setText(person.getLikes()+"");
+            holder.tvLikeBtn.setText(person.getLikes() + "");
             switch (person.getLikeStatus()) {
                 case 0:
                     holder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn);
@@ -66,10 +66,10 @@ holder.tvProductTitle.setText(person.getTitle());
                 case 1:
                     holder.ivLikeBtn.setImageResource(R.mipmap.img_have_thumb_up_btn);
                     break;
-                case  2:
+                case 2:
                     holder.ivLikeBtn.setImageResource(R.mipmap.img_like_btn_no);
                     break;
-                case  3:
+                case 3:
                     holder.ivLikeBtn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
                     break;
             }

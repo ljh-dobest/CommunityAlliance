@@ -7,6 +7,7 @@ package com.issp.association.crowdfunding.bean;
 public class Code<T> {
     private int code;
     private T data;
+    private String msgs;
 
     public Code() {
     }
@@ -30,5 +31,13 @@ public class Code<T> {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public String getMsgs() {
+        return msgs;
+    }
+
+    public void setMsgs(String msgs) {
+        this.msgs = msgs;
     }
 }

@@ -15,4 +15,5 @@ import java.util.ArrayList;
 
 public interface IProductParticularsInfoView extends BaseView {
     void setProductParticularsInfoData(ProductCollectBean data);
+    void userPraise(String data);
 }

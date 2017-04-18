@@ -20,6 +20,7 @@ import com.issp.inspiration.interfaces.IReadDealBuyView;
 import com.issp.inspiration.network.HttpUtils;
 import com.issp.inspiration.presenters.ReadDealBuyInfoPresenter;
 import com.issp.inspiration.utils.DisplayUtils;
+import com.issp.inspiration.utils.T;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
@@ -78,10 +79,6 @@ public class ReadDealBuyActivity extends BaseMvpActivity<IReadDealBuyView, ReadD
     LinearLayout llBuy;
     @BindView(R.id.tv_buy)
     TextView tvBuy;
-    @BindView(R.id.iv_play)
-    ImageView ivPlay;
-    @BindView(R.id.pb_play)
-    ProgressBar pbPlay;
     @BindView(R.id.ll_play)
     LinearLayout llPlay;
     @BindView(R.id.tv_play_time)
@@ -90,6 +87,11 @@ public class ReadDealBuyActivity extends BaseMvpActivity<IReadDealBuyView, ReadD
     LinearLayout llBuyAndPlay;
     @BindView(R.id.wv_content)
     WebView wvContent;
+    @BindView(R.id.wv_play)
+    WebView wvPlay;
+
+
+    private static final int REQUEST_CODE = 1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -104,6 +106,11 @@ public class ReadDealBuyActivity extends BaseMvpActivity<IReadDealBuyView, ReadD
         ltMainTitle.setText("");
         Intent intent = getIntent();
         bean = (DealBuyBean) intent.getSerializableExtra("bean");
+        getDealBuy();
+    }
+
+    private void getDealBuy() {
+
         Map<String, String> formData = new HashMap<String, String>(0);
         formData.put("userId", "111");
         formData.put("articleId", bean.getId());
@@ -114,18 +121,18 @@ public class ReadDealBuyActivity extends BaseMvpActivity<IReadDealBuyView, ReadD
         final AlertDialog ComfirmDialog = new AlertDialog.Builder(this).create();
         ComfirmDialog.show();
         Window window = ComfirmDialog.getWindow();
-        WindowManager.LayoutParams  lp= ComfirmDialog.getWindow().getAttributes();
-        lp.width=DisplayUtils.dp2px(ReadDealBuyActivity.this,300);//定义宽度
-        lp.height=DisplayUtils.dp2px(ReadDealBuyActivity.this,200);//定义高度
+        WindowManager.LayoutParams lp = ComfirmDialog.getWindow().getAttributes();
+        lp.width = DisplayUtils.dp2px(ReadDealBuyActivity.this, 300);//定义宽度
+        lp.height = DisplayUtils.dp2px(ReadDealBuyActivity.this, 200);//定义高度
         ComfirmDialog.getWindow().setAttributes(lp);
         window.setContentView(R.layout.comfirm_dialog_layout);
         Button btn_comfirm_dialog_comfirm = (Button) window.findViewById(R.id.btn_comfirm_dialog_comfirm);
-        ImageView iv_comfirm_dialog_cancel= (ImageView) window.findViewById(R.id.iv_comfirm_dialog_cancel);
+        ImageView iv_comfirm_dialog_cancel = (ImageView) window.findViewById(R.id.iv_comfirm_dialog_cancel);
         btn_comfirm_dialog_comfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(ReadDealBuyActivity.this,DealBuyConfirmOrderActivity.class);
-                intent.putExtra("bean",bean);
+                Intent intent = new Intent(ReadDealBuyActivity.this, DealBuyConfirmOrderActivity.class);
+                intent.putExtra("bean", bean);
                 startActivity(intent);
                 ComfirmDialog.dismiss();
             }
@@ -160,8 +167,8 @@ public class ReadDealBuyActivity extends BaseMvpActivity<IReadDealBuyView, ReadD
     }
 
     @OnClick(R.id.tv_buy)
-    void buyClick(){
-       showComfirmDialog();
+    void buyClick() {
+        showComfirmDialog();
     }
 
     @OnClick(R.id.ll_like)
@@ -169,34 +176,68 @@ public class ReadDealBuyActivity extends BaseMvpActivity<IReadDealBuyView, ReadD
         Map<String, String> formData = new HashMap<String, String>(0);
         formData.put("userId", "111");
         formData.put("articleId", bean.getId());
-        formData.put("praise", "1");
+        formData.put("type", "5");
+        formData.put("status", "1");
         presenter.sharePraiseInfoPresenter(formData);
     }
 
     @OnClick(R.id.ll_comment)
     void commentClick() {
-        Intent intent = new Intent(ReadDealBuyActivity.this, DealBuyCommentActivity.class);
+        Intent intent = new Intent(ReadDealBuyActivity.this, FeedForCommentActivity.class);
         intent.putExtra("bean", bean);
-        startActivity(intent);
+        startActivityForResult(intent, REQUEST_CODE);
     }
 
     @Override
     public void showError(String errorString) {
-
+        T.showLong(ReadDealBuyActivity.this, errorString);
     }
 
     @Override
     public void setDealBuyData(DealBuyBean data) {
         tvTitle.setText(data.getTitle());
         tvDealBuyUserName.setText(data.getNickname());
-        tvTime.setText(data.getTime());
+        tvTime.setText(data.getReleaseTime());
         Picasso.with(ReadDealBuyActivity.this).load(HttpUtils.IMAGE_RUL + data.getUserPortraitUrl()).into(ivDealBuyIcon);
         wvContent.loadData(data.getContent(), "text/html; charset=UTF-8", null);
-        //tvLikeBtn.setText(data.getLikes() + "");
+        tvLikeBtn.setText(data.getLikes() + "");
+        tvCommentBtn.setText("" + data.getCommentNumber());
+        switch (data.getStatusLikes()) {
+            case 0:
+                ivLikeBtn.setImageResource(R.mipmap.img_like_btn);
+                break;
+            case 1:
+                ivLikeBtn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+                break;
+            case 2:
+                ivLikeBtn.setImageResource(R.mipmap.img_like_btn_no);
+                break;
+            case 3:
+                ivLikeBtn.setImageResource(R.mipmap.img_comments_have_thumb_up_btn);
+                break;
+        }
+        if (null != data.getDealContent() && !data.getDealContent().equals("")) {
+            llBuy.setVisibility(View.GONE);
+            llPlay.setVisibility(View.VISIBLE);
+            wvContent.loadData(data.getDealContent(), "text/html; charset=UTF-8", null);
+        }
+        bean = data;
     }
 
     @Override
     public void dealBuyPraise(String data) {
+        int likes = Integer.parseInt(tvLikeBtn.getText().toString().trim());
+        tvLikeBtn.setText((likes + 1) + "");
+        ivLikeBtn.setImageResource(R.mipmap.img_have_thumb_up_btn);
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            if (requestCode == REQUEST_CODE){
+                getDealBuy();
+            }
+        }
     }
 }

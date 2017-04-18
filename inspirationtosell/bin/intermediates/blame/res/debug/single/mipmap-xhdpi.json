@@ -52,12 +52,20 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xhdpi\\img_comments_have_thumb_up_btn.png"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\header.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xhdpi\\header.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\img_have_thumb_up_btn.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xhdpi\\img_have_thumb_up_btn.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\banner.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xhdpi\\banner.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\close.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xhdpi\\close.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\more.png",

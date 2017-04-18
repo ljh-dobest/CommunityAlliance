@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,27 +14,33 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
-    <TextView
-        android:id="@+id/tv_login"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:gravity="center"
-        android:text="@string/login_tv"
+    <ImageView
+        android:layout_marginTop="213px"
+        android:id="@+id/iv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/login"
         android:textSize="@dimen/font_48"
         />
     <android.support.design.widget.TabLayout
-        android:layout_below="@id/tv_login"
+        android:layout_marginTop="86px"
+        android:layout_below="@id/iv_login"
         android:id="@+id/tl_login"
-        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_width="380px"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
         android:layout_height="wrap_content"
-        app:tabIndicatorColor="@color/white"
-        app:tabSelectedTextColor="@color/blue3"
-        app:tabTextColor="@color/black">
+        app:tabIndicatorColor="@color/col_10DB9F"
+        app:tabIndicatorHeight="14px"
+        app:tabSelectedTextColor="@color/col_333333"
+        app:tabTextColor="@color/col_666666">
 
     </android.support.design.widget.TabLayout>
  <android.support.v4.view.ViewPager
+     android:layout_marginTop="37px"
      android:layout_below="@id/tl_login"
      android:id="@+id/vp_login"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
-</RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

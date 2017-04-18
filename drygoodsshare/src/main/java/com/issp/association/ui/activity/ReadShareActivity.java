@@ -13,6 +13,7 @@ import com.issp.association.bean.ShareBean;
 import com.issp.association.interfaces.IReadShareView;
 import com.issp.association.network.HttpUtils;
 import com.issp.association.presenters.ReadShareInfoPresenter;
+import com.issp.association.utils.CircleTransform;
 import com.issp.association.utils.T;
 import com.squareup.picasso.Picasso;
 
@@ -144,9 +145,12 @@ public class ReadShareActivity extends BaseMvpActivity<IReadShareView, ReadShare
         tvTitle.setText(data.getTitle());
         tvShareUserName.setText(data.getNickname());
         tvTime.setText(data.getTime());
-        Picasso.with(ReadShareActivity.this).load(HttpUtils.IMAGE_RUL + data.getUserPortraitUrl()).into(ivShareIcon);
+        Picasso.with(ReadShareActivity.this).load(HttpUtils.IMAGE_RUL + data.getUserPortraitUrl())
+                .transform(new CircleTransform()).into(ivShareIcon);
         wvContent.loadData(data.getContent(), "text/html; charset=UTF-8", null);
         tvLikeBtn.setText(data.getLikes() + "");
+
+        tvCommentBtn.setText(""+data.getCommentNumber());
         switch (data.getLikesStatus()) {
             case 0:
                 ivLikeBtn.setImageResource(R.mipmap.img_like_btn);

@@ -48,6 +48,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\comfirm_dialog_layout.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\comfirm_dialog_layout.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\yiyuan_gv_item.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\yiyuan_gv_item.xml"
     },
@@ -112,6 +116,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_verify_recommed_info.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\activity_verify_recommed_info.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_layout_tab_text.xml"
     },
@@ -134,6 +142,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\zhongchou_fragment.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\zhongchou_fragment.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_sign_picker.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\activity_sign_picker.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
@@ -232,6 +244,10 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\fragment_connections.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\popupwindow_claim.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\popupwindow_claim.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\usefulactivity_lv_item.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\usefulactivity_lv_item.xml"
     },
@@ -304,6 +320,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_mine_claim.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\activity_mine_claim.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\banner.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\layout\\banner.xml"
     },
@@ -326,6 +346,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\fragment_register.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\fragment_register.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\mineclaim_rv_item.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\layout\\mineclaim_rv_item.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_relation_map.xml",

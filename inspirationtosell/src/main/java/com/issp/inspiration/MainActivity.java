@@ -3,7 +3,6 @@ package com.issp.inspiration;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -22,8 +21,8 @@ import com.issp.inspiration.base.view.BaseMvpActivity;
 import com.issp.inspiration.bean.DealBuyBean;
 import com.issp.inspiration.interfaces.IDealBuyListView;
 import com.issp.inspiration.presenters.DealBuyInfoPresenter;
-import com.issp.inspiration.presenters.ReadDealBuyInfoPresenter;
-import com.issp.inspiration.ui.activity.DealBuyCommentActivity;
+import com.issp.inspiration.ui.activity.CommentMessageActivity;
+import com.issp.inspiration.ui.activity.FeedForCommentActivity;
 import com.issp.inspiration.ui.activity.ReadDealBuyActivity;
 import com.issp.inspiration.utils.DisplayUtils;
 import com.issp.inspiration.utils.T;
@@ -39,6 +38,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 灵感贩卖
+ */
 public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoPresenter> implements IDealBuyListView {
 
     private PopupWindow mPopupWindow;
@@ -140,8 +142,9 @@ public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoP
                 isRefresh=false;
                 Map<String, String> formData = new HashMap<String, String>(0);
                 formData.put("userId", "111");
-                formData.put("shareId", bean.getId());
-                formData.put("praise", "1");
+                formData.put("articleId", bean.getId());
+                formData.put("type", "5");
+                formData.put("status", "1");
                 tv_like_btn = (TextView) view.findViewById(R.id.tv_like_btn);
                 iv_like_btn = (ImageView) view.findViewById(R.id.iv_like_btn);
 
@@ -150,7 +153,7 @@ public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoP
 
             @Override
             public void onCommentClick(View view, DealBuyBean bean) {
-                Intent intent = new Intent(MainActivity.this, DealBuyCommentActivity.class);
+                Intent intent = new Intent(MainActivity.this, FeedForCommentActivity.class);
                 intent.putExtra("bean", bean);
                 startActivity(intent);
             }
@@ -202,15 +205,15 @@ public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoP
             tv_information.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                   /* Intent intent = new Intent(MainActivity.this, CommentMessageActivity.class);
+                    Intent intent = new Intent(MainActivity.this, CommentMessageActivity.class);
                     startActivity(intent);
-                    mPopupWindow.dismiss();*/
+                    mPopupWindow.dismiss();
                 }
             });
             tv_my_share.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                  /*  Intent intent = new Intent(MainActivity.this, MinShareActivity.class);
+                   /* Intent intent = new Intent(MainActivity.this, MinShareActivity.class);
                     startActivity(intent);
                     mPopupWindow.dismiss();*/
                 }

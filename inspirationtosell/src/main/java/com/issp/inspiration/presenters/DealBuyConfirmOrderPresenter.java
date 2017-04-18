@@ -2,15 +2,10 @@ package com.issp.inspiration.presenters;
 
 
 import com.issp.inspiration.base.presenter.BasePersenter;
-import com.issp.inspiration.bean.DealBuyCommentBean;
-import com.issp.inspiration.interfaces.IDealBuyCommentListView;
 import com.issp.inspiration.interfaces.IDealBuyConfirmOrderView;
-import com.issp.inspiration.listeners.OnDealBuyCommentListListener;
 import com.issp.inspiration.listeners.OnDealBuyConfirmOrderListener;
-import com.issp.inspiration.model.DealBuyCommentModel;
 import com.issp.inspiration.model.DealBuyConfirmOrderModel;
 
-import java.util.List;
 import java.util.Map;
 
 /**

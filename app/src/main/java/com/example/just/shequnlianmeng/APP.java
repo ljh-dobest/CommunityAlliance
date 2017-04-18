@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.example.just.shequnlianmeng.network.HttpUtils;
+import com.liulishuo.filedownloader.FileDownloader;
 import com.morgoo.droidplugin.PluginApplication;
 import com.morgoo.droidplugin.PluginHelper;
 
@@ -15,6 +16,7 @@ public class APP extends PluginApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+        FileDownloader.init(getApplicationContext());
         PluginHelper.getInstance().applicationOnCreate(getBaseContext());
         HttpUtils.setCookie(this);
     }

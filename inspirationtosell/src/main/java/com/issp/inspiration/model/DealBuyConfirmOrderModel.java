@@ -3,15 +3,11 @@ package com.issp.inspiration.model;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.issp.inspiration.bean.Code;
-import com.issp.inspiration.bean.DealBuyCommentBean;
-import com.issp.inspiration.listeners.OnDealBuyCommentListListener;
 import com.issp.inspiration.listeners.OnDealBuyConfirmOrderListener;
 import com.issp.inspiration.network.HttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 import okhttp3.Call;

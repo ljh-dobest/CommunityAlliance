@@ -4,9 +4,6 @@ package com.issp.inspiration.interfaces;
 
 
 import com.issp.inspiration.base.view.BaseView;
-import com.issp.inspiration.bean.DealBuyCommentBean;
-
-import java.util.List;
 
 /**
  * 产品众筹评论

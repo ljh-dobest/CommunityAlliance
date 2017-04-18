@@ -14,6 +14,8 @@ import com.issp.association.bean.ShareBean;
 import com.issp.association.bean.ShareCommentBean;
 import com.issp.association.network.HttpUtils;
 import com.squareup.picasso.Picasso;
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
 
 import java.util.List;
 
@@ -107,9 +109,11 @@ public class ShareCommentListAdapter extends BaseRecyclerAdapter<ShareCommentLis
 
         public ShareCommentListAdapterViewHolder(View itemView, boolean isItem) {
             super(itemView);
-            if (isItem)
+            if (isItem) {
                 ButterKnife.bind(this, itemView);
 
+                AutoUtils.autoSize(itemView, AutoAttr.BASE_HEIGHT);
+            }
         }
     }
 

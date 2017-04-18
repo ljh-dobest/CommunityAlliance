@@ -1,13 +1,12 @@
 package com.issp.association.presenters;
 
+
+
 import com.issp.association.base.presenter.BasePersenter;
 import com.issp.association.bean.CommentsBean;
-import com.issp.association.bean.ShareCommentBean;
 import com.issp.association.interfaces.IFeedForCommentListView;
 import com.issp.association.listeners.OnFeedForCommentListListener;
 import com.issp.association.model.FeedForCommentModel;
-
-import java.util.ArrayList;
 
 import java.util.List;
 import java.util.Map;
@@ -31,6 +30,10 @@ public class FeedForCommentPresenter extends BasePersenter<IFeedForCommentListVi
         recommendInfoMoudle.addCommentInfo(formData, this);
 
     }
+    public void addCommentLikes( Map<String, String> formData){
+        recommendInfoMoudle.commentLikes(formData,this);
+    }
+
 
     @Override
     public void getFeedCommentInfo(List<CommentsBean> data) {
@@ -41,6 +44,11 @@ public class FeedForCommentPresenter extends BasePersenter<IFeedForCommentListVi
 
     public void getAddCommentInfo(String data) {
         mView.setAddCommentData(data);
+    }
+
+    @Override
+    public void commentLikes(String data) {
+        mView.commentLikes(data);
     }
 
     @Override

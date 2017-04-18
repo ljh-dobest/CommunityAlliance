@@ -1,9 +1,5 @@
 [
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\btom_nav_wo.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\btom_nav_wo.png"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\notification_icon_background.xml"
     },
@@ -12,16 +8,16 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\pic1.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\nav_order.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\nav_order.png"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\pic7.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\pic7.png"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\chat.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\chat.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\pic7.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\pic7.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
@@ -44,6 +40,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\notification_bg.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\btn_login.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\btn_login.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_connection_buttom.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\botm_connection_buttom.xml"
     },
@@ -54,14 +54,6 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\pic6.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\pic6.png"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_nav_home.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\botm_nav_home.png"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_wo_buttom.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\botm_wo_buttom.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
@@ -100,8 +92,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\nav_destination.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\nav_destination.png"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\home.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\home.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\tab_indicator.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\tab_indicator.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\box_blue_solid.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\box_blue_solid.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
@@ -112,16 +112,16 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\header1.png"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\box_gray_solid.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\box_gray_solid.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\white_radius.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\drawable\\white_radius.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\chat2x.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\chat2x.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_relation_buttom.xml",
@@ -136,12 +136,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\popwindow_bg.9.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\popwindow_bg.9.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\test.jpg",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\test.jpg"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\back_press.png",
@@ -168,12 +172,32 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\hobby_seleted.9.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\hobby_seleted.9.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\claiminfo_item_rb_bg.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\claiminfo_item_rb_bg.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\main_chat_bg.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\main_chat_bg.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\recommed.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\recommed.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\discusstion.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\discusstion.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\main_mine_bg.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\main_mine_bg.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
@@ -192,36 +216,32 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_nav_order.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\botm_nav_order.png"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\ac_back_icon.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\ac_back_icon.png"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_destination_buttom.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\botm_destination_buttom.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\drawable\\design_password_eye.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_home_buttom.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\botm_home_buttom.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\hobby_unselect.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\hobby_unselect.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\btn_shape.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\btn_shape.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\share.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\share.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\mine2x.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\mine2x.png"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\main_home_bg.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\main_home_bg.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\good.png",
@@ -236,8 +256,8 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\drawable\\black_background.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_nav_destination.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\botm_nav_destination.png"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\mine.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\mine.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
@@ -260,10 +280,6 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\nav_home.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\nav_home.png"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\progressbar.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\progressbar.xml"
     },
@@ -272,16 +288,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_order_buttom.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\botm_order_buttom.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\mined.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\mined.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\homed.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\homed.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -300,28 +320,32 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\selector_pickerview_btn.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\\output\\res\\drawable\\selector_pickerview_btn.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\chated.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\chated.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\nav_wo.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\nav_wo.png"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\selector_pickerview_btn.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\\output\\res\\drawable\\selector_pickerview_btn.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\rp_arrow.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\rp_arrow.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\gray_radius.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\drawable\\gray_radius.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\hobby_item_textcolor.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\drawable\\hobby_item_textcolor.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\gray_radius.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\drawable\\gray_radius.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",

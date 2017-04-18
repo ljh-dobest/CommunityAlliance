@@ -39,8 +39,16 @@
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="calendar_top_bg">#F5A0B3</color>
     <color name="ccc">#444444</color>
+    <color name="col_050505">#050505</color>
     <color name="col_10DB9F">#10DB9F</color>
+    <color name="col_10db9f">#10db9f</color>
+    <color name="col_11624A">#11624A</color>
+    <color name="col_121212">#121212</color>
+    <color name="col_188C88">#188C88</color>
+    <color name="col_18BC8B">#18BC8B</color>
     <color name="col_333333">#333333</color>
+    <color name="col_444343">#444343</color>
+    <color name="col_666666">#666666</color>
     <color name="col_909090">#909090</color>
     <color name="col_999999">#999999</color>
     <color name="col_A0A0A0">#A0A0A0</color>
@@ -68,12 +76,14 @@
     <color name="f850_default_blue">#0079ff</color>
     <color name="fd">#dcdcdc</color>
     <color name="ff">#aeadad</color>
+    <color name="font_white_one">#FFFFFF</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
     <color name="fs">#D4D4D4</color>
     <color name="gary">#898989</color>
     <color name="gray">#aaaaaa</color>
     <color name="gray_lite">#c5c5c5</color>
+    <color name="gray_normal">#666667</color>
     <color name="green">#73ec71</color>
     <color name="grey">#eeeeee</color>
     <color name="header_toast">#024ca1</color>
@@ -134,6 +144,7 @@
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="taobao_black">#333333</color>
+    <color name="textColor">#CC99FF</color>
     <color name="text_color">#353535</color>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFF</color>
@@ -197,6 +208,7 @@
     <declare-styleable name="AppCompatTheme"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="dimension|fraction" name="windowFixedWidthMajor"/><attr format="dimension|fraction" name="windowFixedHeightMinor"/><attr format="dimension|fraction" name="windowFixedWidthMinor"/><attr format="dimension|fraction" name="windowFixedHeightMajor"/><attr format="dimension|fraction" name="windowMinWidthMajor"/><attr format="dimension|fraction" name="windowMinWidthMinor"/><attr name="android:windowIsFloating"/><attr name="android:windowAnimationStyle"/><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionOverflowMenuStyle"/><attr format="reference" name="actionBarPopupTheme"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarTheme"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize">
             <enum name="wrap_content" value="0"/>
         </attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeCutDrawable"/><attr format="reference" name="actionModeCopyDrawable"/><attr format="reference" name="actionModePasteDrawable"/><attr format="reference" name="actionModeSelectAllDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModeFindDrawable"/><attr format="reference" name="actionModeWebSearchDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="textAppearancePopupMenuHeader"/><attr format="reference" name="dialogTheme"/><attr format="dimension" name="dialogPreferredPadding"/><attr format="reference" name="listDividerAlertDialog"/><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="selectableItemBackgroundBorderless"/><attr format="reference" name="borderlessButtonStyle"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="dividerHorizontal"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="toolbarStyle"/><attr format="reference" name="toolbarNavigationButtonStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="reference" name="popupWindowStyle"/><attr format="reference|color" name="editTextColor"/><attr format="reference" name="editTextBackground"/><attr format="reference" name="imageButtonStyle"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="reference" name="searchViewStyle"/><attr format="dimension" name="listPreferredItemHeight"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemHeightLarge"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="textAppearanceListItem"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="reference" name="panelBackground"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/><attr format="color" name="colorPrimary"/><attr format="color" name="colorPrimaryDark"/><attr format="color" name="colorAccent"/><attr format="color" name="colorControlNormal"/><attr format="color" name="colorControlActivated"/><attr format="color" name="colorControlHighlight"/><attr format="color" name="colorButtonNormal"/><attr format="color" name="colorSwitchThumbNormal"/><attr format="reference" name="controlBackground"/><attr format="color" name="colorBackgroundFloating"/><attr format="reference" name="alertDialogStyle"/><attr format="reference" name="alertDialogButtonGroupStyle"/><attr format="boolean" name="alertDialogCenterButtons"/><attr format="reference" name="alertDialogTheme"/><attr format="reference|color" name="textColorAlertDialogListItem"/><attr format="reference" name="buttonBarPositiveButtonStyle"/><attr format="reference" name="buttonBarNegativeButtonStyle"/><attr format="reference" name="buttonBarNeutralButtonStyle"/><attr format="reference" name="autoCompleteTextViewStyle"/><attr format="reference" name="buttonStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="checkboxStyle"/><attr format="reference" name="checkedTextViewStyle"/><attr format="reference" name="editTextStyle"/><attr format="reference" name="radioButtonStyle"/><attr format="reference" name="ratingBarStyle"/><attr format="reference" name="ratingBarStyleIndicator"/><attr format="reference" name="ratingBarStyleSmall"/><attr format="reference" name="seekBarStyle"/><attr format="reference" name="spinnerStyle"/><attr format="reference" name="switchStyle"/><attr format="reference" name="listMenuViewStyle"/></declare-styleable>
+    <declare-styleable name="ArcProgress"><attr format="dimension" name="borderWidth"/><attr format="color" name="unprogresColor"/><attr format="color" name="progressColor"/><attr format="dimension" name="tickWidth"/><attr format="integer" name="tickDensity"/><attr format="boolean" name="bgShow"/><attr format="dimension" name="radius"/><attr format="color" name="arcbgColor"/><attr format="integer" name="degree"/><attr format="boolean" name="arcCapRound"/><attr format="enum" name="progressStyle"><enum name="tick" value="1"/><enum name="arc" value="0"/></attr></declare-styleable>
     <declare-styleable name="AutoLayout_Layout"><attr name="layout_auto_basewidth"><flag name="width" value="1"/><flag name="height" value="2"/><flag name="textSize" value="4"/><flag name="padding" value="8"/><flag name="margin" value="16"/><flag name="marginLeft" value="32"/><flag name="marginTop" value="64"/><flag name="marginRight" value="128"/><flag name="marginBottom" value="256"/><flag name="paddingLeft" value="512"/><flag name="paddingTop" value="1024"/><flag name="paddingRight" value="2048"/><flag name="paddingBottom" value="4096"/></attr><attr name="layout_auto_baseheight"><flag name="width" value="1"/><flag name="height" value="2"/><flag name="textSize" value="4"/><flag name="padding" value="8"/><flag name="margin" value="16"/><flag name="marginLeft" value="32"/><flag name="marginTop" value="64"/><flag name="marginRight" value="128"/><flag name="marginBottom" value="256"/><flag name="paddingLeft" value="512"/><flag name="paddingTop" value="1024"/><flag name="paddingRight" value="2048"/><flag name="paddingBottom" value="4096"/><flag name="minWidth" value="8192"/><flag name="maxWidth" value="16384"/><flag name="minHeight" value="32768"/><flag name="maxHeight" value="65536"/></attr></declare-styleable>
     <declare-styleable name="Banner"><attr format="integer" name="delay_time"/><attr format="integer" name="scroll_time"/><attr format="boolean" name="is_auto_play"/><attr format="color|reference" name="title_background"/><attr format="color" name="title_textcolor"/><attr format="dimension" name="title_textsize"/><attr format="dimension" name="title_height"/><attr format="dimension" name="indicator_width"/><attr format="dimension" name="indicator_height"/><attr format="dimension" name="indicator_margin"/><attr format="reference" name="indicator_drawable_selected"/><attr format="reference" name="indicator_drawable_unselected"/><attr format="enum" name="image_scale_type">
             <enum name="center" value="0"/>
@@ -382,11 +394,25 @@
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
     <declare-styleable name="RecycleListView"><attr format="dimension" name="paddingBottomNoButtons"/><attr format="dimension" name="paddingTopNoTitle"/></declare-styleable>
     <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr name="android:descendantFocusability"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
+    <declare-styleable name="RoundedImageView"><attr format="dimension" name="riv_corner_radius"/><attr format="dimension" name="riv_corner_radius_top_left"/><attr format="dimension" name="riv_corner_radius_top_right"/><attr format="dimension" name="riv_corner_radius_bottom_left"/><attr format="dimension" name="riv_corner_radius_bottom_right"/><attr format="dimension" name="riv_border_width"/><attr format="color" name="riv_border_color"/><attr format="boolean" name="riv_mutate_background"/><attr format="boolean" name="riv_oval"/><attr name="android:scaleType"/><attr name="riv_tile_mode">
+      <enum name="clamp" value="0"/>
+      <enum name="repeat" value="1"/>
+      <enum name="mirror" value="2"/>
+    </attr><attr name="riv_tile_mode_x">
+      <enum name="clamp" value="0"/>
+      <enum name="repeat" value="1"/>
+      <enum name="mirror" value="2"/>
+    </attr><attr name="riv_tile_mode_y">
+      <enum name="clamp" value="0"/>
+      <enum name="repeat" value="1"/>
+      <enum name="mirror" value="2"/>
+    </attr></declare-styleable>
     <declare-styleable name="ScrimInsetsFrameLayout"><attr format="color|reference" name="insetForeground"/></declare-styleable>
     <declare-styleable name="ScrollingViewBehavior_Layout"><attr format="dimension" name="behavior_overlapTop"/></declare-styleable>
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="SnackbarLayout"><attr name="android:maxWidth"/><attr name="elevation"/><attr format="dimension" name="maxActionInlineWidth"/></declare-styleable>
     <declare-styleable name="Spinner"><attr name="android:prompt"/><attr name="popupTheme"/><attr name="android:popupBackground"/><attr name="android:dropDownWidth"/><attr name="android:entries"/></declare-styleable>
+    <declare-styleable name="SwitchButton"><attr format="reference|dimension" name="sb_shadow_radius"/><attr format="reference|dimension" name="sb_shadow_offset"/><attr format="reference|color" name="sb_shadow_color"/><attr format="reference|color" name="sb_uncheck_color"/><attr format="reference|color" name="sb_checked_color"/><attr format="reference|dimension" name="sb_border_width"/><attr format="reference|color" name="sb_checkline_color"/><attr format="reference|dimension" name="sb_checkline_width"/><attr format="reference|color" name="sb_uncheckcircle_color"/><attr format="reference|dimension" name="sb_uncheckcircle_width"/><attr format="reference|dimension" name="sb_uncheckcircle_radius"/><attr format="reference|boolean" name="sb_checked"/><attr format="reference|boolean" name="sb_shadow_effect"/><attr format="reference|integer" name="sb_effect_duration"/><attr format="reference|color" name="sb_button_color"/><attr format="reference|boolean" name="sb_show_indicator"/><attr format="reference|color" name="sb_background"/><attr format="reference|boolean" name="sb_enable_effect"/></declare-styleable>
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="color" name="thumbTint"/><attr name="thumbTintMode">
             
             <enum name="src_over" value="3"/>
@@ -586,8 +612,11 @@
     <dimen name="font_18">18sp</dimen>
     <dimen name="font_20">20sp</dimen>
     <dimen name="font_24">24sp</dimen>
-    <dimen name="font_26">26sp</dimen>
-    <dimen name="font_28">28sp</dimen>
+    <dimen name="font_26">26px</dimen>
+    <dimen name="font_28">28px</dimen>
+    <dimen name="font_30">30px</dimen>
+    <dimen name="font_32">32px</dimen>
+    <dimen name="font_40">40px</dimen>
     <dimen name="font_48">48sp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
@@ -695,10 +724,20 @@
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="canyudehuodong">参与的活动</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="define_roundedimageview"/>
     <string name="edit">编辑</string>
     <string name="fankui">反馈</string>
     <string name="forget_passwork">忘记密码</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="library_roundedimageview_author">Vince Mi</string>
+    <string name="library_roundedimageview_authorWebsite">https://github.com/vinc3m1</string>
+    <string name="library_roundedimageview_isOpenSource">true</string>
+    <string name="library_roundedimageview_libraryDescription">A fast ImageView (and Drawable) that supports rounded corners (and ovals or circles) based on the original example from Romain Guy.</string>
+    <string name="library_roundedimageview_libraryName">RoundedImageView</string>
+    <string name="library_roundedimageview_libraryVersion">1.3.0</string>
+    <string name="library_roundedimageview_libraryWebsite">https://github.com/vinc3m1/RoundedImageView</string>
+    <string name="library_roundedimageview_licenseId">apache_2_0</string>
+    <string name="library_roundedimageview_repositoryLink">https://github.com/vinc3m1/RoundedImageView.git</string>
     <string name="lijiduobao">立即夺宝</string>
     <string name="login">登录</string>
     <string name="login_tv">LOGIN</string>
@@ -722,8 +761,10 @@
     <string name="prompt_password">密码</string>
     <string name="prompt_user">账号</string>
     <string name="qiandao">签到</string>
+    <string name="quxiao">取消</string>
     <string name="register">注册</string>
     <string name="renchouzonge">认筹总额：¥</string>
+    <string name="renlingxinxi">认领信息</string>
     <string name="renlingzhoingxin">认领中心</string>
     <string name="sanfenzhong">三分钟教学</string>
     <string name="searchSomething">请输入要搜索的关键字</string>
@@ -1946,6 +1987,9 @@
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
     </style>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/font_32</item>
+    </style>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
     <style name="TextAppearance.AppCompat.Body2" parent="Base.TextAppearance.AppCompat.Body2"/>
@@ -2272,6 +2316,44 @@
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
         <item name="passwordToggleContentDescription">@string/password_toggle_content_description</item>
     </style>
+    <style name="claimInfo_et_styles">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:textColor">@color/col_121212</item>
+    </style>
+    <style name="claimInfo_item_ll_styles">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="claimInfo_item_rb_styles">
+        <item name="android:layout_width">140px</item>
+        <item name="android:layout_height">60px</item>
+        <item name="android:layout_marginLeft">14px</item>
+        <item name="android:paddingLeft">40px</item>
+        <item name="android:paddingRight">40px</item>
+        <item name="android:background">@drawable/claiminfo_item_rb_bg</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:textColor">@color/col_11624A</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="claimInfo_item_sp_styles">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">150px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10px</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:textColor">@color/col_121212</item>
+    </style>
+    <style name="claimInfo_tv_styles">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/font_30</item>
+    <item name="android:textColor">@color/col_121212</item>
+</style>
     <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <!-- Dialog的windowFrame框为无 -->
@@ -2322,7 +2404,8 @@
     </style>
     <style name="relation_radio_button_styles">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:button">@null</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/font_18</item>

@@ -17,7 +17,7 @@ import java.lang.Override;
 public class ManagementShippingAddressActivity_ViewBinding implements Unbinder {
   private ManagementShippingAddressActivity target;
 
-  private View view2131624117;
+  private View view2131624121;
 
   @UiThread
   public ManagementShippingAddressActivity_ViewBinding(ManagementShippingAddressActivity target) {
@@ -32,7 +32,7 @@ public class ManagementShippingAddressActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624117 = view;
+    view2131624121 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -58,7 +58,7 @@ public class ManagementShippingAddressActivity_ViewBinding implements Unbinder {
     target.recyclerView = null;
     target.xRefreshView = null;
 
-    view2131624117.setOnClickListener(null);
-    view2131624117 = null;
+    view2131624121.setOnClickListener(null);
+    view2131624121 = null;
   }
 }

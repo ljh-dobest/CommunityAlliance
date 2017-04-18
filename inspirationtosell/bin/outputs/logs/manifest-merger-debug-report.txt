@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:2:1-40:12
 	package
 		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidMa
 	android:name
 		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:8:22-77
 application
-ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:10:5-37:19
+ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:10:5-38:19
 MERGED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\bd2cd6d72e8ea3c623c7d364926b579717a46661\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:transition:25.1.0] C:\Users\Administrator\.android\build-cache\198ea21b78f60ebd55370c37f9fcf0e9a999475c\output\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:palette-v7:25.1.0] C:\Users\Administrator\.android\build-cache\eeb751391ac77fd6e332b208d1b4edd6b4acdd85\output\AndroidManifest.xml:22:5-23:19
@@ -68,26 +68,30 @@ activity#com.issp.inspiration.ui.activity.ReadDealBuyActivity
 ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:26:9-68
 	android:name
 		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:26:19-66
-activity#com.issp.inspiration.ui.activity.DealBuyCommentActivity
-ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:27:9-71
-	android:name
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:27:19-69
 activity#com.issp.inspiration.ui.activity.DealBuyConfirmOrderActivity
-ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:28:9-76
+ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:27:9-76
 	android:name
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:28:19-74
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:27:19-74
+activity#com.issp.inspiration.ui.activity.CommentMessageActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:28:9-71
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:28:19-69
+activity#com.issp.inspiration.ui.activity.FeedForCommentActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:29:9-71
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:29:19-69
 meta-data#design_width
-ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:31:9-33:35
+ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:32:9-34:35
 	android:value
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:33:13-32
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:34:13-32
 	android:name
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:32:13-40
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:33:13-40
 meta-data#design_height
-ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:34:9-36:36
+ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:35:9-37:36
 	android:value
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:36:13-33
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:37:13-33
 	android:name
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:35:13-41
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml:36:13-41
 uses-sdk
 INJECTED from F:\NB\T-BayMax\CommunityAlliance\inspirationtosell\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\bd2cd6d72e8ea3c623c7d364926b579717a46661\output\AndroidManifest.xml:21:5-23:62
