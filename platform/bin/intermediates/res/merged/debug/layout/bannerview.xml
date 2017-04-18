@@ -1,0 +1,6 @@
+<com.ike.coalition.platform.view.BannerViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/index_viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+</com.ike.coalition.platform.view.BannerViewPager>

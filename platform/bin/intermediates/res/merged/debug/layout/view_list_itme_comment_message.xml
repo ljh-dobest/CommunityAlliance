@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_share_icon"
+            android:layout_width="@dimen/border_50"
+            android:layout_height="@dimen/border_50"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/list_itme_img"
+            android:scaleType="fitStart"
+            android:src="@mipmap/header" />
+
+        <TextView
+            android:id="@+id/tv_share_user_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/iv_share_icon"
+            android:layout_toRightOf="@+id/iv_share_icon"
+            android:gravity="center"
+            android:padding="@dimen/border_10"
+            android:text="TextView"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/font_26" />
+
+
+        <TextView
+            android:id="@+id/tv_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_share_user_Name"
+            android:layout_toRightOf="@+id/tv_share_user_Name"
+            android:gravity="center"
+            android:padding="@dimen/border_10"
+            android:text="评论你的"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/font_24" />
+
+        <TextView
+            android:id="@+id/tv_share_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_operation"
+            android:layout_toRightOf="@+id/tv_operation"
+            android:gravity="center"
+            android:padding="@dimen/border_10"
+            android:text="分享的标题"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/font_26" />
+
+        <TextView
+            android:id="@+id/tv_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="@dimen/border_10"
+            android:text="2017.03.19"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/font_26" />
+        android:text="TextView" />
+    </RelativeLayout>
+
+</LinearLayout>

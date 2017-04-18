@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_custom_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_10"
+        android:background="@color/aam_item_border" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/border_10"
+        android:background="@android:color/white"
+        android:padding="@dimen/border_20"
+        android:text="评论（50）"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/font_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/aam_item_border" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/border_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/border_10"
+                android:layout_weight="4"
+                android:background="@color/aam_item_border"
+                android:gravity="left|top"
+                android:hint="输入你的评论内容"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:textSize="@dimen/font_30"
+                android:padding="@dimen/border_20"
+                android:textColorHint="@color/color_99" />
+
+            <TextView
+                android:id="@+id/tv_submit_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/submit_comment_bkg"
+                android:gravity="center"
+                android:padding="@dimen/border_20"
+                android:text="发送"
+                android:textSize="@dimen/font_30"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_et"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.andview.refreshview.XRefreshView
+                android:id="@+id/xrefreshview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/editText"
+                android:background="@color/aam_item_border">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_test_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@android:color/white"
+                    android:scrollbars="vertical" />
+            </com.andview.refreshview.XRefreshView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
