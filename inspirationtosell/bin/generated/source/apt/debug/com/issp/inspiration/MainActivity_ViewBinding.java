@@ -16,7 +16,9 @@ import java.lang.Override;
 public class MainActivity_ViewBinding implements Unbinder {
   private MainActivity target;
 
-  private View view2131624198;
+  private View view2131624117;
+
+  private View view2131624266;
 
   @UiThread
   public MainActivity_ViewBinding(MainActivity target) {
@@ -28,11 +30,20 @@ public class MainActivity_ViewBinding implements Unbinder {
     this.target = target;
 
     View view;
+    view = Utils.findRequiredView(source, R.id.tv_add_article, "field 'btnAddArticle' and method 'onViewClicked'");
+    target.btnAddArticle = Utils.castView(view, R.id.tv_add_article, "field 'btnAddArticle'", TextView.class);
+    view2131624117 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked();
+      }
+    });
     target.lt_main_title_left = Utils.findRequiredViewAsType(source, R.id.lt_main_title_left, "field 'lt_main_title_left'", TextView.class);
     target.lt_main_title = Utils.findRequiredViewAsType(source, R.id.lt_main_title, "field 'lt_main_title'", TextView.class);
     view = Utils.findRequiredView(source, R.id.lt_main_title_right, "field 'lt_main_title_right' and method 'initPopupWindow'");
     target.lt_main_title_right = Utils.castView(view, R.id.lt_main_title_right, "field 'lt_main_title_right'", TextView.class);
-    view2131624198 = view;
+    view2131624266 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,13 +61,16 @@ public class MainActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
+    target.btnAddArticle = null;
     target.lt_main_title_left = null;
     target.lt_main_title = null;
     target.lt_main_title_right = null;
     target.recyclerView = null;
     target.xRefreshView = null;
 
-    view2131624198.setOnClickListener(null);
-    view2131624198 = null;
+    view2131624117.setOnClickListener(null);
+    view2131624117 = null;
+    view2131624266.setOnClickListener(null);
+    view2131624266 = null;
   }
 }

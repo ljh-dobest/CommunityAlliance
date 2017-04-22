@@ -19,7 +19,7 @@ import java.lang.Override;
 public class PlatformParticularsActivity_ViewBinding implements Unbinder {
   private PlatformParticularsActivity target;
 
-  private View view2131624097;
+  private View view2131624096;
 
   private View view2131624108;
 
@@ -42,7 +42,7 @@ public class PlatformParticularsActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'onViewClicked'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624097 = view;
+    view2131624096 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -127,8 +127,8 @@ public class PlatformParticularsActivity_ViewBinding implements Unbinder {
     target.tvAddRegister = null;
     target.llHandle = null;
 
-    view2131624097.setOnClickListener(null);
-    view2131624097 = null;
+    view2131624096.setOnClickListener(null);
+    view2131624096 = null;
     view2131624108.setOnClickListener(null);
     view2131624108 = null;
     view2131624111.setOnClickListener(null);

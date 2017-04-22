@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -28,6 +29,17 @@
             android:windowSoftInputMode="stateHidden"/>
 
         <activity android:name=".ui.activity.ReadShareActivity"/>
+        <activity android:name=".ui.activity.PreviewActivity"/>
+        <activity android:name=".ui.activity.AddArticleActivity"/>
+
+        <!--选择图片-->
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="design_width"

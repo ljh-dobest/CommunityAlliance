@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifes
 	android:name
 		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:7:22-77
 application
-ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:8:5-42:19
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:8:5-43:19
 MERGED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\bd2cd6d72e8ea3c623c7d364926b579717a46661\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:transition:25.1.0] C:\Users\Administrator\.android\build-cache\198ea21b78f60ebd55370c37f9fcf0e9a999475c\output\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:palette-v7:25.1.0] C:\Users\Administrator\.android\build-cache\eeb751391ac77fd6e332b208d1b4edd6b4acdd85\output\AndroidManifest.xml:22:5-23:19
@@ -104,29 +104,38 @@ activity#com.issp.association.crowdfunding.ui.activity.FeedForCommentActivity
 ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:34:9-71
 	android:name
 		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:34:19-69
+activity#com.issp.association.crowdfunding.ui.activity.AddCrowdFundingActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:35:9-72
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:35:19-70
 meta-data#design_width
-ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:36:9-38:35
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:37:9-39:35
 	android:value
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:38:13-32
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:39:13-32
 	android:name
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:37:13-40
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:38:13-40
 meta-data#design_height
-ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:39:9-41:36
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:40:9-42:36
 	android:value
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:41:13-33
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:42:13-33
 	android:name
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:40:13-41
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:41:13-41
 uses-sdk
 INJECTED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\bd2cd6d72e8ea3c623c7d364926b579717a46661\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:transition:25.1.0] C:\Users\Administrator\.android\build-cache\198ea21b78f60ebd55370c37f9fcf0e9a999475c\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:palette-v7:25.1.0] C:\Users\Administrator\.android\build-cache\eeb751391ac77fd6e332b208d1b4edd6b4acdd85\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\2c57585b2e8047809ff038d9621dfe00caf793dc\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\Administrator\.android\build-cache\8c351e8836634bf8a6065f46d2ff66c3e6cb5c49\output\AndroidManifest.xml:20:5-43
 MERGED from [com.zhy:okhttputils:2.6.2] C:\Users\Administrator\.android\build-cache\4f36a58ddf48c72643ea7ee0ba527854fddb99bc\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.youth.banner:banner:1.4.9] C:\Users\Administrator\.android\build-cache\cbf2c0f19cd3a36677ea0d2928257971329433d1\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.contrarywind:Android-PickerView:3.0.7] C:\Users\Administrator\.android\build-cache\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.zhy:autolayout:1.4.5] C:\Users\Administrator\.android\build-cache\09501a7d11c9327dae519b1aaad79d156c473653\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.huxq17.xrefreshview:xrefreshview:3.6.2] C:\Users\Administrator\.android\build-cache\5b1c56a9d983afe3720d6c59b281f48d0566e317\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.android\build-cache\47ae1336204a8a2883d281084a6341de35313e05\output\AndroidManifest.xml:5:5-43
+MERGED from [jp.wasabeef:richeditor-android:1.2.2] C:\Users\Administrator\.android\build-cache\c4ff7b7e86a30bdf1bf1ef2fbd682b0156934626\output\AndroidManifest.xml:8:5-10:41
+MERGED from [cn.finalteam.rxgalleryfinal:library:0.0.9] C:\Users\Administrator\.android\build-cache\09d7e1b6465e62818e4efa452f6e820320694dfa\output\AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex:rxandroid:1.2.1] C:\Users\Administrator\.android\build-cache\6351fe8b4d14688f3abb45a3d66df56c75bbc91f\output\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\Administrator\.android\build-cache\8c351e8836634bf8a6065f46d2ff66c3e6cb5c49\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Administrator\.android\build-cache\de444d381dddf90fa4b9fc385bd723fdb46a5c22\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Administrator\.android\build-cache\db60f765030ad1f7c93a62b49e9ea3ec1ddd1b3e\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Administrator\.android\build-cache\5178dc13923d45a79df8c12afabc47433ddf9880\output\AndroidManifest.xml:21:5-23:60
@@ -135,8 +144,6 @@ MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Administrator\
 MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Administrator\.android\build-cache\86d8576ba87b179c65d2158d43173468a6f20b59\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\04e93da64a9d3e0b8db9741d8052e4594244934e\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Administrator\.android\build-cache\7cf76b89e74b7780b529890a18fc1f0583732221\output\AndroidManifest.xml:21:5-43
-MERGED from [com.huxq17.xrefreshview:xrefreshview:3.6.2] C:\Users\Administrator\.android\build-cache\5b1c56a9d983afe3720d6c59b281f48d0566e317\output\AndroidManifest.xml:8:5-10:41
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.android\build-cache\47ae1336204a8a2883d281084a6341de35313e05\output\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Administrator\.android\build-cache\dae051d3f30c6089237cce0403da5dde2bea8711\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\bd2cd6d72e8ea3c623c7d364926b579717a46661\output\AndroidManifest.xml:23:9-59

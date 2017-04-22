@@ -1,5 +1,9 @@
 [
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_ucrop_shadow_upside.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_ucrop_shadow_upside.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_ucrop_vector_ic_crop.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_ucrop_vector_ic_crop.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
@@ -48,6 +56,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_ucrop_vector_loader_animated.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_ucrop_vector_loader_animated.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
@@ -58,6 +70,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_checkbox_selector.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_checkbox_selector.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
@@ -86,6 +102,14 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_bucket_item_selector.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_bucket_item_selector.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_ucrop_vector_loader.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_ucrop_vector_loader.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_relation_buttom.xml",
@@ -120,6 +144,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_button_selector.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_button_selector.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\notification_bg_low.xml"
     },
@@ -150,6 +178,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_default_image.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_default_image.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",

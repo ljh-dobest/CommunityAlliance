@@ -35,9 +35,11 @@
     <dimen name="border_42">42px</dimen>
     <dimen name="border_50">50px</dimen>
     <dimen name="border_60">60px</dimen>
+    <dimen name="border_64">64px</dimen>
     <dimen name="border_70">70px</dimen>
     <dimen name="border_88">88px</dimen>
     <dimen name="border_114">114px</dimen>
+    <dimen name="border_320">320px</dimen>
     <dimen name="border_400">400px</dimen>
 
 </resources>

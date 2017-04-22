@@ -38,7 +38,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:button="@null"
-                android:textSize="@dimen/font_30"
+                android:textSize="@dimen/font_32"
                 android:text="我的干货" />
 
             <RadioButton
@@ -48,7 +48,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:button="@null"
-                android:textSize="@dimen/font_30"
+                android:textSize="@dimen/font_32"
                 android:text="收藏干货" />
 
 
@@ -58,7 +58,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/font_20"/>
+            android:textSize="@dimen/font_28"/>
     </LinearLayout>
 <!--
     <View

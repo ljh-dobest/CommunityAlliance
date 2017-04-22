@@ -4,6 +4,10 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xhdpi\\img_share_btn.png"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\picture.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xhdpi\\picture.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\img_like_btn_no.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xhdpi\\img_like_btn_no.png"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\add_association.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xhdpi\\add_association.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\close.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xhdpi\\close.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\more.png",
@@ -50,6 +58,14 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\header.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xhdpi\\header.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\camera.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xhdpi\\camera.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\btn_login.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xhdpi\\btn_login.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\back.png",

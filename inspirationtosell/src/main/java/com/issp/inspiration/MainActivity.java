@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ import com.issp.inspiration.base.view.BaseMvpActivity;
 import com.issp.inspiration.bean.DealBuyBean;
 import com.issp.inspiration.interfaces.IDealBuyListView;
 import com.issp.inspiration.presenters.DealBuyInfoPresenter;
+import com.issp.inspiration.ui.activity.AddArticleActivity;
 import com.issp.inspiration.ui.activity.CommentMessageActivity;
 import com.issp.inspiration.ui.activity.FeedForCommentActivity;
 import com.issp.inspiration.ui.activity.ReadDealBuyActivity;
@@ -28,6 +30,8 @@ import com.issp.inspiration.utils.DisplayUtils;
 import com.issp.inspiration.utils.T;
 import com.issp.inspiration.view.BannerViewPager;
 import com.issp.inspiration.view.CustomGifHeader;
+import com.zhy.autolayout.attr.AutoAttr;
+import com.zhy.autolayout.utils.AutoUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,6 +47,8 @@ import butterknife.OnClick;
  */
 public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoPresenter> implements IDealBuyListView {
 
+    @BindView(R.id.tv_add_article)
+    TextView btnAddArticle;
     private PopupWindow mPopupWindow;
 
     @BindView(R.id.lt_main_title_left)
@@ -139,7 +145,7 @@ public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoP
 
             @Override
             public void onLikeClick(View view, DealBuyBean bean) {
-                isRefresh=false;
+                isRefresh = false;
                 Map<String, String> formData = new HashMap<String, String>(0);
                 formData.put("userId", "111");
                 formData.put("articleId", bean.getId());
@@ -194,6 +200,7 @@ public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoP
                     .getSystemService(LAYOUT_INFLATER_SERVICE);
             View popwindow_more = mLayoutInflater.inflate(
                     R.layout.popwindow_more, null);
+           // AutoUtils.autoSize(popwindow_more, AutoAttr.BASE_HEIGHT);
             mPopupWindow = new PopupWindow(popwindow_more, WidthPixels / 3, ViewGroup.LayoutParams.WRAP_CONTENT, true);
             mPopupWindow.setTouchable(true);
             mPopupWindow.setOutsideTouchable(true);
@@ -249,7 +256,9 @@ public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoP
         } else {
             xRefreshView.stopLoadMore(true);
         }
-        adapter.setData(data, page);
+        if (null!=data &&data.size()>0) {
+            adapter.setData(data, page);
+        }
     }
 
     @Override
@@ -258,5 +267,11 @@ public class MainActivity extends BaseMvpActivity<IDealBuyListView, DealBuyInfoP
         tv_like_btn.setText((likes + 1) + "");
         iv_like_btn.setImageResource(R.mipmap.img_have_thumb_up_btn);
         T.showShort(MainActivity.this, data);
+    }
+
+    @OnClick(R.id.tv_add_article)
+    public void onViewClicked() {
+        Intent intent=new Intent(MainActivity.this, AddArticleActivity.class);
+        startActivity(intent);
     }
 }

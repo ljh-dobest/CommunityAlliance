@@ -33,7 +33,7 @@ public class BaseActivity extends AutoLayoutActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+     //   getSupportActionBar().hide();
         super.setContentView(R.layout.activity_base);
         setVolumeControlStream(AudioManager.STREAM_MUSIC); //使得音量键控制媒体声音
         mContext=this;

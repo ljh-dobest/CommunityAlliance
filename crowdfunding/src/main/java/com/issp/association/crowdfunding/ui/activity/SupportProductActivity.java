@@ -16,6 +16,7 @@ import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.adapter.SupportProductAdapter;
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
+import com.issp.association.crowdfunding.bean.ProductRewardBean;
 import com.issp.association.crowdfunding.interfaces.ISupportProductListView;
 import com.issp.association.crowdfunding.presenters.SupportProductPresenter;
 
@@ -63,7 +64,8 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
     XRefreshView xrefreshview;
     private View headerView;
 
-    List<ProductCollectBean> personList = new ArrayList<ProductCollectBean>();
+    List<ProductRewardBean> personList = new ArrayList<ProductRewardBean>();
+    ProductCollectBean bean;
     LinearLayoutManager layoutManager;
     private int mLoadCount = 0;
     SupportProductAdapter adapter;
@@ -77,7 +79,8 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
     }
 
     private void initView() {
-
+        bean = (ProductCollectBean) getIntent().getSerializableExtra("bean");
+        personList=bean.getProductReward();
         ltMainTitle.setText(getString(R.string.str_title_support));
 
         xrefreshview.setPullLoadEnable(true);
@@ -113,51 +116,22 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
 
             @Override
             public void onRefresh(boolean isPullDown) {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        //模拟数据加载失败的情况
-                        Random random = new Random();
-                        boolean success = random.nextBoolean();
-                        if (success) {
-                            xrefreshview.stopRefresh();
-                        } else {
-                            xrefreshview.stopRefresh(false);
-                        }
-                        //或者
-//                        xRefreshView1.stopRefresh(success);
-                    }
-                }, 2000);
+
             }
 
             @Override
             public void onLoadMore(boolean isSilence) {
-                new Handler().postDelayed(new Runnable() {
-                    public void run() {
-                        for (int i = 0; i < 6; i++) {
-                            ProductCollectBean person = new ProductCollectBean();
-                            adapter.insert(person,
-                                    adapter.getAdapterItemCount());
-                        }
-                        mLoadCount++;
-                        if (mLoadCount >= 3) {
-                            xrefreshview.setLoadComplete(true);
-                        } else {
-                            // 刷新完成必须调用此方法停止加载
-                            xrefreshview.stopLoadMore();
-                        }
-                    }
-                }, 1000);
+
             }
         });
         adapter.setOnItemClickListener(new SupportProductAdapter.OnItemClickListener() {
             @Override
-            public void onItemClick(View view, ProductCollectBean bean) {
+            public void onItemClick(View view, ProductRewardBean bean) {
 
             }
 
             @Override
-            public void onSupportClick(View view, ProductCollectBean bean) {
+            public void onSupportClick(View view, ProductRewardBean bean) {
                 Intent intent = new Intent(SupportProductActivity.this, AddSupportProjectActivity.class);
                 intent.putExtra("bean", bean);
                 startActivity(intent);
@@ -166,10 +140,7 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
     }
 
     private void initData() {
-        for (int i = 0; i < 3; i++) {
-            ProductCollectBean person = new ProductCollectBean();
-            personList.add(person);
-        }
+
     }
 
     @OnClick(R.id.lt_main_title_left)

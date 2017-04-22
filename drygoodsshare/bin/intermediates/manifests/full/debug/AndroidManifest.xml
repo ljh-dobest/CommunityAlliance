@@ -10,6 +10,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -33,6 +34,17 @@
             android:name="com.issp.association.ui.activity.FeedForCommentActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name="com.issp.association.ui.activity.ReadShareActivity" />
+        <activity android:name="com.issp.association.ui.activity.PreviewActivity" />
+        <activity android:name="com.issp.association.ui.activity.AddArticleActivity" />
+
+        <!-- 选择图片 -->
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="design_width"

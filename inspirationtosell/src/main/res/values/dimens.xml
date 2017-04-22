@@ -38,6 +38,7 @@
     <dimen name="border_70">70px</dimen>
     <dimen name="border_88">88px</dimen>
     <dimen name="border_114">114px</dimen>
+    <dimen name="border_200">200px</dimen>
     <dimen name="border_400">400px</dimen>
 
 </resources>

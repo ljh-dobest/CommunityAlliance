@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aam_item_border"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_custom_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_4"
+        android:background="@color/aam_item_border" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_imgage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_320"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="添加封面图片"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/font_30" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_10"
+                android:background="@color/aam_item_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/border_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_product_type"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <RadioGroup
+                    android:id="@+id/rg_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/border_10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/border_20"
+                        android:paddingLeft="@dimen/border_10"
+                        android:text="@string/str_product_product" />
+
+                    <RadioButton
+                        android:id="@+id/rb_seek_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/border_60"
+                        android:paddingLeft="@dimen/border_10"
+                        android:text="@string/str_product_seek_help" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_10"
+                android:background="@color/aam_item_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="@dimen/border_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_product_title"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/border_10"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/font_26" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_10"
+                android:background="@color/aam_item_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="@dimen/border_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_product_objective"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <EditText
+                    android:id="@+id/et_objective"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/border_10"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/font_26" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_10"
+                android:background="@color/aam_item_border" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/border_20">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_product_capital"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="元"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <EditText
+                    android:id="@+id/et_capital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:layout_toLeftOf="@+id/textView3"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:layout_toStartOf="@+id/textView3"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/border_10"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/font_26" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_10"
+                android:background="@color/aam_item_border" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/border_20">
+
+                <TextView
+                    android:id="@+id/tv_product_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_product_days"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <TextView
+                    android:id="@+id/tv_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="天"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <EditText
+                    android:id="@+id/et_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tv_product_days"
+                    android:layout_toLeftOf="@+id/tv_days"
+                    android:layout_toRightOf="@+id/tv_product_days"
+                    android:layout_toStartOf="@+id/tv_days"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/border_10"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/font_26" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_10"
+                android:background="@color/aam_item_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="@dimen/border_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="@string/str_product_content"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <TextView
+                    android:layout_width="@dimen/border_30"
+                    android:layout_height="@dimen/border_30"
+                    android:layout_margin="@dimen/border_10"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/item_more" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_10"
+                android:background="@color/aam_item_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="@dimen/border_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="@string/str_product_commodity_one"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <TextView
+                    android:layout_width="@dimen/border_30"
+                    android:layout_height="@dimen/border_30"
+                    android:layout_margin="@dimen/border_10"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/item_more" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_10"
+                android:background="@color/aam_item_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="@dimen/border_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="@string/str_product_commodity_tow"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30" />
+
+                <TextView
+                    android:layout_width="@dimen/border_30"
+                    android:layout_height="@dimen/border_30"
+                    android:layout_margin="@dimen/border_10"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/item_more" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/border_20"
+                android:src="@mipmap/add" />
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/border_64"
+                android:background="@mipmap/submit"
+                android:gravity="center"
+                android:text="提交众筹审核"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_30" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -12,6 +12,7 @@ import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 
+import com.issp.association.crowdfunding.bean.ProductRewardBean;
 import com.zhy.autolayout.attr.AutoAttr;
 
 import com.zhy.autolayout.utils.AutoUtils;
@@ -28,22 +29,29 @@ import butterknife.OnClick;
  * <p>
  * Created by T-BayMax on 2017/3/16.
  */
-public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProductAdapter.ProductAdapterViewHolder, ProductCollectBean> {
+public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProductAdapter.ProductAdapterViewHolder, ProductRewardBean> {
 
-    private List<ProductCollectBean> list;
+    private List<ProductRewardBean> list;
     private Context context;
     private int position;
     private OnItemClickListener onItemClickListener;
 
-    public SupportProductAdapter(List<ProductCollectBean> list, Context context) {
+    public SupportProductAdapter(List<ProductRewardBean> list, Context context) {
         this.list = list;
     }
 
     @Override
     public void onBindViewHolder(ProductAdapterViewHolder holder, int position, boolean isItem) {
         if (isItem) {
-            ProductCollectBean person = list.get(position);
+            ProductRewardBean person = list.get(position);
             holder.itemView.setTag(person);
+            holder.tvMinSupport.setTag(person);
+
+            holder.tvProductNumber.setText("认筹人数"+person.getPayNumber()+"2人/"+(person.getLimitNumber()==0?"无限制":person.getLimitNumber()));
+            holder.tvPrice.setText(person.getSupportMoney()+"");
+            holder.tvProductName.setText(person.getRewardTitle());
+            holder.tvProductContent.setText(person.getRewardContent());
+            holder.tvRemark.setText("项目介绍后"+person.getDeliveryDays()+"天发货");
 
         }
 
@@ -66,7 +74,7 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
         return new ProductAdapterViewHolder(view, false);
     }
 
-    public void setData(List<ProductCollectBean> list) {
+    public void setData(List<ProductRewardBean> list) {
         this.list = list;
         notifyDataSetChanged();
     }
@@ -80,7 +88,7 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
 
     }
 
-    public void insert(ProductCollectBean person, int position) {
+    public void insert(ProductRewardBean person, int position) {
         insert(list, person, position);
     }
 
@@ -120,11 +128,11 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
 
         @OnClick(R.id.tv_min_support)
         void SupportClick(View v) {
-            onItemClickListener.onSupportClick(v, (ProductCollectBean) v.getTag());
+            onItemClickListener.onSupportClick(v, (ProductRewardBean) v.getTag());
         }
     }
 
-    public ProductCollectBean getItem(int position) {
+    public ProductRewardBean getItem(int position) {
         if (position < list.size())
             return list.get(position);
         else
@@ -138,9 +146,9 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
 
 
     public interface OnItemClickListener {
-        public void onItemClick(View view, ProductCollectBean bean);
+        public void onItemClick(View view, ProductRewardBean bean);
 
-        public void onSupportClick(View view, ProductCollectBean bean);
+        public void onSupportClick(View view, ProductRewardBean bean);
 
     }
 

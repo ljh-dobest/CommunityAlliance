@@ -8,6 +8,10 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\gold.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xxhdpi\\gold.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\back.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xxhdpi\\back.png"
     },

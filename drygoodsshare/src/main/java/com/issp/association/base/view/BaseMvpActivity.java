@@ -21,7 +21,7 @@ public abstract class BaseMvpActivity<V,T extends BasePersenter<V>> extends Auto
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
              presenter=initPresenter();
     }

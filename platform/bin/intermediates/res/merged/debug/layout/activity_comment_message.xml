@@ -6,6 +6,11 @@
 
     <include layout="@layout/view_custom_toolbar" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_2"
+        android:background="@color/aam_item_border" />
+
     <com.andview.refreshview.XRefreshView
         android:id="@+id/xrefreshview"
         android:layout_width="match_parent"

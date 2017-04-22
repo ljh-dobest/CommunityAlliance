@@ -3,11 +3,9 @@ package com.issp.association.crowdfunding;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import android.os.Handler;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,20 +15,17 @@ import android.widget.TextView;
 
 import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.XRefreshViewFooter;
-
 import com.issp.association.crowdfunding.adapter.IndexPageAdapter;
-import com.issp.association.crowdfunding.base.adpater.BannerImageLoader;
-
 import com.issp.association.crowdfunding.adapter.SimpleAdapter;
-import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
+import com.issp.association.crowdfunding.base.adpater.BannerImageLoader;
 import com.issp.association.crowdfunding.base.view.BaseMvpActivity;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.interfaces.IProductCollectListView;
 import com.issp.association.crowdfunding.presenters.ProductCollectPresenter;
+import com.issp.association.crowdfunding.ui.activity.AddCrowdFundingActivity;
 import com.issp.association.crowdfunding.ui.activity.FeedForCommentActivity;
 import com.issp.association.crowdfunding.ui.activity.MessageActivity;
 import com.issp.association.crowdfunding.ui.activity.MinProductActivity;
-import com.issp.association.crowdfunding.ui.activity.ProductCommentActivity;
 import com.issp.association.crowdfunding.ui.activity.ProductParticularsActivity;
 import com.issp.association.crowdfunding.utils.DisplayUtils;
 import com.issp.association.crowdfunding.utils.T;
@@ -45,8 +40,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import java.util.Random;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -58,6 +51,8 @@ import butterknife.OnClick;
 public class MainActivity extends BaseMvpActivity<IProductCollectListView, ProductCollectPresenter> implements IProductCollectListView {
 
 
+    @BindView(R.id.tv_add_product)
+    TextView tvAddProduct;
     private PopupWindow mPopupWindow;
 
     @BindView(R.id.lt_main_title_left)
@@ -178,7 +173,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
                 formData.put("userId", "111");
                 formData.put("articleId", bean.getId());
                 formData.put("type", "1");
-                formData.put("status","1");
+                formData.put("status", "1");
                 tv_like_btn = (TextView) view.findViewById(R.id.tv_like_btn);
                 iv_like_btn = (ImageView) view.findViewById(R.id.iv_like_btn);
 
@@ -336,4 +331,9 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
         homepage_banner.stopAutoPlay();
     }
 
+    @OnClick(R.id.tv_add_product)
+    public void onViewClicked() {
+        Intent intent=new Intent(MainActivity.this,AddCrowdFundingActivity.class);
+        startActivity(intent);
+    }
 }

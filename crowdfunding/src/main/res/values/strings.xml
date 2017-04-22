@@ -15,4 +15,19 @@
     <string name="str_add_support_project">支持项目</string>
     <string name="str_check_indent">已支付\n查看订单</string>
     <string name="str_check_indent_no">我要支持</string>
+
+    <string name="str_product_type">众筹类型：</string>
+    <string name="str_product_product">产品众筹</string>
+    <string name="str_product_seek_help">求助众筹</string>
+    <string name="str_product_title">项目标题：</string>
+    <string name="str_product_objective">众筹目的：</string>
+    <string name="str_product_capital">众筹资金：</string>
+    <string name="str_product_days">众筹天数：</string>
+    <string name="str_product_content">图文详情：</string>
+    <string name="str_product_commodity_one">商品1</string>
+    <string name="str_product_commodity_tow">商品2</string>
+
+    <string name="str_commodity_title">商品标题</string>
+    <string name="str_commodity_support_money">支持价格</string>
+    <string name="str_commodity_content">文字详情</string>
 </resources>

@@ -11,7 +11,14 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\values-w820dp\\dimens.xml"
+                    "file": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 295,
+                        "endColumn": 57,
+                        "endOffset": 348
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\values-w820dp\\dimens.xml"
+                    "file": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 354,
+                        "endColumn": 55,
+                        "endOffset": 405
+                    }
                 }
             }
         ]

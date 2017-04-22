@@ -16,9 +16,9 @@ import java.lang.Override;
 public class DealBuyConfirmOrderActivity_ViewBinding implements Unbinder {
   private DealBuyConfirmOrderActivity target;
 
-  private View view2131624196;
+  private View view2131624264;
 
-  private View view2131624103;
+  private View view2131624116;
 
   @UiThread
   public DealBuyConfirmOrderActivity_ViewBinding(DealBuyConfirmOrderActivity target) {
@@ -33,7 +33,7 @@ public class DealBuyConfirmOrderActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624196 = view;
+    view2131624264 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,7 +51,7 @@ public class DealBuyConfirmOrderActivity_ViewBinding implements Unbinder {
     target.imageView2 = Utils.findRequiredViewAsType(source, R.id.imageView2, "field 'imageView2'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.tv_buy_button, "field 'tvBuyButton' and method 'buyClick'");
     target.tvBuyButton = Utils.castView(view, R.id.tv_buy_button, "field 'tvBuyButton'", TextView.class);
-    view2131624103 = view;
+    view2131624116 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -79,9 +79,9 @@ public class DealBuyConfirmOrderActivity_ViewBinding implements Unbinder {
     target.imageView2 = null;
     target.tvBuyButton = null;
 
-    view2131624196.setOnClickListener(null);
-    view2131624196 = null;
-    view2131624103.setOnClickListener(null);
-    view2131624103 = null;
+    view2131624264.setOnClickListener(null);
+    view2131624264 = null;
+    view2131624116.setOnClickListener(null);
+    view2131624116 = null;
   }
 }

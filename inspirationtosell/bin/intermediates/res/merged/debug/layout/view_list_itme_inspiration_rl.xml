@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:text="fdsafewffsadfsafasfsdfsdf"
                 android:textColor="@color/color_33"
-                android:textSize="@dimen/font_28" />
+                android:textSize="@dimen/font_34" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -56,7 +56,7 @@
                         android:padding="@dimen/border_10"
                         android:text="12"
                         android:textColor="@color/color_99"
-                        android:textSize="@dimen/font_22" />
+                        android:textSize="@dimen/font_24" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -80,7 +80,7 @@
                         android:padding="@dimen/border_10"
                         android:text="12"
                         android:textColor="@color/color_99"
-                        android:textSize="@dimen/font_22" />
+                        android:textSize="@dimen/font_24" />
                 </LinearLayout>
                     <TextView
                         android:id="@+id/tv_time"
@@ -91,7 +91,7 @@
                         android:padding="@dimen/border_10"
                         android:text="2017-03-16"
                         android:textColor="@color/color_99"
-                        android:textSize="@dimen/font_22" />
+                        android:textSize="@dimen/font_24" />
 
             </LinearLayout>
         </LinearLayout>

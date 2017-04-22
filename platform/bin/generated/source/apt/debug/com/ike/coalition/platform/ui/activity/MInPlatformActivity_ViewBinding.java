@@ -17,7 +17,7 @@ import java.lang.Override;
 public class MInPlatformActivity_ViewBinding implements Unbinder {
   private MInPlatformActivity target;
 
-  private View view2131624097;
+  private View view2131624096;
 
   @UiThread
   public MInPlatformActivity_ViewBinding(MInPlatformActivity target) {
@@ -31,7 +31,7 @@ public class MInPlatformActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624097 = view;
+    view2131624096 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,7 +57,7 @@ public class MInPlatformActivity_ViewBinding implements Unbinder {
     target.recyclerViewTestRv = null;
     target.xrefreshview = null;
 
-    view2131624097.setOnClickListener(null);
-    view2131624097 = null;
+    view2131624096.setOnClickListener(null);
+    view2131624096 = null;
   }
 }

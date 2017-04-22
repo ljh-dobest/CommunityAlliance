@@ -44,6 +44,8 @@
     <dimen name="border_98">98px</dimen>
     <dimen name="border_114">114px</dimen>
     <dimen name="border_140">140px</dimen>
+    <dimen name="border_200">200px</dimen>
+    <dimen name="border_228">228px</dimen>
     <dimen name="border_210">210px</dimen>
     <dimen name="border_400">400px</dimen>
 

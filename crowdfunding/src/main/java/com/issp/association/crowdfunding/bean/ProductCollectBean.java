@@ -1,6 +1,7 @@
 package com.issp.association.crowdfunding.bean;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 产品众筹
@@ -26,7 +27,7 @@ public class ProductCollectBean implements Serializable {
     private String content;         //众筹内容
     private String time;            //发布时间
     private int totalPayNumber;    //已购买用户数量
-    private ProductRewardBean productReward;
+    private List<ProductRewardBean> productReward;
 
 
 
@@ -151,11 +152,11 @@ public class ProductCollectBean implements Serializable {
         this.totalPayNumber = totalPayNumber;
     }
 
-    public ProductRewardBean getProductReward() {
+    public List<ProductRewardBean> getProductReward() {
         return productReward;
     }
 
-    public void setProductReward(ProductRewardBean productReward) {
+    public void setProductReward(List<ProductRewardBean> productReward) {
         this.productReward = productReward;
     }
 }

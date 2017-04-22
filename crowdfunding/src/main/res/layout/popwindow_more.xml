@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/border_20"
-        android:textSize="@dimen/font_30"
+        android:textSize="@dimen/font_32"
         android:gravity="center"
         android:text="@string/str_information"/>
     <View
@@ -26,6 +26,6 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/border_20"
         android:gravity="center"
-        android:textSize="@dimen/font_30"
+        android:textSize="@dimen/font_32"
         android:text="@string/str_my_product_collect"/>
 </LinearLayout>

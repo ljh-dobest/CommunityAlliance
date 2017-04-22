@@ -19,11 +19,11 @@ import java.lang.Override;
 public class MinProductActivity_ViewBinding implements Unbinder {
   private MinProductActivity target;
 
-  private View view2131624121;
+  private View view2131624137;
 
-  private View view2131624123;
+  private View view2131624139;
 
-  private View view2131624124;
+  private View view2131624140;
 
   @UiThread
   public MinProductActivity_ViewBinding(MinProductActivity target) {
@@ -37,7 +37,7 @@ public class MinProductActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'lt_main_title_left' and method 'backClick'");
     target.lt_main_title_left = Utils.castView(view, R.id.lt_main_title_left, "field 'lt_main_title_left'", TextView.class);
-    view2131624121 = view;
+    view2131624137 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class MinProductActivity_ViewBinding implements Unbinder {
     target.radioGroup = Utils.findRequiredViewAsType(source, R.id.rg_relation, "field 'radioGroup'", RadioGroup.class);
     view = Utils.findRequiredView(source, R.id.rb_connection, "field 'rb_connection' and method 'connectionClick'");
     target.rb_connection = Utils.castView(view, R.id.rb_connection, "field 'rb_connection'", RadioButton.class);
-    view2131624123 = view;
+    view2131624139 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +56,7 @@ public class MinProductActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.rb_relation_map, "field 'rb_relation_map' and method 'relationMapClick'");
     target.rb_relation_map = Utils.castView(view, R.id.rb_relation_map, "field 'rb_relation_map'", RadioButton.class);
-    view2131624124 = view;
+    view2131624140 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -81,11 +81,11 @@ public class MinProductActivity_ViewBinding implements Unbinder {
     target.recyclerView = null;
     target.xRefreshView = null;
 
-    view2131624121.setOnClickListener(null);
-    view2131624121 = null;
-    view2131624123.setOnClickListener(null);
-    view2131624123 = null;
-    view2131624124.setOnClickListener(null);
-    view2131624124 = null;
+    view2131624137.setOnClickListener(null);
+    view2131624137 = null;
+    view2131624139.setOnClickListener(null);
+    view2131624139 = null;
+    view2131624140.setOnClickListener(null);
+    view2131624140 = null;
   }
 }

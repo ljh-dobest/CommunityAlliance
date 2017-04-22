@@ -8,8 +8,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_ucrop_vector_ic_crop.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_ucrop_vector_ic_crop.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\black_background.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\drawable\\black_background.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_button_selector.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_button_selector.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
@@ -48,12 +56,24 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_bucket_item_selector.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_bucket_item_selector.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_ucrop_shadow_upside.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_ucrop_shadow_upside.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\notification_bg.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_ucrop_vector_loader_animated.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_ucrop_vector_loader_animated.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_relation_buttom.xml",
@@ -98,6 +118,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_connection_buttom.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\src\\main\\res\\drawable\\botm_connection_buttom.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_default_image.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_default_image.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
@@ -152,6 +176,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_checkbox_selector.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_checkbox_selector.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
@@ -198,6 +226,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_ucrop_vector_loader.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_ucrop_vector_loader.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",

@@ -4,11 +4,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -23,12 +21,12 @@ import com.issp.association.base.view.BaseMvpActivity;
 import com.issp.association.bean.ShareBean;
 import com.issp.association.interfaces.IShareListView;
 import com.issp.association.presenters.ShareInfoPresenter;
+import com.issp.association.ui.activity.AddArticleActivity;
 import com.issp.association.ui.activity.CommentMessageActivity;
 import com.issp.association.ui.activity.FeedForCommentActivity;
 import com.issp.association.ui.activity.MinShareActivity;
 import com.issp.association.ui.activity.ReadShareActivity;
 import com.issp.association.utils.DisplayUtils;
-import com.issp.association.utils.L;
 import com.issp.association.utils.T;
 import com.issp.association.view.BannerViewPager;
 import com.issp.association.view.CustomGifHeader;
@@ -37,7 +35,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,6 +45,8 @@ import butterknife.OnClick;
  */
 public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPresenter> implements IShareListView {
 
+    @BindView(R.id.tv_add_share)
+    TextView tvAddShare;
     private PopupWindow mPopupWindow;
 
     @BindView(R.id.lt_main_title_left)
@@ -143,11 +142,11 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
 
             @Override
             public void onLikeClick(View view, ShareBean bean) {
-                isRefresh=false;
+                isRefresh = false;
                 Map<String, String> formData = new HashMap<String, String>(0);
                 formData.put("userId", "111");
                 formData.put("articleId", bean.getId());
-                formData.put("type","3");
+                formData.put("type", "3");
                 formData.put("status", "1");
                 tv_like_btn = (TextView) view.findViewById(R.id.tv_like_btn);
                 iv_like_btn = (ImageView) view.findViewById(R.id.iv_like_btn);
@@ -262,5 +261,12 @@ public class MainActivity extends BaseMvpActivity<IShareListView, ShareInfoPrese
         tv_like_btn.setText((likes + 1) + "");
         iv_like_btn.setImageResource(R.mipmap.img_have_thumb_up_btn);
         T.showShort(MainActivity.this, data);
+    }
+
+    @OnClick(R.id.tv_add_share)
+    public void onViewClicked() {
+
+        Intent intent=new Intent(MainActivity.this, AddArticleActivity.class);
+        startActivity(intent);
     }
 }

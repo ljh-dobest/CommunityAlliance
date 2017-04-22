@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/white"
+            android:paddingLeft="20px">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_ask_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_ask_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:src="@mipmap/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/border_10"
+                    android:text="返回"
+                    android:textColor="@color/nsdk_color_suspend"
+                    android:textSize="@dimen/font_32" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20px"
+                android:padding="@dimen/border_10"
+                android:text="发布灵感"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_ask_release"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/border_10"
+                android:text="发布"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_ask_release"
+                android:layout_marginRight="@dimen/border_20"
+                android:layout_toLeftOf="@+id/tv_ask_release"
+                android:layout_toStartOf="@+id/tv_ask_release"
+                android:padding="@dimen/border_10"
+                android:text="预览"
+                android:textSize="16sp" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/aam_item_border" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/border_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/border_400"
+                    android:gravity="center"
+                    android:text="添加背景图片"
+                    android:textSize="@dimen/font_30" />
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:hint="请输入标题"
+                    android:inputType="textMultiLine"
+                    android:maxLines="2"
+                    android:maxLength="30"
+                    android:scrollbars="vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/aam_item_border" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="请输入简介（40字~140字以内）" />
+
+                <jp.wasabeef.richeditor.RichEditor
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/border_228"
+                    android:textSize="@dimen/font_28" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/aam_item_border" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="输入正文" />
+                <jp.wasabeef.richeditor.RichEditor
+                    android:id="@+id/et_deal_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/font_28"
+                    android:minHeight="@dimen/border_200"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_ask_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/aam_item_border" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_ask_camera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/camera" />
+
+            <ImageView
+                android:id="@+id/iv_ask_picture"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/picture" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/aam_item_border" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

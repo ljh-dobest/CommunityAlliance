@@ -37,6 +37,7 @@
         <activity android:name="com.issp.association.crowdfunding.ui.activity.ProductParticularsActivity" />
         <activity android:name="com.issp.association.crowdfunding.ui.activity.SupportProductActivity" />
         <activity android:name="com.issp.association.crowdfunding.ui.activity.FeedForCommentActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.AddCrowdFundingActivity" />
 
         <meta-data
             android:name="design_width"

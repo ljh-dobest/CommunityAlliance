@@ -48,6 +48,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_fragment_media_preview.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_fragment_media_preview.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gif_header.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\gif_header.xml"
     },
@@ -76,6 +80,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_media_image_preview_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_media_image_preview_item.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_read_deal_buy.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_read_deal_buy.xml"
     },
@@ -86,6 +94,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_loading_view_final_footer_default.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_loading_view_final_footer_default.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
@@ -132,12 +144,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\popupwindow_insert_gold.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\popupwindow_insert_gold.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_comment_message.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\view_list_itme_comment_message.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_aspect_ratio.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_aspect_ratio.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
@@ -150,6 +170,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\view_custom_toolbar.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\view_custom_toolbar.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_fragment_media_grid.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_fragment_media_grid.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
@@ -170,6 +194,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_preview.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_preview.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
@@ -194,6 +222,14 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_activity_photobox.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_activity_photobox.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_layout_rotate_wheel.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_layout_rotate_wheel.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -248,6 +284,14 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\home_ads_view.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_layout_scale_wheel.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_layout_scale_wheel.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_adapter_media_grid_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_adapter_media_grid_item.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
@@ -260,8 +304,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_adapter_bucket_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_adapter_bucket_item.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_activity_media.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_activity_media.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
@@ -280,8 +332,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\\output\\res\\layout\\pickerview_options.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_article.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_add_article.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_comment_message.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_comment_message.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_fragment_media_page.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_fragment_media_page.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
@@ -296,6 +356,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_view.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_feed_for_comments.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\layout\\activity_feed_for_comments.xml"
     },
@@ -306,5 +370,9 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_controls.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_controls.xml"
     }
 ]

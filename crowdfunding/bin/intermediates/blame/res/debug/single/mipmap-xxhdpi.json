@@ -1,10 +1,46 @@
 [
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\submit.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\submit.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\unchecked.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\unchecked.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\item_more.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\item_more.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\residue.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\residue.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\address.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\address.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\pop_windows_bkg.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\pop_windows_bkg.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\checked.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\checked.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\close.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\close.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\add.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xxhdpi\\add.png"
     }
 ]

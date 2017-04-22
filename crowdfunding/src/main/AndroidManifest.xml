@@ -32,6 +32,7 @@
         <activity android:name=".ui.activity.ProductParticularsActivity" />
         <activity android:name=".ui.activity.SupportProductActivity" />
         <activity android:name=".ui.activity.FeedForCommentActivity"/>
+        <activity android:name=".ui.activity.AddCrowdFundingActivity"/>
 
         <meta-data
             android:name="design_width"

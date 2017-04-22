@@ -60,7 +60,7 @@
         <ImageView
             android:id="@+id/iv_product_img"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/border_400"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -72,7 +72,7 @@
             android:id="@+id/tv_surplus_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_bright"
+            android:background="@mipmap/residue"
 
             android:padding="@dimen/border_20"
             android:text="剩余22天"

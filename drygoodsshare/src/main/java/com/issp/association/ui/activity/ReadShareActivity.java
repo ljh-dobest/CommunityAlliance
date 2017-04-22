@@ -78,6 +78,10 @@ public class ReadShareActivity extends BaseMvpActivity<IReadShareView, ReadShare
     LinearLayout llCollect;
 
     ShareBean bean;
+    @BindView(R.id.iv_image)
+    ImageView ivImage;
+    @BindView(R.id.wv_cynopsis)
+    WebView wvCynopsis;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -124,20 +128,21 @@ public class ReadShareActivity extends BaseMvpActivity<IReadShareView, ReadShare
         Map<String, String> formData = new HashMap<String, String>(0);
         formData.put("userId", "111");
         formData.put("articleId", bean.getId());
-        formData.put("type","3");
+        formData.put("type", "3");
         formData.put("status", "1");
         presenter.sharePraiseInfoPresenter(formData);
     }
 
     @OnClick(R.id.ll_comment)
     void commentClick() {
-        Intent intent=new Intent(ReadShareActivity.this,FeedForCommentActivity.class);
-        intent.putExtra("bean",bean);
+        Intent intent = new Intent(ReadShareActivity.this, FeedForCommentActivity.class);
+        intent.putExtra("bean", bean);
         startActivity(intent);
     }
+
     @Override
     public void showError(String errorString) {
-        T.showShort(ReadShareActivity.this,errorString);
+        T.showShort(ReadShareActivity.this, errorString);
     }
 
     @Override
@@ -145,12 +150,17 @@ public class ReadShareActivity extends BaseMvpActivity<IReadShareView, ReadShare
         tvTitle.setText(data.getTitle());
         tvShareUserName.setText(data.getNickname());
         tvTime.setText(data.getTime());
-        Picasso.with(ReadShareActivity.this).load(HttpUtils.IMAGE_RUL + data.getUserPortraitUrl())
-                .transform(new CircleTransform()).into(ivShareIcon);
+        if (null != data.getUserPortraitUrl())
+            Picasso.with(ReadShareActivity.this).load(HttpUtils.IMAGE_RUL + data.getUserPortraitUrl())
+                    .transform(new CircleTransform()).into(ivShareIcon);
+        if (null != data.getImage())
+            Picasso.with(ReadShareActivity.this).load(HttpUtils.IMAGE_RUL + data.getImage())
+                    .into(ivImage);
+        wvCynopsis.loadData(data.getSynopsis(), "text/html; charset=UTF-8", null);
         wvContent.loadData(data.getContent(), "text/html; charset=UTF-8", null);
         tvLikeBtn.setText(data.getLikes() + "");
 
-        tvCommentBtn.setText(""+data.getCommentNumber());
+        tvCommentBtn.setText("" + data.getCommentNumber());
         switch (data.getLikesStatus()) {
             case 0:
                 ivLikeBtn.setImageResource(R.mipmap.img_like_btn);

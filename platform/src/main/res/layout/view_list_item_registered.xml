@@ -4,15 +4,14 @@
     android:layout_height="match_parent"
     android:padding="@dimen/border_16"
     android:gravity="center"
-
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/iv_userPortraitUrl"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/border_102"
         android:adjustViewBounds="true"
-        android:scaleType="fitStart"
+        android:scaleType="fitXY"
         android:src="@mipmap/header" />
 
     <TextView

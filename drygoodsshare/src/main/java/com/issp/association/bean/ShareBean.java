@@ -9,6 +9,7 @@ import java.io.Serializable;
  */
 
 public class ShareBean implements Serializable{
+    private String userId;
     private String nickname;       //用户昵称
     private String userPortraitUrl;   //用户头像
     private String id;              //干货id
@@ -21,6 +22,14 @@ public class ShareBean implements Serializable{
     private int likesStatus;   //1当前用户已点赞 0未点赞
     private int commentNumber;   //评论数量
     private int collectionNumber; //收藏数量
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
     public String getNickname() {
         return nickname;

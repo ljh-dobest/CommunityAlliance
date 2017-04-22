@@ -52,4 +52,6 @@ dependencies {
     compile 'com.huxq17.xrefreshview:xrefreshview:3.6.2'
     compile 'com.jakewharton:butterknife:8.5.1'
     compile 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'jp.wasabeef:richeditor-android:1.2.2'
+    compile 'cn.finalteam.rxgalleryfinal:library:0.0.9'
 }

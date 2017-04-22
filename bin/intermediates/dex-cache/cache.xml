@@ -83,6 +83,15 @@
         <dex dex="F:\NB\T-BayMax\CommunityAlliance\app\bin\intermediates\transforms\dex\debug\folders\1000\10\classes_6ac39b5504080b19134c4ee4335f62e06ad878e9\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\6351fe8b4d14688f3abb45a3d66df56c75bbc91f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\bin\intermediates\pre-dexed\debug\classes_82f47e232afc9ddc2b15e8a57a2ed3464620943e.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\Administrator\.android\build-cache\bd2cd6d72e8ea3c623c7d364926b579717a46661\output\jars\classes.jar"
         jumboMode="false"
@@ -99,6 +108,15 @@
         revision="25.0.0"
         sha1="2edb96379079e3de24bc988c4f32bae6763a7a51">
         <dex dex="F:\NB\T-BayMax\CommunityAlliance\app\bin\intermediates\transforms\dex\debug\folders\1000\10\classes_dc4c3d866ec332beed1461811225af2352d25b9e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.9\e4362e62f1ba92e360b197d6d7ffae67e5ecae9a\rxjava-1.1.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e4362e62f1ba92e360b197d6d7ffae67e5ecae9a">
+        <dex dex="F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\bin\intermediates\pre-dexed\debug\rxjava-1.1.9_82a537d5fc11c5aeb9cc44855ce7783630bf9cf4.jar" />
     </item>
     <item
         is-multidex="true"
@@ -173,6 +191,15 @@
         <dex dex="F:\NB\T-BayMax\CommunityAlliance\app\bin\intermediates\transforms\dex\debug\folders\1000\10\classes_29006bbd773b8aa89ac2a3aa753e2336398b0557\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\c4ff7b7e86a30bdf1bf1ef2fbd682b0156934626\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="21a28ff219324575b509d7c471487450d0c04584">
+        <dex dex="F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\bin\intermediates\pre-dexed\debug\classes_8aec0df02ce6b72831888a8b32d34a078632c95f.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\Administrator\.android\build-cache\083a30fba4198813428267b07b0d91a799b3fad6\output\jars\classes.jar"
         jumboMode="false"
@@ -216,6 +243,15 @@
         revision="25.0.0"
         sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
         <dex dex="F:\NB\T-BayMax\CommunityAlliance\app\bin\intermediates\transforms\dex\debug\folders\1000\10\classes_72f2d9cf036192a5a7af04788aafb0fdf5c8a0af\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\09d7e1b6465e62818e4efa452f6e820320694dfa\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9117df950f29218704518f08aec66e0ec415aad2">
+        <dex dex="F:\NB\T-BayMax\CommunityAlliance\drygoodsshare\bin\intermediates\pre-dexed\debug\classes_d9c7257eae94e698e2c4cf9b22da25e3812fc35f.jar" />
     </item>
     <item
         is-multidex="true"

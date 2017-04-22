@@ -36,7 +36,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * 我的分享
+ * 我的
  * Created by T-BayMax on 2017/3/18.
  */
 

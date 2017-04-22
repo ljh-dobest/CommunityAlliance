@@ -6,7 +6,21 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical">
-
+    <TextView
+        android:id="@+id/lt_main_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/back"
+        android:gravity="center"
+        android:padding="@dimen/border_20"
+        android:text="@string/str_title_left"
+        android:textColor="@color/color_10"
+        android:textSize="@dimen/font_30"
+        android:visibility="visible" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_2"
+        android:background="@color/aam_item_border"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,17 +31,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/lt_main_title_left"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@mipmap/back"
-                android:gravity="center"
-                android:padding="@dimen/border_20"
-                android:text="@string/str_title_left"
-                android:textColor="@color/color_10"
-                android:textSize="@dimen/font_30"
-                android:visibility="visible" />
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
@@ -35,13 +38,13 @@
 
                 <ImageView
                     android:id="@+id/iv_platform"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/border_466"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:adjustViewBounds="true"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:srcCompat="@mipmap/banner02" />
