@@ -7,38 +7,36 @@
 
     <include layout="@layout/view_custom_toolbar" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/border_4"
-        android:background="@color/aam_item_border" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/border_4">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_imgage"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/border_320"
-                android:background="@android:color/white"
-                android:gravity="center"
-                android:text="添加封面图片"
-                android:textColor="@color/color_66"
-                android:textSize="@dimen/font_30" />
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/border_10"
-                android:background="@color/aam_item_border" />
+                <TextView
+                    android:id="@+id/tv_imgage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/border_320"
+                    android:gravity="center"
+                    android:text="添加封面图片"
+                    android:textColor="@color/color_66"
+                    android:textSize="@dimen/font_30" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/border_10"
                 android:background="@android:color/white"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -77,14 +75,11 @@
                 </RadioGroup>
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/border_10"
-                android:background="@color/aam_item_border" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/border_10"
                 android:background="@android:color/white"
                 android:gravity="center"
                 android:padding="@dimen/border_20">
@@ -106,14 +101,11 @@
                     android:textSize="@dimen/font_26" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/border_10"
-                android:background="@color/aam_item_border" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/border_10"
                 android:background="@android:color/white"
                 android:gravity="center"
                 android:padding="@dimen/border_20">
@@ -135,14 +127,11 @@
                     android:textSize="@dimen/font_26" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/border_10"
-                android:background="@color/aam_item_border" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/border_10"
                 android:background="@android:color/white"
                 android:padding="@dimen/border_20">
 
@@ -187,14 +176,10 @@
                     android:textSize="@dimen/font_26" />
             </RelativeLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/border_10"
-                android:background="@color/aam_item_border" />
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/border_10"
                 android:background="@android:color/white"
                 android:padding="@dimen/border_20">
 
@@ -239,14 +224,13 @@
                     android:textSize="@dimen/font_26" />
             </RelativeLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/border_10"
-                android:background="@color/aam_item_border" />
+            android:layout_marginTop="@dimen/border_20"
 
             <LinearLayout
+                android:id="@+id/ll_product_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/border_10"
                 android:background="@android:color/white"
                 android:gravity="center"
                 android:padding="@dimen/border_20">
@@ -267,63 +251,17 @@
                     android:drawableRight="@mipmap/item_more" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/border_10"
-                android:background="@color/aam_item_border" />
-
             <LinearLayout
+                android:id="@+id/ll_product_commodity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:gravity="center"
-                android:padding="@dimen/border_20">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="6"
-                    android:text="@string/str_product_commodity_one"
-                    android:textColor="@color/color_33"
-                    android:textSize="@dimen/font_30" />
-
-                <TextView
-                    android:layout_width="@dimen/border_30"
-                    android:layout_height="@dimen/border_30"
-                    android:layout_margin="@dimen/border_10"
-                    android:layout_weight="1"
-                    android:drawableRight="@mipmap/item_more" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/border_10"
-                android:background="@color/aam_item_border" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:gravity="center"
-                android:padding="@dimen/border_20">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="6"
-                    android:text="@string/str_product_commodity_tow"
-                    android:textColor="@color/color_33"
-                    android:textSize="@dimen/font_30" />
-
-                <TextView
-                    android:layout_width="@dimen/border_30"
-                    android:layout_height="@dimen/border_30"
-                    android:layout_margin="@dimen/border_10"
-                    android:layout_weight="1"
-                    android:drawableRight="@mipmap/item_more" />
-            </LinearLayout>
 
             <ImageView
+                android:id="@+id/iv_add_commodity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/border_20"

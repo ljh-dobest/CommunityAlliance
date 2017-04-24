@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:text="干货分享"
             android:textColor="@color/color_99"
-            android:textSize="@dimen/font_28" />
+            android:textSize="@dimen/font_22" />
     </LinearLayout>
 
     <View
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:text="fdsafewffsadfsafasfsdfsdf"
         android:textColor="@color/color_33"
-        android:textSize="@dimen/font_32" />
+        android:textSize="@dimen/font_38" />
 
     <TextView
         android:id="@+id/tv_share_content"
@@ -72,9 +72,9 @@
     <ImageView
         android:id="@+id/iv_share_img"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/border_400"
         android:adjustViewBounds="true"
-        android:scaleType="fitStart"
+        android:scaleType="fitXY"
         android:src="@mipmap/banner02" />
 
     <View
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/border_20"
-                android:text="12"
+                android:text="0"
                 android:textColor="@color/color_99"
                 android:textSize="@dimen/font_24" />
         </LinearLayout>
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/border_20"
-                android:text="12"
+                android:text="0"
                 android:textColor="@color/color_99"
                 android:textSize="@dimen/font_24" />
         </LinearLayout>
@@ -148,7 +148,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/border_20"
-                android:text="12"
+                android:text="0"
                 android:textColor="@color/color_99"
                 android:textSize="@dimen/font_24" />
         </LinearLayout>

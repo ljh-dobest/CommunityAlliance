@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapterViewHolder> implements View.OnClickListener {
     private List<DealBuyBean> list;
-    private static Context context;
+    private Context context;
     private int position;
 
     private OnItemClickListener onItemClickListener;

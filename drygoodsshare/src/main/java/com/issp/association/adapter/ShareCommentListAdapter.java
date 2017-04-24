@@ -34,6 +34,7 @@ public class ShareCommentListAdapter extends BaseRecyclerAdapter<ShareCommentLis
     private int position;
 
     public ShareCommentListAdapter(List<ShareCommentBean> list, Context context) {
+        this.context=context;
         this.list = list;
     }
 

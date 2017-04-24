@@ -80,7 +80,7 @@ public class SupportProductActivity extends BaseMvpActivity<ISupportProductListV
 
     private void initView() {
         bean = (ProductCollectBean) getIntent().getSerializableExtra("bean");
-        personList=bean.getProductReward();
+        personList.addAll(bean.getProductReward());
         ltMainTitle.setText(getString(R.string.str_title_support));
 
         xrefreshview.setPullLoadEnable(true);

@@ -32,6 +32,7 @@ public class OrderDetailListAdapter extends BaseRecyclerViewAdapter<OrderDetailL
 
     public OrderDetailListAdapter(List<OrderDetailBean> list, Context context) {
         this.list = list;
+        this.context=context;
     }
 
     @Override

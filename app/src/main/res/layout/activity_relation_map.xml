@@ -13,6 +13,7 @@
         android:layout_margin="@dimen/lv_dividerHeight"
         android:orientation="horizontal">
         <TextView
+            android:id="@+id/tv_back"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"

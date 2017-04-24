@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_connection_buttom.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\drawable\\botm_connection_buttom.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\drawable\\botm_connection_buttom.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\drawable\\botm_connection_buttom.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",

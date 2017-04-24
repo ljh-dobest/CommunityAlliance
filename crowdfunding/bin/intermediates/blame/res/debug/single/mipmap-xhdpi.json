@@ -32,6 +32,10 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xhdpi\\checked.png"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\camera.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xhdpi\\camera.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\more.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xhdpi\\more.png"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\back.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xhdpi\\back.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\picture.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\mipmap-xhdpi\\picture.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\banner02.png",

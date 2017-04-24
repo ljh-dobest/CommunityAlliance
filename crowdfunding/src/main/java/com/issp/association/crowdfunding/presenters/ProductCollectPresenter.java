@@ -27,6 +27,10 @@ public class ProductCollectPresenter extends BasePersenter<IProductCollectListVi
         recommendInfoMoudle.getProductCollectInfo(formData, this);
 
     }
+    public void selectProductIdCardPresenter(Map<String ,String> formData){
+        recommendInfoMoudle.selectProductIdCardView(formData,this);
+    }
+
     public void postUserPraise(Map<String,String> formData){
         recommendInfoMoudle.postUserPraise(formData,this);
     }
@@ -34,6 +38,11 @@ public class ProductCollectPresenter extends BasePersenter<IProductCollectListVi
     @Override
     public void getProductCollectInfo(ArrayList<ProductCollectBean> data) {
         mView.setProductCollectData(data);
+    }
+
+    @Override
+    public void selectProductIdCard(String data) {
+        mView.selectProductIdCardView(data);
     }
 
     @Override

@@ -8,23 +8,19 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import com.example.just.shequnlianmeng.R;
 import com.example.just.shequnlianmeng.base.view.BaseActivity;
-import com.example.just.shequnlianmeng.base.view.BaseMvpActivity;
-import com.example.just.shequnlianmeng.bean.RelationBean;
-import com.example.just.shequnlianmeng.interfaces.IRelationMapView;
-import com.example.just.shequnlianmeng.presenters.RelationMapPresenter;
 import com.example.just.shequnlianmeng.ui.fragments.InterpersonalConnectionsFragment;
 import com.example.just.shequnlianmeng.ui.fragments.RelationMapFragment;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * 关系图谱
@@ -41,6 +37,8 @@ public class RelationMapActivity extends BaseActivity implements RadioGroup.OnCh
     RadioButton rb_relation_map;
     @BindView(R.id.relation_vp)
     ViewPager relation_vp;
+    @BindView(R.id.tv_back)
+    TextView tvBack;
 
 
     private int checkedcolor = 0xffff3300;
@@ -54,9 +52,10 @@ public class RelationMapActivity extends BaseActivity implements RadioGroup.OnCh
         ButterKnife.bind(this);
         initFragment();
     }
+
     private void initFragment() {
-        radioButtons = new RadioButton[]{rb_connection,rb_relation_map};
-        fragments=new ArrayList<Fragment>();
+        radioButtons = new RadioButton[]{rb_connection, rb_relation_map};
+        fragments = new ArrayList<Fragment>();
         fragments.add(new InterpersonalConnectionsFragment());
         fragments.add(new RelationMapFragment());
         relation_vp.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
@@ -64,6 +63,7 @@ public class RelationMapActivity extends BaseActivity implements RadioGroup.OnCh
             public Fragment getItem(int position) {
                 return fragments.get(position);
             }
+
             @Override
             public int getCount() {
                 return fragments.size();
@@ -82,7 +82,7 @@ public class RelationMapActivity extends BaseActivity implements RadioGroup.OnCh
 
     @Override
     public void onPageSelected(int position) {
-        RadioButton rb=null;
+        RadioButton rb = null;
         for (int i = 0; i < radioButtons.length; i++) {
             rb = radioButtons[i];
             rb.setChecked(false);
@@ -99,21 +99,27 @@ public class RelationMapActivity extends BaseActivity implements RadioGroup.OnCh
 
     @Override
     public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
-        int curItem=0;
+        int curItem = 0;
         reset();
         RadioButton rb = (RadioButton) group.findViewById(checkedId);
         rb.setTextColor(Color.BLACK);
-        for (int i=0;i<radioButtons.length;i++){
-            if(checkedId==radioButtons[i].getId()){
-                curItem=i;
+        for (int i = 0; i < radioButtons.length; i++) {
+            if (checkedId == radioButtons[i].getId()) {
+                curItem = i;
             }
         }
         relation_vp.setCurrentItem(curItem);
     }
+
     private void reset() {
         for (RadioButton rb : radioButtons) {
             rb.setTextColor(Color.GREEN);
         }
 
+    }
+
+    @OnClick(R.id.tv_back)
+    public void onViewClicked() {
+        RelationMapActivity.this.finish();
     }
 }

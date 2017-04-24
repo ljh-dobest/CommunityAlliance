@@ -35,6 +35,7 @@ public class MessageListAdapter extends BaseRecyclerViewAdapter<MessageListAdapt
 
     public MessageListAdapter(List<MessageBean> list, Context context) {
         this.list = list;
+        this.context=context;
     }
 
     @Override
