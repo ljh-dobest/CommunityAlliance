@@ -17,9 +17,9 @@ import java.lang.Override;
 public class AddShippingAddressActivity_ViewBinding implements Unbinder {
   private AddShippingAddressActivity target;
 
-  private View view2131624137;
+  private View view2131624140;
 
-  private View view2131624115;
+  private View view2131624118;
 
   @UiThread
   public AddShippingAddressActivity_ViewBinding(AddShippingAddressActivity target) {
@@ -34,7 +34,7 @@ public class AddShippingAddressActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624137 = view;
+    view2131624140 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -48,7 +48,7 @@ public class AddShippingAddressActivity_ViewBinding implements Unbinder {
     target.etUserAddress = Utils.findRequiredViewAsType(source, R.id.et_user_address, "field 'etUserAddress'", EditText.class);
     view = Utils.findRequiredView(source, R.id.btn_address_submit, "field 'btnAddressSubmit' and method 'addressSubmit'");
     target.btnAddressSubmit = Utils.castView(view, R.id.btn_address_submit, "field 'btnAddressSubmit'", Button.class);
-    view2131624115 = view;
+    view2131624118 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -72,9 +72,9 @@ public class AddShippingAddressActivity_ViewBinding implements Unbinder {
     target.etUserAddress = null;
     target.btnAddressSubmit = null;
 
-    view2131624137.setOnClickListener(null);
-    view2131624137 = null;
-    view2131624115.setOnClickListener(null);
-    view2131624115 = null;
+    view2131624140.setOnClickListener(null);
+    view2131624140 = null;
+    view2131624118.setOnClickListener(null);
+    view2131624118 = null;
   }
 }

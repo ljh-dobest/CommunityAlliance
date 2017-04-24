@@ -23,7 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ui.activitys.AddApplicationActivity">
+        <activity android:name=".ui.activitys.RelationMapActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

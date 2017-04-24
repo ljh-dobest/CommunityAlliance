@@ -50,6 +50,34 @@ public class ProductCollectModel {
             }
         });
     }
+    public void selectProductIdCardView(Map<String, String> formData, final OnProductCollectListener listener) {
+
+        HttpUtils.sendGsonPostRequest("/selectProductIdcardInfo", formData, new StringCallback() {
+            @Override
+            public void onError(Call call, Exception e, int id) {
+                listener.showError(e.toString());
+            }
+
+            @Override
+            public void onResponse(String response, int id) {
+                Gson gson = new Gson();
+                Type type = new TypeToken<Code>() {
+                }.getType();
+                Code code = gson.fromJson(response, type);
+                switch (code.getCode()) {
+                    case 200:
+                        listener.selectProductIdCard("已验证");
+                        break;
+                    case 100:
+                        listener.showError(code.getMsgs());
+                        break;
+                    case 0:
+                        listener.showError("未验证");
+                        break;
+                }
+            }
+        });
+    }
 
     /**
      * 点赞
@@ -78,7 +106,7 @@ public class ProductCollectModel {
                         listener.showError(code.getMsgs());
                         break;
                     case 0:
-                        listener.showError("评论失败");
+                        listener.showError("点赞失败");
                         break;
                 }
             }

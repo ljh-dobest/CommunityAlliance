@@ -1,7 +1,7 @@
 package com.issp.association.crowdfunding.presenters;
 
 import com.issp.association.crowdfunding.base.presenter.BasePersenter;
-import com.issp.association.crowdfunding.interfaces.IAddCrowdFunding;
+import com.issp.association.crowdfunding.interfaces.IAddCrowdFundingView;
 import com.issp.association.crowdfunding.listeners.OnAddProductCollectListener;
 import com.issp.association.crowdfunding.model.AddProductCollectModel;
 
@@ -11,7 +11,7 @@ import java.util.Map;
  * Created by T-BayMax on 2017/4/21.
  */
 
-public class AddProductCollectPresenter extends BasePersenter<IAddCrowdFunding> implements OnAddProductCollectListener {
+public class AddProductCollectPresenter extends BasePersenter<IAddCrowdFundingView> implements OnAddProductCollectListener {
     private AddProductCollectModel model;
 
     public AddProductCollectPresenter() {

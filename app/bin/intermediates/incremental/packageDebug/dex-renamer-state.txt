@@ -1,4 +1,4 @@
-#Fri Apr 14 17:52:27 CST 2017
+#Sat Apr 22 10:07:16 CST 2017
 file.9=F\:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_dc4c3d866ec332beed1461811225af2352d25b9e\\classes.dex
 base.10=F\:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\transforms\\dex\\debug\\folders\\1000\\4\\classes_e91386f83574c709e8428d82d15863e5da912412
 file.8=F\:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_04dad1a498c4d1d0be418080aeeefcdadcfc0f1c\\classes.dex

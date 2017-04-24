@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:2:1-57:12
 	package
 		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifes
 	android:name
 		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:7:22-77
 application
-ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:8:5-43:19
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:8:5-55:19
 MERGED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\bd2cd6d72e8ea3c623c7d364926b579717a46661\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:transition:25.1.0] C:\Users\Administrator\.android\build-cache\198ea21b78f60ebd55370c37f9fcf0e9a999475c\output\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:palette-v7:25.1.0] C:\Users\Administrator\.android\build-cache\eeb751391ac77fd6e332b208d1b4edd6b4acdd85\output\AndroidManifest.xml:22:5-23:19
@@ -108,18 +108,44 @@ activity#com.issp.association.crowdfunding.ui.activity.AddCrowdFundingActivity
 ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:35:9-72
 	android:name
 		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:35:19-70
+activity#com.issp.association.crowdfunding.ui.activity.ProductIDCardActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:36:9-70
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:36:19-68
+activity#com.issp.association.crowdfunding.ui.activity.AddCommodityActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:37:9-69
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:37:19-67
+activity#com.issp.association.crowdfunding.ui.activity.TextDetailsActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:38:9-68
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:38:19-66
+activity#cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:41:9-44:52
+	android:screenOrientation
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:44:13-49
+	android:exported
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:43:13-36
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:42:13-81
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:45:9-47:52
+	android:screenOrientation
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:47:13-49
+	android:name
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:46:13-60
 meta-data#design_width
-ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:37:9-39:35
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:49:9-51:35
 	android:value
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:39:13-32
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:51:13-32
 	android:name
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:38:13-40
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:50:13-40
 meta-data#design_height
-ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:40:9-42:36
+ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:52:9-54:36
 	android:value
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:42:13-33
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:54:13-33
 	android:name
-		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:41:13-41
+		ADDED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml:53:13-41
 uses-sdk
 INJECTED from F:\NB\T-BayMax\CommunityAlliance\crowdfunding\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.1.0] C:\Users\Administrator\.android\build-cache\bd2cd6d72e8ea3c623c7d364926b579717a46661\output\AndroidManifest.xml:21:5-23:62

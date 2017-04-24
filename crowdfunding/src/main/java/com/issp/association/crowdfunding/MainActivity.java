@@ -26,6 +26,7 @@ import com.issp.association.crowdfunding.ui.activity.AddCrowdFundingActivity;
 import com.issp.association.crowdfunding.ui.activity.FeedForCommentActivity;
 import com.issp.association.crowdfunding.ui.activity.MessageActivity;
 import com.issp.association.crowdfunding.ui.activity.MinProductActivity;
+import com.issp.association.crowdfunding.ui.activity.ProductIDCardActivity;
 import com.issp.association.crowdfunding.ui.activity.ProductParticularsActivity;
 import com.issp.association.crowdfunding.utils.DisplayUtils;
 import com.issp.association.crowdfunding.utils.T;
@@ -81,6 +82,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
     private boolean isRefresh;
     Banner homepage_banner;
+    private boolean isIDCard;
 
     private ArrayList<String> imgList;
     String[] images = {"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=699105693,866957547&fm=21&gp=0.jpg",
@@ -188,6 +190,9 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
             }
         });
+        Map<String, String> formData = new HashMap<String, String>(0);
+        formData.put("userId", "111");
+        presenter.selectProductIdCardPresenter(formData);
     }
 
     private void initData() {
@@ -315,8 +320,13 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
     }
 
     @Override
-    public void userPraise(String data) {
+    public void selectProductIdCardView(String data) {
+        isIDCard = true;
+    }
 
+    @Override
+    public void userPraise(String data) {
+        T.showLong(MainActivity.this, data);
     }
 
     @Override
@@ -333,7 +343,12 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
     @OnClick(R.id.tv_add_product)
     public void onViewClicked() {
-        Intent intent=new Intent(MainActivity.this,AddCrowdFundingActivity.class);
-        startActivity(intent);
+        if (!isIDCard){
+            Intent intent = new Intent(MainActivity.this, AddCrowdFundingActivity.class);
+            startActivity(intent);
+        }else {
+            Intent intent = new Intent(MainActivity.this, ProductIDCardActivity.class);
+            startActivity(intent);
+        }
     }
 }

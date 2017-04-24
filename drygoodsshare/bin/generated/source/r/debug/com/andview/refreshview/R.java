@@ -45,25 +45,25 @@ public final class R {
     }
     public static final class string {
         public static final int app_name = 0x7f080029;
-        public static final int title_activity_main = 0x7f080054;
-        public static final int xrefreshview_footer_hint_click = 0x7f080055;
-        public static final int xrefreshview_footer_hint_complete = 0x7f080056;
-        public static final int xrefreshview_footer_hint_fail = 0x7f080057;
-        public static final int xrefreshview_footer_hint_normal = 0x7f080058;
-        public static final int xrefreshview_footer_hint_ready = 0x7f080059;
-        public static final int xrefreshview_footer_hint_release = 0x7f08005a;
-        public static final int xrefreshview_header_hint_loaded = 0x7f08005b;
-        public static final int xrefreshview_header_hint_loaded_fail = 0x7f08005c;
-        public static final int xrefreshview_header_hint_loading = 0x7f08005d;
-        public static final int xrefreshview_header_hint_normal = 0x7f08005e;
-        public static final int xrefreshview_header_hint_ready = 0x7f08005f;
-        public static final int xrefreshview_header_hint_refreshing = 0x7f080060;
-        public static final int xrefreshview_header_last_time = 0x7f080061;
-        public static final int xrefreshview_never_refresh = 0x7f080062;
-        public static final int xrefreshview_refresh_days_ago = 0x7f080063;
-        public static final int xrefreshview_refresh_hours_ago = 0x7f080064;
-        public static final int xrefreshview_refresh_justnow = 0x7f080065;
-        public static final int xrefreshview_refresh_minutes_ago = 0x7f080066;
+        public static final int title_activity_main = 0x7f08004c;
+        public static final int xrefreshview_footer_hint_click = 0x7f08004d;
+        public static final int xrefreshview_footer_hint_complete = 0x7f08004e;
+        public static final int xrefreshview_footer_hint_fail = 0x7f08004f;
+        public static final int xrefreshview_footer_hint_normal = 0x7f080050;
+        public static final int xrefreshview_footer_hint_ready = 0x7f080051;
+        public static final int xrefreshview_footer_hint_release = 0x7f080052;
+        public static final int xrefreshview_header_hint_loaded = 0x7f080053;
+        public static final int xrefreshview_header_hint_loaded_fail = 0x7f080054;
+        public static final int xrefreshview_header_hint_loading = 0x7f080055;
+        public static final int xrefreshview_header_hint_normal = 0x7f080056;
+        public static final int xrefreshview_header_hint_ready = 0x7f080057;
+        public static final int xrefreshview_header_hint_refreshing = 0x7f080058;
+        public static final int xrefreshview_header_last_time = 0x7f080059;
+        public static final int xrefreshview_never_refresh = 0x7f08005a;
+        public static final int xrefreshview_refresh_days_ago = 0x7f08005b;
+        public static final int xrefreshview_refresh_hours_ago = 0x7f08005c;
+        public static final int xrefreshview_refresh_justnow = 0x7f08005d;
+        public static final int xrefreshview_refresh_minutes_ago = 0x7f08005e;
     }
     public static final class styleable {
         public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f010155, 0x7f010156, 0x7f010157, 0x7f010158 };

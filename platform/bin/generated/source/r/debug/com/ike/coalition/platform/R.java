@@ -1222,20 +1222,26 @@ containing a value of this type.
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
-<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
-<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
-<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
-<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
-<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
-<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
-<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
-<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
-<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
-<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
-<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
-<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
-<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td> Push object to the top of its container, not changing its size. </td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td> Push object to the bottom of its container, not changing its size. </td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td> Push object to the left of its container, not changing its size. </td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td> Push object to the right of its container, not changing its size. </td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td> Place object in the vertical center of its container, not changing its size. </td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td> Grow the vertical size of the object if needed so it completely fills its container. </td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td> Place object in the horizontal center of its container, not changing its size. </td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td> Grow the horizontal size of the object if needed so it completely fills its container. </td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td> Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. </td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td> Grow the horizontal and vertical size of the object if needed so it completely fills its container. </td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td> Additional option that can be set to have the top and/or bottom edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the vertical gravity: a top gravity will clip the bottom
+             edge, a bottom gravity will clip the top edge, and neither will clip both edges. </td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td> Additional option that can be set to have the left and/or right edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the horizontal gravity: a left gravity will clip the right
+             edge, a right gravity will clip the left edge, and neither will clip both edges. </td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td> Push object to the beginning of its container, not changing its size. </td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td> Push object to the end of its container, not changing its size. </td></tr>
 </table>
          */
         public static final int gallery_toolbar_text_gravity=0x7f01001b;
@@ -4785,6 +4791,12 @@ containing a value of this type.
         public static final int Animation_AppCompat_Dialog=0x7f0a00a3;
         public static final int Animation_AppCompat_DropDownUp=0x7f0a00a4;
         public static final int Animation_Design_BottomSheetDialog=0x7f0a00a5;
+        /** 
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+         */
         public static final int AppBaseTheme=0x7f0a00a6;
         public static final int AppTheme=0x7f0a00a7;
         public static final int AppTheme_AppBarOverlay=0x7f0a00a8;
@@ -5164,6 +5176,8 @@ containing a value of this type.
         public static final int Widget_Design_Snackbar=0x7f0a017e;
         public static final int Widget_Design_TabLayout=0x7f0a0001;
         public static final int Widget_Design_TextInputLayout=0x7f0a017f;
+        /**  All customizations that are NOT specific to a particular API-level can go here. 
+         */
         public static final int Widget_GifView=0x7f0a0180;
         public static final int custom_dialog2=0x7f0a0181;
         public static final int dialog=0x7f0a0182;

@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\layout\\include_pickerview_topbar.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\\output\\res\\layout\\include_pickerview_topbar.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",

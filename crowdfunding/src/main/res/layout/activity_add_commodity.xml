@@ -7,14 +7,11 @@
 
     <include layout="@layout/view_custom_toolbar" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/border_10"
-        android:background="@color/aam_item_border" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/border_10"
         android:background="@android:color/white"
         android:gravity="center"
         android:padding="@dimen/border_20">
@@ -35,14 +32,11 @@
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_26" />
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/border_10"
-        android:background="@color/aam_item_border" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/border_10"
         android:background="@android:color/white"
         android:gravity="center"
         android:padding="@dimen/border_20">
@@ -59,19 +53,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@null"
+            android:inputType="numberDecimal"
             android:padding="@dimen/border_10"
             android:textColor="@color/color_99"
             android:textSize="@dimen/font_26" />
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/border_10"
-        android:background="@color/aam_item_border" />
 
     <LinearLayout
         android:id="@+id/ll_commodity_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/border_10"
         android:background="@android:color/white"
         android:gravity="center"
         android:padding="@dimen/border_20">
@@ -91,6 +83,7 @@
             android:layout_weight="1"
             android:drawableRight="@mipmap/item_more" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/tv_submit"
         android:layout_width="match_parent"

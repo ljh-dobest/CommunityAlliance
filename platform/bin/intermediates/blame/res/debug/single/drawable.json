@@ -12,20 +12,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_ucrop_vector_ic_crop.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\black_background.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\drawable\\black_background.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\gallery_button_selector.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable\\gallery_button_selector.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\black_background.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\drawable\\black_background.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
@@ -40,12 +40,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
