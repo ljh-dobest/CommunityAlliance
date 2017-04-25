@@ -19,15 +19,15 @@ import java.lang.Override;
 public class PlatformParticularsActivity_ViewBinding implements Unbinder {
   private PlatformParticularsActivity target;
 
-  private View view2131624096;
+  private View view2131624090;
 
-  private View view2131624108;
+  private View view2131624102;
 
-  private View view2131624111;
+  private View view2131624105;
 
-  private View view2131624112;
+  private View view2131624106;
 
-  private View view2131624113;
+  private View view2131624107;
 
   @UiThread
   public PlatformParticularsActivity_ViewBinding(PlatformParticularsActivity target) {
@@ -42,7 +42,7 @@ public class PlatformParticularsActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'onViewClicked'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624096 = view;
+    view2131624090 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class PlatformParticularsActivity_ViewBinding implements Unbinder {
     target.tvJoinUsersNumber = Utils.findRequiredViewAsType(source, R.id.tv_join_users_number, "field 'tvJoinUsersNumber'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_more, "field 'tvMore' and method 'onViewClicked'");
     target.tvMore = Utils.castView(view, R.id.tv_more, "field 'tvMore'", TextView.class);
-    view2131624108 = view;
+    view2131624102 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -72,7 +72,7 @@ public class PlatformParticularsActivity_ViewBinding implements Unbinder {
     target.ivShare = Utils.findRequiredViewAsType(source, R.id.iv_share, "field 'ivShare'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.iv_like, "field 'ivLike', method 'onClick', and method 'onViewClicked'");
     target.ivLike = Utils.castView(view, R.id.iv_like, "field 'ivLike'", ImageView.class);
-    view2131624111 = view;
+    view2131624105 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,7 +82,7 @@ public class PlatformParticularsActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.iv_comment_btn, "field 'ivCommentBtn' and method 'onViewClicked'");
     target.ivCommentBtn = Utils.castView(view, R.id.iv_comment_btn, "field 'ivCommentBtn'", ImageView.class);
-    view2131624112 = view;
+    view2131624106 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -91,7 +91,7 @@ public class PlatformParticularsActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tv_add_register, "field 'tvAddRegister' and method 'onViewClicked'");
     target.tvAddRegister = Utils.castView(view, R.id.tv_add_register, "field 'tvAddRegister'", TextView.class);
-    view2131624113 = view;
+    view2131624107 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -127,15 +127,15 @@ public class PlatformParticularsActivity_ViewBinding implements Unbinder {
     target.tvAddRegister = null;
     target.llHandle = null;
 
-    view2131624096.setOnClickListener(null);
-    view2131624096 = null;
-    view2131624108.setOnClickListener(null);
-    view2131624108 = null;
-    view2131624111.setOnClickListener(null);
-    view2131624111 = null;
-    view2131624112.setOnClickListener(null);
-    view2131624112 = null;
-    view2131624113.setOnClickListener(null);
-    view2131624113 = null;
+    view2131624090.setOnClickListener(null);
+    view2131624090 = null;
+    view2131624102.setOnClickListener(null);
+    view2131624102 = null;
+    view2131624105.setOnClickListener(null);
+    view2131624105 = null;
+    view2131624106.setOnClickListener(null);
+    view2131624106 = null;
+    view2131624107.setOnClickListener(null);
+    view2131624107 = null;
   }
 }

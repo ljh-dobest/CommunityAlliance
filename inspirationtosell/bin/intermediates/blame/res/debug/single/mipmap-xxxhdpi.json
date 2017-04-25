@@ -1,10 +1,18 @@
 [
     {
+        "merged": "E:\\ike\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "E:\\ike\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\inspirationtosell\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
+        "source": "E:\\ike\\CommunityAlliance\\inspirationtosell\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     }
 ]

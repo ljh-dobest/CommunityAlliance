@@ -19,11 +19,11 @@ import java.lang.Override;
 public class MinShareActivity_ViewBinding implements Unbinder {
   private MinShareActivity target;
 
-  private View view2131624110;
+  private View view2131624104;
 
-  private View view2131624112;
+  private View view2131624106;
 
-  private View view2131624113;
+  private View view2131624107;
 
   @UiThread
   public MinShareActivity_ViewBinding(MinShareActivity target) {
@@ -37,7 +37,7 @@ public class MinShareActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'lt_main_title_left' and method 'backClick'");
     target.lt_main_title_left = Utils.castView(view, R.id.lt_main_title_left, "field 'lt_main_title_left'", TextView.class);
-    view2131624110 = view;
+    view2131624104 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class MinShareActivity_ViewBinding implements Unbinder {
     target.radioGroup = Utils.findRequiredViewAsType(source, R.id.rg_relation, "field 'radioGroup'", RadioGroup.class);
     view = Utils.findRequiredView(source, R.id.rb_connection, "field 'rb_connection' and method 'connectionClick'");
     target.rb_connection = Utils.castView(view, R.id.rb_connection, "field 'rb_connection'", RadioButton.class);
-    view2131624112 = view;
+    view2131624106 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +56,7 @@ public class MinShareActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.rb_relation_map, "field 'rb_relation_map' and method 'relationMapClick'");
     target.rb_relation_map = Utils.castView(view, R.id.rb_relation_map, "field 'rb_relation_map'", RadioButton.class);
-    view2131624113 = view;
+    view2131624107 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -81,11 +81,11 @@ public class MinShareActivity_ViewBinding implements Unbinder {
     target.recyclerView = null;
     target.xRefreshView = null;
 
-    view2131624110.setOnClickListener(null);
-    view2131624110 = null;
-    view2131624112.setOnClickListener(null);
-    view2131624112 = null;
-    view2131624113.setOnClickListener(null);
-    view2131624113 = null;
+    view2131624104.setOnClickListener(null);
+    view2131624104 = null;
+    view2131624106.setOnClickListener(null);
+    view2131624106 = null;
+    view2131624107.setOnClickListener(null);
+    view2131624107 = null;
   }
 }

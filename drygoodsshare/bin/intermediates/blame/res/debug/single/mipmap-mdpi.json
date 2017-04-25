@@ -6,5 +6,13 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     }
 ]

@@ -16,7 +16,7 @@ import java.lang.Override;
 public class HomeFragment_ViewBinding<T extends HomeFragment> implements Unbinder {
   protected T target;
 
-  private View view2131558766;
+  private View view2131558767;
 
   @UiThread
   public HomeFragment_ViewBinding(final T target, View source) {
@@ -26,7 +26,7 @@ public class HomeFragment_ViewBinding<T extends HomeFragment> implements Unbinde
     target.homepage_lv = Utils.findRequiredViewAsType(source, R.id.homepage_lv, "field 'homepage_lv'", ListView.class);
     view = Utils.findRequiredView(source, R.id.homepage_iv_top, "field 'homepage_iv_top' and method 'toTopOnClick'");
     target.homepage_iv_top = Utils.castView(view, R.id.homepage_iv_top, "field 'homepage_iv_top'", ImageView.class);
-    view2131558766 = view;
+    view2131558767 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -44,8 +44,8 @@ public class HomeFragment_ViewBinding<T extends HomeFragment> implements Unbinde
     target.homepage_lv = null;
     target.homepage_iv_top = null;
 
-    view2131558766.setOnClickListener(null);
-    view2131558766 = null;
+    view2131558767.setOnClickListener(null);
+    view2131558767 = null;
 
     this.target = null;
   }

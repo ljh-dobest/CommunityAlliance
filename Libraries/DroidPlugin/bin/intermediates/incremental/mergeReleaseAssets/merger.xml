@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\NB\T-BayMax\CommunityAlliance\Libraries\DroidPlugin\assets"/><source path="F:\NB\T-BayMax\CommunityAlliance\Libraries\DroidPlugin\bin\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="F:\NB\T-BayMax\CommunityAlliance\Libraries\DroidPlugin\build-types\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\ike\CommunityAlliance\Libraries\DroidPlugin\assets"/><source path="E:\ike\CommunityAlliance\Libraries\DroidPlugin\bin\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="E:\ike\CommunityAlliance\Libraries\DroidPlugin\build-types\release\assets"/></dataSet></merger>

@@ -18,13 +18,13 @@ import java.lang.Override;
 public class ReadDealBuyActivity_ViewBinding implements Unbinder {
   private ReadDealBuyActivity target;
 
-  private View view2131624264;
+  private View view2131624258;
 
-  private View view2131624127;
+  private View view2131624121;
+
+  private View view2131624124;
 
   private View view2131624130;
-
-  private View view2131624136;
 
   @UiThread
   public ReadDealBuyActivity_ViewBinding(ReadDealBuyActivity target) {
@@ -38,7 +38,7 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624264 = view;
+    view2131624258 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -58,7 +58,7 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     target.tvLikeBtn = Utils.findRequiredViewAsType(source, R.id.tv_like_btn, "field 'tvLikeBtn'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ll_like, "field 'llLike' and method 'likeClick'");
     target.llLike = Utils.castView(view, R.id.ll_like, "field 'llLike'", LinearLayout.class);
-    view2131624127 = view;
+    view2131624121 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -69,7 +69,7 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     target.tvCommentBtn = Utils.findRequiredViewAsType(source, R.id.tv_comment_btn, "field 'tvCommentBtn'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ll_comment, "field 'llComment' and method 'commentClick'");
     target.llComment = Utils.castView(view, R.id.ll_comment, "field 'llComment'", LinearLayout.class);
-    view2131624130 = view;
+    view2131624124 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -81,7 +81,7 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     target.llBuy = Utils.findRequiredViewAsType(source, R.id.ll_buy, "field 'llBuy'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.tv_buy, "field 'tvBuy' and method 'buyClick'");
     target.tvBuy = Utils.castView(view, R.id.tv_buy, "field 'tvBuy'", TextView.class);
-    view2131624136 = view;
+    view2131624130 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -128,13 +128,13 @@ public class ReadDealBuyActivity_ViewBinding implements Unbinder {
     target.wvContent = null;
     target.wvPlay = null;
 
-    view2131624264.setOnClickListener(null);
-    view2131624264 = null;
-    view2131624127.setOnClickListener(null);
-    view2131624127 = null;
+    view2131624258.setOnClickListener(null);
+    view2131624258 = null;
+    view2131624121.setOnClickListener(null);
+    view2131624121 = null;
+    view2131624124.setOnClickListener(null);
+    view2131624124 = null;
     view2131624130.setOnClickListener(null);
     view2131624130 = null;
-    view2131624136.setOnClickListener(null);
-    view2131624136 = null;
   }
 }

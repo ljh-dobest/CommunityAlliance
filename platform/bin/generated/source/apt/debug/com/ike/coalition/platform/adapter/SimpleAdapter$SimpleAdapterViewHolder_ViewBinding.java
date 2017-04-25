@@ -17,7 +17,7 @@ import java.lang.Override;
 public class SimpleAdapter$SimpleAdapterViewHolder_ViewBinding implements Unbinder {
   private SimpleAdapter.SimpleAdapterViewHolder target;
 
-  private View view2131624247;
+  private View view2131624241;
 
   @UiThread
   public SimpleAdapter$SimpleAdapterViewHolder_ViewBinding(final SimpleAdapter.SimpleAdapterViewHolder target,
@@ -31,7 +31,7 @@ public class SimpleAdapter$SimpleAdapterViewHolder_ViewBinding implements Unbind
     target.tvAddress = Utils.findRequiredViewAsType(source, R.id.tv_address, "field 'tvAddress'", TextView.class);
     view = Utils.findRequiredView(source, R.id.rl_item, "field 'rlItem' and method 'itemClick'");
     target.rlItem = Utils.castView(view, R.id.rl_item, "field 'rlItem'", RelativeLayout.class);
-    view2131624247 = view;
+    view2131624241 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class SimpleAdapter$SimpleAdapterViewHolder_ViewBinding implements Unbind
     target.tvAddress = null;
     target.rlItem = null;
 
-    view2131624247.setOnClickListener(null);
-    view2131624247 = null;
+    view2131624241.setOnClickListener(null);
+    view2131624241 = null;
   }
 }

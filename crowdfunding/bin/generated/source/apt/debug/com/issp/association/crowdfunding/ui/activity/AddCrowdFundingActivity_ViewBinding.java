@@ -20,15 +20,15 @@ import java.lang.Override;
 public class AddCrowdFundingActivity_ViewBinding implements Unbinder {
   private AddCrowdFundingActivity target;
 
-  private View view2131624140;
+  private View view2131624139;
 
-  private View view2131624100;
+  private View view2131624094;
 
-  private View view2131624112;
+  private View view2131624106;
 
-  private View view2131624099;
+  private View view2131624093;
 
-  private View view2131624114;
+  private View view2131624108;
 
   @UiThread
   public AddCrowdFundingActivity_ViewBinding(AddCrowdFundingActivity target) {
@@ -42,7 +42,7 @@ public class AddCrowdFundingActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'onViewClicked'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624140 = view;
+    view2131624139 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class AddCrowdFundingActivity_ViewBinding implements Unbinder {
     target.ltMainTitleRight = Utils.findRequiredViewAsType(source, R.id.lt_main_title_right, "field 'ltMainTitleRight'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_imgage, "field 'tvImgage' and method 'onViewClicked'");
     target.tvImgage = Utils.castView(view, R.id.tv_imgage, "field 'tvImgage'", TextView.class);
-    view2131624100 = view;
+    view2131624094 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -71,7 +71,7 @@ public class AddCrowdFundingActivity_ViewBinding implements Unbinder {
     target.etDays = Utils.findRequiredViewAsType(source, R.id.et_days, "field 'etDays'", EditText.class);
     view = Utils.findRequiredView(source, R.id.ll_product_content, "field 'llProductContent' and method 'onViewClicked'");
     target.llProductContent = Utils.castView(view, R.id.ll_product_content, "field 'llProductContent'", LinearLayout.class);
-    view2131624112 = view;
+    view2131624106 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -81,7 +81,7 @@ public class AddCrowdFundingActivity_ViewBinding implements Unbinder {
     target.llProductCommodity = Utils.findRequiredViewAsType(source, R.id.ll_product_commodity, "field 'llProductCommodity'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.tv_submit, "field 'tvSubmit' and method 'onViewClicked'");
     target.tvSubmit = Utils.castView(view, R.id.tv_submit, "field 'tvSubmit'", TextView.class);
-    view2131624099 = view;
+    view2131624093 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -90,7 +90,7 @@ public class AddCrowdFundingActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.iv_add_commodity, "field 'ivAddCommodity' and method 'onViewClicked'");
     target.ivAddCommodity = Utils.castView(view, R.id.iv_add_commodity, "field 'ivAddCommodity'", ImageView.class);
-    view2131624114 = view;
+    view2131624108 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -124,15 +124,15 @@ public class AddCrowdFundingActivity_ViewBinding implements Unbinder {
     target.tvSubmit = null;
     target.ivAddCommodity = null;
 
-    view2131624140.setOnClickListener(null);
-    view2131624140 = null;
-    view2131624100.setOnClickListener(null);
-    view2131624100 = null;
-    view2131624112.setOnClickListener(null);
-    view2131624112 = null;
-    view2131624099.setOnClickListener(null);
-    view2131624099 = null;
-    view2131624114.setOnClickListener(null);
-    view2131624114 = null;
+    view2131624139.setOnClickListener(null);
+    view2131624139 = null;
+    view2131624094.setOnClickListener(null);
+    view2131624094 = null;
+    view2131624106.setOnClickListener(null);
+    view2131624106 = null;
+    view2131624093.setOnClickListener(null);
+    view2131624093 = null;
+    view2131624108.setOnClickListener(null);
+    view2131624108 = null;
   }
 }

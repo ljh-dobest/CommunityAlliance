@@ -18,11 +18,11 @@ import java.lang.Override;
 public class FeedForCommentActivity_ViewBinding implements Unbinder {
   private FeedForCommentActivity target;
 
-  private View view2131624140;
+  private View view2131624139;
 
-  private View view2131624132;
+  private View view2131624126;
 
-  private View view2131624133;
+  private View view2131624127;
 
   @UiThread
   public FeedForCommentActivity_ViewBinding(FeedForCommentActivity target) {
@@ -36,7 +36,7 @@ public class FeedForCommentActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624140 = view;
+    view2131624139 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class FeedForCommentActivity_ViewBinding implements Unbinder {
     target.ltMainTitleRight = Utils.findRequiredViewAsType(source, R.id.lt_main_title_right, "field 'ltMainTitleRight'", TextView.class);
     view = Utils.findRequiredView(source, R.id.editText, "field 'editText' and method 'commentClick'");
     target.editText = Utils.castView(view, R.id.editText, "field 'editText'", EditText.class);
-    view2131624132 = view;
+    view2131624126 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +56,7 @@ public class FeedForCommentActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tv_submit_comment, "field 'tvSubmitComment' and method 'submitCommentClick'");
     target.tvSubmitComment = Utils.castView(view, R.id.tv_submit_comment, "field 'tvSubmitComment'", TextView.class);
-    view2131624133 = view;
+    view2131624127 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,11 +82,11 @@ public class FeedForCommentActivity_ViewBinding implements Unbinder {
     target.recyclerView = null;
     target.xRefreshView = null;
 
-    view2131624140.setOnClickListener(null);
-    view2131624140 = null;
-    view2131624132.setOnClickListener(null);
-    view2131624132 = null;
-    view2131624133.setOnClickListener(null);
-    view2131624133 = null;
+    view2131624139.setOnClickListener(null);
+    view2131624139 = null;
+    view2131624126.setOnClickListener(null);
+    view2131624126 = null;
+    view2131624127.setOnClickListener(null);
+    view2131624127 = null;
   }
 }

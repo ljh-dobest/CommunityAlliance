@@ -8,6 +8,18 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\raw\\circles.gif"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\raw\\circles.gif",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\raw\\circles.gif"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\raw\\horizontal.gif",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\raw\\horizontal.gif"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\raw\\vertical.gif",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\raw\\vertical.gif"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\raw\\horizontal.gif",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\raw\\horizontal.gif"
     }

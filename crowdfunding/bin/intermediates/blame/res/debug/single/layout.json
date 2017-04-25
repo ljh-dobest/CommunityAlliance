@@ -1,39 +1,67 @@
 [
     {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_layout_scale_wheel.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_ucrop_layout_scale_wheel.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_adapter_bucket_item.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_adapter_bucket_item.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_message.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_message.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_banner.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_banner.xml"
     },
     {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_message.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_message.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_feed_for_comment.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_feed_for_comment.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_layout_tab_icon.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_activity_media.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_activity_media.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
@@ -44,16 +72,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_icon_group.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_bottom_navigation_item.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_media.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_product_idcard.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_product_idcard.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -68,24 +96,8 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\5b1c56a9d983afe3720d6c59b281f48d0566e317\\output\\res\\layout\\xrefreshview_header.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_action.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_custom_toolbar.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_custom_toolbar.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_view.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_view.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\banner.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\layout\\banner.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_fragment_media_grid.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_fragment_media_grid.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_product_idcard.xml",
@@ -96,12 +108,28 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_support_product.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_menu_item_action_area.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_base.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_base.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
@@ -116,6 +144,386 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_order_detail.xml"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_media_image_preview_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_media_image_preview_item.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_layout_rotate_wheel.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_ucrop_layout_rotate_wheel.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\layout_basepickerview.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\bc0a2c8451fe4d48d363c9b90f3bc7e0da54b499\\output\\res\\layout\\layout_basepickerview.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_controls.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_ucrop_controls.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_supported_project.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_add_supported_project.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_product_comments.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_product_comments.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_message.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_message.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_mine_product.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_mine_product.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\pickerview_options.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\bc0a2c8451fe4d48d363c9b90f3bc7e0da54b499\\output\\res\\layout\\pickerview_options.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_layout_rotate_wheel.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_layout_rotate_wheel.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_shipping_address.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_shipping_address.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_mine_product.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_mine_product.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_commodity.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_add_commodity.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_support_product.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_support_product.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_graphic_details.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_graphic_details.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_commodity.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_add_commodity.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_product_commodity.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_product_commodity.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_feed_for_comment.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_feed_for_comment.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\home_ads_view.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\home_ads_view.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\include_pickerview_topbar.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\\output\\res\\layout\\include_pickerview_topbar.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_view.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_ucrop_view.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_custom_toolbar.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_custom_toolbar.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_shipping_address.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_shipping_address.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_management_shipping_address.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_management_shipping_address.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_product_collect.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_product_collect.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gif_header.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\gif_header.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_text_details.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_text_details.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_product_commodity.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_product_commodity.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gif_header.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\gif_header.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_loading_view_final_footer_default.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_loading_view_final_footer_default.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_prduct_comment.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_prduct_comment.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\pickerview_time.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\bc0a2c8451fe4d48d363c9b90f3bc7e0da54b499\\output\\res\\layout\\pickerview_time.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\xrefreshview_header.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\e939f501a7b923b624b3253c46e7e08781842751\\output\\res\\layout\\xrefreshview_header.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_fragment_media_page.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_fragment_media_page.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_management_shipping_address.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_management_shipping_address.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_supported_project.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_add_supported_project.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_orderdetail.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_orderdetail.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_order_detail.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_order_detail.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\popwindow_more.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\popwindow_more.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_adapter_media_grid_item.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_adapter_media_grid_item.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_adapter_bucket_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_adapter_bucket_item.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_shipping_address.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_add_shipping_address.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\home_ads_view.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\home_ads_view.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_message.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_message.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_custom_toolbar.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_custom_toolbar.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\banner.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\cbf2c0f19cd3a36677ea0d2928257971329433d1\\output\\res\\layout\\banner.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_view.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_fragment_media_preview.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_fragment_media_preview.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_activity_photobox.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_activity_photobox.xml"
     },
@@ -124,20 +532,36 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_feed_for_comments.xml"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_prduct_comment.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_prduct_comment.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_identity_authentication.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_identity_authentication.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_feed_for_comments.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_feed_for_comments.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_media_image_preview_item.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_media_image_preview_item.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_fragment_media_grid.xml",
@@ -164,16 +588,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\xrefreshview_footer.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\5b1c56a9d983afe3720d6c59b281f48d0566e317\\output\\res\\layout\\xrefreshview_footer.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_supported_project.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_add_supported_project.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_product_comments.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_product_comments.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_navigation_item_header.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_controls.xml",
@@ -192,72 +616,88 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_crowd_funding.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_add_crowd_funding.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\xrefreshview_footer.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\e939f501a7b923b624b3253c46e7e08781842751\\output\\res\\layout\\xrefreshview_footer.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\bannerview.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\bannerview.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_layout_rotate_wheel.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_ucrop_layout_rotate_wheel.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_message.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_message.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activitiy_product_particulars.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activitiy_product_particulars.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_layout_snackbar.xml"
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activitiy_product_particulars.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activitiy_product_particulars.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_aspect_ratio.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_ucrop_aspect_ratio.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_mine_product.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_mine_product.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_ucrop_activity_photobox.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_ucrop_activity_photobox.xml"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_banner.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_banner.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\include_pickerview_topbar.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\bc0a2c8451fe4d48d363c9b90f3bc7e0da54b499\\output\\res\\layout\\include_pickerview_topbar.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_crowd_funding.xml",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_add_crowd_funding.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_commodity.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_add_commodity.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_product_commodity.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_product_commodity.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\banner.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\4a3d8c3efa00d4fa8e3d7f7ea626eddfba00c336\\output\\res\\layout\\banner.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
@@ -272,16 +712,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\home_ads_view.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\home_ads_view.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_support_product.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_support_product.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_screen_simple.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\include_pickerview_topbar.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\\output\\res\\layout\\include_pickerview_topbar.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\pickerview_options.xml",
@@ -304,16 +740,16 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_media_image_preview_item.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_media_image_preview_item.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\view_list_itme_shipping_address.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\view_list_itme_shipping_address.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_add_shipping_address.xml",
@@ -332,16 +768,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_fragment_media_page.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_management_shipping_address.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_management_shipping_address.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\6e0b95b87a3e3f25f8dc57e63fcf9e06fa645bd6\\output\\res\\layout\\design_navigation_menu.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
@@ -352,8 +788,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_adapter_bucket_item.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\layout\\gallery_adapter_bucket_item.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_product_comments.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_product_comments.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_graphic_details.xml",
@@ -364,8 +804,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\notification_template_media_custom.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\bannerview.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\bannerview.xml"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\0afd8d6630e0944e751013337d8cc12b7f13c8ee\\output\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activity_orderdetail.xml",
@@ -380,16 +824,12 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activity_text_details.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gif_header.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\gif_header.xml"
+        "merged": "E:\\ike\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\activitiy_product_particulars.xml",
+        "source": "E:\\ike\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\activitiy_product_particulars.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_fragment_media_preview.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\layout\\gallery_fragment_media_preview.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\gallery_loading_view_final_footer_default.xml",
@@ -398,10 +838,6 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_item_separator.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
@@ -416,15 +852,7 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\src\\main\\res\\layout\\popwindow_more.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\layout\\abc_search_view.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\pickerview_time.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\f4ca9f7a2bd9c7dd5a936eb9edfb52d16ba91870\\output\\res\\layout\\pickerview_time.xml"
-    },
-    {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\crowdfunding\\bin\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\bd2cd6d72e8ea3c623c7d364926b579717a46661\\output\\res\\layout\\design_navigation_item_subheader.xml"
     }
 ]

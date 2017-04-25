@@ -1,7 +1,19 @@
 [
     {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\add_association.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\add_association.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\back.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\back.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\back.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\back.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
@@ -16,11 +28,23 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\close.png"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\close.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\close.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\more.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\more.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\more.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-xxhdpi\\more.png"
     }
 ]

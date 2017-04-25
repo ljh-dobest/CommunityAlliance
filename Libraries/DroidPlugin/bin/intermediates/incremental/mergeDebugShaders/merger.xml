@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\NB\T-BayMax\CommunityAlliance\Libraries\DroidPlugin\src\main\shaders"/></dataSet><dataSet config="debug"><source path="F:\NB\T-BayMax\CommunityAlliance\Libraries\DroidPlugin\build-types\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\ike\CommunityAlliance\Libraries\DroidPlugin\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\ike\CommunityAlliance\Libraries\DroidPlugin\build-types\debug\shaders"/></dataSet></merger>

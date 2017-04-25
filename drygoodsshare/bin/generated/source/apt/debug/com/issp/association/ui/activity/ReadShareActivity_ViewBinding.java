@@ -18,11 +18,11 @@ import java.lang.Override;
 public class ReadShareActivity_ViewBinding implements Unbinder {
   private ReadShareActivity target;
 
-  private View view2131624110;
+  private View view2131624104;
 
-  private View view2131624126;
+  private View view2131624120;
 
-  private View view2131624129;
+  private View view2131624123;
 
   @UiThread
   public ReadShareActivity_ViewBinding(ReadShareActivity target) {
@@ -36,7 +36,7 @@ public class ReadShareActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624110 = view;
+    view2131624104 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class ReadShareActivity_ViewBinding implements Unbinder {
     target.wvContent = Utils.findRequiredViewAsType(source, R.id.wv_content, "field 'wvContent'", WebView.class);
     view = Utils.findRequiredView(source, R.id.ll_like, "field 'llLike' and method 'likeClick'");
     target.llLike = Utils.castView(view, R.id.ll_like, "field 'llLike'", LinearLayout.class);
-    view2131624126 = view;
+    view2131624120 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -72,7 +72,7 @@ public class ReadShareActivity_ViewBinding implements Unbinder {
     target.llShare = Utils.findRequiredViewAsType(source, R.id.ll_share, "field 'llShare'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.ll_comment, "field 'llComment' and method 'commentClick'");
     target.llComment = Utils.castView(view, R.id.ll_comment, "field 'llComment'", LinearLayout.class);
-    view2131624129 = view;
+    view2131624123 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -116,11 +116,11 @@ public class ReadShareActivity_ViewBinding implements Unbinder {
     target.ivImage = null;
     target.wvCynopsis = null;
 
-    view2131624110.setOnClickListener(null);
-    view2131624110 = null;
-    view2131624126.setOnClickListener(null);
-    view2131624126 = null;
-    view2131624129.setOnClickListener(null);
-    view2131624129 = null;
+    view2131624104.setOnClickListener(null);
+    view2131624104 = null;
+    view2131624120.setOnClickListener(null);
+    view2131624120 = null;
+    view2131624123.setOnClickListener(null);
+    view2131624123 = null;
   }
 }

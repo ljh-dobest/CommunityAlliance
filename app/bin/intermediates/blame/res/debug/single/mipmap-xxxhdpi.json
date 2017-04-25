@@ -2,5 +2,9 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
 ]

@@ -16,9 +16,9 @@ import java.lang.Override;
 public class TextDetailsActivity_ViewBinding implements Unbinder {
   private TextDetailsActivity target;
 
-  private View view2131624140;
+  private View view2131624139;
 
-  private View view2131624276;
+  private View view2131624275;
 
   @UiThread
   public TextDetailsActivity_ViewBinding(TextDetailsActivity target) {
@@ -32,7 +32,7 @@ public class TextDetailsActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'onViewClicked'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624140 = view;
+    view2131624139 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class TextDetailsActivity_ViewBinding implements Unbinder {
     target.ltMainTitle = Utils.findRequiredViewAsType(source, R.id.lt_main_title, "field 'ltMainTitle'", TextView.class);
     view = Utils.findRequiredView(source, R.id.lt_main_title_right, "field 'ltMainTitleRight' and method 'onViewClicked'");
     target.ltMainTitleRight = Utils.castView(view, R.id.lt_main_title_right, "field 'ltMainTitleRight'", TextView.class);
-    view2131624276 = view;
+    view2131624275 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -64,9 +64,9 @@ public class TextDetailsActivity_ViewBinding implements Unbinder {
     target.ltMainTitleRight = null;
     target.etComment = null;
 
-    view2131624140.setOnClickListener(null);
-    view2131624140 = null;
-    view2131624276.setOnClickListener(null);
-    view2131624276 = null;
+    view2131624139.setOnClickListener(null);
+    view2131624139 = null;
+    view2131624275.setOnClickListener(null);
+    view2131624275 = null;
   }
 }

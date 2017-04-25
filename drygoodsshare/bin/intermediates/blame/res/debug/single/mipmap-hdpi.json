@@ -12,7 +12,23 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\picture.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-hdpi\\picture.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\camera.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-hdpi\\camera.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\camera.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-hdpi\\camera.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "E:\\ike\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]

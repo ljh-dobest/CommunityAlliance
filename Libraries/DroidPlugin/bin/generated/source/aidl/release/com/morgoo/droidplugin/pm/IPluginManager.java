@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: F:\\NB\\T-BayMax\\CommunityAlliance\\Libraries\\DroidPlugin\\src\\com\\morgoo\\droidplugin\\pm\\IPluginManager.aidl
+ * Original file: E:\\ike\\CommunityAlliance\\Libraries\\DroidPlugin\\src\\com\\morgoo\\droidplugin\\pm\\IPluginManager.aidl
  */
 package com.morgoo.droidplugin.pm;
 /**

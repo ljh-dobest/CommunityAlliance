@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/CommunityAlliance.iml" filepath="$PROJECT_DIR$/CommunityAlliance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Libraries/DroidPlugin/DroidPlugin.iml" filepath="$PROJECT_DIR$/Libraries/DroidPlugin/DroidPlugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/Libraries/Libraries.iml" filepath="$PROJECT_DIR$/Libraries/Libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmallTalk/SmallTalk.iml" filepath="$PROJECT_DIR$/SmallTalk/SmallTalk.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/crowdfunding/crowdfunding.iml" filepath="$PROJECT_DIR$/crowdfunding/crowdfunding.iml" />
       <module fileurl="file://$PROJECT_DIR$/drygoodsshare/drygoodsshare.iml" filepath="$PROJECT_DIR$/drygoodsshare/drygoodsshare.iml" />

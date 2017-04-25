@@ -1,7 +1,15 @@
 [
     {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "E:\\ike\\CommunityAlliance\\platform\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "E:\\ike\\CommunityAlliance\\platform\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",

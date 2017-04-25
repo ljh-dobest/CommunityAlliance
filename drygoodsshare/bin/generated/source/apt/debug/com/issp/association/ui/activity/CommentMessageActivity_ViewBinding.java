@@ -17,7 +17,7 @@ import java.lang.Override;
 public class CommentMessageActivity_ViewBinding implements Unbinder {
   private CommentMessageActivity target;
 
-  private View view2131624110;
+  private View view2131624104;
 
   @UiThread
   public CommentMessageActivity_ViewBinding(CommentMessageActivity target) {
@@ -31,7 +31,7 @@ public class CommentMessageActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624110 = view;
+    view2131624104 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,7 +57,7 @@ public class CommentMessageActivity_ViewBinding implements Unbinder {
     target.recyclerView = null;
     target.xRefreshView = null;
 
-    view2131624110.setOnClickListener(null);
-    view2131624110 = null;
+    view2131624104.setOnClickListener(null);
+    view2131624104 = null;
   }
 }

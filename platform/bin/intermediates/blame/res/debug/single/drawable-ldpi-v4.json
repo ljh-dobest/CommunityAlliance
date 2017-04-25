@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_crop.png"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_angle.png",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_angle.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_scale.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_scale.png"
     },
@@ -20,8 +24,32 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_done.png"
     },
     {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_scale.png",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_scale.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_reset.png",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_reset.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_cross.png",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_cross.png"
+    },
+    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_next.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_next.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_next.png",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_next.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_done.png",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_done.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_rotate.png",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_rotate.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_rotate.png",
@@ -30,5 +58,9 @@
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_angle.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\09d7e1b6465e62818e4efa452f6e820320694dfa\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_angle.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\platform\\bin\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gallery_ucrop_ic_crop.png",
+        "source": "C:\\Users\\Min\\.android\\build-cache\\c255aaa2976bdebe47be0a0c30e0da7339f57846\\output\\res\\drawable-ldpi-v4\\gallery_ucrop_ic_crop.png"
     }
 ]

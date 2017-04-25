@@ -15,7 +15,7 @@ import java.lang.Override;
 public class MineFragment_ViewBinding<T extends MineFragment> implements Unbinder {
   protected T target;
 
-  private View view2131558815;
+  private View view2131558816;
 
   @UiThread
   public MineFragment_ViewBinding(final T target, View source) {
@@ -24,7 +24,7 @@ public class MineFragment_ViewBinding<T extends MineFragment> implements Unbinde
     View view;
     view = Utils.findRequiredView(source, R.id.iv_mine_recommend, "field 'iv_mine_recommend' and method 'mineFragemntViewOnClick'");
     target.iv_mine_recommend = Utils.castView(view, R.id.iv_mine_recommend, "field 'iv_mine_recommend'", ImageView.class);
-    view2131558815 = view;
+    view2131558816 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -41,8 +41,8 @@ public class MineFragment_ViewBinding<T extends MineFragment> implements Unbinde
 
     target.iv_mine_recommend = null;
 
-    view2131558815.setOnClickListener(null);
-    view2131558815 = null;
+    view2131558816.setOnClickListener(null);
+    view2131558816 = null;
 
     this.target = null;
   }

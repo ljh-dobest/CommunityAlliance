@@ -1,19 +1,31 @@
 [
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\lingyang.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\lingyang.png"
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\close.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\close.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\close.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\close.png"
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\linggan.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\linggan.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\login.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\login.png"
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\download.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\download.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\dache.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\dache.png"
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\login.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\login.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\back.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\back.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\qiuzhu.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\qiuzhu.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\dache.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\dache.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\recommed.png",
@@ -24,20 +36,60 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\linggan.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\more.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\more.png"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\zhibo.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\zhibo.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ganhuo.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\ganhuo.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\recommed.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\recommed.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\zhibo.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\zhibo.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\back.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\back.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\lingyang.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\lingyang.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\close.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\close.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\lingyang.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\lingyang.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\login.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\login.png"
+    },
+    {
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ganhuo.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\ganhuo.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\dache.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\dache.png"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\more.png",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\more.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\qiuzhu.png",
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\qiuzhu.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ganhuo.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\ganhuo.png"
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\download.png",
@@ -48,7 +100,7 @@
         "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\back.png",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\back.png"
+        "merged": "E:\\ike\\CommunityAlliance\\app\\bin\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\more.png",
+        "source": "E:\\ike\\CommunityAlliance\\app\\src\\main\\res\\mipmap-xhdpi\\more.png"
     }
 ]

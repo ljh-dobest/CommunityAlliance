@@ -17,7 +17,7 @@ import java.lang.Override;
 public class PreviewActivity_ViewBinding implements Unbinder {
   private PreviewActivity target;
 
-  private View view2131624262;
+  private View view2131624256;
 
   @UiThread
   public PreviewActivity_ViewBinding(PreviewActivity target) {
@@ -33,7 +33,7 @@ public class PreviewActivity_ViewBinding implements Unbinder {
     target.ltMainTitle = Utils.findRequiredViewAsType(source, R.id.lt_main_title, "field 'ltMainTitle'", TextView.class);
     view = Utils.findRequiredView(source, R.id.lt_main_title_right, "field 'ltMainTitleRight' and method 'onViewClicked'");
     target.ltMainTitleRight = Utils.castView(view, R.id.lt_main_title_right, "field 'ltMainTitleRight'", TextView.class);
-    view2131624262 = view;
+    view2131624256 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -67,7 +67,7 @@ public class PreviewActivity_ViewBinding implements Unbinder {
     target.wvContent = null;
     target.wvDealContent = null;
 
-    view2131624262.setOnClickListener(null);
-    view2131624262 = null;
+    view2131624256.setOnClickListener(null);
+    view2131624256 = null;
   }
 }
