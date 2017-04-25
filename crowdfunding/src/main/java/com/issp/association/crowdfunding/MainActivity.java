@@ -149,7 +149,7 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
                 page = 1;
                 initData();
-
+                checkIDCard();
             }
 
             @Override
@@ -190,6 +190,12 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
             }
         });
+<<<<<<< HEAD
+=======
+        checkIDCard();
+    }
+    private void checkIDCard(){
+>>>>>>> bxh
         Map<String, String> formData = new HashMap<String, String>(0);
         formData.put("userId", "111");
         presenter.selectProductIdCardPresenter(formData);
@@ -343,7 +349,11 @@ public class MainActivity extends BaseMvpActivity<IProductCollectListView, Produ
 
     @OnClick(R.id.tv_add_product)
     public void onViewClicked() {
+<<<<<<< HEAD
         if (!isIDCard){
+=======
+        if (isIDCard){
+>>>>>>> bxh
             Intent intent = new Intent(MainActivity.this, AddCrowdFundingActivity.class);
             startActivity(intent);
         }else {

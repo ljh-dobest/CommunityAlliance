@@ -38,7 +38,7 @@ import butterknife.ButterKnife;
 public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapterViewHolder> implements View.OnClickListener {
 
     private List<ShareBean> list;
-    private static Context context;
+    private Context context;
     private int position;
 
     private OnItemClickListener onItemClickListener;

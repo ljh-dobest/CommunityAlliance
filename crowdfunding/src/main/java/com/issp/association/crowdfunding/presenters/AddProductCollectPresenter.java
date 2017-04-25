@@ -5,6 +5,7 @@ import com.issp.association.crowdfunding.interfaces.IAddCrowdFundingView;
 import com.issp.association.crowdfunding.listeners.OnAddProductCollectListener;
 import com.issp.association.crowdfunding.model.AddProductCollectModel;
 
+import java.io.File;
 import java.util.Map;
 
 /**
@@ -17,8 +18,8 @@ public class AddProductCollectPresenter extends BasePersenter<IAddCrowdFundingVi
     public AddProductCollectPresenter() {
         model = new AddProductCollectModel();
     }
-    public void addProductCollect(Map<String,String> formData){
-        model.productCollect(formData,this);
+    public void addProductCollect(Map<String,String> formData, File file, String fileName){
+        model.productCollect(formData,file,fileName,this);
     }
 
     @Override

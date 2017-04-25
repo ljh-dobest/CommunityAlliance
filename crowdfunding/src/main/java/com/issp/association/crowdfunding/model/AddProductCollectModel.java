@@ -7,6 +7,7 @@ import com.issp.association.crowdfunding.listeners.OnAddProductCollectListener;
 import com.issp.association.crowdfunding.network.HttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
+import java.io.File;
 import java.lang.reflect.Type;
 import java.util.Map;
 
@@ -17,8 +18,8 @@ import okhttp3.Call;
  */
 
 public class AddProductCollectModel {
-    public void productCollect(Map<String,String> formData, final OnAddProductCollectListener listener){
-        HttpUtils.sendGsonPostRequest("/productCollect", formData, new StringCallback() {
+    public void productCollect(Map<String, String> formData, File file, String fileName, final OnAddProductCollectListener listener){
+        HttpUtils.sendFormatPostRequest("/files", formData, file, fileName, new StringCallback() {
             @Override
             public void onError(Call call, Exception e, int id) {
                 listener.showError(e.toString());

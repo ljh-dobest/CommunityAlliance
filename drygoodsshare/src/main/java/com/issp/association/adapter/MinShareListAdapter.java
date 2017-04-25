@@ -36,6 +36,7 @@ public class MinShareListAdapter extends BaseRecyclerAdapter<MinShareListAdapter
     private OnItemClickListener onItemClickListener;
 
     public MinShareListAdapter(List<ShareBean> list, Context context) {
+        this.context=context;
         this.list = list;
     }
 

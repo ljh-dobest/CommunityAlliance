@@ -21,11 +21,11 @@
 
         <ImageView
             android:id="@+id/iv_product_icon"
-            android:layout_width="@dimen/border_88"
-            android:layout_height="@dimen/border_88"
+            android:layout_width="@dimen/border_70"
+            android:layout_height="@dimen/border_70"
             android:adjustViewBounds="true"
             android:background="@drawable/list_itme_img"
-            android:scaleType="fitStart"
+            android:scaleType="fitXY"
             android:src="@mipmap/header" />
 
         <TextView
@@ -33,10 +33,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginLeft="@dimen/border_20"
+            android:layout_marginLeft="@dimen/border_16"
             android:text="TextView"
             android:textColor="@color/color_33"
-            android:textSize="@dimen/font_34" />
+            android:textSize="@dimen/font_28" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
 
             android:padding="@dimen/border_20"
             android:text="剩余22天"
-            android:textSize="@dimen/font_30"
+            android:textSize="@dimen/font_22"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="@+id/iv_product_img" />
     </android.support.constraint.ConstraintLayout>
@@ -97,7 +97,7 @@
         android:maxLength="5"
         android:text="fdsafewffsadfsafasffsdafawesdfsadfsdfassdfsdf"
         android:textColor="@color/color_99"
-        android:textSize="@dimen/font_28" />
+        android:textSize="@dimen/font_26" />
 
 
     <RelativeLayout
@@ -112,8 +112,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="@dimen/border_20"
+            android:textColor="@color/color_57"
             android:text="认筹总额：5080.00"
-            android:textSize="@dimen/font_28" />
+            android:textSize="@dimen/font_22" />
 
         <TextView
             android:id="@+id/tv_amount_total"
@@ -123,8 +124,9 @@
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/tv_confess_total"
             android:layout_marginRight="@dimen/border_20"
+            android:textColor="@color/color_fc"
             android:text="目标总额：15080.00"
-            android:textSize="@dimen/font_28" />
+            android:textSize="@dimen/font_22" />
 
         <ProgressBar
             android:id="@+id/pb_schedule"
@@ -144,8 +146,9 @@
             android:layout_below="@+id/pb_schedule"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/border_20"
+            android:textColor="@color/color_57"
             android:text="45%"
-            android:textSize="@dimen/font_28" />
+            android:textSize="@dimen/font_22" />
     </RelativeLayout>
 
 

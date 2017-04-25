@@ -32,6 +32,7 @@ public class CommentListAdapter extends BaseRecyclerAdapter<CommentListAdapter.C
 
     public CommentListAdapter(List<CommentsBean> list, Context context) {
         this.list = list;
+        this.context=context;
     }
 
     @Override

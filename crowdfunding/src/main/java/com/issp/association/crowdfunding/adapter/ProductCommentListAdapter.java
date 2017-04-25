@@ -37,6 +37,7 @@ public class ProductCommentListAdapter extends BaseRecyclerViewAdapter<ProductCo
 
     public ProductCommentListAdapter(List<CommentsBean> list, Context context) {
         this.list = list;
+        this.context=context;
     }
 
     @Override

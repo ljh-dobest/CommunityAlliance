@@ -92,13 +92,14 @@ public class AddApplicationActivity extends BaseActivity {
         AddApplicationActivity.this.finish();
     }
 
+
     private void initData() {
 
 
         list = new ArrayList<ApplyListItem>(0);
         list.add(new ApplyListItem("shareApp", "干货分享", R.mipmap.ganhuo, 1, "com.issp.association", fileUtils.getSDPATH() + pageName, "", 0));
-        list.add(new ApplyListItem("", "灵感贩卖", R.mipmap.linggan, 1, "com.t.baymax.navi", f.getPath()+"/caar.apk"
-                , "http://7xlet1.com1.z0.glb.clouddn.com/Carapp-release.apk", 0));
+        list.add(new ApplyListItem("", "灵感贩卖", R.mipmap.linggan, 1, "com.t.baymax.navi", f.getPath()+"/ISSP%E5%85%B1%E4%BA%AB%E5%B9%B3%E5%8F%B03.0.0.apk"
+                , "http://7xlet1.com1.z0.glb.clouddn.com/ISSP%E5%85%B1%E4%BA%AB%E5%B9%B3%E5%8F%B03.0.0.apk", 0));
         list.add(new ApplyListItem("", "认领中心", R.mipmap.lingyang, 1, "", "", "", 0));
         list.add(new ApplyListItem("", "直播中心", R.mipmap.zhibo, 1, "", "", "", 0));
         list.add(new ApplyListItem("", "联盟打车", R.mipmap.dache, 1, "", "", "", 0));

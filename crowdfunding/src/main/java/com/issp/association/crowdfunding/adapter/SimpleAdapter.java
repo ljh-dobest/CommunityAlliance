@@ -14,6 +14,7 @@ import com.issp.association.crowdfunding.R;
 import com.issp.association.crowdfunding.base.adpater.BaseRecyclerViewAdapter;
 import com.issp.association.crowdfunding.bean.ProductCollectBean;
 import com.issp.association.crowdfunding.network.HttpUtils;
+import com.issp.association.crowdfunding.utils.CircleTransform;
 import com.squareup.picasso.Picasso;
 import com.zhy.autolayout.attr.AutoAttr;
 import com.zhy.autolayout.utils.AutoUtils;
@@ -43,6 +44,7 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
 
     public SimpleAdapter(List<ProductCollectBean> list, Context context) {
         this.list = list;
+        this.context=context;
     }
 
     @Override
@@ -54,7 +56,7 @@ public class SimpleAdapter extends BaseRecyclerViewAdapter<SimpleAdapter.Product
             holder.llLike.setTag(person);
             holder.llComment.setTag(person);
             Picasso.with(context).load(HttpUtils.IMAGE_RUL + person.getImage())
-                    .into(holder.ivProductIcon);
+                    .transform(new CircleTransform()).into(holder.ivProductIcon);
 
             holder.tvProductUserName.setText(person.getNickname());
 

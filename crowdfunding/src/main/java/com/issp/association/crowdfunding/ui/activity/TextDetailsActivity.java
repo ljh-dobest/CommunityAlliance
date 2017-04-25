@@ -9,6 +9,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.issp.association.crowdfunding.R;
+<<<<<<< HEAD
+=======
+import com.issp.association.crowdfunding.utils.T;
+>>>>>>> bxh
 import com.zhy.autolayout.AutoLayoutActivity;
 
 import butterknife.BindView;
@@ -55,6 +59,14 @@ public class TextDetailsActivity extends AutoLayoutActivity {
                 TextDetailsActivity.this.finish();
                 break;
             case R.id.lt_main_title_right:
+<<<<<<< HEAD
+=======
+                if(etComment.getText().toString().trim().equals("")){
+
+                    T.showLong(TextDetailsActivity.this,"请输入文字详情");
+                    return;
+                }
+>>>>>>> bxh
                 Intent intent = new Intent();
                 intent.putExtra("comment", etComment.getText().toString().trim());
                 setResult(REQUEST_CODE, intent);

@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- if you want to load images from a file OR from the internet -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.issp.association.crowdfunding.App"
@@ -41,6 +42,7 @@
         <activity android:name="com.issp.association.crowdfunding.ui.activity.ProductIDCardActivity" />
         <activity android:name="com.issp.association.crowdfunding.ui.activity.AddCommodityActivity" />
         <activity android:name="com.issp.association.crowdfunding.ui.activity.TextDetailsActivity" />
+        <activity android:name="com.issp.association.crowdfunding.ui.activity.GraphicDetailsActivity" />
 
         <!-- 选择图片 -->
         <activity

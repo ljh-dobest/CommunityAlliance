@@ -15,7 +15,7 @@ import java.lang.Override;
 public class SupportProductAdapter$ProductAdapterViewHolder_ViewBinding implements Unbinder {
   private SupportProductAdapter.ProductAdapterViewHolder target;
 
-  private View view2131624311;
+  private View view2131624320;
 
   @UiThread
   public SupportProductAdapter$ProductAdapterViewHolder_ViewBinding(final SupportProductAdapter.ProductAdapterViewHolder target,
@@ -30,7 +30,7 @@ public class SupportProductAdapter$ProductAdapterViewHolder_ViewBinding implemen
     target.tvProductContent = Utils.findRequiredViewAsType(source, R.id.tv_product_content, "field 'tvProductContent'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_min_support, "field 'tvMinSupport' and method 'SupportClick'");
     target.tvMinSupport = Utils.castView(view, R.id.tv_min_support, "field 'tvMinSupport'", TextView.class);
-    view2131624311 = view;
+    view2131624320 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +55,7 @@ public class SupportProductAdapter$ProductAdapterViewHolder_ViewBinding implemen
     target.tvMinSupport = null;
     target.tvRemark = null;
 
-    view2131624311.setOnClickListener(null);
-    view2131624311 = null;
+    view2131624320.setOnClickListener(null);
+    view2131624320 = null;
   }
 }

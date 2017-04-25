@@ -32,12 +32,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\drawable\\list_itme_img.xml",
-        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\drawable\\list_itme_img.xml"
-    },
-    {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\de444d381dddf90fa4b9fc385bd723fdb46a5c22\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\drawable\\list_itme_img.xml",
+        "source": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\src\\main\\res\\drawable\\list_itme_img.xml"
     },
     {
         "merged": "F:\\NB\\T-BayMax\\CommunityAlliance\\drygoodsshare\\bin\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",

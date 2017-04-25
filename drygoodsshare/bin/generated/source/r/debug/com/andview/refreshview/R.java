@@ -18,7 +18,7 @@ public final class R {
         public static final int stackFromEnd = 0x7f010158;
     }
     public static final class dimen {
-        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f0900c7;
+        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f0900c9;
     }
     public static final class drawable {
         public static final int xrefresh_ok = 0x7f020082;

@@ -33,6 +33,7 @@ public class ShippingAddressListAdapter extends BaseRecyclerViewAdapter<Shipping
 
     public ShippingAddressListAdapter(List<OrderDetailBean> list, Context context) {
         this.list = list;
+        this.context=context;
     }
 
     @Override

@@ -717,8 +717,10 @@
     <dimen name="border_22">22px</dimen>
     <dimen name="border_228">228px</dimen>
     <dimen name="border_26">26px</dimen>
+    <dimen name="border_260">260px</dimen>
     <dimen name="border_28">28px</dimen>
     <dimen name="border_30">30px</dimen>
+    <dimen name="border_330">330px</dimen>
     <dimen name="border_34">34px</dimen>
     <dimen name="border_36">36px</dimen>
     <dimen name="border_38">38px</dimen>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="530px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_comfirm_dialog"
+            android:layout_width="470px"
+            android:layout_height="266px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30px"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="176px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+           <!--     <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="部分信息确认后不能再修改!"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30"
+                    android:textStyle="bold" />-->
+
+                <TextView
+                    android:id="@+id/tv_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="确定购买内容？"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/font_30"
+                    android:textStyle="bold" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <Button
+                android:id="@+id/btn_comfirm_dialog_comfirm"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:background="@mipmap/btn_login"
+                android:gravity="center"
+                android:text="确认" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_comfirm_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/close" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -38,6 +38,7 @@ public class FeedForCommentListAdapter extends BaseRecyclerAdapter<FeedForCommen
 
     public FeedForCommentListAdapter(List<CommentsBean> list, Context context) {
         this.list = list;
+        this.context=context;
     }
 
     @Override

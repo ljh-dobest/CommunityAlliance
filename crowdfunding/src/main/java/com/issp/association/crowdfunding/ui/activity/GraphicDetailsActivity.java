@@ -1,20 +1,58 @@
 package com.issp.association.crowdfunding.ui.activity;
 
+<<<<<<< HEAD
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+=======
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
+>>>>>>> bxh
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.issp.association.crowdfunding.R;
+<<<<<<< HEAD
 import com.zhy.autolayout.AutoLayoutActivity;
 import com.zhy.autolayout.AutoLinearLayout;
+=======
+import com.issp.association.crowdfunding.bean.ProductRewardBean;
+import com.issp.association.crowdfunding.network.HttpUtils;
+import com.issp.association.crowdfunding.utils.T;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
+import com.zhy.autolayout.AutoLayoutActivity;
+import com.zhy.autolayout.AutoLinearLayout;
+import com.zhy.http.okhttp.callback.StringCallback;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+>>>>>>> bxh
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+<<<<<<< HEAD
 import jp.wasabeef.richeditor.RichEditor;
+=======
+import cn.finalteam.rxgalleryfinal.RxGalleryFinal;
+import cn.finalteam.rxgalleryfinal.imageloader.ImageLoaderType;
+import cn.finalteam.rxgalleryfinal.rxbus.RxBusResultSubscriber;
+import cn.finalteam.rxgalleryfinal.rxbus.event.ImageRadioResultEvent;
+import cn.finalteam.rxgalleryfinal.utils.ModelUtils;
+import jp.wasabeef.richeditor.RichEditor;
+import okhttp3.Call;
+
+import static android.R.attr.data;
+>>>>>>> bxh
 
 /**
  * 图文详情
@@ -47,13 +85,34 @@ public class GraphicDetailsActivity extends AutoLayoutActivity implements View.O
     private int keyHeight = 0;
     private int goldNum = 0;
 
+<<<<<<< HEAD
+=======
+
+    private int REQUEST_CONTENT = 200;
+
+>>>>>>> bxh
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graphic_details);
+<<<<<<< HEAD
         ButterKnife.bind(this);
         llInsert.addOnLayoutChangeListener(this);
     }
+=======
+        ModelUtils.setDebugModel(true);
+        ButterKnife.bind(this);
+        initView();
+        llInsert.addOnLayoutChangeListener(this);
+    }
+    private void initView(){
+        ltMainTitleLeft.setText("取消");
+        ltMainTitleLeft.setCompoundDrawables(null,null,null,null);
+        ltMainTitleRight.setText("保存");
+        ltMainTitleRight.setCompoundDrawables(null,null,null,null);
+        etContent.setPlaceholder("请输入项目详情");
+    }
+>>>>>>> bxh
 
     /**
      * 布局底部移动超过屏幕高度的四分之一则判断软键盘弹出或关闭
@@ -72,13 +131,69 @@ public class GraphicDetailsActivity extends AutoLayoutActivity implements View.O
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.lt_main_title_left:
+<<<<<<< HEAD
                 break;
             case R.id.lt_main_title_right:
+=======
+                GraphicDetailsActivity.this.finish();
+                break;
+            case R.id.lt_main_title_right:
+                submit();
+>>>>>>> bxh
                 break;
             case R.id.iv_ask_camera:
                 break;
             case R.id.iv_ask_picture:
+<<<<<<< HEAD
                 break;
         }
     }
+=======
+                RxGalleryFinal
+                        .with(GraphicDetailsActivity.this)
+                        .image()
+                        .radio()
+                        .crop()
+                        .imageLoader(ImageLoaderType.PICASSO)
+                        .subscribe(new RxBusResultSubscriber<ImageRadioResultEvent>() {
+                            @Override
+                            protected void onEvent(ImageRadioResultEvent imageRadioResultEvent) throws Exception {
+                                String path = imageRadioResultEvent.getResult().getOriginalPath();
+                                File file = new File(path);
+                                Map<String, String> params = new HashMap<String, String>(0);
+                                params.put("userId", "111");
+                               // presenter.uploadPicturesPresenter(params, file, "file");
+                                HttpUtils.sendFormatPostRequest("/files",params,file,"file", new StringCallback() {
+                                    @Override
+                                    public void onError(Call call, Exception e, int id) {
+                                        T.showShort(GraphicDetailsActivity.this, "上传失败");
+                                    }
+
+                                    @Override
+                                    public void onResponse(String response, int id) {
+                                        String imgUrl = HttpUtils.IMAGE_RUL + response;
+                                        etContent.insertImage(imgUrl, "dachshund");
+                                        T.showShort(GraphicDetailsActivity.this, "上传成功");
+                                    }
+                                });
+                            }
+                        }).openGallery();
+                break;
+        }
+    }
+    private void submit() {
+       if (etContent.getHtml().equals("")) {
+           if(etContent.getHtml().toString().trim().equals("")){
+
+               T.showLong(GraphicDetailsActivity.this,"请输入文字详情");
+               return;
+           }
+           return;
+       }
+        Intent it = new Intent();
+        it.putExtra("productReward", etContent.getHtml());
+        setResult(REQUEST_CONTENT, it);
+        GraphicDetailsActivity.this.finish();
+    }
+>>>>>>> bxh
 }

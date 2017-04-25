@@ -16,7 +16,7 @@ import java.lang.Override;
 public class SearchActivity_ViewBinding<T extends SearchActivity> implements Unbinder {
   protected T target;
 
-  private View view2131558667;
+  private View view2131558668;
 
   @UiThread
   public SearchActivity_ViewBinding(final T target, View source) {
@@ -26,7 +26,7 @@ public class SearchActivity_ViewBinding<T extends SearchActivity> implements Unb
     target.rv_search = Utils.findRequiredViewAsType(source, R.id.rv_search, "field 'rv_search'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.tv_search_clear, "field 'tv_search_clear' and method 'onViewClick'");
     target.tv_search_clear = Utils.castView(view, R.id.tv_search_clear, "field 'tv_search_clear'", TextView.class);
-    view2131558667 = view;
+    view2131558668 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -44,8 +44,8 @@ public class SearchActivity_ViewBinding<T extends SearchActivity> implements Unb
     target.rv_search = null;
     target.tv_search_clear = null;
 
-    view2131558667.setOnClickListener(null);
-    view2131558667 = null;
+    view2131558668.setOnClickListener(null);
+    view2131558668 = null;
 
     this.target = null;
   }

@@ -22,8 +22,8 @@ import okhttp3.RequestBody;
  */
 public class HttpUtils {
 
-     public static final String URL = "http://192.168.0.104:90/appapi/app";
-    public static final String IMAGE_RUL = "http://192.168.0.104:90";
+     public static final String URL = "https://sq.bjike.com/appapi/app";
+    public static final String IMAGE_RUL = "https://sq.bjike.com";
 
     private static final String TAG = "HttpClient-Request";
 
@@ -210,19 +210,17 @@ public class HttpUtils {
      *
      * @param url
      * @param params
-     * @param headers
      * @param file
      * @param fileName
      * @param callback
      */
     public static void sendFormatPostRequest(String url, Map<String, String> params,
-                                             Map<String, String> headers, File file, String fileName, Callback callback) {
+                                              File file, String fileName, StringCallback callback) {
 
         OkHttpUtils.post()
                 .addFile(fileName, file.getName(), file)
                 .url(URL + url)
                 .params(params)
-                .headers(headers)
                 .build()
                 .execute(callback);
     }
@@ -238,7 +236,7 @@ public class HttpUtils {
      * @param callback
      */
     public static void sendFormatPostRequest(String url, Map<String, String> params,
-                                             Map<String, String> headers, Map<String, File> files, String fileName, Callback callback) {
+                                             Map<String, String> headers, Map<String, File> files, String fileName, StringCallback callback) {
         OkHttpUtils.post()
                 .headers(headers)
                 .url(URL + url)

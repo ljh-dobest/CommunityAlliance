@@ -38,6 +38,7 @@ public class MinProductListAdapter extends BaseRecyclerViewAdapter<MinProductLis
 
     public MinProductListAdapter(List<ProductCollectBean> list, Context context) {
         this.list = list;
+        this.context=context;
     }
 
     @Override

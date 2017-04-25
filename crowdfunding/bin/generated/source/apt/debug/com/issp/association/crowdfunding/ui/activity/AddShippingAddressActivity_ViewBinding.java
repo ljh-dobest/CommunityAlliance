@@ -17,7 +17,7 @@ import java.lang.Override;
 public class AddShippingAddressActivity_ViewBinding implements Unbinder {
   private AddShippingAddressActivity target;
 
-  private View view2131624140;
+  private View view2131624145;
 
   private View view2131624118;
 
@@ -34,7 +34,7 @@ public class AddShippingAddressActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.lt_main_title_left, "field 'ltMainTitleLeft' and method 'leftClick'");
     target.ltMainTitleLeft = Utils.castView(view, R.id.lt_main_title_left, "field 'ltMainTitleLeft'", TextView.class);
-    view2131624140 = view;
+    view2131624145 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -72,8 +72,8 @@ public class AddShippingAddressActivity_ViewBinding implements Unbinder {
     target.etUserAddress = null;
     target.btnAddressSubmit = null;
 
-    view2131624140.setOnClickListener(null);
-    view2131624140 = null;
+    view2131624145.setOnClickListener(null);
+    view2131624145 = null;
     view2131624118.setOnClickListener(null);
     view2131624118 = null;
   }

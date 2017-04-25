@@ -31,11 +31,11 @@ public final class R {
         public static final int pickerview_wheelview_textcolor_out = 0x7f0d0065;
     }
     public static final class dimen {
-        public static final int pickerview_textsize = 0x7f0900d5;
-        public static final int pickerview_topbar_btn_textsize = 0x7f0900d6;
-        public static final int pickerview_topbar_height = 0x7f0900d7;
-        public static final int pickerview_topbar_padding = 0x7f0900d8;
-        public static final int pickerview_topbar_title_textsize = 0x7f0900d9;
+        public static final int pickerview_textsize = 0x7f0900d7;
+        public static final int pickerview_topbar_btn_textsize = 0x7f0900d8;
+        public static final int pickerview_topbar_height = 0x7f0900d9;
+        public static final int pickerview_topbar_padding = 0x7f0900da;
+        public static final int pickerview_topbar_title_textsize = 0x7f0900db;
     }
     public static final class drawable {
         public static final int selector_pickerview_btn = 0x7f02007f;

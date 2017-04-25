@@ -32,7 +32,7 @@ import butterknife.OnClick;
 public class SimpleAdapter extends BaseRecyclerAdapter<SimpleAdapter.SimpleAdapterViewHolder>{
 
     private List<PlatformBean> list;
-    private static Context context;
+    private Context context;
     private int position;
 
     private OnItemClickListener onItemClickListener;

@@ -38,6 +38,7 @@ public class SupportProductAdapter extends BaseRecyclerViewAdapter<SupportProduc
 
     public SupportProductAdapter(List<ProductRewardBean> list, Context context) {
         this.list = list;
+        this.context=context;
     }
 
     @Override

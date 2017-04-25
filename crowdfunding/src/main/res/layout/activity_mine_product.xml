@@ -42,7 +42,7 @@
                 android:button="@null"
                 android:gravity="center"
                 android:text="我的众筹"
-                android:textSize="@dimen/font_34" />
+                android:textSize="@dimen/font_30" />
 
             <RadioButton
                 android:id="@+id/rb_relation_map"
@@ -52,7 +52,7 @@
                 android:button="@null"
                 android:gravity="center"
                 android:text="我支持过的众筹"
-                android:textSize="@dimen/font_34" />
+                android:textSize="@dimen/font_30" />
 
         </com.issp.association.crowdfunding.view.ShareRadioGroup>
 
